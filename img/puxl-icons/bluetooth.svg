@@ -1,0 +1,18 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+
+  Bluetooth logo Copyright © Bluetooth SIG
+  https://www.bluetooth.com/copyright-policy
+-->
+
+  <g id='bluetooth' aria-labelledby='t-bluetooth d-bluetooth'>
+    <title id='t-bluetooth'>Bluetooth</title>
+    <desc id='d-bluetooth'>Bluetooth symbol</desc>
+    <path d='M15,32V19.2l-5.6,5.7L7.5,23l6.9-6.9l-7-7l1.9-1.9l5.7,5.7V0l9.6,9.6L18.2,16l6.399,6.4L15,32z M17.7,19.4v6l3-3L17.7,19.4z M17.7,6.6v5.9l3-3L17.7,6.6z'/>
+  </g>
+
+</svg>

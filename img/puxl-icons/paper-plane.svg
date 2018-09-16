@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='paper-plane' aria-labelledby='t-paper-plane d-paper-plane'>
+    <title id='t-paper-plane'>Paper plane</title>
+    <desc id='d-paper-plane'>A paper plane</desc>
+    <path d='M31.7,4.3C31.5,4.1,31.3,4,31,4c-0.1,0-0.2,0-0.3,0.1l-30,10C0.3,14.2,0,14.6,0,15s0.3,0.8,0.7,0.9 l8.6,2.9l1.2,7.3c0,0.2,0.2,0.301,0.3,0.4h0.1c0.1,0,0.3-0.1,0.4-0.2l3.4-3.5l6.7,5C21.6,27.9,21.8,28,22,28h0.3 c0.3-0.1,0.5-0.3,0.7-0.6l9-22C32.1,5,32,4.6,31.7,4.3z M29,5.7L9.7,17.9L1,15L29,5.7z M11.3,24.9L10.4,19.6l3.5,2.604L11.3,24.9z M22,27l-11.4-8.5l20-12.7L22,27z'/>
+  </g>
+
+</svg>

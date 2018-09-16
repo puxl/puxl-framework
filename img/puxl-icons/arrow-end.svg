@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrow-end' aria-labelledby='t-arrow-end d-arrow-end'>
+    <title id='t-arrow-end'>Arrow to end</title>
+    <desc id='d-arrow-end'>Simple caret arrow pointing rightwards to a vertical line</desc>
+    <path d='M4.6,3.4c-0.8-0.8-0.8-2,0-2.8c0.8-0.8,2-0.8,2.8,0l14,14c0.8,0.8,0.8,2,0,2.8l-14,14 c-0.8,0.8-2,0.8-2.8,0c-0.8-0.801-0.8-2,0-2.801L17.2,16L4.6,3.4z M28,26c0,1.1-0.9,2-2,2s-2-0.9-2-2V6c0-1.1,0.9-2,2-2s2,0.9,2,2 V26z'/>
+  </g>
+
+</svg>

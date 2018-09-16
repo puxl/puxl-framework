@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='comment' aria-labelledby='t-comment d-comment'>
+    <title id='t-comment'>Comment</title>
+    <desc id='d-comment'>Speech bubble</desc>
+    <path d='M30,1c0.6,0,1,0.5,1,1v21c0,0.5-0.4,1-1,1H20l-4,7l-4-7H2c-0.5,0-1-0.5-1-1V2c0-0.5,0.5-1,1-1H30 M30,0H2 C0.953,0,0,0.953,0,2v21c0,1.047,0.953,2,2,2h9.42l3.712,6.496C15.31,31.809,15.641,32,16,32s0.689-0.191,0.868-0.504L20.58,25H30 c1.104,0,2-0.896,2-2V2C32,0.897,31.104,0,30,0L30,0z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='list-unordered-square' aria-labelledby='t-list-unordered-square d-list-unordered-square'>
+    <title id='t-list-unordered-square'>Square unordered list</title>
+    <desc id='d-list-unordered-square'>Unordered list with squares as bullets</desc>
+    <path d='M30,28H12c-1.1,0-2-0.9-2-2s0.9-2,2-2h18c1.1,0,2,0.9,2,2S31.1,28,30,28z'/>
+    <path d='M7,24v4H3v-4H7 M8,23H2v6h6V23L8,23z'/>
+    <path d='M30,18H12c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2h18c1.1,0,2,0.9,2,2C32,17.1,31.1,18,30,18z'/>
+    <path d='M7,14v4H3v-4H7 M8,13H2v6h6V13L8,13z'/>
+    <path d='M30,8H12c-1.1,0-2-0.9-2-2s0.9-2,2-2h18c1.1,0,2,0.9,2,2S31.1,8,30,8z'/>
+    <path d='M7,4v4H3V4H7 M8,3H2v6h6V3L8,3z'/>
+  </g>
+
+</svg>

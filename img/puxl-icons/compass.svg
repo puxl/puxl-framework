@@ -1,0 +1,20 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='compass' aria-labelledby='t-compass d-compass'>
+    <title id='t-compass'>Compass</title>
+    <desc id='d-compass'>A compass pointing at north</desc>
+    <path d='M16,1c8.271,0,15,6.729,15,15c0,8.271-6.729,15-15,15C7.729,31,1,24.271,1,16 C1,7.729,7.729,1,16,1 M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0L16,0z'/>
+    <path d='M18.701,17.174l-6.225,6.932l0.822-9.271L18.701,17.174z M20.785,4.994l-8.454,9.41l-1.117,12.6 l8.453-9.408L20.785,4.994L20.785,4.994z'/>
+    <polygon points='16,2 17,4 16,6 15,4'/>
+    <polygon points='30,16 28,17 26,16 28,15'/>
+    <polygon points='16,26 17,28 16,30 15,28'/>
+    <polygon points='6,16 4,17 2,16 4,15'/>
+  </g>
+
+</svg>

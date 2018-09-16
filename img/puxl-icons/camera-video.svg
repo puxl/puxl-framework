@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='camera-video' aria-labelledby='t-camera-video d-camera-video'>
+    <title id='t-camera-video'>Video camera</title>
+    <desc id='d-camera-video'>Rear view of a video camera with two rolls</desc>
+    <path d='M31.551,17.165C31.385,17.057,31.191,17,31,17c-0.134,0-0.268,0.025-0.395,0.081L24,19.912v-3.055 c0-0.667-0.378-1.24-0.939-1.569c2.33-1.136,3.938-3.521,3.938-6.289c0-3.868-3.133-7-7-7c-2.951,0-5.47,1.827-6.499,4.411 C12.471,3.827,9.952,2,7,2C3.132,2,0,5.132,0,9c0,2.595,1.414,4.854,3.51,6.063C2.645,15.267,2,15.991,2,16.857v11.285 C2,29.167,2.897,30,4,30h18c1.104,0,2-0.833,2-1.857v-3.055l6.605,2.831C30.732,27.975,30.866,28,31,28 c0.191,0,0.385-0.057,0.551-0.165C31.831,27.648,32,27.336,32,27v-9C32,17.664,31.831,17.352,31.551,17.165z M19.999,3 c3.31,0,6,2.691,6,6s-2.69,6-6,6C16.691,15,14,12.309,14,9S16.691,3,19.999,3z M16.406,15h-5.813 c1.307-0.784,2.336-1.979,2.907-3.411C14.07,13.021,15.099,14.216,16.406,15z M1,9c0-3.309,2.691-6,6-6s6,2.691,6,6s-2.691,6-6,6 S1,12.309,1,9z M23,28c0,0.553-0.447,1-1,1H4c-0.552,0-1-0.447-1-1V17c0-0.553,0.448-1,1-1h18c0.553,0,1,0.447,1,1V28z M31,27l-7-3 v-3l7-3V27z'/>
+  </g>
+
+</svg>

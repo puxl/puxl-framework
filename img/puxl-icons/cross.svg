@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='cross' aria-labelledby='t-cross d-cross'>
+    <title id='t-cross'>Cross</title>
+    <desc id='d-cross'>Two lines crossed diagonally</desc>
+    <path d='M13.172,16L0.586,3.414c-0.781-0.781-0.781-2.047,0-2.828c0.78-0.781,2.048-0.781,2.828,0L16,13.172 L28.586,0.586c0.781-0.781,2.047-0.781,2.828,0c0.781,0.781,0.781,2.047,0,2.828L18.828,16l12.586,12.586 c0.781,0.781,0.781,2.047,0,2.828c-0.78,0.781-2.048,0.781-2.828,0L16,18.828L3.414,31.414c-0.781,0.781-2.047,0.781-2.828,0 c-0.781-0.781-0.781-2.047,0-2.828L13.172,16z'/>
+  </g>
+
+</svg>

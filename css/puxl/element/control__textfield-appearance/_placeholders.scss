@@ -1,0 +1,464 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__textfield-appearance/_placeholders.scss
+//
+//    Requires:    css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/function/_draw-svg.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/placeholder/_animation--enable.scss
+//                 puxl-framework/css/puxl/placeholder/_sr.scss
+//                 puxl-framework/css/puxl/element/control__textfield-appearance/_mixins.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Textfield-ish appearance - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %textfield-ish {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    border-radius:    var(--control__box--shape);
+    border-style:     $control__box--border-style;
+    border-width:     var(--control__box--border-width);
+    cursor:           $cursor--textfield;
+  }
+
+
+  //  Textfield construction - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %txt {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    align-items:       baseline;
+    border-radius:     var(--control__box--shape);
+    cursor:            $cursor--press;
+    display:           inline-flex;
+    font-size:         var(--control__box--size);
+    height:            2em;
+    vertical-align:    middle;
+
+    @if ($control__box--variant != default) {
+      @include control__textfield-appearance($control__box--look, $control__box--variant);
+    }
+    @else {
+      &:hover {
+        --txt--bd-c:    $txt--default--hover--border-color;
+        --txt--sh:      $txt--default--hover--box-shadow;
+      }
+
+      > input:focus {
+        --txt--bd-c:    $txt--default--focus--border-color;
+        --txt--sh:      $txt--default--focus--box-shadow;
+      }
+
+      &.disabled,
+      > input:disabled {
+        --txt--bg-c:    $txt--default--disabled--background-color;
+        --txt--bd-c:    $txt--default--disabled--background-color;
+        --txt--sh:      $txt--default--disabled--box-shadow;
+        --txt--c:       $txt--default--disabled--color;
+      }
+
+      > input[readonly] {
+        --txt--bg-c:    $txt--default--readonly--background-color;
+        --txt--bd-c:    $txt--default--readonly--border-color;
+        --txt--c:       $txt--default--readonly--color;
+
+        &:hover {
+          --txt--bd-c:    $txt--default--hover--border-color;
+          --txt--sh:      $txt--box-shadow;
+        }
+      }
+    }
+
+    @each $look in $looks {
+      @each $key, $value in $colors {
+        &.#{$key} {
+          &.#{$look} {
+            @include control__textfield-appearance($look, $key);
+          }
+        }
+      }
+    }
+
+    @each $key, $value in $control__box--shapes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--shape:    var(--control__box--shape--#{$key});
+      }
+    }
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    &.disabled {
+      cursor:    $cursor--disabled;
+
+      > span,
+      > small {
+        opacity:    $opacity--disabled;
+      }
+    }
+
+    &.block {
+      width:    100%;
+
+      > input {
+        flex-grow:    1;
+      }
+    }
+
+    &.icon {
+      &--before {
+        [dir=ltr] & input {
+          background-position: ($control__textfield__input__icon--size / 2) center;
+          padding-left: 2 * $control__textfield__input__icon--size;
+        }
+
+        [dir=rtl] & input {
+          background-position: right ($control__textfield__input__icon--size / 2) center;
+          padding-right: 2 * $control__textfield__input__icon--size;
+        }
+      }
+
+      &--after {
+        [dir=ltr] & input {
+          background-position: right ($control__textfield__input__icon--size / 2) center;
+          padding-right: 2 * $control__textfield__input__icon--size;
+        }
+
+        [dir=rtl] & input {
+          background-position: ($control__textfield__input__icon--size / 2) center;
+          padding-left: 2 * $control__textfield__input__icon--size;
+        }
+      }
+
+      &--before input,
+      &--after input {
+        &[type=email] {
+          background-image: url(draw-svg(email-unread, get-color(secondary, darkest)));
+        }
+
+        &[type=number] {
+          background-image: url(draw-svg(dialer, get-color(secondary, darkest)));
+        }
+
+        &[type=password] {
+          background-image: url(draw-svg(password, get-color(secondary, darkest)));
+        }
+
+        &[type=search] {
+          background-image: url(draw-svg(lens, get-color(secondary, darkest)));
+        }
+
+        &[type=tel] {
+          background-image: url(draw-svg(phone, get-color(secondary, darkest)));
+        }
+
+        &[type=url] {
+          background-image: url(draw-svg(web, get-color(secondary, darkest)));
+        }
+      }
+    }
+
+    &.text--hide {
+      > span,
+      > small {
+        @extend %sr;
+      }
+    }
+
+    &.v {
+      align-items:       stretch;
+      flex-direction:    column;
+      height:            auto;
+
+      > span {
+        margin:    0
+                   0
+                   $control__textfield--separation--v;
+
+        [dir=ltr] & {
+          margin-right:    0;
+        }
+
+        [dir=rtl] & {
+          margin-left:    0;
+        }
+      }
+
+      > small {
+        margin:    $control__textfield--separation--v
+                   0
+                   0;
+
+        [dir=ltr] & {
+          margin-left:    0;
+        }
+
+        [dir=rtl] & {
+          margin-right:    0;
+        }
+      }
+    }
+
+    > span {
+      [dir=ltr] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+    }// > span
+
+    > input {
+      @extend %textfield-ish;
+
+      background-color:     var(--txt--bg-c);
+      background-repeat:    no-repeat;
+      background-size:      $control__textfield__input__icon--size;
+      border-color:         var(--txt--bd-c);
+      box-shadow:           var(--txt--sh);
+      color:                var(--txt--c);
+      font-size:            1em;
+      height:               2em;
+
+      [dir=ltr] & {
+        padding:    $control__textfield__input--ltr--padding;
+      }
+
+      [dir=rtl] & {
+        padding:    $control__textfield__input--rtl--padding;
+      }
+
+      &:disabled {
+        cursor:     $cursor--disabled;
+        opacity:    $opacity--disabled;
+
+        + small {
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+      }
+
+      &[type=number] {
+        padding:    $control__textfield__input--padding--v
+                    $control__textfield__input--padding--h;
+      }
+    }// > input
+
+    > small {
+      color:          var(--txt--c);
+      font-size:      $control__textfield__small--font-size;
+      line-height:    $control__textfield__small--line-height;
+
+      [dir=ltr] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+    }// > small
+  }// %txt
+
+
+  //  Textarea construction  - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %txta {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    align-items:       baseline;
+    border-radius:     var(--control__box--shape);
+    cursor:            $cursor--press;
+    display:           inline-flex;
+    font-size:         var(--control__box--size);
+    vertical-align:    top;
+
+    @if ($control__box--variant != default) {
+      @include control__textarea-appearance($control__box--look, $control__box--variant);
+    }
+    @else {
+      &:hover {
+        --txt--bd-c:    $txt--default--hover--border-color;
+        --txt--sh:      $txt--default--hover--box-shadow;
+      }
+
+      > textarea:focus {
+        --txt--bd-c:    $txt--default--focus--border-color;
+        --txt--sh:      $txt--default--focus--box-shadow;
+      }
+
+      &.disabled,
+      > textarea:disabled {
+        --txt--bg-c:    $txt--default--disabled--background-color;
+        --txt--bd-c:    $txt--default--disabled--background-color;
+        --txt--sh:      $txt--default--disabled--box-shadow;
+        --txt--c:       $txt--default--disabled--color;
+      }
+
+      > textarea[readonly] {
+        --txt--bg-c:    $txt--default--readonly--background-color;
+        --txt--bd-c:    $txt--default--readonly--border-color;
+        --txt--c:       $txt--default--readonly--color;
+
+        &:hover {
+          --txt--bd-c:    $txt--default--hover--border-color;
+          --txt--sh:      $txt--box-shadow;
+        }
+      }
+    }
+
+    @each $look in $looks {
+      @each $key, $value in $colors {
+        &.#{$key} {
+          &.#{$look} {
+            @include control__textarea-appearance($look, $key);
+          }
+        }
+      }
+    }
+
+    @each $key, $value in $control__box--shapes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--shape:    var(--control__box--shape--#{$key});
+      }
+    }
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    &.disabled {
+      cursor:    $cursor--disabled;
+
+      > span,
+      > small {
+        opacity:    $opacity--disabled;
+      }
+    }
+
+    &.block {
+      width:    100%;
+
+      > input {
+        flex-grow:    1;
+      }
+    }
+
+    &.text--hide {
+      > span,
+      > small {
+        @extend %sr;
+      }
+    }
+
+    &.v {
+      align-items:       stretch;
+      flex-direction:    column;
+      height:            auto;
+
+      > span {
+        margin:    0
+                   0
+                   $control__textfield--separation--v;
+
+        [dir=ltr] & {
+          margin-right:    0;
+        }
+
+        [dir=rtl] & {
+          margin-left:    0;
+        }
+      }
+
+      > small {
+        margin:    $control__textfield--separation--v
+                   0
+                   0;
+
+        [dir=ltr] & {
+          margin-left:    0;
+        }
+
+        [dir=rtl] & {
+          margin-right:    0;
+        }
+      }
+    }
+
+    > span {
+      [dir=ltr] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+    }// > span
+
+    > textarea {
+      @extend %textfield-ish;
+
+      background-color:     var(--txt--bg-c);
+      border-color:         var(--txt--bd-c);
+      box-shadow:           var(--txt--sh);
+      color:                var(--txt--c);
+      flex-grow:            1;
+      font-size:            1em;
+      line-height:          $control__textarea__textarea--line-height;
+      padding:              $control__textarea__textarea--padding;
+
+      &:disabled {
+        cursor:     $cursor--disabled;
+        opacity:    $opacity--disabled;
+
+        + small {
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+      }
+    }// > textarea
+
+    > small {
+      color:          var(--txt--c);
+      font-size:      $control__textfield__small--font-size;
+      line-height:    $control__textfield__small--line-height;
+
+      [dir=ltr] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+    }// > small
+  }// %txta

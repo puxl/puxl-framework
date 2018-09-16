@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='justice' aria-labelledby='t-justice d-justice'>
+    <title id='t-justice'>Justice</title>
+    <desc id='d-justice'>A weight balance</desc>
+    <path d='M31,30H17V3.765C17.333,3.593,17.594,3.333,17.766,3H25.6L20,18c0,2.2,2.7,4,6,4s6-1.8,6-4L26.3,2.9 C26.7,2.8,27,2.4,27,2c0-0.6-0.4-1-1-1h-8.234C17.445,0.38,16.82,0,16,0c-0.821,0-1.446,0.38-1.765,1H6C5.4,1,5,1.4,5,2 c0,0.4,0.3,0.8,0.7,0.9L0,18c0,2.2,2.7,4,6,4s6-1.8,6-4L6.4,3h7.835C14.406,3.333,14.667,3.594,15,3.765V30H1c-0.6,0-1,0.4-1,1 s0.4,1,1,1h30c0.6,0,1-0.4,1-1S31.6,30,31,30z M30.9,18H21l5-13.2L30.9,18z M10.9,18H1L6,4.8L10.9,18z M16,3c-0.6,0-1-0.4-1-1 s0.4-1,1-1c0.6,0,1,0.4,1,1S16.6,3,16,3z'/>
+  </g>
+
+</svg>

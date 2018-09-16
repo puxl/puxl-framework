@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='input-checkbox-background' aria-labelledby='t-input-checkbox-background d-input-checkbox-background'>
+    <title id='t-input-checkbox-background'>Checkbox square background</title>
+    <desc id='d-input-checkbox-background'>A square</desc>
+    <path d='M28,4v24H4V4H28'/>
+  </g>
+
+</svg>

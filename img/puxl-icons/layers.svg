@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='layers' aria-labelledby='t-layers d-layers'>
+    <title id='t-layers'>Layers</title>
+    <desc id='d-layers'>Three stacked squares</desc>
+    <path d='M31.5,15.1L27.7,13L26.6,13.6L31,16l-15,8L1,16l4.4-2.4L4.3,13l-3.8,2.1C0.2,15.3,0,15.6,0,16 s0.2,0.7,0.5,0.9l15,8C15.7,25,15.8,25,16,25s0.3,0,0.5-0.1l15-8c0.3-0.2,0.5-0.5,0.5-0.9S31.8,15.3,31.5,15.1z'/>
+    <path d='M31.5,22.1L27.7,20L26.6,20.6L31,23l-15,8L1,23l4.4-2.4L4.3,20l-3.8,2.1C0.2,22.3,0,22.6,0,23 s0.2,0.7,0.5,0.9l15,8C15.7,32,15.8,32,16,32s0.3,0,0.5-0.1l15-8c0.3-0.2,0.5-0.5,0.5-0.9S31.8,22.3,31.5,22.1z M31.5,8.1l-15-8 C16.3,0,16.2,0,16,0s-0.3,0-0.5,0.1l-15,8C0.2,8.3,0,8.6,0,9s0.2,0.7,0.5,0.9l15,8C15.7,18,15.8,18,16,18s0.3,0,0.5-0.1l15-8 C31.8,9.7,32,9.4,32,9S31.8,8.3,31.5,8.1z M16,17L1,9l15-8l15,8L16,17z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='redo' aria-labelledby='t-redo d-redo'>
+    <title id='t-redo'>Redo</title>
+    <desc id='d-redo'>An arrow circling forward to its origin</desc>
+    <path d='M13.3,2.8c7.3,0,13.3,5.9,13.3,13.3v1.5L31.2,13c0.2-0.2,0.5-0.2,0.7,0c0.199,0.2,0.199,0.5,0,0.7 l-5.5,5.5c-0.104,0.1-0.2,0.1-0.4,0.1s-0.3,0-0.4-0.1l-5.5-5.5c-0.199-0.2-0.199-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0l4.601,4.6V16 c0-6.8-5.5-12.3-12.292-12.3C6.301,3.7,1,9.2,1,16s5.5,12.3,12.3,12.3c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5 C5.9,29.3,0,23.3,0,16S5.9,2.8,13.3,2.8z'/>
+  </g>
+
+</svg>

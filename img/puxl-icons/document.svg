@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='document' aria-labelledby='t-document d-document'>
+    <title id='t-document'>Document</title>
+    <desc id='d-document'>Empty paper sheet</desc>
+    <path d='M19,0H5v32h22V8L19,0z M19,1.414L25.586,8H19V1.414z M26,31H6V1h12v7c0,0.552,0.447,1,1,1h7V31z'/>
+  </g>
+
+</svg>

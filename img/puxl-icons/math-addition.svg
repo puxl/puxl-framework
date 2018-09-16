@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='math-addition' aria-labelledby='t-math-addition d-math-addition'>
+    <title id='t-math-addition'>Addition</title>
+    <desc id='d-math-addition'>Math symbol for addition</desc>
+    <path d='M31,15H17V1c0-0.552-0.447-1-1-1c-0.552,0-1,0.448-1,1v14H1c-0.552,0-1,0.448-1,1c0,0.553,0.448,1,1,1h14 v14c0,0.553,0.448,1,1,1c0.553,0,1-0.447,1-1V17h14c0.553,0,1-0.447,1-1C32,15.448,31.553,15,31,15z'/>
+  </g>
+
+</svg>

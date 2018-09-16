@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='math-multiplication' aria-labelledby='t-math-multiplication d-math-multiplication'>
+    <title id='t-math-multiplication'>Multiplication</title>
+    <desc id='d-math-multiplication'>Math symbol for multiplication</desc>
+    <path d='M0.293,30.293c-0.391,0.391-0.391,1.023,0,1.414s1.023,0.391,1.414,0L16,17.414l14.293,14.293 c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414L17.414,16L31.707,1.707c0.391-0.391,0.391-1.023,0-1.414 s-1.023-0.391-1.414,0L16,14.586L1.707,0.293c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L14.586,16L0.293,30.293z'/>
+  </g>
+
+</svg>

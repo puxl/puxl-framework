@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='rss' aria-labelledby='t-rss d-rss'>
+    <title id='t-rss'>RSS</title>
+    <desc id='d-rss'>Two waves spread from a dot</desc>
+    <circle cx='3' cy='29' r='3'/>
+    <path d='M20,32h-4c0-8.822-7.178-16-16-16v-4C11.028,12,20,20.973,20,32z'/>
+    <path d='M32,32h-4C28,16.561,15.439,4,0,4V0C17.645,0,32,14.355,32,32z'/>
+  </g>
+
+</svg>

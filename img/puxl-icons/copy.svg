@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='copy' aria-labelledby='t-copy d-copy'>
+    <title id='t-copy'>Copy</title>
+    <desc id='d-copy'>Two identical overlapping written documents</desc>
+    <path d='M1,1h20v3h1V1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1v24c0,0.6,0.4,1,1,1h7v-1H1V1z'/>
+    <path d='M5,5h6v1H5V5z M31,6H11c-0.6,0-1,0.4-1,1v2H7v1h3v3H5v1h5v3H5v1h5v13c0,0.6,0.4,1,1,1h20c0.6,0,1-0.4,1-1 V7C32,6.4,31.6,6,31,6z M31,31H11V7h20V31z'/>
+    <path d='M15,11h6v1h-6V11z M17,15h10v1H17V15z M15,19h12v1H15V19z M15,23h6v1h-6V23z M25,27h2v1h-2V27z'/>
+  </g>
+
+</svg>

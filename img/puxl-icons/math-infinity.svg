@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='math-infinity' aria-labelledby='t-math-infinity d-math-infinity'>
+    <title id='t-math-infinity'>Infinity</title>
+    <desc id='d-math-infinity'>A lemniscate</desc>
+    <path d='M29.886,10.892c-2.821-2.821-7.4-2.821-10.221,0L16,14.585l-3.666-3.694c-2.822-2.821-7.398-2.822-10.219,0c-2.821,2.821-2.821,7.395,0.001,10.217c2.82,2.822,7.396,2.822,10.216,0L16,17.413l3.667,3.695c2.819,2.822,7.397,2.822,10.217,0C32.706,18.286,32.706,13.712,29.886,10.892z M10.919,19.694c-2.04,2.04-5.348,2.04-7.388,0C1.49,17.653,1.49,14.345,3.53,12.305c2.04-2.041,5.349-2.04,7.39,0L14.585,16L10.919,19.694z M28.47,19.694c-2.039,2.04-5.35,2.04-7.389,0L17.414,16l3.666-3.695c2.039-2.04,5.351-2.04,7.391,0C30.511,14.345,30.511,17.653,28.47,19.694z'/>
+  </g>
+
+</svg>

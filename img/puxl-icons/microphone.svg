@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='microphone' aria-labelledby='t-microphone d-microphone'>
+    <title id='t-microphone'>Microphone</title>
+    <desc id='d-microphone'>A standing microphone</desc>
+    <path d='M25,20v-4.5c0-0.3-0.2-0.5-0.5-0.5S24,15.2,24,15.5V17h-2V6c0-3.3-2.7-6-6-6s-6,2.7-6,6v11H8v-1.5 C8,15.2,7.8,15,7.5,15S7,15.2,7,15.5V20c0,4.6,3.5,8.4,8,8.9V31H7.5C7.2,31,7,31.2,7,31.5S7.2,32,7.5,32h17c0.3,0,0.5-0.2,0.5-0.5 S24.8,31,24.5,31H17v-2.1C21.5,28.4,25,24.6,25,20z M11,6c0-2.761,2.238-5,5-5c2.762,0,5,2.239,5,5v2h-3.5C17.2,8,17,8.2,17,8.5 S17.2,9,17.5,9H21v3h-3.5c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5H21v3h-3.5c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5H21v2 c0,2.8-2.2,5-5,5s-5-2.2-5-5v-2h3.5c0.3,0,0.5-0.2,0.5-0.5S14.8,16,14.5,16H11v-3h3.5c0.3,0,0.5-0.2,0.5-0.5S14.8,12,14.5,12H11V9 h3.5C14.8,9,15,8.8,15,8.5S14.8,8,14.5,8H11V6z M16,28c-4.4,0-8-3.6-8-8v-1h2c0,3.3,2.7,6,6,6s6-2.7,6-6h2v1C24,24.4,20.4,28,16,28 z'/>
+  </g>
+
+</svg>

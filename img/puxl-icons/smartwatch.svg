@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='smartwatch' aria-labelledby='t-smartwatch d-smartwatch'>
+    <title id='t-smartwatch'>Smartwatch</title>
+    <desc id='d-smartwatch'>Wristwatch with empty screen</desc>
+    <path d='M22,10v12H10V10H22 M22,9H10c-0.552,0-1,0.448-1,1v12c0,0.553,0.448,1,1,1h12c0.553,0,1-0.447,1-1V10 C23,9.448,22.553,9,22,9z'/>
+    <path d='M10,7c-1.654,0-3,1.346-3,3v12c0,1.654,1.346,3,3,3l1.014,6.164C11.094,31.646,11.511,32,12,32h8 c0.49,0,0.906-0.354,0.986-0.836L22.003,25C23.656,24.998,25,23.652,25,22V10c0-1.654-1.346-3-3-3l-1.014-6.165 C20.906,0.355,20.49,0,20,0h-8c-0.49,0-0.906,0.354-0.986,0.835L10,7z M12,1h8l1,6H11L12,1z M20,31h-8l-1-6h10L20,31z M24,22 c0,1.104-0.896,2-2,2H10c-1.104,0-2-0.896-2-2V10c0-1.104,0.896-2,2-2h12c1.104,0,2,0.896,2,2V22z'/>
+  </g>
+
+</svg>

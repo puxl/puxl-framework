@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='grow' aria-labelledby='t-grow d-grow'>
+    <title id='t-grow'>Grow</title>
+    <desc id='d-grow'>A little plant growing first two leaves</desc>
+    <path d='M31,30H16.938L16.5,16.2l3.6-3.6c2.4,2,5.9,1.9,8.104-0.3C30.6,9.9,32,0,32,0s-9.9,1.4-12.2,3.8 c-2.2,2.2-2.3,5.7-0.3,8.1l-3.8,3.8c0,0-0.1,0.1-0.1,0.2v0.2l-0.1,2.7l-2.9-2.9c1.2-1.6,1.1-3.8-0.3-5.3C10.6,8.9,4,8,4,8 s0.9,6.6,2.5,8.2c1.4,1.399,3.7,1.5,5.3,0.3l3.6,3.6L15.067,30H1c-0.552,0-1,0.447-1,1s0.448,1,1,1h30c0.553,0,1-0.447,1-1 S31.553,30,31,30z M20.4,4.4C21.8,3,27,1.8,30.7,1.1c-0.5,3.8-1.8,9.1-3.2,10.4c-1.8,1.8-4.7,1.9-6.7,0.3l3.5-3.5 c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0l-3.5,3.5C18.5,9.1,18.6,6.2,20.4,4.4z M11.8,15.1l-1.4-1.4c-0.2-0.2-0.5-0.2-0.7,0 c-0.2,0.2-0.2,0.5,0,0.7l1.4,1.4c-1.2,0.8-2.8,0.7-3.9-0.3c-0.8-0.8-1.6-3.8-2-6.2c2.5,0.5,5.5,1.2,6.2,2 C12.5,12.3,12.6,13.9,11.8,15.1z'/>
+  </g>
+
+</svg>

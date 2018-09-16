@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='tablet' aria-labelledby='t-tablet d-tablet'>
+    <title id='t-tablet'>Tablet</title>
+    <desc id='d-tablet'>Tablet device in portrait</desc>
+    <circle cx='16' cy='29' r='1'/>
+    <path d='M24,4v22H8V4H24 M24,3H8C7.447,3,7,3.448,7,4v22c0,0.553,0.447,1,1,1h16c0.553,0,1-0.447,1-1V4 C25,3.448,24.553,3,24,3L24,3z'/>
+    <path d='M25,1c1.104,0,2,0.896,2,2v26c0,1.104-0.896,2-2,2H7c-1.104,0-2-0.896-2-2V3c0-1.104,0.896-2,2-2H25 M25,0H7C5.346,0,4,1.346,4,3v26c0,1.654,1.346,3,3,3h18c1.654,0,3-1.346,3-3V3C28,1.346,26.654,0,25,0L25,0z'/>
+  </g>
+
+</svg>

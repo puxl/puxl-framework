@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='security' aria-labelledby='t-security d-security'>
+    <title id='t-security'>Security</title>
+    <desc id='d-security'>A heater shield</desc>
+    <path d='M29.3,4.2L16.3,0h-0.6l-13,4.2C2.3,4.3,2,4.7,2,5.2v4.2c0,9.3,5.2,17.9,13.5,22.5C15.7,32,15.8,32,16,32 s0.3,0,0.5-0.1C24.8,27.2,30,18.6,30,9.3V5.2C30,4.8,29.7,4.4,29.3,4.2z M3,9.3V5.2l12-3.9v29.2C7.8,26,3,18.2,3,9.3z M29,9.4 c0,8.9-4.8,16.6-12,21.1V1.3l12,3.9V9.4z'/>
+  </g>
+
+</svg>

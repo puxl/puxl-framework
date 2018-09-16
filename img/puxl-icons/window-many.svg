@@ -1,0 +1,21 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='window-many' aria-labelledby='t-window-many d-window-many'>
+    <title id='t-window-many'>Many windows</title>
+    <desc id='d-window-many'>A computer window overlapping another one</desc>
+    <circle cx='29' cy='13' r='1'/>
+    <circle cx='26' cy='13' r='1'/>
+    <circle cx='23' cy='13' r='1'/>
+    <circle cx='23' cy='3' r='1'/>
+    <circle cx='20' cy='3' r='1'/>
+    <circle cx='17' cy='3' r='1'/>
+    <path d='M31,10h-5V1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1v20c0,0.6,0.4,1,1,1h5v9c0,0.6,0.4,1,1,1h24 c0.6,0,1-0.4,1-1V11C32,10.4,31.6,10,31,10z M1,1h24v4H1V1z M1,21V6h24v4H7c-0.6,0-1,0.4-1,1v10H1z M7,15v-4h24v4H7z M31,16v15H7 V16H31z'/>
+  </g>
+
+</svg>

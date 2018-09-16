@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='cursor-default' aria-labelledby='t-cursor-default d-cursor-default'>
+    <title id='t-cursor-default'>Cursor</title>
+    <desc id='d-cursor-default'>An arrow to point with</desc>
+    <path d='M25.7,18.3L6,0v27c0,0,0,0.5,0.5,0.8c0.4,0.3,0.9,0.101,1,0.101l6.3-2.801l2.7,6.301 c0.2,0.5,0.8,0.699,1.3,0.5l3.7-1.601c0.5-0.2,0.7-0.8,0.5-1.3l-2.7-6.3l6.3-2.8c0,0,0.5-0.2,0.604-0.7 C26.1,18.6,25.7,18.3,25.7,18.3z M17.8,22.2l3.101,7.2L17.3,31l-3.1-7.2L7,27V2.3L25,19L17.8,22.2z'/>
+  </g>
+
+</svg>

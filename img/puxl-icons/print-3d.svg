@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='print-3d' aria-labelledby='t-print-3d d-print-3d'>
+    <title id='t-print-3d'>3D print</title>
+    <desc id='d-print-3d'>A cube in a cartesian X Y Z axis</desc>
+    <path d='M31.5,27.257L26,24.083v-9.816c0-0.357-0.189-0.688-0.5-0.866L17,8.494v-6.35c0-0.55-0.447-1-1-1 c-0.553,0-1,0.45-1,1v6.352L6.5,13.4C6.19,13.58,6,13.91,6,14.267v9.815l-5.497,3.175c-0.48,0.276-0.643,0.888-0.366,1.365 c0.276,0.479,0.888,0.646,1.367,0.367l5.5-3.177l8.5,4.896c0.31,0.188,0.69,0.188,1,0L25,25.814l5.5,3.177 c0.479,0.276,1.09,0.112,1.363-0.366C32.143,28.146,31.979,27.535,31.5,27.257L31.5,27.257z M7,24.66v-9.815l8.5,4.906v9.817 L7,24.66z M16,18.886L7.5,13.98L16,9.07l8.5,4.907L16,18.883V18.886z M25,24.659l-8.5,4.907V19.75l8.5-4.905V24.659z'/>
+  </g>
+
+</svg>

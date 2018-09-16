@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/utility/_text-blur.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+	.text--blur {
+    color:          transparent;
+    text-shadow:    0
+                    0
+                    1em
+                    rgba(0,0,0,.75);
+	}

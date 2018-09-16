@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='energy' aria-labelledby='t-energy d-energy'>
+    <title id='t-energy'>Energy</title>
+    <desc id='d-energy'>Lightning bolt</desc>
+    <path d='M19,1l-1,13l5,2L13,31l1-13l-5-2L19,1 M19,0c-0.3,0-0.6,0.2-0.8,0.4l-10,15C8,15.7,8,16,8,16.3 c0.1,0.3,0.3,0.5,0.6,0.601l4.3,1.699L12,30.9c0,0.5,0.2,0.896,0.7,1c0.1,0,0.2,0.1,0.3,0.1c0.3,0,0.6-0.2,0.8-0.4l10-15 C24,16.3,24,16,24,15.7c0-0.3-0.3-0.5-0.6-0.6L19.1,13.4L20,1.1c0-0.5-0.2-0.9-0.7-1C19.2,0,19.1,0,19,0z'/>
+  </g>
+
+</svg>

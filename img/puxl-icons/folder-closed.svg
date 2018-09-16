@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='folder-closed' aria-labelledby='t-folder-closed d-folder-closed'>
+    <title id='t-folder-closed'>Closed folder</title>
+    <desc id='d-folder-closed'>Closed folder</desc>
+    <path d='M31,7H13V5c0-0.6-0.4-1-1-1H1C0.4,4,0,4.4,0,5v22c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V8 C32,7.4,31.6,7,31,7z M31,27H1V5h11v2H3C2.448,7,2,7.448,2,8v17.5C2,25.775,2.224,26,2.5,26S3,25.775,3,25.5V8h28V27z'/>
+  </g>
+
+</svg>

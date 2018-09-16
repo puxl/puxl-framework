@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='portfolio' aria-labelledby='t-portfolio d-portfolio'>
+    <title id='t-portfolio'>Portfolio</title>
+    <desc id='d-portfolio'>A closed portfolio case</desc>
+    <path d='M31,7h-9V5c0-1.1-0.9-2-2-2h-8c-1.1,0-2,0.9-2,2v2H1C0.4,7,0,7.4,0,8v19c0,1.1,0.9,2,2,2h28 c1.1,0,2-0.9,2-2V8C32,7.4,31.6,7,31,7z M11,6c0-0.5,0.5-1,1-1h8c0.5,0,1,0.5,1,1v1H11V6z M31,27c0,0.6-0.4,1-1,1H2 c-0.6,0-1-0.4-1-1V17l13,3.5V23c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1v-2.5L31,17V27z M15,23v-4h2v4H15z M31,16l-13,3.5V19 c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v0.5L1,16V8h30V16z'/>
+  </g>
+
+</svg>

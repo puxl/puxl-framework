@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='hammer' aria-labelledby='t-hammer d-hammer'>
+    <title id='t-hammer'>Hammer</title>
+    <desc id='d-hammer'>Hammer</desc>
+    <path d='M31.7,27.4l-18.4-17l1.2-1.2c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-0.4-1,0-1.4C18.3,2.6,19.9,2,19.9,2 c0.199,0,0.3-0.1,0.5-0.3c0.199-0.2,0.3-0.5,0.3-0.8c0-0.5-0.4-0.9-0.9-0.9C19.5,0,13-0.6,9.5,2.9L3.8,8.5c-0.4,0.4-0.4,1,0,1.4 c-0.4-0.4-1-0.4-1.4,0L0.3,12c-0.4,0.4-0.4,1,0,1.4l4.2,4.2c0.4,0.4,1,0.4,1.4,0L8,15.5c0.4-0.4,0.4-1,0-1.4c0.4,0.4,1,0.4,1.4,0 l0.9-0.9l17,18.399c0.2,0.188,0.4,0.301,0.7,0.301s0.5-0.104,0.7-0.301l2.8-2.812c0.2-0.188,0.3-0.5,0.3-0.688 C32,27.9,31.9,27.6,31.7,27.4z M8.8,13.5c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L5.2,17L1,12.8l2.1-2.1c0.4,0.4,1,0.4,1.4,0 c0.4-0.4,0.4-1,0-1.4l5.7-5.7C13.4,0.4,19.6,1.1,19.6,1.1S18,1.5,13.7,5.7c-0.8,0.8-0.8,2,0,2.8L8.8,13.5z M28.2,31l-17-18.5 l1.4-1.4l18.5,17L28.2,31z'/>
+  </g>
+
+</svg>

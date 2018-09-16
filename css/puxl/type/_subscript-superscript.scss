@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/type/_subscript-superscript.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  sub,
+  sup {
+    font-size:         $sub-sup--font-size;
+    line-height:       0;
+    position:          relative;
+    vertical-align:    baseline;
+  }
+
+  sub {
+    bottom:    $sub--bottom;
+  }
+
+  sup {
+    top:    $sup--top;
+  }

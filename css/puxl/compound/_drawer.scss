@@ -1,0 +1,141 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/compound/_drawer.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  // Drawer toggler  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  .drawer--toggler {
+    &:not([id]) {
+      @include error-warning('This <button class="drawer--toggle"> tag must have a not empty aria-controls="" attribute with the id="" attribute of the drawer it toggles. Example: <button class="drawer--toggle" aria-controls="[ The toggled drawer ID ]">.');
+    }
+
+    &:not([aria-controls]) {
+      @include error-warning('This <button class="drawer--toggle"> tag must have a not empty aria-controls="" attribute with the id="" attribute of the drawer it toggles. Example: <button class="drawer--toggle" aria-controls="[ The toggled drawer ID ]">.');
+    }
+
+    &:not([aria-haspopup=true]) {
+      @include error-warning('This <button class="drawer--toggle"> tag must have a aria-haspopup="true" attribute. Example: <button class="drawer--toggle" aria-haspopup="true">.');
+    }
+
+    &:not([aria-expanded=true]):not([aria-expanded=false]) {
+      @include error-warning('This <button class="drawer--toggle"> tag must have a true OR false aria-expanded="" attribute. Example: <button class="drawer--toggle" aria-expanded="[ true OR false ]">.');
+    }
+  }
+
+
+  // Drawer  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  .drawer {
+    &:not([id]) {
+      @include error-warning('This <div class="drawer"> tag must have a non-empty id="" attribute. Example: <div class="drawer" id="[ some ID ]">.');
+    }
+
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    background-color:    $drawer--background-color;
+    bottom:              0;
+    overflow-y:          auto;
+    position:            fixed;
+    top:                 0;
+    width:               $drawer--width;
+    max-width:           calc(100% - var(--app-bar--height));
+    z-index:             map-get($z-elevations, drawer);
+
+    &[aria-hidden=false] {
+      &.left {
+        [dir=ltr] & {
+          @include z-shadow(map-get($z-elevations, drawer), east);
+
+          left:    0;
+        }
+
+        [dir=rtl] & {
+          @include z-shadow(map-get($z-elevations, drawer), west);
+
+          right:    0;
+        }
+      }
+
+      &.right {
+        [dir=ltr] & {
+          @include z-shadow(map-get($z-elevations, drawer), west);
+
+          right:    0;
+        }
+
+        [dir=rtl] & {
+          @include z-shadow(map-get($z-elevations, drawer), east);
+
+          left:    0;
+        }
+      }
+    }
+
+    &[aria-hidden=true] {
+      &.left {
+        [dir=ltr] & {
+          @include z-shadow(0);
+
+          left:    -$drawer--width;
+        }
+
+        [dir=rtl] & {
+          @include z-shadow(0);
+
+          right:    -$drawer--width;
+        }
+      }
+
+      &.right {
+        [dir=ltr] & {
+          @include z-shadow(0);
+
+          right:    -$drawer--width;
+        }
+
+        [dir=rtl] & {
+          @include z-shadow(0);
+
+          left:    -$drawer--width;
+        }
+      }
+    }
+
+    &.app-bar--top {
+      top:        var(--app-bar--height);
+      z-index:    map-get($z-elevations, app-bar);
+
+      &--double {
+        top:    calc(2 * var(--app-bar--height));
+      }
+    }
+
+    > ol,
+    > ul {
+      padding:    0;
+
+      li {
+        padding:    $drawer__list__item--padding;
+      }
+    }
+  }// .drawer

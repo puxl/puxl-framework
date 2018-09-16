@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='input-radio-background' aria-labelledby='t-input-radio-background d-input-radio-background'>
+    <title id='t-input-radio-background'>Radio circle background</title>
+    <desc id='d-input-radio-background'>A circle</desc>
+    <path d='M16,4c6.627,0,12,5.373,12,12s-5.373,12-12,12S4,22.627,4,16S9.373,4,16,4'/>
+  </g>
+
+</svg>

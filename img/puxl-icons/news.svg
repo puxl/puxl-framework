@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='news' aria-labelledby='t-news d-news'>
+    <title id='t-news'>News</title>
+    <desc id='d-news'>Half-folded newspaper</desc>
+    <path d='M6,3v5H2c-1.1,0-2,0.9-2,2v17c0,1.1,0.9,2,2,2h28c1.1,0,2-0.9,2-2V3H6z M6,24H4V13H3v12h3v2 c0,0.5-0.4,1-1,1H2c-0.5,0-1-0.4-1-1V10c0-0.6,0.5-1,1-1h4V24z M31,27c0,0.6-0.4,1-1,1H6.7C6.9,27.7,7,27.4,7,27V4h24V27z'/>
+    <path d='M21,16v10h8V16H21z M28,25h-6v-8h6V25z M10,20h9v2h-9V20z M10,16h9v2h-9V16z M10,24h9v2h-9V24z M10,6v8 h19V6H10z M28,13H11V7h17V13z'/>
+  </g>
+
+</svg>

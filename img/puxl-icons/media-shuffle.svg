@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='media-shuffle' aria-labelledby='t-media-shuffle d-media-shuffle'>
+    <title id='t-media-shuffle'>Shuffle</title>
+    <desc id='d-media-shuffle'>Two arrows crossing their paths</desc>
+    <path d='M27.854,19.146c-0.188-0.195-0.512-0.195-0.707,0c-0.188,0.188-0.188,0.512,0,0.707L30.293,23h-8.586 l-5.293-5.293l-0.707,0.707l5.439,5.439C21.24,23.947,21.367,24,21.5,24h8.793l-3.146,3.146c-0.188,0.188-0.188,0.512,0,0.707 c0.195,0.188,0.521,0.188,0.707,0l4-4c0.195-0.195,0.195-0.521,0-0.707L27.854,19.146z'/>
+    <path d='M0.5,9h5.793l5.293,5.293l0.707-0.707l-5.439-5.44C6.76,8.053,6.633,8,6.5,8h-6C0.224,8,0,8.224,0,8.5 S0.224,9,0.5,9z'/>
+    <path d='M30.293,9l-3.146,3.146c-0.188,0.195-0.188,0.512,0,0.707c0.195,0.195,0.521,0.195,0.707,0l4-4 c0.195-0.195,0.195-0.512,0-0.707l-4-4c-0.188-0.195-0.512-0.195-0.707,0c-0.188,0.195-0.188,0.512,0,0.707L30.293,8H21.5 c-0.133,0-0.26,0.053-0.354,0.146L6.293,23H0.5C0.224,23,0,23.225,0,23.5S0.224,24,0.5,24h6c0.133,0,0.26-0.053,0.354-0.146 L21.707,9H30.293z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,20 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='qrcode' aria-labelledby='t-qrcode d-qrcode'>
+    <title id='t-qrcode'>QR Code</title>
+    <desc id='d-qrcode'>A 2D matrix of squares representing a computer-readable code</desc>
+    <path d='M14,2V0H0v12h2v2h2v-2h8v-2h2V8h-2V2H14z M10,10H2V2h8V10z'/>
+    <path d='M4,4h4v4H4V4z M20,0v6h-2v2h2v2h-2v2h2v2h4v-2h8V0H20z M30,10h-8V2h8V10z'/>
+    <path d='M24,4h4v4h-4V4z M4,24h4v4H4V24z M24,24h2v2h-2V24z'/>
+    <path d='M16,28v-2h-2v-2h-2v-6h-2v2H6v-2H4v2H0v12h12v-4h2v2h4v-2H16z M10,30H2v-8h8V30z M14,10h2v2h-2V10z M14,6 h2v2h-2V6z M18,6h-2V4h-2V2h4 M0,16h4v2H0V16z M8,18H6v-2H4v-2h4 M14,16v-2h2v-2h2v4 M10,14h2v2h-2V14z'/>
+    <path d='M16,18h2v4h-2v2h-2v-4h2'/>
+    <path d='M32,26v-4h-2v-2H20v4h-4v2h4v4h4v2h4v-2h4v-2h-2v-2H32z M28,28h-6v-6h6V28z M32,16h-4v-2h4V16z M24,14h2 v2h2v2h-6v-2h2 M20,18h-2v-2h2V18z M18,30h2v2h-2V30z'/>
+  </g>
+
+</svg>

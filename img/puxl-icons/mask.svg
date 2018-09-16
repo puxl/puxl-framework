@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='mask' aria-labelledby='t-mask d-mask'>
+    <title id='t-mask'>Mask</title>
+    <desc id='d-mask'>A Venetian mask with a handle</desc>
+    <path d='M29,13.2C30.9,10.6,32,6,32,0C21.5,0,20.6,2,16,2c-4.6,0-5.5-2-16-2c0,10.1,3,16,8,16c4.9,0,6.3-4,8-4 s3.1,4,8,4c1.5,0,2.9-0.6,4-1.6V32h1V13.2z M8.4,9.9H7.9C6.9,9.6,5.8,8.3,5,7.2C6,6.6,7.6,6,8.7,6h0.4c1,0.2,2.5,1.6,3.6,2.8 C11.4,9.3,9.6,9.9,8.4,9.9z M24.1,9.8h-0.5c-1.199,0-3.1-0.6-4.396-1.1c1.101-1.2,2.601-2.6,3.601-2.8h0.399 c1.101,0,2.696,0.7,3.696,1.2C26.3,8.2,25.2,9.6,24.1,9.8z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='email-draft' aria-labelledby='t-email-draft d-email-draft'>
+    <title id='t-email-draft'>Draft email</title>
+    <desc id='d-email-draft'>An open envelope revealing an empty paper sheet</desc>
+    <path d='M31.6,12.2L27,8.5V4h-5.6l-4.7-3.8C16.4,0.1,16.2,0,16,0s-0.4,0.1-0.6,0.2L10.6,4H5v4.5l-4.6,3.7 C0.1,12.4,0,12.7,0,13v18c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V13C32,12.7,31.9,12.4,31.6,12.2z M16,1l3.8,3h-7.5L16,1z M6,5h20v12 l-10,8L6,17V5z M5,9.8v6.4L1,13L5,9.8z M31,31H1V14.3l14.4,11.5C15.6,25.9,15.8,26,16,26s0.4-0.1,0.6-0.2L31,14.3V31z M27,16.2V9.8 l4,3.2L27,16.2z'/>
+    <path d='M29.6,14c0.301,0,0.5-0.2,0.5-0.5S29.9,13,29.6,13c-0.3,0-0.5,0.2-0.5,0.5S29.3,14,29.6,14z M27.6,14 c0.301,0,0.5-0.2,0.5-0.5S27.9,13,27.6,13c-0.3,0-0.5,0.2-0.5,0.5S27.3,14,27.6,14z M4.4,13c-0.3,0-0.5,0.2-0.5,0.5S4.1,14,4.4,14 c0.3,0,0.5-0.2,0.5-0.5S4.6,13,4.4,13z M2.4,13c-0.3,0-0.5,0.2-0.5,0.5S2.1,14,2.4,14c0.3,0,0.5-0.2,0.5-0.5S2.7,13,2.4,13z'/>
+  </g>
+
+</svg>

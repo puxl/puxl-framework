@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrange-column' aria-labelledby='t-arrange-column d-arrange-column'>
+    <title id='t-arrange-column'>Arrange in column</title>
+    <desc id='d-arrange-column'>Three rectangular blocks in battery</desc>
+    <path d='M8,1c0-0.6-0.4-1-1-1H1C0.4,0,0,0.4,0,1v30c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V1z'/>
+    <path d='M20,1c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v30c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V1z'/>
+    <path d='M32,1c0-0.6-0.4-1-1-1h-6c-0.6,0-1,0.4-1,1v30c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V1z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__button-icon-text/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/element/control__button-appearance/_placeholders.scss
+//                 puxl-framework/css/puxl/element/control__button/_styles.scss
+//                 puxl-framework/css/puxl/element/control__button-icon/_styles.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  [class*=btn-icn-txt] {
+    @extend %btn-icn-txt;
+  }// [class*=btn-icn-txt]

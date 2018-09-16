@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='blacksmithing' aria-labelledby='t-blacksmithing d-blacksmithing'>
+    <title id='t-blacksmithing'>Blacksmithing</title>
+    <desc id='d-blacksmithing'>An anvil</desc>
+    <path d='M31,5H10C9.4,5,9,5.4,9,6H1C0.4,6,0,6.4,0,7c0,2.9,3.9,5,9,5v2c0,0.6,0.4,1,1,1c1.1,0,2,1.3,2,3 s-0.9,3-2,3H5c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1h-5c-1.1,0-2-1.3-2-3s0.9-3,2-3 c0.6,0,1-0.4,1-1c0-1.9,3.3-4,8-4c0.6,0,1-0.4,1-1V6C32,5.4,31.6,5,31,5z M1,7h8v4C4.5,11,1,9.2,1,7z M27,22v4H5v-4H27z M19,18 c0,1.2,0.4,2.3,1,3h-8c0.6-0.7,1-1.8,1-3s-0.4-2.3-1-3h8C19.4,15.7,19,16.8,19,18z M31,9c-5,0-9,2.2-9,5H10V6h21V9z'/>
+  </g>
+
+</svg>

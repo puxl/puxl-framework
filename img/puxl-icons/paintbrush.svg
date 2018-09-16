@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='paintbrush' aria-labelledby='t-paintbrush d-paintbrush'>
+    <title id='t-paintbrush'>Paintbrush</title>
+    <desc id='d-paintbrush'>A paintbrush</desc>
+    <path d='M32,32v-1H12c-7.6-2.2-3.6-2.7-4.6-6.8l17.7-19c1.2-1.3,1.2-3.1,0-4.3C23.9-0.3,22-0.3,20.9,0.9L4.4,21.5 C1.6,21.8,0,24.6,0,27c0,2.6,1.4,5,6,5H32z M6.7,23.5l-1.5-1.3L9,17.5l1.9,1.6L6.7,23.5z M24.4,4.4L11.5,18.3l-1.9-1.7l12-15.1 c0.801-0.8,2-0.8,2.801,0C25.2,2.4,25.2,3.6,24.4,4.4z'/>
+  </g>
+
+</svg>

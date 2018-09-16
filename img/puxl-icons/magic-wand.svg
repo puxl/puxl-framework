@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='magic-wand' aria-labelledby='t-magic-wand d-magic-wand'>
+    <title id='t-magic-wand'>Magic wand</title>
+    <desc id='d-magic-wand'>A stick with sparks emerging from one endpoint</desc>
+    <path d='M30,2l-1.5,0.5L28,4l-0.5-1.5L26,2l1.5-0.5L28,0l0.5,1.5 M23,3l-1.5,0.5L21,5l-0.5-1.5L19,3l1.5-0.5L21,1 l0.5,1.5 M13,2l-1.5,0.5L11,4l-0.5-1.5L9,2l1.5-0.5L11,0l0.5,1.5 M32,11l-2.3,0.8L29,14l-0.8-2.3L26,11l2.3-0.8L29,8l0.8,2.3 M17,8 l-2.3,0.8L14,11l-0.8-2.3L11,8l2.3-0.8L14,5l0.8,2.3 M22.2,7L25,9.8l-5.7,5.7l-2.8-2.8L22.2,7 M21.5,6.3L0.3,27.5 c-0.4,0.4-0.4,1,0,1.4l2.8,2.8c0.4,0.399,1,0.399,1.4,0l21.2-21.2c0.399-0.4,0.399-1,0-1.4l-2.8-2.8C22.5,5.9,21.9,5.9,21.5,6.3z'/>
+  </g>
+
+</svg>

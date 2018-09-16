@@ -1,0 +1,159 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__button-appearance/_mixins.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_color.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Look ghost - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin button--ghost--rest($variant) {
+    --btn--bg-c:    transparent;
+    --btn--bd-c:    colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+    --btn--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+  }
+
+  @mixin button--ghost--hover($variant) {
+    --btn--bg-c:    transparentize(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), .9);
+    --btn--c:       darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%);
+  }
+
+  @mixin button--ghost--focus-hover($variant) {
+    --btn--bd-c:    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+  }
+
+  @mixin button--ghost--active($variant) {
+    --btn--bg-c:    transparentize(darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 5%), .75);
+    --btn--bd-c:    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%)
+                    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 5%)
+                    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 5%);
+    --btn--c:       darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%);
+  }
+
+  @mixin button--ghost--active-hover($variant) {
+    --btn--bd-c:    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%);
+  }
+
+  @mixin button--ghost--disabled($variant) {
+    --btn--bg-c:    transparent;
+    --btn--bd-c:    lighten(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+    --btn--c:       lighten(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+  }
+
+
+  //  Look solid - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin button--solid--rest($variant) {
+    --btn--bg-c:    var(--color--#{$variant});
+    --btn--bd-c:    var(--btn--bg-c);
+    --btn--c:       contrast-color-black-white(get-color($variant));
+  }
+
+  @mixin button--solid--hover($variant) {
+    --btn--bg-c:    get-color($variant, lighter);
+    --btn--c:       contrast-color-black-white(get-color($variant, lighter));
+  }
+
+  @mixin button--solid--focus-hover($variant) {
+    --btn--bd-c:    get-color($variant, darker);
+  }
+
+  @mixin button--solid--active($variant) {
+    --btn--bg-c:    get-color($variant);
+    --btn--bd-c:    get-color($variant, darkest)
+                    get-color($variant)
+                    get-color($variant);
+    --btn--c:       contrast-color-black-white(get-color($variant));
+  }
+
+  @mixin button--solid--active-hover($variant) {
+    --btn--bd-c:    get-color($variant, darkest);
+  }
+
+  @mixin button--solid--disabled($variant) {
+    --btn--bg-c:    get-color($variant, lightest);
+    --btn--bd-c:    get-color($variant, lightest);
+    --btn--c:       get-color($variant, darkest);
+  }
+
+
+  //  Control button appearance - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin control__button-appearance($look, $variant) {
+    @if ($look == ghost) {
+
+      @include button--ghost--rest($variant);
+
+      &:focus,
+      &:hover {
+        @include button--ghost--hover($variant);
+      }
+
+      &:focus:hover {
+        @include button--ghost--focus-hover($variant);
+      }
+
+      &:active {
+        @include button--ghost--active($variant);
+      }
+
+      &:active:hover {
+        @include button--ghost--active-hover($variant);
+      }
+
+      &:disabled,
+      &:disabled:hover,
+      &:disabled:active,
+      &[aria-disabled],
+      &[aria-disabled]:hover,
+      &[aria-disabled]:active {
+        @include button--ghost--disabled($variant);
+      }
+
+    }// @if ($look == ghost)
+
+    @if ($look == solid) {
+
+      @include button--solid--rest($variant);
+
+      &:focus,
+      &:hover {
+        @include button--solid--hover($variant);
+      }
+
+      &:focus:hover {
+        @include button--solid--focus-hover($variant);
+      }
+
+      &:active {
+        @include button--solid--active($variant);
+      }
+
+      &:active:hover {
+        @include button--solid--active-hover($variant);
+      }
+
+      &:disabled,
+      &:disabled:hover,
+      &:disabled:active,
+      &[aria-disabled],
+      &[aria-disabled]:hover,
+      &[aria-disabled]:active {
+        @include button--solid--disabled($variant);
+      }
+
+    }// @if ($look == solid)
+  }

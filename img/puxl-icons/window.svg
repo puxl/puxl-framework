@@ -1,0 +1,18 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='window' aria-labelledby='t-window d-window'>
+    <title id='t-window'>Window</title>
+    <desc id='d-window'>A computer window</desc>
+    <circle cx='29' cy='5' r='1'/>
+    <circle cx='26' cy='5' r='1'/>
+    <circle cx='23' cy='5' r='1'/>
+    <path d='M32,3c0-0.552-0.447-1-1-1H1C0.448,2,0,2.448,0,3v26c0,0.553,0.448,1,1,1h30c0.553,0,1-0.447,1-1V3z M1,3 h30v4H1V3z M31,29H1V8h30V29z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,87 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/type/_definition-list.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  dl {
+    margin:    0
+               0
+               var(--body--line-height);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.h {
+      dt {
+        @media (min-width: $mobile-threshold) {
+          overflow:         hidden;
+          text-overflow:    ellipsis;
+          white-space:      nowrap;
+          width:            $dl--h__dt--width;
+        }
+
+        [dir=ltr] & {
+          @media (min-width: $mobile-threshold) {
+            clear:         left;
+            float:         left;
+          }
+        }
+
+        [dir=rtl] & {
+          @media (min-width: $mobile-threshold) {
+            clear:         right;
+            float:         right;
+          }
+        }
+      }
+
+      dd {
+        [dir=ltr] & {
+          @media (min-width: $mobile-threshold) {
+            margin-left:     $dl--h__dt--width + 1;
+            margin-right:    0;
+          }
+        }
+
+        [dir=rtl] & {
+          @media (min-width: $mobile-threshold) {
+            margin-left:     0;
+            margin-right:    $dl--h__dt--width + 1;
+          }
+        }
+      }
+    }
+
+    dt {
+      font-weight:    $dl__dt--font-weight;
+    }
+
+    dd {
+      margin:    $dl__dd--margin;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $mobile-threshold) {
+        margin-left:    $dl__dd--mobile--margin-left;
+      }
+    }
+  }

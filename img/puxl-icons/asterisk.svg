@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='asterisk' aria-labelledby='t-asterisk d-asterisk'>
+    <title id='t-asterisk'>Asterisk</title>
+    <desc id='d-asterisk'>Asterisk symbol</desc>
+    <path d='M7.5,23.1c-0.4,0.4-0.4,1,0,1.4s1,0.4,1.4,0l6.1-6.1V27c0,0.6,0.4,1,1,1c0.6,0,1-0.4,1-1v-8.6l6.1,6.1 c0.4,0.4,1,0.4,1.4,0s0.4-1,0-1.4L18.4,17H27c0.6,0,1-0.4,1-1c0-0.6-0.4-1-1-1h-8.6l6.1-6.1c0.4-0.4,0.4-1,0-1.4s-1-0.4-1.4,0 L17,13.6V5c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v8.6L8.9,7.5c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.1,6.1H5c-0.6,0-1,0.4-1,1 c0,0.6,0.4,1,1,1h8.6L7.5,23.1z'/>
+  </g>
+
+</svg>

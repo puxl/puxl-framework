@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='video' aria-labelledby='t-video d-video'>
+    <title id='t-video'>Video</title>
+    <desc id='d-video'>Film with three frames</desc>
+    <path d='M6,9h20v14H6V9z M5,11H1V9h4V11z M5,12v2H1v-2H5z M5,15v2H1v-2H5z M5,18v2H1v-2H5z M5,21v2H1v-2H5z M27,21h4v2h-4V21z M27,20v-2h4v2H27z M27,17v-2h4v2H27z M27,14v-2h4v2H27z M27,11V9h4v2H27z M27,8V6h4v2H27z M5,8H1V6h4V8z M1,24 h4v2H1V24z M26,32h1v-2h4v2h1V0h-1v2h-4V0h-1v8H6V0H5v2H1V0H0v32h1v-2h4v2h1v-8h20V32z M27,24h4v2h-4V24z M31,3v2h-4V3H31z M5,3v2 H1V3H5z M1,29v-2h4v2H1z M27,29v-2h4v2H27z'/>
+  </g>
+
+</svg>

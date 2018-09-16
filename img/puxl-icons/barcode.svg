@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='barcode' aria-labelledby='t-barcode d-barcode'>
+    <title id='t-barcode'>Barcode</title>
+    <desc id='d-barcode'>Vertical lines representing a machine-readable code</desc>
+    <path d='M0,0h1v32H0V0z M31,0h1v32h-1V0z M16,0h1v32h-1V0z M2,0h1v28H2V0z M10,0h1v28h-1V0z M5,0h2v28H5V0z M19,0 h1v28h-1V0z M26,0h1v28h-1V0z M22,0h2v28h-2V0z M13,0h1v28h-1V0z M28,0h2v28h-2V0z'/>
+  </g>
+
+</svg>

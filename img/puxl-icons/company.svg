@@ -1,0 +1,24 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='company' aria-labelledby='t-company d-company'>
+    <title id='t-company'>Company</title>
+    <desc id='d-company'>4 story tall building with two windows per floor and a main entrance door</desc>
+    <path d='M21,21h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C20,20.6,20.4,21,21,21z'/>
+    <path d='M15,7h2c0.6,0,1-0.4,1-1V5c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C14,6.6,14.4,7,15,7z'/>
+    <path d='M21,14h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C20,13.6,20.4,14,21,14z'/>
+    <path d='M21,7h2c0.6,0,1-0.4,1-1V5c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C20,6.6,20.4,7,21,7z'/>
+    <path d='M15,14h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C14,13.6,14.4,14,15,14z'/>
+    <path d='M9,21h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1H9c-0.6,0-1,0.4-1,1v1C8,20.6,8.4,21,9,21z'/>
+    <path d='M15,21h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v1C14,20.6,14.4,21,15,21z'/>
+    <path d='M9,14h2c0.6,0,1-0.4,1-1v-1c0-0.6-0.4-1-1-1H9c-0.6,0-1,0.4-1,1v1C8,13.6,8.4,14,9,14z'/>
+    <path d='M9,7h2c0.6,0,1-0.4,1-1V5c0-0.6-0.4-1-1-1H9C8.4,4,8,4.4,8,5v1C8,6.6,8.4,7,9,7z'/>
+    <path d='M31.5,31H27V1c0-0.6-0.4-1-1-1H6C5.4,0,5,0.4,5,1v30H0.5C0.2,31,0,31.2,0,31.5S0.2,32,0.5,32h31 c0.3,0,0.5-0.2,0.5-0.5S31.8,31,31.5,31z M18,31h-4v-6h4V31z M26,31h-7v-6c0-0.6-0.4-1-1-1h-4c-0.6,0-1,0.4-1,1v6H6V1h20V31z'/>
+  </g>
+
+</svg>

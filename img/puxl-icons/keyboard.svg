@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='keyboard' aria-labelledby='t-keyboard d-keyboard'>
+    <title id='t-keyboard'>Keyboard</title>
+    <desc id='d-keyboard'>A Qwerty-like keyboard</desc>
+    <path d='M31,6H1C0.4,6,0,6.4,0,7v18c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V7C32,6.4,31.6,6,31,6z M14,9 c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1v2c0,0.5-0.5,1-1,1h-2c-0.5,0-1-0.5-1-1V9z M14,15c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1v2 c0,0.5-0.5,1-1,1h-2c-0.5,0-1-0.5-1-1V15z M8,9c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1v2c0,0.5-0.5,1-1,1H9c-0.5,0-1-0.5-1-1V9z M8,15 c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1v2c0,0.5-0.5,1-1,1H9c-0.5,0-1-0.5-1-1V15z M6,23c0,0.5-0.5,1-1,1H3c-0.5,0-1-0.5-1-1v-2 c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V23z M6,17c0,0.5-0.5,1-1,1H3c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V17z M6,11 c0,0.5-0.5,1-1,1H3c-0.5,0-1-0.5-1-1V9c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V11z M24,23c0,0.5-0.5,1-1,1H9c-0.5,0-1-0.5-1-1v-2 c0-0.5,0.5-1,1-1h14c0.5,0,1,0.5,1,1V23z M24,17c0,0.5-0.5,1-1,1h-2c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V17z M30,23c0,0.5-0.5,1-1,1h-2c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V23z M30,17c0,0.5-0.5,1-1,1h-2 c-0.5,0-1-0.5-1-1v-2c0-0.5,0.5-1,1-1h2c0.5,0,1,0.5,1,1V17z M30,11c0,0.5-0.5,1-1,1h-8c-0.5,0-1-0.5-1-1V9c0-0.5,0.5-1,1-1h8 c0.5,0,1,0.5,1,1V11z'/>
+  </g>
+
+</svg>

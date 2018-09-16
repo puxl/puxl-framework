@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__button/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//                 puxl-framework/css/puxl/element/control__button-appearance/_placeholders.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  [class*=btn] {
+		@extend %btn;
+  }// [class*=btn]
+
+	button[class*=btn]:not([type=button]):not([type=reset]):not([type=submit]) {
+    @include error-warning('This <button> tag must have a type="" attribute. Use button, reset OR submit. Example: <button type="button">, <button type="reset"> OR <button type="submit">.');
+	}// button[class*=btn]:not([type=button]):not([type=reset]):not([type=submit])
+
+	a[class*=btn] {
+    &:not([role=button]) {
+      @include error-warning('This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.');
+    }
+
+    text-align:         center;
+    text-decoration:    none;
+
+    &[aria-disabled=true] {
+      &:not([tabindex="-1"]) {
+        @include error-warning('This <a class="btn" role="button" aria-disabled="true"> tag must have a tabindex="-1" attribute not to receive focus. Example: <a class="btn" role="button" aria-disabled="true" tabindex="-1">.');
+      }
+
+      cursor:            $cursor--disabled;
+      opacity:           $opacity--disabled;
+      pointer-events:    none;
+		}
+  }// a[class*=btn]

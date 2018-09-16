@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puxl: New HTML document</title>
+  <meta name="description" content="Description of the page less than 150 characters.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/puxl.min.css">
+</head>
+<body>
+
+  <a class="skip-to-main" href="#main__content">Skip to main content</a>
+
+
+  <header id="main__header">
+
+    <!-- Header here -->
+
+  </header>
+
+
+  <main id="main__content">
+
+    <!-- Content here -->
+
+  </main>
+
+
+  <footer id="main__footer">
+
+    <!-- Footer here -->
+
+  </footer>
+
+
+  <script>
+    (function() {
+      'use strict';
+
+      var
+        // html: The document element: <html>.
+        html = document.documentElement;
+
+      // If html tag has the .no-js class.
+      if (html.classList.contains('no-js')) {
+
+        // Remove .no-js class from html's classlist.
+        html.classList.remove('no-js');
+
+        // Add .js class to html's classlist.
+        html.classList.add('js');
+
+      }
+    })();
+  </script>
+
+</body>
+</html>

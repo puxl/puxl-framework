@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='diamond' aria-labelledby='t-diamond d-diamond'>
+    <title id='t-diamond'>Diamond</title>
+    <desc id='d-diamond'>A brilliant diamond</desc>
+    <path d='M31.8,10.4l-5-6C26.6,4.1,26.3,4,26,4H6C5.7,4,5.4,4.1,5.2,4.4l-5,6c-0.3,0.4-0.3,1,0,1.3l15,16 c0.2,0.2,0.5,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3l15-16C32.1,11.3,32.1,10.7,31.8,10.4z M22.5,11.5L16,25.8L9.5,11.5H22.5z M10.1,10.5L16,5.6l5.9,4.9H10.1z M16.8,5h8.7l-2.4,5.2L16.8,5z M8.9,10.2L6.5,5h8.7L8.9,10.2z M14.9,25.9L1.5,11.5h6.9L14.9,25.9z M23.6,11.5h6.9L17.1,25.9L23.6,11.5z M30.6,10.5H24l2.3-5.1L30.6,10.5z M5.6,5.4L8,10.5H1.4L5.6,5.4z'/>
+  </g>
+
+</svg>

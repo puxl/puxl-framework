@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='strongbox' aria-labelledby='t-strongbox d-strongbox'>
+    <title id='t-strongbox'>Strongbox</title>
+    <desc id='d-strongbox'>A secured locker with a rotatory lock</desc>
+    <path d='M19.7,16.3c0.399-0.8,0.399-1.8,0-2.6l3-3c0.399-0.4,0.399-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-3,3 c-0.8-0.4-1.8-0.4-2.6,0l-3-3c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3,3c-0.4,0.8-0.4,1.8,0,2.6l-3,3c-0.4,0.4-0.4,1,0,1.4 c0.4,0.399,1,0.399,1.4,0l3-3c0.8,0.399,1.8,0.399,2.6,0l3,3c0.4,0.399,1,0.399,1.4,0c0.399-0.4,0.399-1,0-1.4L19.7,16.3z M17,17 c-1.1,0-2-0.9-2-2s0.9-2,2-2c1.1,0,2,0.9,2,2S18.1,17,17,17z'/>
+    <path d='M26,3H7C6.4,3,6,3.4,6,4v3H5C4.4,7,4,7.4,4,8v4c0,0.6,0.4,1,1,1h1v4H5c-0.6,0-1,0.4-1,1v4 c0,0.6,0.4,1,1,1h1v3c0,0.6,0.4,1,1,1h19c0.6,0,1-0.4,1-1V4C27,3.4,26.6,3,26,3z M5,12V8h3v4H5z M5,22v-4h3v4H5z M26,26H7v-3h1 c0.6,0,1-0.4,1-1v-4c0-0.6-0.4-1-1-1H7v-4h1c0.6,0,1-0.4,1-1V8c0-0.6-0.4-1-1-1H7V4h19V26z'/>
+    <path d='M29,0H3C2.4,0,2,0.4,2,1v28c0,0.6,0.4,1,1,1h1v1c0,0.553,0.448,1,1,1h4c0.552,0,1-0.447,1-1v-1h12v1 c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-1h1c0.6,0,1-0.4,1-1V1C30,0.4,29.6,0,29,0z M29,29H3V1h26V29z'/>
+  </g>
+
+</svg>

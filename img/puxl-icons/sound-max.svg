@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='sound-max' aria-labelledby='t-sound-max d-sound-max'>
+    <title id='t-sound-max'>Maximum sound</title>
+    <desc id='d-sound-max'>A loudspeaker with three sound waves</desc>
+    <path d='M14,7v18l-6-6H1v-6h7L14,7 M14,6c-0.3,0-0.5,0.1-0.7,0.3L7.6,12H1c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1 h6.6l5.7,5.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1c0.4-0.2,0.6-0.5,0.6-0.9V7c0-0.4-0.2-0.8-0.6-0.9C14.3,6,14.1,6,14,6z M27,27.5c-0.1,0-0.3,0-0.4-0.1c-0.199-0.2-0.199-0.5,0-0.7C29.4,23.8,31,20,31,16s-1.6-7.8-4.4-10.6c-0.199-0.2-0.199-0.5,0-0.7 c0.2-0.2,0.5-0.2,0.7,0c3,3,4.7,7,4.7,11.3s-1.7,8.3-4.7,11.3C27.2,27.4,27.1,27.5,27,27.5z'/>
+    <path d='M23.4,23.9c-0.104,0-0.301,0-0.4-0.104c-0.2-0.196-0.2-0.5,0-0.696C26.9,19.2,26.9,12.9,23,9 c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0c4.3,4.3,4.3,11.3,0,15.601H23.4L23.4,23.9z M19.9,20.4c-0.104,0-0.301,0-0.4-0.104 c-0.2-0.196-0.2-0.5,0-0.696C20.4,18.7,21,17.4,21,16.1s-0.5-2.6-1.5-3.5c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0 c1.1,1.1,1.8,2.6,1.8,4.2s-0.6,3.1-1.8,4.2C20.1,20.3,20,20.4,19.9,20.4z'/>
+  </g>
+
+</svg>

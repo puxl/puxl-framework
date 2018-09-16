@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='exclamation' aria-labelledby='t-exclamation d-exclamation'>
+    <title id='t-exclamation'>Exclamation</title>
+    <desc id='d-exclamation'>Exclamation mark</desc>
+    <circle cx='16' cy='29' r='3'/>
+    <path d='M17,22h-2L14,0h4L17,22z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='battery-min-charging' aria-labelledby='t-battery-min-charging d-battery-min-charging'>
+    <title id='t-battery-min-charging'>Empty battery charging</title>
+    <desc id='d-battery-min-charging'>An empty electric battery with a lighting bolt</desc>
+    <path d='M19,1v3h5v26H8V4h5V1H19 M19,0h-6c-0.6,0-1,0.4-1,1v2H8C7.4,3,7,3.4,7,4v27c0,0.6,0.4,1,1,1h16 c0.6,0,1-0.4,1-1V4c0-0.6-0.4-1-1-1h-4V1C20,0.4,19.6,0,19,0z'/>
+    <path d='M22,16.7c-0.1-0.3-0.3-0.5-0.6-0.6L18.5,15l0.7-7.9c0-0.4-0.2-0.9-0.7-1C18.4,6,18.3,6,18.1,6 c-0.3,0-0.6,0.2-0.8,0.4l-7.1,10C10,16.7,10,17,10,17.3c0.1,0.3,0.3,0.5,0.6,0.601l2.9,1.104L12.8,26.9c0,0.396,0.2,0.896,0.7,1 c0.1,0,0.2,0.101,0.3,0.101c0.3,0,0.6-0.2,0.8-0.399l7.1-10C22,17.3,22,17,22,16.7z M13.9,27l0.7-8.7L11,17l7.1-10L17.4,15.7L21,17 L13.9,27z'/>
+  </g>
+
+</svg>

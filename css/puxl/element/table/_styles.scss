@@ -1,0 +1,130 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:      0.1-beta
+//
+//    Author:       Iñigo Garcia (@MrKanuel)
+//
+//    Route:        puxl-framework/css/puxl/element/table/_styles.scss
+//
+//    Requires:     puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:      The MIT License (MIT)
+//                  https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+	.tbl {
+    background-color:    $table--background-color;
+    border-collapse:     $table--border-collapse;
+    border-spacing:      $table--border-spacing;
+    max-width:           100%;
+
+    &.border {
+      tbody tr {
+        th,
+        td {
+          border-bottom:    $table--border-width
+                            $table--border-style
+                            $table--border-color;
+        }
+
+        &:last-child {
+          th,
+          td {
+            border-bottom:    0;
+          }
+        }
+      }
+    }
+
+    &.framed {
+      &,
+      & th,
+      & td {
+        border:    $table--border-color
+                   $table--border-style
+                   $table--border-width;
+      }
+    }
+
+    &.hover {
+      th:hover,
+      td:hover {
+        background-color:    $table__cell--hover--background-color;
+      }
+    }
+
+    &.responsive {
+      @each $key, $value in $control__box--sizes {
+        &--#{$key} {
+          width: 100%;
+
+          @media (max-width: map-get($breakpoints, #{$key}) - 1) {
+            display: block;
+            overflow-x: auto;
+          }
+        }
+      }
+    }
+
+    &.stripe {
+      &--even {
+        tr:nth-of-type(even) {
+          background-color:    $table--stripe--background-color;
+        }
+      }
+
+      &--odd {
+        tr:nth-of-type(odd) {
+          background-color:    $table--stripe--background-color;
+        }
+      }
+    }
+
+    &.xs {
+      th,
+      td {
+        padding:    $table__cell--padding / 2;
+      }
+    }
+
+    caption {
+      padding:    $table__cell--padding;
+
+      &.bottom {
+        caption-side:    bottom;
+      }
+    }
+
+    th,
+    td {
+      line-height:    $table__cell--line-height;
+      padding:        $table__cell--padding;
+    }
+
+    thead th,
+    thead td {
+      border-bottom:     $table--border-color
+                         $table--border-style
+                         $table--border-width;
+      vertical-align:    bottom;
+    }
+
+    tbody th,
+    tbody td {
+      vertical-align:    top;
+    }
+
+    tfoot th,
+    tfoot td {
+      border-top:        $table--border-color
+                         $table--border-style
+                         $table--border-width;
+      vertical-align:    top;
+    }
+	}

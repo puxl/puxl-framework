@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='wallet' aria-labelledby='t-wallet d-wallet'>
+    <title id='t-wallet'>Wallet</title>
+    <desc id='d-wallet'>A leather wallet</desc>
+    <circle cx='25' cy='17' r='1'/>
+    <path d='M31,14V8c0-0.6-0.4-1-1-1h-1V5c0-0.6-0.4-1-1-1H2C0.9,4,0,4.9,0,6v20c0,1.1,0.9,2,2,2h28c0.6,0,1-0.4,1-1 v-7c0.6,0,1-0.4,1-1v-4C32,14.4,31.6,14,31,14z M2,5h26v2H2C1.4,7,1,6.6,1,6S1.4,5,2,5z M30,27H2c-0.6,0-1-0.4-1-1V7.7 C1.3,7.9,1.6,8,2,8h28v6h-6c-1.1,0-2,0.9-2,2v2c0,1.1,0.9,2,2,2h6V27z M31,19h-7c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1h7V19z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='home' aria-labelledby='t-home d-home'>
+    <title id='t-home'>Home</title>
+    <desc id='d-home'>House with triangular roof, chimney and door</desc>
+    <path d='M16.707,4.293C16.512,4.098,16.256,4,16,4s-0.512,0.098-0.707,0.293l-13,13C2.105,17.48,2,17.734,2,18v13 c0,0.553,0.448,1,1,1h9c0.552,0,1-0.447,1-1V21h6v10c0,0.553,0.447,1,1,1h9c0.553,0,1-0.447,1-1V18c0-0.266-0.105-0.52-0.293-0.707 L16.707,4.293z M29,31h-9V20h-8v11H3V18L16,5l13,13V31z'/>
+    <path d='M31.854,15.646l-15.5-15.5c-0.195-0.195-0.512-0.195-0.707,0L9,6.793V3.5C9,3.224,8.776,3,8.5,3h-2 C6.224,3,6,3.224,6,3.5v6.293l-5.854,5.854c-0.195,0.195-0.195,0.512,0,0.707s0.512,0.195,0.707,0L16,1.207l15.146,15.146 c0.098,0.098,0.226,0.146,0.354,0.146s0.256-0.049,0.354-0.146C32.049,16.158,32.049,15.842,31.854,15.646z M7,4h1v3.793l-1,1V4z'/>
+  </g>
+
+</svg>

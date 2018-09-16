@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='heart-full' aria-labelledby='t-heart-full d-heart-full'>
+    <title id='t-heart-full'>Heart full</title>
+    <desc id='d-heart-full'>Filled heart shape</desc>
+    <path d='M22.4,1c-2.5,0-4.7,1-6.4,2.5C14.3,2,12.1,1,9.6,1C4.3,1,0,5.4,0,10.9C0,24.8,16,31,16,31s16-6.2,16-20.1 C32,5.4,27.7,1,22.4,1z'/>
+  </g>
+
+</svg>

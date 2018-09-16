@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='chart-area' aria-labelledby='t-chart-area d-chart-area'>
+    <title id='t-chart-area'>Area chart</title>
+    <desc id='d-chart-area'>Area defined by the space between an ascending trend line and the cartesian chart horizontal line</desc>
+    <path d='M31.5,32H0V0.5C0,0.2,0.2,0,0.5,0S1,0.2,1,0.5V31h30.5c0.3,0,0.5,0.2,0.5,0.5S31.8,32,31.5,32z'/>
+    <path d='M5,29v-5l7-8l8,2l8-10v21H5z'/>
+  </g>
+
+</svg>

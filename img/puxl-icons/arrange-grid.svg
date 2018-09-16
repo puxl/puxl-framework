@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrange-grid' aria-labelledby='t-arrange-grid d-arrange-grid'>
+    <title id='t-arrange-grid'>Arrange in grid</title>
+    <desc id='d-arrange-grid'>Four squares arranged orthogonally</desc>
+    <path d='M31,18H19c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V19C32,18.4,31.6,18,31,18z M13,18H1 c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V19C14,18.4,13.6,18,13,18z M31,0H19c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1 h12c0.6,0,1-0.4,1-1V1C32,0.4,31.6,0,31,0z M13,0H1C0.4,0,0,0.4,0,1v12c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V1C14,0.4,13.6,0,13,0z'/>
+  </g>
+
+</svg>

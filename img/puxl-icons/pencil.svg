@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='pencil' aria-labelledby='t-pencil d-pencil'>
+    <title id='t-pencil'>Pencil</title>
+    <desc id='d-pencil'>Pencil with eraser</desc>
+    <path d='M29.1,2.9c-2.8-2.8-6.199-3.7-7.8-2.1L3.1,19c-0.1,0.1-0.2,0.3-0.3,0.5L0,30.8V32h1.2l11.3-2.8 c0.2,0,0.3-0.101,0.5-0.3l18.2-18.2C32.8,9.1,31.9,5.7,29.1,2.9z M5.5,29.9l-3.4-3.4l1.7-6.8l8.5,8.5L5.5,29.9z M30.5,10l-1.4,1.4 l-8.5-8.5L22,1.5c1.2-1.2,4-0.2,6.4,2.1C30.7,6,31.7,8.8,30.5,10z'/>
+  </g>
+
+</svg>

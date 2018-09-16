@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='text-align-justify-right' aria-labelledby='t-text-align-justify-right d-text-align-justify-right'>
+    <title id='t-text-align-justify-right'>Text align justified right</title>
+    <desc id='d-text-align-justify-right'>Three lines of same width as the container, the last one is shorter and aligned to right</desc>
+    <path d='M30,28H14c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S31.1,28,30,28z M30,20H2c-1.1,0-2-0.9-2-2 s0.9-2,2-2h28c1.1,0,2,0.9,2,2S31.1,20,30,20z M30,12H2c-1.1,0-2-0.9-2-2s0.9-2,2-2h28c1.1,0,2,0.9,2,2S31.1,12,30,12z M30,4H2 C0.9,4,0,3.1,0,2s0.9-2,2-2h28c1.1,0,2,0.9,2,2S31.1,4,30,4z'/>
+  </g>
+
+</svg>

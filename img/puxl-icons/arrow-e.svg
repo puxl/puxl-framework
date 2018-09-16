@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrow-right' aria-labelledby='t-arrow-right d-arrow-right'>
+    <title id='t-arrow-right'>Right arrow</title>
+    <desc id='d-arrow-right'>Simple caret arrow pointing rightwards</desc>
+    <path d='M25,16c0,0.512-0.195,1.023-0.586,1.414l-14,14c-0.781,0.781-2.047,0.781-2.828,0 c-0.781-0.78-0.781-2.048,0-2.828L20.172,16L7.586,3.414c-0.781-0.781-0.781-2.047,0-2.828c0.781-0.781,2.047-0.781,2.828,0l14,14 C24.805,14.977,25,15.488,25,16z'/>
+  </g>
+
+</svg>

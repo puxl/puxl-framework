@@ -1,0 +1,175 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/function/_math.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_math.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+//
+//    This functions use Open Source components. You can find the source code 
+//    of their open source projects along with license information below.
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl math functions  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Proportion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @function proportion($v1, $v2) {
+  //  Return proportion between two values expressed in percentage.
+  //
+  //  Parameters:    $v1: [ number ]
+  //
+  //                 $v2: [ number ]
+
+    @return (($v2/$v1) * 100) * 1%;
+  }
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    SASS Color Helpers: Math - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Resources:     https://github.com/voxpelli/sass-color-helpers/blob/master/stylesheets/color-helpers/_math.scss
+//
+//    Author:        Pelle Wessman
+//
+//    Author URL:    http://kodfabrik.se/
+//
+//    Copyright:     Copyright © 2018 Pelle Wessman <pelle@kodfabrik.se>
+//
+//    License:       The MIT License (MIT)
+//                   https://voxpelli.mit-license.org/
+
+  @function ch-max($v1, $v2) {
+  //  Return highest number.
+  //
+  //  Parameters:    $v1: [ number ]
+  //
+  //                 $v2: [ number ]
+
+    @return if($v1 > $v2, $v1, $v2);
+  }
+
+
+  @function ch-min($v1, $v2) {
+  //  Return lowest number.
+  //
+  //  Parameters:    $v1: [ number ]
+  //
+  //                 $v2: [ number ]
+
+    @return if($v1 < $v2, $v1, $v2);
+  }
+
+
+  @function ch-gcd($a, $b) {
+  //  Return greatest common divisor.
+  //
+  //  From: http://rosettacode.org/wiki/Greatest_common_divisor#JavaScript
+  //
+  //  Parameters:    $a: [ number ]
+  //
+  //                 $b: [ number ]
+
+    @if ($b != 0) {
+      @return ch-gcd($b, $a % $b);
+    } @else {
+      @return abs($a);
+    }
+  }
+
+
+  @function ch-nth-root($num, $n: 2, $prec: 12) {
+  //  .
+  //
+  //  From: http://rosettacode.org/wiki/Nth_root#JavaScript
+  //
+  //  Parameters:    $num: [ number ]
+  //
+  //                 $n: [ number ]
+  //                     Default: [ 2 ]
+  //
+  //                 $prec: [ number ]
+  //                        Default: [ 12 ]
+
+    $x: 1;
+
+    @for $i from 0 through $prec {
+      $x: 1 / $n * (($n - 1) * $x + ($num / ch-pow($x, $n - 1)));
+    }
+
+    @return $x;
+  }
+
+
+  @function ch-pow($base, $exponent, $prec: 12) {
+  //  Handles decimal exponents by trying to convert them into a fraction and
+  //  then use a nthRoot-algorithm for parts of the calculation.
+  //
+  //  From: http://rosettacode.org/wiki/Greatest_common_divisor#JavaScript
+  //
+  //  Parameters:    $base: [ number ]
+  //
+  //                 $exponent: [ number ]
+  //
+  //                 $prec: [ number ]
+  //                        Default: [ 12 ]
+
+    @if (floor($exponent) != $exponent) {
+      $prec2 : ch-pow(10, $prec);
+      $exponent: round($exponent * $prec2);
+      $denominator: ch-gcd($exponent, $prec2);
+      @return ch-nth-root(ch-pow($base, $exponent / $denominator), $prec2 / $denominator, $prec);
+    }
+
+    $value: $base;
+    @if $exponent > 1 {
+      @for $i from 2 through $exponent {
+        $value: $value * $base;
+      }
+    } @else if $exponent < 1 {
+      @for $i from 0 through -$exponent {
+        $value: $value / $base;
+      }
+    }
+
+    @return $value;
+  }
+
+
+  @function ch-nth-root($num, $n: 2, $prec: 12) {
+  //  .
+  //
+  //  From: http://rosettacode.org/wiki/Nth_root#JavaScript
+  //
+  //  Parameters:    $num: [ number ]
+  //
+  //                 $n: [ number ]
+  //                     Default: [ 2 ]
+  //
+  //                 $prec: [ number ]
+  //                        Default: [ 12 ]
+
+    $x: 1;
+
+    @for $i from 0 through $prec {
+      $x: 1 / $n * (($n - 1) * $x + ($num / ch-pow($x, $n - 1)));
+    }
+
+    @return $x;
+  }

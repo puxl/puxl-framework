@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='plug' aria-labelledby='t-plug d-plug'>
+    <title id='t-plug'>Plug</title>
+    <desc id='d-plug'>A type C plug pointing rightwards</desc>
+    <path d='M30,19h-9v-6h9c1.1,0,2-0.9,2-2s-0.9-2-2-2h-9V7c0-0.6-0.4-1-1-1h-4c-4.6,0-8.4,3.5-8.9,8H6 c-3.312,0-6,2.686-6,6v12h1V20c0-2.762,2.24-5,5-5h2c0-4.4,3.6-8,8-8h4v18h-4c-4.4,0-8-3.6-8-8H6c-1.656,0-3,1.343-3,3v12h1V20 c0-1.104,0.896-2,2-2h1.1c0.5,4.5,4.3,8,8.9,8h4c0.6,0,1-0.4,1-1v-2h9c1.1,0,2-0.9,2-2S31.1,19,30,19z M21,10h9c0.6,0,1,0.4,1,1 s-0.4,1-1,1h-9V10z M30,22h-9v-2h9c0.6,0,1,0.4,1,1S30.6,22,30,22z'/>
+  </g>
+
+</svg>

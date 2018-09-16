@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='text-indent-in' aria-labelledby='t-text-indent-in d-text-indent-in'>
+    <title id='t-text-indent-in'>Text indent in</title>
+    <desc id='d-text-indent-in'>Four horizontal lines stacked, a triangle in the left pushes rightwards the second and third lines</desc>
+    <path d='M30,28H2c-1.1,0-2-0.9-2-2s0.9-2,2-2h28c1.1,0,2,0.9,2,2S31.1,28,30,28z M30,20H14c-1.1,0-2-0.9-2-2 s0.9-2,2-2h16c1.1,0,2,0.9,2,2S31.1,20,30,20z M30,12H14c-1.1,0-2-0.9-2-2s0.9-2,2-2h16c1.1,0,2,0.9,2,2S31.1,12,30,12z M30,4H2 C0.9,4,0,3.1,0,2s0.9-2,2-2h28c1.1,0,2,0.9,2,2S31.1,4,30,4z'/>
+    <path d='M7.5,14c0,0.384-0.146,0.768-0.44,1.061l-4.5,4.5c-0.429,0.438-1.074,0.562-1.633,0.326 C0.366,19.652,0,19.105,0,18.499V9.5c0-0.607,0.366-1.152,0.926-1.386C1.486,7.88,2.131,8.01,2.56,8.44l4.5,4.5 C7.353,13.232,7.5,13.616,7.5,14z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='drop-arrow--s' aria-labelledby='t-drop-arrow--s d-drop-arrow--s'>
+    <title id='t-drop-arrow--s'>Drop-down arrow</title>
+    <desc id='d-drop-arrow--s'>Arrow pointing south</desc>
+    <path d="M24.004 10H8.002c-.809 0-1.54.49-1.851 1.234-.308.75-.138 1.61.436 2.179l7.999 8c.39.392.905.587 1.415.587s1.02-.195 1.41-.586l8.004-8c.569-.569.743-1.429.432-2.179C25.536 10.49 24.81 10 24.004 10z"/>
+  </g>
+
+</svg>

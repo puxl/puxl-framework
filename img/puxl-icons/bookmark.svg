@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='bookmark' aria-labelledby='t-bookmark d-bookmark'>
+    <title id='t-bookmark'>Bookmark</title>
+    <desc id='d-bookmark'>A hanging cloth stripe</desc>
+    <path d='M22.5,32c-0.13,0-0.258-0.05-0.354-0.146L16,25.707l-6.146,6.146c-0.143,0.143-0.358,0.185-0.545,0.104 c-0.188-0.075-0.31-0.258-0.31-0.46v-31c0-0.276,0.224-0.5,0.5-0.5h13c0.276,0,0.5,0.224,0.5,0.5v31 c0,0.202-0.122,0.385-0.31,0.462C22.629,31.986,22.562,32,22.5,32L22.5,32z M16,24.5c0.128,0,0.256,0.05,0.354,0.146L22,30.293V1 H10v29.293l5.646-5.646C15.744,24.549,15.872,24.5,16,24.5z'/>
+  </g>
+
+</svg>

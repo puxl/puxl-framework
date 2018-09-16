@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='text-underline' aria-labelledby='t-text-underline d-text-underline'>
+    <title id='t-text-underline'>Underlined text</title>
+    <desc id='d-text-underline'>An underlined A letter</desc>
+    <path d='M0,30h32v2H0V30z M19.8,17.5H9.9l-1.7,4c-0.4,1-0.6,1.7-0.6,2.2c0,0.399,0.2,0.7,0.6,1 c0.4,0.3,1.2,0.5,2.4,0.6V26h-8v-0.7c1.1-0.2,1.7-0.399,2.1-0.7C5.3,24,6,22.8,6.8,20.9L15.6,0h0.7l8.8,21.1 c0.7,1.7,1.4,2.801,1.9,3.301s1.4,0.812,2.4,0.899V26h-10v-0.7c1,0,1.699-0.2,2.1-0.5s0.5-0.6,0.5-1c0-0.5-0.3-1.399-0.7-2.6 L19.8,17.5z M19.2,16.1L14.9,5.8l-4.4,10.3H19.2z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,65 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/animation/focus--outline.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+  @keyframes focus--outline {
+    0% {
+      outline-color:    rgba(0,0,0,0);
+      outline-width:    0;
+    }
+
+    25% {
+      outline-color:    rgba(0,0,0,.35);
+      outline-width:    rem(8px);// = .5rem;
+    }
+
+    60% {
+      outline-color:    rgba(0,0,0,0);
+    }
+
+    80% {
+      outline-width:    0;
+    }
+
+    100% {
+      outline-color:    rgba(0,0,0,0);
+      outline-width:    0;
+    }
+  }
+
+
+	%animation--focus-outline {
+		outline:{
+			color:     rgba(0,0,0,.5);
+			offset:    0;
+			style:     solid;
+			width:     rem(2px);// = .125rem;
+		}
+
+		@if $animation--enabled == true {
+			animation:                    focus--outline
+                                    ease
+                                    3s;
+			animation-iteration-count:    infinite;
+			transform-origin:             50%
+                                    50%;
+		}
+	}

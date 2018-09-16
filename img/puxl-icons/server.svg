@@ -1,0 +1,24 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='server' aria-labelledby='t-server d-server'>
+    <title id='t-server'>Server</title>
+    <desc id='d-server'>Three stacked rack-mountable servers connected to a network cable</desc>
+    <path d='M18.8,28c-0.3-0.8-1-1.5-1.8-1.8V24h10c0.6,0,1-0.4,1-1v-6c0-0.6-0.4-1-1-1c0.6,0,1-0.4,1-1V9 c0-0.6-0.4-1-1-1c0.6,0,1-0.4,1-1V1c0-0.6-0.4-1-1-1H5C4.4,0,4,0.4,4,1v6c0,0.6,0.4,1,1,1C4.4,8,4,8.4,4,9v6c0,0.6,0.4,1,1,1 c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h10v2.2c-0.8,0.3-1.5,1-1.8,1.8H0v2h13.2c0.4,1.2,1.5,2,2.8,2s2.4-0.8,2.8-2H32v-2H18.8z M5,1 h22v6H5V1z M5,9h22v6H5V9z M5,23v-6h22v6H5z M16,31c-1.1,0-2-0.9-2-2s0.9-2,2-2c1.1,0,2,0.9,2,2S17.1,31,16,31z'/>
+    <circle cx='8' cy='4' r='1'/>
+    <circle cx='11' cy='4' r='1'/>
+    <circle cx='14' cy='4' r='1'/>
+    <circle cx='8' cy='12' r='1'/>
+    <circle cx='11' cy='12' r='1'/>
+    <circle cx='14' cy='12' r='1'/>
+    <circle cx='8' cy='20' r='1'/>
+    <circle cx='11' cy='20' r='1'/>
+    <circle cx='14' cy='20' r='1'/>
+  </g>
+
+</svg>

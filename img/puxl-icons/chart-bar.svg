@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='chart-bar' aria-labelledby='t-chart-bar d-chart-bar'>
+    <title id='t-chart-bar'>Bar chart</title>
+    <desc id='d-chart-bar'>Ascending trend bars on a cartesian chart</desc>
+    <path d='M31.5,32H0V0.5C0,0.2,0.2,0,0.5,0S1,0.2,1,0.5V31h30.5c0.3,0,0.5,0.2,0.5,0.5S31.8,32,31.5,32z'/>
+    <path d='M11,17h4v12h-4V17z M19,21h4v8h-4V21z M26,8h4v21h-4V8z M3,25h4v4H3V25z'/>
+  </g>
+
+</svg>

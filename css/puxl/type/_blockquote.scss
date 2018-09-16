@@ -1,0 +1,122 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       css/puxl/type/_blockquote.scss
+//
+//    Requires:    puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  blockquote {
+    background-color:    var(--body--background-color);
+    border-radius:       $blockquote--border-radius;
+    font-style:          $blockquote--font-style;
+    margin:              0
+                         0
+                         var(--body--line-height);
+
+    [dir=ltr] & {
+      border-left:     $blockquote--border-style
+                       $blockquote--border-width
+                       $blockquote--border-color;
+      border-right:    0;
+      padding:         $blockquote--ltr--padding;
+      text-align:      left;
+    }
+
+    [dir=rtl] & {
+      border-right:    $blockquote--border-style
+                       $blockquote--border-width
+                       $blockquote--border-color;
+      border-left:     0;
+      padding:         $blockquote--rtl--padding;
+      text-align:      right;
+    }
+
+    &:last-child {
+      margin-bottom:    0;
+    }
+
+    &::before {
+      color:          $blockquote__before--color;
+      display:        block;
+      font-family:    var(--font-family--serif);
+      font-size:      $blockquote__before--font-size;
+      font-weight:    $blockquote__before--font-weight;
+      height:         $blockquote__before--height;
+      line-height:    $blockquote__before--line-height;
+      position:       relative;
+      top:            $blockquote__before--top;
+      width:          $blockquote__before--width;
+
+      [dir=ltr] & {
+        content:    $blockquote__before--ltr--content;
+        left:       $blockquote__before--ltr--left;
+      }
+
+      [dir=rtl] & {
+        content:    $blockquote__before--rtl--content;
+        right:      $blockquote__before--rtl--right;
+      }
+    }
+
+    &:last-child {
+      margin-bottom:    0;
+    }
+
+    blockquote,
+    p,
+    ol,
+    ul {
+      margin-bottom:    0;
+      margin-top:       1em;
+      max-width:        100%;
+
+      &:first-child {
+        margin-top:    0;
+      }
+    }
+
+    blockquote {
+      [dir=ltr] & {
+        margin-left:    $blockquote__blockquote--space--before;
+      }
+
+      [dir=rtl] & {
+        margin-right:    $blockquote__blockquote--space--before;
+      }
+    }
+
+    footer {
+      border-top:     $blockquote__footer--border-top-style
+                      $blockquote__footer--border-top-width
+                      $blockquote__footer--border-top-color;
+      font-size:      $blockquote__footer--font-size;
+      margin-top:     $blockquote__footer--margin-top;
+      padding-top:    $blockquote__footer--padding-top;
+
+      [dir=ltr] & {
+        text-align:    right;
+      }
+
+      [dir=rtl] & {
+        text-align:    left;
+      }
+    }
+
+      cite {
+        color:    $blockquote__cite--color;
+      }
+  }

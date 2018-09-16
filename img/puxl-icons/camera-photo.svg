@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='camera-photo' aria-labelledby='t-camera-photo d-camera-photo'>
+    <title id='t-camera-photo'>Photo camera</title>
+    <desc id='d-camera-photo'>Front face of a compact body camera</desc>
+    <path d='M16,9c-4.4,0-8,3.6-8,8c0,4.4,3.6,8,8,8c4.4,0,8-3.6,8-8C24,12.6,20.4,9,16,9z M16,24c-3.9,0-7-3.1-7-7 c0-3.9,3.1-7,7-7c3.9,0,7,3.1,7,7C23,20.9,19.9,24,16,24z'/>
+    <path d='M16,12c-2.8,0-5,2.2-5,5c0,0.3-0.2,0.5-0.5,0.5S10,17.3,10,17c0-3.3,2.7-6,6-6c0.3,0,0.5,0.2,0.5,0.5 S16.3,12,16,12z'/>
+    <path d='M31,6H11.6l-0.7-1.4C10.7,4.2,10.4,4,10,4H6C5.6,4,5.3,4.2,5.1,4.6L4.4,6H1C0.4,6,0,6.4,0,7v20 c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V7C32,6.4,31.6,6,31,6z M31,7v20H1V7H31z'/>
+  </g>
+
+</svg>

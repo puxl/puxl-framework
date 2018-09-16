@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='battery-max' aria-labelledby='t-battery-max d-battery-max'>
+    <title id='t-battery-max'>Full battery</title>
+    <desc id='d-battery-max'>A full-charged electric battery</desc>
+    <path d='M10,6h12v22H10V6z'/>
+    <path d='M19,1v3h5v26H8V4h5V1H19 M19,0h-6c-0.6,0-1,0.4-1,1v2H8C7.4,3,7,3.4,7,4v27c0,0.6,0.4,1,1,1h16 c0.6,0,1-0.4,1-1V4c0-0.6-0.4-1-1-1h-4V1C20,0.4,19.6,0,19,0z'/>
+  </g>
+
+</svg>

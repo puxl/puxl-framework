@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='text-italic' aria-labelledby='t-text-italic d-text-italic'>
+    <title id='t-text-italic'>Italic text</title>
+    <desc id='d-text-italic'>An italic I letter</desc>
+    <path d='M18.8,31.1L18.5,32H5.3l0.3-0.9c1.3,0,2.2-0.1,2.6-0.3c0.7-0.3,1.2-0.6,1.5-1.1c0.5-0.7,1.1-2.101,1.6-4 L17,6.4c0.5-1.6,0.7-2.8,0.7-3.6c0-0.4-0.101-0.8-0.3-1c-0.2-0.3-0.5-0.5-0.9-0.6C16,0.9,15.2,0.9,14,0.9L14.3,0h12.4l-0.3,0.9 c-1,0-1.801,0.1-2.2,0.3C23.5,1.5,23,2,22.6,2.5C22.2,3.1,21.8,4.4,21.2,6.4l-5.5,19.3c-0.5,1.8-0.8,2.899-0.8,3.399 c0,0.396,0.1,0.688,0.3,1c0.2,0.301,0.5,0.5,0.9,0.601C16.5,30.9,17.4,31,18.8,31.1z'/>
+  </g>
+
+</svg>

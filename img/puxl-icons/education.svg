@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='education' aria-labelledby='t-education d-education'>
+    <title id='t-education'>Education</title>
+    <desc id='d-education'>A square academic cap</desc>
+    <path d='M31.4,11.1l-15-7C16.3,4,16.1,4,16,4s-0.3,0-0.4,0.1l-15,7C0.2,11.3,0,11.6,0,12s0.2,0.7,0.6,0.9L2,13.6 v2.47c-0.861,0.224-1.5,1-1.5,1.93c0,1.104,0.896,2,2,2c1.105,0,2-0.896,2-2c0-0.93-0.639-1.706-1.5-1.93V14l4.4,2.1 C5.9,18,5,20.4,5,23c0,3.2,5.7,5,11,5s11-1.8,11-5c0-2.6-0.9-5-2.4-6.9l6.9-3.2c0.4-0.2,0.6-0.5,0.6-0.9 C32,11.6,31.8,11.3,31.4,11.1z M26,23c0,2.2-4.5,4-10,4S6,25.2,6,23c0-2.5,0.9-4.7,2.4-6.5l7.2,3.4C15.7,20,15.9,20,16,20 s0.3,0,0.4-0.1l7.2-3.4C25.1,18.3,26,20.5,26,23z M16,19L1,12l1.6-0.7L16,12.5c0.2,0,0.5-0.2,0.5-0.5c0-0.2-0.2-0.5-0.5-0.5 L4.4,10.4L16,5l15,7L16,19z'/>
+  </g>
+
+</svg>

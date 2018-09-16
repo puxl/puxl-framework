@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='reload' aria-labelledby='t-reload d-reload'>
+    <title id='t-reload'>Reload</title>
+    <desc id='d-reload'>Two arrows following each other in circles</desc>
+    <path d='M31.9,11.6c-0.2-0.2-0.5-0.2-0.7,0L26.6,16.2V14c0-5.8-4.699-10.5-10.5-10.5c-2.8,0-5.4,1.1-7.4,3.1 c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0c1.8-1.8,4.2-2.8,6.7-2.8c5.2,0,9.5,4.3,9.5,9.5v2.3L21,11.7c-0.2-0.2-0.5-0.2-0.7,0 c-0.2,0.2-0.2,0.5,0,0.7l5.5,5.5C25.7,18,25.9,18,26,18s0.3,0,0.4-0.1l5.5-5.5C32,12.2,32,11.8,31.9,11.6z M0.1,20.4 c0.2,0.199,0.5,0.199,0.7,0L5.4,15.8V18c0,5.8,4.7,10.5,10.5,10.5c2.8,0,5.4-1.1,7.4-3.1c0.2-0.2,0.2-0.5,0-0.7s-0.5-0.2-0.7,0 c-1.8,1.8-4.199,2.8-6.7,2.8c-5.2,0-9.5-4.3-9.5-9.5v-2.3l4.6,4.6c0.2,0.2,0.5,0.2,0.7,0c0.2-0.2,0.2-0.5,0-0.7l-5.5-5.5 C6.3,14,6.1,14,6,14s-0.3,0-0.4,0.1l-5.5,5.5C0,19.8,0,20.2,0.1,20.4z'/>
+  </g>
+
+</svg>

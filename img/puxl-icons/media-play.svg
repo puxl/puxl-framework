@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='media-play' aria-labelledby='t-media-play d-media-play'>
+    <title id='t-media-play'>Play</title>
+    <desc id='d-media-play'>A single triangle pointing forward</desc>
+    <path d='M28.9,19.5l-22,11.9C4.2,32.9,1,30.9,1,27.9V4.1c0-3,3.2-5,5.9-3.5l22,11.9C31.7,14,31.7,18,28.9,19.5z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/compound/_disclosure.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .disclosure {
+
+    > header {
+      &:not([id]) {
+        @include error-warning('This header must have a not empty id="" attribute. Example: <header id="[ some ID ]">.');
+      }
+
+      align-items:         center;
+      border-bottom:       $disclosure__header--border-color
+                           $disclosure__header--border-style
+                           $disclosure__header--border-width;
+      display:             flex;
+      justify-content:     space-between;
+      padding:             $disclosure__header--padding;
+    }// > header
+
+    > div {
+      &:not([id]) {
+        @include error-warning('This tag must have a not empty id="" attribute. Example: <tag id="[ some ID ]">.');
+      }
+
+      &:not([aria-labelledby]) {
+        @include error-warning('This tag must have an aria-labelledby="" attribute. The value of the aria-labelledby="" attribute must be the ID of this disclosure header. Example: <tag aria-labelledby="[ this disclosure header ID ]">.');
+      }
+
+      &:not([aria-hidden=true]):not([aria-hidden=false]) {
+        @include error-warning('This tag must have a true OR false aria-hidden="" attribute. Example: <tag aria-hidden="[ true OR false ]">.');
+      }
+
+      &[aria-hidden=true] {
+        display:    none;
+      }
+    }// > div
+
+  }// .disclosure

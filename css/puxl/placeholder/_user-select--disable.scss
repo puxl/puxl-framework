@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:    0.1-beta
+//
+//    Author:     Iñigo Garcia (@MrKanuel)
+//
+//    Route:      puxl-framework/css/puxl/placeholder/_user-select--disable.scss
+//
+//    License:    The MIT License (MIT)
+//                https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+	%user-select--disable {
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}

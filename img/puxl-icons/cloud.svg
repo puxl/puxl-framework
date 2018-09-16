@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='cloud' aria-labelledby='t-cloud d-cloud'>
+    <title id='t-cloud'>Cloud</title>
+    <desc id='d-cloud'>Cloud</desc>
+    <path d='M17,6c3.199,0,5.988,2.161,6.781,5.254c0.113,0.442,0.512,0.751,0.969,0.751 c0.062,0,0.115-0.002,0.168-0.004L25,12c3.309,0,6,2.691,6,6c0,3.309-2.691,6-6,6H5c-2.206,0-4-1.794-4-4s1.794-4,4-4 c0.552,0,1-0.448,1-1c0-1.103,0.897-2,2-2c0.236,0,0.474,0.042,0.708,0.125c0.108,0.038,0.221,0.057,0.333,0.057 c0.187,0,0.373-0.053,0.535-0.155c0.259-0.164,0.429-0.438,0.46-0.744C10.4,8.701,13.395,6,17,6 M17,5 c-4.14,0-7.548,3.146-7.959,7.182C8.71,12.064,8.362,12,8,12c-1.657,0-3,1.343-3,3c-2.762,0-5,2.238-5,5s2.238,5,5,5h20 c3.865,0,7-3.134,7-7s-3.135-7-7-7c-0.084,0-0.156,0.006-0.25,0.006C23.863,7.552,20.73,5,17,5L17,5z'/>
+  </g>
+
+</svg>

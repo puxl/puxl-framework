@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='wall' aria-labelledby='t-wall d-wall'>
+    <title id='t-wall'>Wall</title>
+    <desc id='d-wall'>A wall of bricks</desc>
+    <path d='M21,26h11v4H21V26z M7,26h12v4H7V26z M0,26h5v4H0V26z M28,20h4v4h-4V20z M14,20h12v4H14V20z M0,20h12v4H0 V20z M21,14h11v4H21V14z M7,14h12v4H7V14z M0,14h5v4H0V14z M28,8h4v4h-4V8z M14,8h12v4H14V8z M0,8h12v4H0V8z M21,2h11v4H21V2z M7,2 h12v4H7V2z M0,2h5v4H0V2z'/>
+  </g>
+
+</svg>

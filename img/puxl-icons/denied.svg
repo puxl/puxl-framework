@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='denied' aria-labelledby='t-denied d-denied'>
+    <title id='t-denied'>Denied</title>
+    <desc id='d-denied'>A line oriented north-east in a circle</desc>
+    <path d='M27.312,4.687c-6.248-6.249-16.378-6.249-22.626,0c-6.248,6.248-6.249,16.377,0,22.627 s16.378,6.248,22.626,0S33.562,10.936,27.312,4.687z M7.515,7.515c4.196-4.196,10.747-4.617,15.428-1.287L6.228,22.943 C2.898,18.26,3.318,11.711,7.515,7.515z M9.057,25.771L25.771,9.057c3.33,4.683,2.91,11.232-1.287,15.429 C20.289,28.684,13.739,29.104,9.057,25.771z'/>
+  </g>
+
+</svg>

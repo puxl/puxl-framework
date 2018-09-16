@@ -1,0 +1,108 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/_structure.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //	00 Geometry  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	$phi:    1.6180;
+	$pi:     3.1415;
+
+  :root {
+
+    //  00 Colors  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    --body--background-color:      $body--background-color;
+    --body--color:                 $body--color;
+
+    --box-shadow--color:    $box-shadow--color;
+
+    @each $key, $value in $colors {
+      --color--#{$key}:    #{$value};
+    }
+
+    //	00 Type  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    --font-family--mono:     #{inspect($font-family--mono)};
+    --font-family--sans:     #{inspect($font-family--sans)};
+    --font-family--serif:    #{inspect($font-family--serif)};
+
+    --body--font-family--mono:     var(--font-family--mono);
+    --body--font-family--sans:     var(--font-family--sans);
+    --body--font-family--serif:    var(--font-family--serif);
+    --body--font-size:             $body--font-size;
+    --body--line-height:           $body--line-height;
+
+
+    //	00 Structure: Control box  - - - - - - - - - - - - - - - - - - - - - - -
+
+    --control__box--border-width:    $control__box--border-width;
+
+    @each $key, $value in $control__box--shapes {
+      --control__box--shape--#{$key}:    #{$value};
+    }
+
+    --control__box--shape:    var(--control__box--shape--#{$control__box--shape});
+
+    @each $key, $value in $control__box--sizes {
+      --control__box--size--#{$key}:    #{$value};
+    }
+
+    --control__box--size:    var(--control__box--size--#{$control__box--size});
+
+
+    //	00 Control box: Button-ish - - - - - - - - - - - - - - - - - - - - - - -
+
+    --btn--bg-c:    $btn--default--rest--background-color;
+    --btn--bd-c:    $btn--default--rest--border-color;
+    --btn--c:       $btn--default--rest--color;
+
+
+    //	00 Control box: Textfield-ish  - - - - - - - - - - - - - - - - - - - - -
+
+    --txt--bg-c:    $txt--default--rest--background-color;
+    --txt--bd-c:    $txt--default--rest--border-color;
+    --txt--sh:      $txt--default--rest--box-shadow;
+    --txt--c:       $txt--default--rest--color;
+
+
+    //	00 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - -
+
+    @each $key, $value in $breakpoints {
+      --breakpoint--#{$key}:    #{$value};
+    }
+
+    --mobile-threshold:    $mobile-threshold;
+
+
+    //	00 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - -
+
+    @each $key, $value in $z-elevations {
+      --z--#{$key}:    #{$value};
+    }
+
+
+    //	00 Structure: Bar  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    --status-bar--height:    rem(24px);
+
+    --app-bar--height:    $bar--height;
+    --app-bar--top:       0;
+    --app-bar--bottom:    0;
+
+  }// :root

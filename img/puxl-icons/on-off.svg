@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='on-off' aria-labelledby='t-on-off d-on-off'>
+    <title id='t-on-off'>On/Off</title>
+    <desc id='d-on-off'>On and off symbol</desc>
+    <path d='M16,32C8.28,32,2,25.721,2,18c0-5.238,2.888-9.998,7.536-12.422c0.489-0.255,1.094-0.065,1.349,0.424 c0.255,0.49,0.065,1.094-0.424,1.349C6.476,9.43,4,13.51,4,18c0,6.617,5.383,12,12,12s12-5.383,12-12 c0-4.492-2.479-8.573-6.465-10.65c-0.49-0.255-0.68-0.859-0.426-1.349s0.854-0.682,1.35-0.425C27.109,8,30,12.76,30,18 C30,25.721,23.721,32,16,32z'/>
+    <path d='M16,19c-0.552,0-1-0.447-1-1V1c0-0.552,0.448-1,1-1c0.553,0,1,0.448,1,1v17C17,18.553,16.553,19,16,19z'/>
+  </g>
+
+</svg>

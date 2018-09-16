@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='image' aria-labelledby='t-image d-image'>
+    <title id='t-image'>Image</title>
+    <desc id='d-image'>Landscape of mountain and sun in a frame</desc>
+    <path d='M31,3H1C0.448,3,0,3.448,0,4v24c0,0.553,0.448,1,1,1h30c0.553,0,1-0.447,1-1V4C32,3.448,31.553,3,31,3z M31,28H1V4h30V28z'/>
+    <path d='M29,6H3v20h26V6z M4,7h24v8.817l-3.743-2.246c-0.175-0.105-0.399-0.092-0.563,0.034l-6.416,4.989 c-0.019-0.013-0.021-0.031-0.053-0.041l-4-2c-0.164-0.082-0.359-0.068-0.51,0.037L4,22.689V7z M4,25v-1.09l9.043-6.33l3.372,1.688 l-1.722,1.338c-0.218,0.17-0.257,0.483-0.087,0.701C14.704,21.434,14.852,21.5,15,21.5c0.107,0,0.215-0.034,0.307-0.105l8.729-6.79 L28,16.982V25H4z'/>
+    <path d='M8,8.5c-1.378,0-2.5,1.121-2.5,2.5s1.122,2.5,2.5,2.5s2.5-1.121,2.5-2.5S9.378,8.5,8,8.5z M8,12.5 c-0.828,0-1.5-0.672-1.5-1.5S7.172,9.5,8,9.5s1.5,0.671,1.5,1.5S8.828,12.5,8,12.5z'/>
+  </g>
+
+</svg>

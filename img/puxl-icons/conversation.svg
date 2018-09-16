@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='conversation' aria-labelledby='t-conversation d-conversation'>
+    <title id='t-conversation'>Conversation</title>
+    <desc id='d-conversation'>Two opposing speech bubbles</desc>
+    <path d='M30,18c0.5,0,1,0.5,1,1v8c0,0.5-0.5,1-1,1h-4v3l-3-3H10c-0.6,0-1-0.5-1-1v-8c0-0.5,0.4-1,1-1H30 M30,17 H10c-1.1,0-2,0.9-2,2v8c0,1.1,0.9,2,2,2h12.6l2.7,2.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1C26.8,31.7,27,31.4,27,31v-2h3 c1.1,0,2-0.9,2-2v-8C32,17.9,31.1,17,30,17z M2,1h20c0.6,0,1,0.5,1,1v8c0,0.5-0.4,1-1,1H9l-3,3v-3H2c-0.5,0-1-0.5-1-1V2 C1,1.5,1.5,1,2,1 M0,2v8c0,1.1,0.9,2,2,2h3v2c0,0.4,0.2,0.7,0.6,0.9C5.7,15,5.9,15,6,15c0.3,0,0.5-0.1,0.7-0.3L9.4,12H22 c1.1,0,2-0.9,2-2V2c0-1.1-0.9-2-2-2H2C0.9,0,0,0.9,0,2z'/>
+  </g>
+
+</svg>

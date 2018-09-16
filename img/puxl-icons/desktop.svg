@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='desktop' aria-labelledby='t-desktop d-desktop'>
+    <title id='t-desktop'>Desktop</title>
+    <desc id='d-desktop'>Desktop size screen</desc>
+    <path d='M3,6h26v16H3V6 M2,6v16c0,0.553,0.448,1,1,1h26c0.553,0,1-0.447,1-1V6c0-0.553-0.447-1-1-1H3 C2.448,5,2,5.447,2,6L2,6z'/>
+    <path d='M29,3H3C1.346,3,0,4.346,0,6v16c0,1.654,1.346,3,3,3h10v2c0,1.104-0.896,2-2,2h-1 c-0.276,0-0.5,0.225-0.5,0.5S9.724,30,10,30h12c0.275,0,0.5-0.225,0.5-0.5S22.275,29,22,29h-1c-1.104,0-2-0.896-2-2v-2h10 c1.654,0,3-1.346,3-3V6C32,4.346,30.654,3,29,3z M13.231,29.003C13.709,28.473,14,27.77,14,27v-2h4v2 c0,0.77,0.291,1.471,0.768,2.002L13.231,29.003z M31,22c0,1.104-0.896,2-2,2H3c-1.104,0-2-0.896-2-2V6c0-1.104,0.896-2,2-2h26 c1.104,0,2,0.896,2,2V22z'/>
+  </g>
+
+</svg>

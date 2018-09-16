@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='user-profile' aria-labelledby='t-user-profile d-user-profile'>
+    <title id='t-user-profile'>User profile</title>
+    <desc id='d-user-profile'>Silhouette of human head and shoulders inside a circle</desc>
+    <path d='M16,8c-4.296,0-7,3.31-7,7.39C9,19.473,11.704,25,16,25c4.294,0,7-5.527,7-9.61C23,11.31,20.294,8,16,8z M16,24c-3.663,0-6-5.1-6-8.61C10,11.63,12.467,9,16,9c3.532,0,6,2.628,6,6.39C22,18.9,19.663,24,16,24z'/>
+    <path d='M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z M16,31c-3.114,0-6.008-0.955-8.408-2.586C9.326,27.624,11.546,27,13,27h6c1.453,0,3.674,0.625,5.408,1.414 C22.008,30.044,19.113,31,16,31z M25.32,27.73C23.229,26.68,20.439,26,19,26h-6c-1.44,0-4.227,0.68-6.32,1.73 C3.224,24.98,1,20.75,1,16C1,7.73,7.73,1,16,1c8.27,0,15,6.73,15,15C31,20.75,28.775,24.98,25.32,27.73z'/>
+  </g>
+
+</svg>

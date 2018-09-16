@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='audio' aria-labelledby='t-audio d-audio'>
+    <title id='t-audio'>Audio</title>
+    <desc id='d-audio'>Music note</desc>
+    <path d='M31.721,8.051c-1.533-0.754-2.531-1.802-3.587-2.912C25.843,2.73,23.246,0,14.5,0 C14.224,0,14,0.224,14,0.5v22.52C12.704,21.219,10.279,20,7.5,20C3.364,20,0,22.691,0,26s3.364,6,7.5,6s7.5-2.691,7.5-6V7.001 c4.962,0.033,7.035,0.562,9.042,1.073C25.911,8.55,27.678,9,31.5,9c0.232,0,0.436-0.16,0.486-0.387 C32.039,8.386,31.93,8.154,31.721,8.051z M7.5,31C3.916,31,1,28.757,1,26s2.916-5,6.5-5s6.5,2.243,6.5,5S11.084,31,7.5,31z M24.289,7.105C22.223,6.579,20.088,6.035,15,6.001V1.003c7.912,0.097,10.197,2.5,12.41,4.825c0.691,0.728,1.4,1.472,2.271,2.132 C27.184,7.842,25.77,7.482,24.289,7.105z'/>
+  </g>
+
+</svg>

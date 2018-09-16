@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='time' aria-labelledby='t-time d-time'>
+    <title id='t-time'>Time</title>
+    <desc id='d-time'>A sandclock</desc>
+    <path d='M27.5,32c0.275,0,0.5-0.225,0.5-0.5S27.775,31,27.5,31H26c0-7.221-3.207-13.286-7.525-15 C22.793,14.286,26,8.221,26,1h1.5C27.775,1,28,0.776,28,0.5S27.775,0,27.5,0h-23C4.224,0,4,0.224,4,0.5S4.224,1,4.5,1H6 c0,7.221,3.207,13.286,7.525,15C9.207,17.714,6,23.779,6,31H4.5C4.224,31,4,31.225,4,31.5S4.224,32,4.5,32H27.5z M7,1h18 c0,2.537-0.406,4.924-1.12,7H8.119C7.406,5.924,7,3.535,7,1z M16,16.5c4.963,0,9,6.505,9,14.5h-4l-5-4l-5,4H7 C7,23.005,11.038,16.5,16,16.5z'/>
+  </g>
+
+</svg>

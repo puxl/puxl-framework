@@ -1,0 +1,20 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='game' aria-labelledby='t-game d-game'>
+    <title id='t-game'>Game</title>
+    <desc id='d-game'>A gamepad with a connection cable, a direction controller on the left, and four buttons on the right</desc>
+    <circle cx='23' cy='12' r='2'/>
+    <circle cx='27' cy='16' r='2'/>
+    <circle cx='23' cy='20' r='2'/>
+    <circle cx='19' cy='16' r='2'/>
+    <path d='M10,10H8c-0.6,0-1,0.4-1,1v3H4c-0.6,0-1,0.4-1,1v2c0,0.3,0.1,0.5,0.3,0.7C3.5,17.9,3.7,18,4,18h3v3 c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1v-3h3c0.6,0,1-0.4,1-1v-2c0-0.6-0.4-1-1-1h-3v-3C11,10.4,10.6,10,10,10z'/>
+    <path d='M26,7c2.8,0,5,2.2,5,5v5c0,4.4-3.6,8-8,8H9c-4.4,0-8-3.6-8-8v-5c0-2.8,2.2-5,5-5H26z M17,0h-2v6H6 c-3.3,0-6,2.7-6,6v5c0,5,4,9,9,9h14c5,0,9-4,9-9v-5c0-3.3-2.7-6-6-6h-9V0z'/>
+  </g>
+
+</svg>

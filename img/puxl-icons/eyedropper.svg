@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='eyedropper' aria-labelledby='t-eyedropper d-eyedropper'>
+    <title id='t-eyedropper'>Eyedropper</title>
+    <desc id='d-eyedropper'>An empty Pasteur pipette with rubber bulb</desc>
+    <path d='M22.3,13.9L6.9,29.3C6,30.2,4.6,30.4,3.5,29.9l-0.8,0.8c-0.4,0.399-1,0.399-1.4,0c-0.4-0.4-0.4-1,0-1.4 l0.8-0.8c-0.5-1.1-0.3-2.5,0.6-3.4L18.1,9.7L22.3,13.9z M17.4,8.9L2,24.3c-1,1-1.4,2.5-1,3.9L0.6,28.6C-0.2,29.4-0.2,30.7,0.6,31.4 c0.8,0.8,2,0.8,2.8,0L3.8,31c1.4,0.4,2.8,0,3.9-1L23,14.6l1.4,1.4c0.396,0.4,1,0.4,1.396,0c0.399-0.4,0.399-1,0-1.4L24.4,13.2 L30.8,6.8c1.601-1.6,1.601-4.1,0-5.7c-1.6-1.6-4.1-1.6-5.7,0L18.7,7.5l-1.4-1.4c-0.399-0.4-1-0.4-1.4,0s-0.4,1,0,1.4L17.4,8.9z'/>
+  </g>
+
+</svg>

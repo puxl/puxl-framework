@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='contrast' aria-labelledby='t-contrast d-contrast'>
+    <title id='t-contrast'>Contrast</title>
+    <desc id='d-contrast'>A circle split into two halves. Left half black, right half white.</desc>
+    <path d='M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16s16-7.2,16-16S24.8,0,16,0z M16,30V2c7.7,0,14,6.3,14,14 S23.7,30,16,30z'/>
+  </g>
+
+</svg>

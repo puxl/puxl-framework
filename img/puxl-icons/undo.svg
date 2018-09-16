@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='undo' aria-labelledby='t-undo d-undo'>
+    <title id='t-undo'>Undo</title>
+    <desc id='d-undo'>An arrow circling backward to its origin</desc>
+    <path d='M18.8,2.8C11.4,2.8,5.5,8.7,5.5,16v1.5l-4.6-4.6c-0.2-0.2-0.5-0.2-0.7,0c-0.2,0.2-0.2,0.5,0,0.7l5.5,5.5 C5.8,19.2,5.9,19.2,6.1,19.2c0.2,0,0.3,0,0.4-0.101l5.5-5.5c0.2-0.2,0.2-0.5,0-0.7c-0.2-0.2-0.5-0.2-0.7,0l-4.6,4.6V16 C6.5,9.2,12,3.8,18.8,3.8S31,9.2,31,16s-5.5,12.3-12.3,12.3c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5C26.1,29.3,32,23.3,32,16 S26.1,2.8,18.8,2.8z'/>
+  </g>
+
+</svg>

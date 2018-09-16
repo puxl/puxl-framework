@@ -1,0 +1,36 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:      0.1-beta
+//
+//    Author:       Iñigo Garcia (@MrKanuel)
+//
+//    Route:        puxl-framework/css/puxl/utility/_skip-to-main.scss
+//
+//    Requires:     puxl-framework/css/puxl/placeholder/_sr.scss
+//                  puxl-framework/css/puxl/placeholder/_sr--undo.scss
+//
+//    License:      The MIT License (MIT)
+//                  https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .skip-to-main {
+    @extend %sr;
+
+    left:        .5rem;
+    position:    fixed;
+    top:         .5rem;
+    z-index:     map-get($z-elevations, app-bar) + 1;
+
+    &:active,
+    &:focus {
+      @extend %sr--undo;
+
+      position:    fixed;
+    }
+  }

@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/type/_keyboard.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  kbd {
+    background-color:    $kbd--background-color;
+    border-color:        $kbd--border-color;
+    border-radius:       $kbd--border-radius;
+    border-style:        $kbd--border-style;
+    border-width:        $kbd--border-width;
+    box-shadow:          $kbd--box-shadow;
+    color:               $kbd--color;
+    display:             inline-block;
+    padding:             $kbd--padding;
+  }

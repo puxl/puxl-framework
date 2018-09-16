@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrange-masonry' aria-labelledby='t-arrange-masonry d-arrange-masonry'>
+    <title id='t-arrange-masonry'>Arrange in masonry</title>
+    <desc id='d-arrange-masonry'>Seven different sized blocks arranged like bricks</desc>
+    <path d='M7,0H1C0.4,0,0,0.4,0,1v10c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V1C8,0.4,7.6,0,7,0z M19,0h-6 c-0.6,0-1,0.4-1,1v16c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V1C20,0.4,19.6,0,19,0z M31,0h-6c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h6 c0.6,0,1-0.4,1-1V1C32,0.4,31.6,0,31,0z M7,16H1c-0.6,0-1,0.4-1,1v14c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V17C8,16.4,7.6,16,7,16z M19,22h-6c-0.6,0-1,0.4-1,1v8c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-8C20,22.4,19.6,22,19,22z M31,10h-6c-0.6,0-1,0.4-1,1v10 c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1V11C32,10.4,31.6,10,31,10z M31,26h-6c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h6c0.6,0,1-0.4,1-1v-4 C32,26.4,31.6,26,31,26z'/>
+  </g>
+
+</svg>

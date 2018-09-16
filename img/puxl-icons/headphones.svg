@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='headphones' aria-labelledby='t-headphones d-headphones'>
+    <title id='t-headphones'>Headphones</title>
+    <desc id='d-headphones'>Headphones front view</desc>
+    <path d='M31,25h-2v3c0,1.1-0.9,2-2,2s-2-0.9-2-2V18c0-1.1,0.9-2,2-2s2,0.9,2,2v3h2v-3c0-8.3-6.7-15-15-15 S1,9.7,1,18v3h2v-3c0-1.1,0.9-2,2-2s2,0.9,2,2v10c0,1.1-0.9,2-2,2s-2-0.9-2-2v-3H1v0.5C1,25.8,0.8,26,0.5,26S0,25.8,0,25.5V18 C0,9.2,7.2,2,16,2s16,7.2,16,16v7.5c0,0.3-0.2,0.5-0.5,0.5S31,25.8,31,25.5V25z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='share' aria-labelledby='t-share d-share'>
+    <title id='t-share'>Share</title>
+    <desc id='d-share'>Three separate circles connected in line</desc>
+    <path d='M26,20c-2.17,0-4.064,1.154-5.119,2.882l-9.312-4.655C11.844,17.537,12,16.787,12,16 s-0.156-1.537-0.431-2.226l9.312-4.656C21.936,10.844,23.83,12,26,12c3.312,0,6-2.686,6-6s-2.688-6-6-6s-6,2.686-6,6 c0,0.787,0.156,1.537,0.432,2.226l-9.312,4.656C10.065,11.156,8.17,10,6,10c-3.313,0-6,2.686-6,6c0,3.314,2.687,6,6,6 c2.17,0,4.065-1.154,5.119-2.882l9.312,4.655C20.154,24.463,20,25.213,20,26c0,3.314,2.688,6,6,6s6-2.686,6-6S29.312,20,26,20z M26,1c2.757,0,5,2.243,5,5s-2.243,5-5,5s-5-2.243-5-5S23.243,1,26,1z M6,21c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5 S8.757,21,6,21z M26,31c-2.757,0-5-2.243-5-5s2.243-5,5-5s5,2.243,5,5S28.757,31,26,31z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='key' aria-labelledby='t-key d-key'>
+    <title id='t-key'>Key</title>
+    <desc id='d-key'>A lock key</desc>
+    <path d='M7.5,9.5c2.5,0,4.7,1.4,5.8,3.5H29l2,3l-2,3h-1l-2-2l-2,2v1h-2l-1-1v-2h-2l-1,1v2h-2v-1h-2.7 c-1.1,2.1-3.3,3.5-5.8,3.5C3.9,22.5,1,19.6,1,16C1,12.4,3.9,9.5,7.5,9.5 M7.5,8.5C3.4,8.5,0,11.9,0,16c0,4.1,3.4,7.5,7.5,7.5 c2.6,0,5-1.3,6.4-3.5H15c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1v-1.6l0.4-0.4H20v1c0,0.3,0.1,0.5,0.3,0.7l1,1c0.2,0.2,0.4,0.3,0.7,0.3 h2c0.6,0,1-0.4,1-1v-0.6l1-1l1.3,1.3c0.2,0.2,0.4,0.3,0.7,0.3h1c0.3,0,0.6-0.2,0.8-0.4l2-3c0.2-0.3,0.2-0.8,0-1.1l-2-3 C29.6,12.2,29.3,12,29,12H13.9C12.5,9.8,10.1,8.5,7.5,8.5z'/>
+    <path d='M6,15c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1s-1-0.4-1-1C5,15.4,5.4,15,6,15 M6,14c-1.1,0-2,0.9-2,2 c0,1.1,0.9,2,2,2s2-0.9,2-2C8,14.9,7.1,14,6,14z'/>
+  </g>
+
+</svg>

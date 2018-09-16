@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='laptop' aria-labelledby='t-laptop d-laptop'>
+    <title id='t-laptop'>Laptop</title>
+    <desc id='d-laptop'>A laptop computer</desc>
+    <path d='M32,23h-2V7c0-1.1-0.9-2-2-2H4C2.9,5,2,5.9,2,7v16H0v3c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V23z M3,7 c0-0.6,0.4-1,1-1h24c0.6,0,1,0.4,1,1v16H3V7z M31,26H1v-2h11c0,0.5,0.5,1,1,1h6c0.5,0,1-0.5,1-1h11V26z'/>
+    <path d='M27,8v13H5V8H27 M27,7H5C4.4,7,4,7.4,4,8v13c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V8C28,7.4,27.6,7,27,7z'/>
+  </g>
+
+</svg>

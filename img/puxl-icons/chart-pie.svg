@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='chart-pie' aria-labelledby='t-chart-pie d-chart-pie'>
+    <title id='t-chart-pie'>Pie chart</title>
+    <desc id='d-chart-pie'>A pie chart with one salient slice</desc>
+    <path d='M18,0.1v13.4l11.6-6.7C26.9,3.2,22.7,0.7,18,0.1z'/>
+    <path d='M29,9.5L16,17V2C7.7,2,1,8.7,1,17s6.7,15,15,15s15-6.7,15-15C31,14.3,30.3,11.7,29,9.5z M2,17 C2,9.6,7.7,3.6,15,3.1v27.85C7.764,30.43,2,24.359,2,17z M16,31V18.188L28.6,10.9c0.9,1.8,1.4,3.9,1.4,6.1C30,24.7,23.7,31,16,31z'/>
+  </g>
+
+</svg>

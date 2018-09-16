@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='lock-close' aria-labelledby='t-lock-close d-lock-close'>
+    <title id='t-lock-close'>Closed lock</title>
+    <desc id='d-lock-close'>Closed lock</desc>
+    <path d='M28,16h-2v-6c0-5.514-4.486-10-10-10C10.486,0,6,4.486,6,10v6H4c-0.552,0-1,0.448-1,1v14 c0,0.553,0.448,1,1,1h24c0.553,0,1-0.447,1-1V17C29,16.448,28.553,16,28,16z M7,10c0-4.971,4.029-9,9-9c4.971,0,9,4.029,9,9v6h-4 v-6c0-2.761-2.24-5-5-5c-2.761,0-5,2.239-5,5v6H7V10z M20,16h-8v-6c0-2.206,1.794-4,4-4s4,1.794,4,4V16z M28,31H4V17h24V31z'/>
+  </g>
+
+</svg>

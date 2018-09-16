@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='shop' aria-labelledby='t-shop d-shop'>
+    <title id='t-shop'>Shop</title>
+    <desc id='d-shop'>Shopping cart</desc>
+    <path d='M12,23c1.103,0,2,0.896,2,2s-0.897,2-2,2s-2-0.896-2-2S10.897,23,12,23 M12,22c-1.657,0-3,1.344-3,3 c0,1.658,1.343,3,3,3s3-1.342,3-3C15,23.344,13.657,22,12,22z M27,23c1.104,0,2,0.896,2,2s-0.896,2-2,2s-2-0.896-2-2 S25.896,23,27,23 M27,22c-1.656,0-3,1.344-3,3c0,1.658,1.344,3,3,3s3-1.342,3-3C30,23.344,28.656,22,27,22z M27.5,21h-15 c-0.208,0-0.395-0.13-0.468-0.324L6.152,5H0.5C0.224,5,0,4.776,0,4.5S0.224,4,0.5,4h6c0.208,0,0.395,0.13,0.468,0.324L12.848,20 H27.15l3.658-10.06L9.455,7.997C9.18,7.972,8.977,7.729,9.002,7.454s0.26-0.478,0.543-0.453l22,2c0.155,0.014,0.294,0.1,0.377,0.23 s0.102,0.293,0.051,0.44l-4,11C27.898,20.867,27.71,20.999,27.5,21L27.5,21z'/>
+  </g>
+
+</svg>

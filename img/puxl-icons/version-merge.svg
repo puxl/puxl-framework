@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='version-merge' aria-labelledby='t-version-merge d-version-merge'>
+    <title id='t-version-merge'>Merge version</title>
+    <desc id='d-version-merge'>Two vertical parallel lines converge in a point</desc>
+    <path d='M9,24.2V10.8c1.2-0.4,2-1.5,2-2.8s-0.8-2.4-2-2.8V0H7v5.2C5.8,5.6,5,6.7,5,8s0.8,2.4,2,2.8v13.4 C5.8,24.6,5,25.7,5,27s0.8,2.4,2,2.8V32h2v-2.2c1.2-0.399,2-1.5,2-2.8S10.2,24.6,9,24.2z M6,8c0-1.1,0.9-2,2-2s2,0.9,2,2 s-0.9,2-2,2S6,9.1,6,8z M8,29c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S9.1,29,8,29z'/>
+    <path d='M25,24.2V15c0-4.4-3.6-8-8-8h-2.6l5.3-5.3c0.399-0.4,0.399-1,0-1.4c-0.4-0.4-1-0.4-1.4,0l-7,7 c-0.4,0.4-0.4,1,0,1.4l7,7c0.4,0.4,1,0.4,1.4,0c0.399-0.4,0.399-1,0-1.4L14.4,9H17c3.3,0,6,2.7,6,6v9.2c-1.2,0.399-2,1.5-2,2.8 s0.8,2.4,2,2.8V32h2v-2.2c1.2-0.399,2-1.5,2-2.8S26.2,24.6,25,24.2z M24,29c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S25.1,29,24,29z'/>
+  </g>
+
+</svg>

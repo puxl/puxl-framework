@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_rem.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+//    Error warning  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin error-warning($message: null) {
+  //  Display a red error warning and message ::before element.
+  //
+  //  Parameters:    $message (optional): [ text ]
+  //                                      Default: [ null ]
+  //                                      Text to describe error and provide
+  //                                      possible solution(s).
+
+    background-color:    rgba(255,0,0,.1);
+    border:              dotted
+                         rem(4px)
+                         red
+                         !important;
+
+    @if $message != null {
+      &::before {
+        background-color:    red;
+        display:             inline-block;
+        color:               white;
+        content:             $message;
+        font-size:           $body--font-size;
+        font-weight:         bold;
+        padding:             rem(2px)
+                             rem(4px);
+      }
+    }
+  }

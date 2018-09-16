@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='eject' aria-labelledby='t-eject d-eject'>
+    <title id='t-eject'>Eject</title>
+    <desc id='d-eject'>An up-pointing triangle over a horizontal rectangle</desc>
+    <path d='M31,24H1c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1v-4C32,24.4,31.6,24,31,24z M15.3,2.3 c0.4-0.4,1-0.4,1.4,0l15,15C32,17.6,32.1,18,31.9,18.4C31.8,18.8,31.4,19,31,19H1c-0.4,0-0.8-0.2-0.9-0.6C-0.1,18,0,17.6,0.3,17.3 L15.3,2.3z'/>
+  </g>
+
+</svg>

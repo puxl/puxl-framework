@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='repeat' aria-labelledby='t-repeat d-repeat'>
+    <title id='t-repeat'>Repeat</title>
+    <desc id='d-repeat'>Two arrows following each other in circles</desc>
+    <path d='M13.5,21H6c-2.8,0-5-2.2-5-5s2.2-5,5-5h6.8l-3.6,3.6c-0.2,0.2-0.2,0.5,0,0.7c0.2,0.2,0.5,0.2,0.7,0 l4.5-4.5c0.2-0.2,0.2-0.5,0-0.7L9.9,5.6c-0.2-0.2-0.5-0.2-0.7,0C9,5.8,9,6.2,9.1,6.4l3.6,3.6H6c-3.3,0-6,2.7-6,6s2.7,6,6,6h7.5 c0.3,0,0.5-0.2,0.5-0.5S13.8,21,13.5,21z M26,10h-7.5c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5H26c2.8,0,5,2.2,5,5s-2.2,5-5,5h-6.8 l3.6-3.6c0.2-0.2,0.2-0.5,0-0.7s-0.5-0.2-0.7,0l-4.5,4.5c-0.199,0.2-0.199,0.5,0,0.7l4.5,4.5c0.2,0.199,0.5,0.199,0.7,0 c0.2-0.2,0.2-0.5,0-0.7L19.2,22H26c3.3,0,6-2.7,6-6S29.3,10,26,10z'/>
+  </g>
+
+</svg>

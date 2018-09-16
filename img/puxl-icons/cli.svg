@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='cli' aria-labelledby='t-cli d-cli'>
+    <title id='t-cli'>Command Line Interface</title>
+    <desc id='d-cli'>A right-pointing angle bracket followed by an underscore</desc>
+    <path d='M17,26h14v2H17V26z M2.2,25L1,23.3L11.4,16L1,8.7L2.2,7L15,16'/>
+  </g>
+
+</svg>

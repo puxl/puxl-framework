@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/utility/_text-color.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  @each $key, $value in $colors {
+    .text--#{$key} {
+      color:    colors-shade-contrast-dark-light($value, $main--background-color);
+    }
+  }

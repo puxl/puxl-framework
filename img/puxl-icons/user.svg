@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='user' aria-labelledby='t-user d-user'>
+    <title id='t-user'>User</title>
+    <desc id='d-user'>Silhouette of human head and shoulders</desc>
+    <path d='M20,25c3.543,0,11,2.801,11,5c0,0.553-0.447,1-1,1H2c-0.551,0-1-0.447-1-1c0-2.199,7.457-5,11-5H20 M20,24h-8c-3.313,0-12,2.688-12,6c0,1.104,0.896,2,2,2h28c1.104,0,2-0.896,2-2C32,26.688,23.312,24,20,24L20,24z'/>
+    <path d='M16,1c4.71,0,8,3.701,8,9c0,4.893-3.116,12-8,12c-4.883,0-8-7.107-8-12C8,4.701,11.29,1,16,1 M16,0 c-5.523,0-9,4.477-9,10s3.477,13,9,13c5.523,0,9-7.477,9-13S21.523,0,16,0L16,0z'/>
+  </g>
+
+</svg>

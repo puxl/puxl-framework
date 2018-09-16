@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='sound-off' aria-labelledby='t-sound-off d-sound-off'>
+    <title id='t-sound-off'>Sound off</title>
+    <desc id='d-sound-off'>A silent loudspeaker with a cross</desc>
+    <path d='M14,7v18l-6-6H1v-6h7L14,7 M14,6c-0.3,0-0.5,0.1-0.7,0.3L7.6,12H1c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1 h6.6l5.7,5.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1c0.4-0.2,0.6-0.5,0.6-0.9V7c0-0.4-0.2-0.8-0.6-0.9C14.3,6,14.1,6,14,6z'/>
+    <path d='M31.146,10.146c0.188-0.195,0.512-0.195,0.707,0c0.188,0.195,0.188,0.512,0,0.707L26.707,16l5.146,5.146 c0.188,0.188,0.188,0.512,0,0.707c-0.195,0.188-0.521,0.188-0.707,0L26,16.707l-5.146,5.146c-0.188,0.188-0.512,0.188-0.707,0 c-0.188-0.195-0.188-0.521,0-0.707L25.293,16l-5.146-5.146c-0.188-0.195-0.188-0.512,0-0.707c0.195-0.195,0.521-0.195,0.707,0 L26,15.293L31.146,10.146z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='plus' aria-labelledby='t-plus d-plus'>
+    <title id='t-plus'>Plus</title>
+    <desc id='d-plus'>Two horizontal and vertical lines crossed</desc>
+    <path d='M18,18v12c0,1.104-0.896,2-2,2c-1.104,0.001-2-0.896-2-2V18H2c-1.105,0-2-0.896-2-2c0-1.104,0.896-2,2-2 h12V2c0-1.105,0.895-2,2-2c1.104,0,2,0.896,2,2v12h12c1.105,0,2,0.895,2,2c0,1.104-0.895,2-2,2H18z'/>
+  </g>
+
+</svg>

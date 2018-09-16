@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='save' aria-labelledby='t-save d-save'>
+    <title id='t-save'>Save</title>
+    <desc id='d-save'>A floppy disk</desc>
+    <path d='M22,2h-2c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1h2c0.6,0,1-0.4,1-1V3C23,2.4,22.6,2,22,2z'/>
+    <path d='M31,32c0.6,0,1-0.4,1-1V3c0-0.3-0.1-0.5-0.3-0.7l-2-2C29.5,0.1,29.3,0,29,0H1C0.4,0,0,0.4,0,1v30 c0,0.6,0.4,1,1,1H31z M7,1h18v10H7V1z M27,31H5V17h22V31z M31,31h-3V17c0-0.6-0.4-1-1-1H5c-0.6,0-1,0.4-1,1v14H1V1h5v10 c0,0.6,0.4,1,1,1h18c0.6,0,1-0.4,1-1V1h3l2,2V31z'/>
+  </g>
+
+</svg>

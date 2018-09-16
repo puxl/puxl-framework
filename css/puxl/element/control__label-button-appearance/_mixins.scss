@@ -1,0 +1,101 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__label-button-appearance/_mixins.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/element/control__button-appearance/_mixins.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Control label-button appearance - - - - - - - - - - - - - - - - - - - - - -
+
+	@mixin control__label-button-appearance($look, $variant) {
+    @if ($look == ghost) {
+
+      > input + span {
+        @include button--ghost--rest($variant);
+      }
+
+      > input:focus + span,
+      > input:hover + span {
+        @include button--ghost--hover($variant);
+
+        cursor:    $cursor--press;
+      }
+
+      > input:focus:hover + span {
+        @include button--ghost--focus-hover($variant);
+      }
+
+      > input:active + span,
+      > input[checked] + span {
+        @include button--ghost--active($variant);
+      }
+
+      > input:active:hover + span,
+      > input[checked]:hover + span {
+        @include button--ghost--active-hover($variant);
+
+        cursor:    $cursor--press;
+      }
+
+      > input:disabled + span,
+      > input:disabled:active + span {
+        @include button--ghost--disabled($variant);
+
+        cursor:    $cursor--disabled;
+      }
+
+    }// @if ($look == ghost)
+
+    @if ($look == solid) {
+
+      > input + span {
+        @include button--solid--rest($variant);
+      }
+
+      > input:focus + span,
+      > input:hover + span {
+        @include button--solid--hover($variant);
+
+        cursor:    $cursor--press;
+      }
+
+      > input:focus:hover + span {
+        @include button--solid--focus-hover($variant);
+      }
+
+      > input:active + span,
+      > input[checked] + span {
+        @include button--solid--active($variant);
+      }
+
+      > input:active:hover + span,
+      > input:checked:hover + span,
+      > input[checked]:hover + span {
+        @include button--solid--active-hover($variant);
+
+        cursor:    $cursor--press;
+      }
+
+      > input:disabled + span,
+      > input:disabled:active + span {
+        @include button--solid--disabled($variant);
+
+        cursor:    $cursor--disabled;
+      }
+
+    }// @if ($look == solid)
+	}

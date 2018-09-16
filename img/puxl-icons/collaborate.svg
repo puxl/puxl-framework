@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='collaborate' aria-labelledby='t-collaborate d-collaborate'>
+    <title id='t-collaborate'>Collaborate</title>
+    <desc id='d-collaborate'>Four clockwise flowing spirals converging in a central disk</desc>
+    <path d='M19,24c7.184,0,13-5.816,13-13c0-0.275-0.225-0.5-0.5-0.5S31,10.725,31,11c0,6.63-5.37,12-12,12 c-2.245,0-4.238-1.061-5.519-2.703C14.223,20.732,15.077,21,16,21c4.42,0,8-3.58,8-8c0-7.183-5.816-13-13-13 c-0.275,0-0.5,0.224-0.5,0.5S10.725,1,11,1c6.63,0,12,5.37,12,12c0,2.245-1.061,4.238-2.703,5.52C20.732,17.775,21,16.923,21,16 c0-4.42-3.58-8-8-8C5.817,8,0,13.817,0,21c0,0.275,0.224,0.5,0.5,0.5S1,21.275,1,21C1,14.37,6.37,9,13,9 c2.246,0,4.238,1.061,5.52,2.704C17.777,11.268,16.924,11,16,11c-4.42,0-8,3.58-8,8c0,7.184,5.817,13,13,13 c0.275,0,0.5-0.225,0.5-0.5S21.275,31,21,31c-6.63,0-12-5.37-12-12c0-2.246,1.061-4.239,2.704-5.52C11.268,14.223,11,15.077,11,16 C11,20.42,14.58,24,19,24z M16,12c2.21,0,4,1.792,4,4c0,2.21-1.79,4-4,4c-2.208,0-4-1.79-4-4C12,13.792,13.792,12,16,12z'/>
+  </g>
+
+</svg>

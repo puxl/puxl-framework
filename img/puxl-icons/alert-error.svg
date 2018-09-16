@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='alert-error' aria-labelledby='t-alert-error d-alert-error'>
+    <title id='t-alert-error'>Error</title>
+    <desc id='d-alert-error'>X-cross in a circle</desc>
+    <path d='M16,1c8.3,0,15,6.7,15,15s-6.7,15-15,15S1,24.3,1,16S7.7,1,16,1 M16,0C7.2,0,0,7.2,0,16s7.2,16,16,16 s16-7.2,16-16S24.8,0,16,0z'/>
+    <path d='M14.6,16L8.3,9.7c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l6.3,6.3l6.3-6.3c0.4-0.4,1-0.4,1.4,0 c0.399,0.4,0.399,1,0,1.4L17.4,16l6.3,6.3c0.399,0.4,0.399,1,0,1.4c-0.4,0.399-1,0.399-1.4,0L16,17.4l-6.3,6.3 c-0.4,0.399-1,0.399-1.4,0c-0.4-0.4-0.4-1,0-1.4L14.6,16z'/>
+  </g>
+
+</svg>

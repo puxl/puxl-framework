@@ -1,0 +1,18 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrange-list' aria-labelledby='t-arrange-list d-arrange-list'>
+    <title id='t-arrange-list'>Arrange in list</title>
+    <desc id='d-arrange-list'>Four rectangular blocks stacked</desc>
+    <path d='M31,0H1C0.4,0,0,0.4,0,1v3c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1V1C32,0.4,31.6,0,31,0z'/>
+    <path d='M31,18H1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1v-3C32,18.4,31.6,18,31,18z'/>
+    <path d='M31,9H1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1v-3C32,9.4,31.6,9,31,9z'/>
+    <path d='M31,27H1c-0.6,0-1,0.4-1,1v3c0,0.6,0.4,1,1,1h30c0.6,0,1-0.4,1-1v-3C32,27.4,31.6,27,31,27z'/>
+  </g>
+
+</svg>

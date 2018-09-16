@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:    0.1-beta
+//
+//    Author:     Iñigo Garcia (@MrKanuel)
+//
+//    Route:      puxl-framework/css/puxl/type/_bold-b-strong.scss
+//
+//    License:    The MIT License (MIT)
+//                https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  b,
+  strong {
+    font-weight:    inherit;
+    font-weight:    bolder;
+  }

@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:      0.1-beta
+//
+//    Author:       Iñigo Garcia (@MrKanuel)
+//
+//    Route:        puxl-framework/css/puxl/element/figure/_styles.scss
+//
+//    Requires:     puxl-framework/css/puxl/_structure.scss
+//                  puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:      The MIT License (MIT)
+//                  https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  figure {
+    margin:    0
+               0
+               var(--body--line-height);
+
+    &:last-child {
+      margin-bottom:    0;
+    }
+
+    > * {
+      max-width:    100%;
+    }
+  }
+
+    figcaption {
+      color:        $figcaption--color;
+      font-size:    $figcaption--font-size;
+    }

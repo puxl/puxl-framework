@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='database' aria-labelledby='t-database d-database'>
+    <title id='t-database'>Database</title>
+    <desc id='d-database'>A stack of three hard disks</desc>
+    <path d='M16,1C7.2,1,0,3.7,0,7v18c0,3.3,7.2,6,16,6s16-2.7,16-6V7C32,3.7,24.8,1,16,1z M16,2c8.6,0,15,2.6,15,5 s-6.4,5-15,5C7.4,12,1,9.4,1,7S7.4,2,16,2z M31,25c0,2.4-6.4,5-15,5c-8.6,0-15-2.6-15-5v-3.9C3.3,23.4,9.1,25,16,25 c6.9,0,12.7-1.6,15-3.9V25z M31,19c0,2.4-6.4,5-15,5c-8.6,0-15-2.6-15-5v-3.9C3.3,17.4,9.1,19,16,19c6.9,0,12.7-1.6,15-3.9V19z M31,13c0,2.4-6.4,5-15,5c-8.6,0-15-2.6-15-5V9.1C3.3,11.4,9.1,13,16,13c6.9,0,12.7-1.6,15-3.9V13z'/>
+  </g>
+
+</svg>

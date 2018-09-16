@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='location' aria-labelledby='t-location d-location'>
+    <title id='t-location'>Location</title>
+    <desc id='d-location'>Location mark</desc>
+    <path d='M16,1c5.525,0,10,4.481,10,10c0,5.525-10,19.322-10,19.322S6,16.525,6,11C6,5.481,10.481,1,16,1 M16,15 c2.21,0,4-1.79,4-4s-1.79-4-4-4s-4,1.79-4,4S13.79,15,16,15 M16,0C9.935,0,5,4.935,5,11c0,2.48,1.732,6.55,5.148,12.098 c2.494,4.049,5.023,7.786,5.048,7.82L16,32l0.803-1.082c0.025-0.034,2.555-3.771,5.049-7.82C25.268,17.55,27,13.48,27,11 C27,4.935,22.064,0,16,0L16,0z M16,14c-1.654,0-3-1.346-3-3s1.346-3,3-3c1.654,0,3,1.346,3,3S17.654,14,16,14L16,14z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='key-backspace' aria-labelledby='t-key-backspace d-key-backspace'>
+    <title id='t-key-backspace'>Backspace key</title>
+    <desc id='d-key-backspace'>A X cross inside an arrow-shaped rectangle pointing left</desc>
+    <path d='M23.4,16l3.3-3.3c0.399-0.4,0.399-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L22,14.6l-3.3-3.3c-0.4-0.4-1-0.4-1.4,0 c-0.399,0.4-0.399,1,0,1.4l3.3,3.3l-3.3,3.3c-0.399,0.4-0.399,1,0,1.4c0.4,0.399,1,0.399,1.4,0l3.3-3.3l3.3,3.3 c0.4,0.399,1,0.399,1.4,0c0.399-0.4,0.399-1,0-1.4L23.4,16z'/>
+    <path d='M31,6H10C9.7,6,9.5,6.1,9.3,6.3l-9,9c-0.4,0.4-0.4,1,0,1.4l9,9C9.5,25.9,9.7,26,10,26h21c0.6,0,1-0.4,1-1 V7C32,6.4,31.6,6,31,6z M31,25H10l-9-9l9-9h21V25z'/>
+  </g>
+
+</svg>

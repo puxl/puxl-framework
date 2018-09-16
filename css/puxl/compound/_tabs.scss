@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/compound/_tabs.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .tabs {
+
+    &:not([aria-label]) {
+      @include error-warning('This <div class="tabs"> must have a non empty aria-label="" attribute. Example: <div class="tabs" aria-label="[ tabs component name ]">.');
+    }
+
+    display:    flex;
+
+    & {
+      flex-direction:    column;
+
+      > div:first-of-type {
+        flex-direction:    row;
+
+        > button {
+          border-style:    none
+                           none
+                           $tabs__tab--border-style;
+          border-width:    $tabs__tab--border-width
+                           0;
+        }
+      }
+    }
+
+    &.h {
+      flex-direction:    row;
+
+      > div:first-of-type {
+        flex-direction:    column;
+
+        > button {
+          border-width:    0
+                           $tabs__tab--border-width;
+
+          [dir=ltr] & {
+            border-style:    none
+                             $tabs__tab--border-style
+                             none
+                             none;
+          }
+
+          [dir=rtl] & {
+            border-style:    none
+                             none
+                             none
+                             $tabs__tab--border-style;
+          }
+        }
+      }
+    }
+
+    &.tabs--start {
+      > div:first-of-type {
+        justify-content:    flex-start;
+      }
+    }
+
+    &.tabs--end {
+      > div:first-of-type {
+        justify-content:    flex-end;
+      }
+    }
+
+    &.tabs--wide {
+      > div:first-of-type > button {
+        flex-grow:    1;
+      }
+    }
+
+    > div:first-of-type {
+      display:           flex;
+
+      &:not([role=tablist]) {
+        @include error-warning('This <div> must have a role="tablist" attribute. Example: <div role="tablist">.');
+      }
+
+      > button {
+
+        @if $animation--enabled == true {
+          @extend %animation--enable;
+        }
+
+        &:not([role=tab]) {
+          @include error-warning('This <button> must have a role="tab" attribute. Example: <button role="tab">.');
+        }
+
+        &:not([id]) {
+          @include error-warning('This <button role="tab"> must have a non empty id="" attribute. Example: <button role="tab" id="[ some ID ]">.');
+        }
+
+        &:not([aria-controls]) {
+          @include error-warning('This <button role="tab"> must have a non empty aria-controls="" attribute. The value of aria-controls attribute must be the ID of the tabpanel this tab points at. Example: <button role="tab" aria-controls="[ pointed tabpanel ID ]">.');
+        }
+
+        &:not([aria-selected=false]):not([aria-selected=true]) {
+          @include error-warning('This <button role="tab"> must have a aria-selected="false" OR aria-selected="true" attribute. Example: <button role="tab" aria-selected="[ false OR true ]">.');
+        }
+
+        &:not([tabindex="0"]):not([tabindex="-1"]) {
+          @include error-warning('This <button role="tab"> must have a tabindex="0" OR tabindex="-1" attribute. Example: <button role="tab" tabindex="[ 0 OR -1 ]">.');
+        }
+
+        background-color:    $tabs__tab--rest--background-color;
+        border-color:        $tabs__tab--rest--border-color;
+        border-radius:       $tabs__tab--border-radius;
+        cursor:              $cursor--press;
+        font-size:           $tabs__tab--font-size;
+        padding:             $tabs__tab--padding;
+        text-align:          $tabs__tab--text-align;
+
+        &:focus,
+        &:hover {
+          border-color:    $tabs__tab--focus-hover--border-color;
+        }
+
+        &[aria-selected=true] {
+          border-color:    $tabs__tab--selected--border-color;
+        }
+
+        &[disabled] {
+          background-color:    $tabs__tab--disabled--background-color;
+          cursor:              $cursor--disabled;
+          opacity:             $opacity--disabled;
+        }
+
+        &[class*=icn] {
+          > img,
+          > svg {
+            height:    $tabs__tab__icon--size;
+            margin:    0
+                       0
+                       -.25em;
+            width:     $tabs__tab__icon--size;
+          }
+        }
+
+        &.tab-icn {
+          > span {
+            @extend %sr;
+          }
+        }
+
+        &.tab-icn-txt {
+          &.v {
+            padding:    $tabs__tab--v--padding;
+
+            > img,
+            > svg {
+              display:    block;
+              margin:     0
+                          auto;
+            }
+          }
+        }
+
+      }// > button
+
+    }// > div:first-of-type
+
+    > div:not(:first-of-type) {
+
+      &:not([role=tabpanel]) {
+        @include error-warning('This <div> must have a role="tabpanel" attribute. Example: <div role="tabpanel">.');
+      }
+
+      &:not([id]) {
+        @include error-warning('This <div role="tabpanel"> must have a non empty id="" attribute. Example: <div role="tabpanel" id="[ some ID ]">.');
+      }
+
+      &:not([aria-labelledby]) {
+        @include error-warning('This <div role="tabpanel"> must have a non empty aria-labelledby="" attribute. The value of aria-labelledby attribute must be the ID of the tab pointing at this tabpanel. Example: <div role="tabpanel" aria-labelledby="[ pointing tab ID ]">.');
+      }
+
+      &:not([tabindex="0"]):not([tabindex="-1"]) {
+        @include error-warning('This <div role="tabpanel"> must have a tabindex="0" OR tabindex="-1" attribute. Example: <div role="tabpanel" tabindex="[ 0 OR -1 ]">.');
+      }
+
+      flex-grow:    1;
+
+    }// > div:not(:first-of-type)
+
+  }// .tabs

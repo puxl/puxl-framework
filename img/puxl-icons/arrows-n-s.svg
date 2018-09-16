@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='arrows-n-s' aria-labelledby='t-arrows-n-s d-arrows-n-s'>
+    <title id='t-arrows-n-s'>Arrows North-South</title>
+    <desc id='d-arrows-n-s'>Two united arrows: one pointing North, the other pointing South</desc>
+    <path d='M23.293,22.293L17,28.586V3.414l6.293,6.293C23.488,9.902,23.744,10,24,10s0.512-0.098,0.707-0.293 c0.391-0.391,0.391-1.023,0-1.414l-8-8c-0.391-0.391-1.023-0.391-1.414,0l-8,8c-0.391,0.391-0.391,1.023,0,1.414 s1.023,0.391,1.414,0L15,3.414v25.172l-6.293-6.293c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l8,8 C15.488,31.902,15.744,32,16,32s0.512-0.098,0.707-0.293l8-8c0.391-0.391,0.391-1.023,0-1.414S23.684,21.902,23.293,22.293z'/>
+  </g>
+
+</svg>

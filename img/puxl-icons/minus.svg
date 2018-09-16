@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='minus' aria-labelledby='t-minus d-minus'>
+    <title id='t-minus'>Minus</title>
+    <desc id='d-minus'>Single horizontal line</desc>
+    <path d='M2,18c-1.105,0-2-0.896-2-2c0-1.104,0.896-2,2-2h28c1.105,0,2,0.895,2,2c0,1.104-0.895,2-2,2H2z'/>
+  </g>
+
+</svg>

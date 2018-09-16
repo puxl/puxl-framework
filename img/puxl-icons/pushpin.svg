@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='pushpin' aria-labelledby='t-pushpin d-pushpin'>
+    <title id='t-pushpin'>Pushpin</title>
+    <desc id='d-pushpin'>A pushpin</desc>
+    <path d='M31.7,7.4L24.6,0.3c-0.396-0.4-1-0.4-1.396,0L22.5,1c-0.8,0.8-0.8,2,0,2.8L14,12.3 c-2.3-2.3-6.1-2.3-8.5,0c-0.4,0.4-0.4,1,0,1.4l5.7,5.7l-9.1,9.1C1.7,28.9,0,32,0,32s3.1-1.7,3.5-2.1l9.1-9.104l5.7,5.7 c0.4,0.396,1,0.396,1.4,0c2.3-2.301,2.3-6.104,0-8.5l8.5-8.5c0.8,0.8,2,0.8,2.8,0l0.7-0.7C32.1,8.4,32.1,7.8,31.7,7.4z M30.3,8.8 c-0.399,0.4-1,0.4-1.399,0c-0.396-0.4-1-0.4-1.396,0L19,17.3c-0.4,0.4-0.4,1,0,1.4c2,2,2,5.1,0,7.1L6.3,13c2-2,5.1-2,7.1,0 c0.4,0.4,1,0.4,1.4,0l8.5-8.5c0.4-0.4,0.4-1,0-1.4c-0.399-0.4-0.399-1,0-1.4L23.9,1L31,8.1L30.3,8.8z'/>
+  </g>
+
+</svg>

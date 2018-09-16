@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='question' aria-labelledby='t-question d-question'>
+    <title id='t-question'>Question</title>
+    <desc id='d-question'>Question mark</desc>
+    <circle cx='16' cy='29' r='3'/>
+    <path d='M17,23.559h-2c0-5.459,2.747-7.808,5.172-9.875c1.999-1.709,3.578-3.059,3.578-5.918 c0-0.749-0.166-3.304-2.298-4.751C19.25,1.52,15.633,1.706,10.993,3.549L10.255,1.69c5.361-2.131,9.507-2.242,12.32-0.332 C24.562,2.705,25.75,5.1,25.75,7.762c0,3.781-2.175,5.64-4.279,7.438C19.172,17.164,17,19.021,17,23.559z'/>
+  </g>
+
+</svg>

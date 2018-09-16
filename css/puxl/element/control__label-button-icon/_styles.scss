@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__label-button-icon/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/element/control__label-button-appearance/_placeholders.scss
+//                 puxl-framework/css/puxl/element/control__label-button/_styles.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  [class*=lbl-btn-icn] {
+    @extend %lbl-btn-icn;
+
+    > span > img,
+    > span > svg {
+      &:not([aria-hidden=true]) {
+        @include error-warning('This <img> OR <svg> tag must have aria-hidden="true". Example: <img aria-hidden="true"> OR <svg aria-hidden="true">.');
+      }
+    }
+  }// [class*=lbl-btn-icn]

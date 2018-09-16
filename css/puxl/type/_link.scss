@@ -1,0 +1,102 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/type/_link.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/function/_draw-svg.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/placeholder/_animation--enable.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  a {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    &:not([class*=bar]):not([class*=btn]):not([class*=card]):not([class*=site]) {
+      &,
+      &:link {
+        background-color:         $link--link--background-color;
+        border-bottom:            $link--link--border-bottom-style
+                                  $link--link--border-bottom-width
+                                  $link--link--border-bottom-color;
+        border-radius:            $link--link--border-radius;
+        color:                    $link--link--color;
+        cursor:                   $cursor--press;
+        padding:                  $link--link--padding;
+        text-decoration:          $link--link--text-decoration;
+      }
+
+      &:visited {
+        color:                    $link--visited--color;
+      }
+
+      &:focus,
+      &:hover {
+        background-color:         $link--hover--background-color;
+        border-bottom-color:      $link--hover--background-color;
+        color:                    $link--hover--color;
+      }
+
+      &:active {
+        background-color:         $link--active--background-color;
+        border-bottom-color:      $link--active--background-color;
+        color:                    $link--active--color;
+      }
+
+      &[rel=external] {
+        background-repeat:        no-repeat;
+        background-size:          1em;
+
+        [dir=ltr] & {
+          background-position:    center right .125em;
+          padding-right:          1.5em;
+        }
+
+        [dir=rtl] & {
+          background-position:    .125em center;
+          padding-left:           1.5em;
+        }
+
+        &,
+        &:link {
+          background-image:       url(draw-svg(link-external, get-color(primary)));
+        }
+
+        &:visited {
+          background-image:       url(draw-svg(link-external, $link--visited--color));
+        }
+
+        &:focus,
+        &:hover {
+          background-image:       url(draw-svg(link-external, $link--hover--color));
+        }
+
+        &:active {
+          background-image:       url(draw-svg(link-external, $link--active--color));
+        }
+      }
+
+      &.block {
+        background:               none;
+        border:                   0;
+        color:                    inherit;
+        display:                  block;
+        padding:                  0;
+        text-decoration:          none;
+      }
+    }
+  }

@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='open-source' aria-labelledby='t-open-source d-open-source'>
+    <title id='t-open-source'>Open Source</title>
+    <desc id='d-open-source'>Open Source</desc>
+    <path d='M16,1c8.284,0,15,6.716,15,15c0,6.115-3.659,11.375-8.907,13.711l-3.265-8.418C20.715,20.281,22,18.289,22,16c0-3.313-2.688-6-6-6c-3.313,0-6,2.687-6,6c0,2.289,1.285,4.281,3.172,5.293l-3.265,8.418C4.659,27.375,1,22.115,1,16C1,7.716,7.716,1,16,1 M16,0C7.178,0,0,7.178,0,16c0,6.315,3.729,12.056,9.5,14.625c0.129,0.057,0.268,0.086,0.407,0.086c0.129,0,0.259-0.025,0.381-0.075c0.253-0.104,0.452-0.308,0.551-0.563l3.265-8.418c0.183-0.471-0.015-1.004-0.46-1.243C12.013,19.537,11,17.847,11,16c0-2.757,2.243-5,5-5s5,2.243,5,5c0,1.847-1.014,3.537-2.645,4.412c-0.445,0.238-0.643,0.771-0.46,1.242l3.265,8.418c0.1,0.256,0.299,0.459,0.552,0.563c0.122,0.05,0.251,0.075,0.381,0.075c0.139,0,0.277-0.029,0.406-0.086C28.271,28.056,32,22.315,32,16C32,7.178,24.822,0,16,0L16,0z'/>
+  </g>
+
+</svg>

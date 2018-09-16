@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='sound-min' aria-labelledby='t-sound-min d-sound-min'>
+    <title id='t-sound-min'>Minimum sound</title>
+    <desc id='d-sound-min'>A loudspeaker with one sound wave</desc>
+    <path d='M14,7v18l-6-6H1v-6h7L14,7 M14,6c-0.3,0-0.5,0.1-0.7,0.3L7.6,12H1c-0.6,0-1,0.4-1,1v6c0,0.6,0.4,1,1,1 h6.6l5.7,5.7c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.3,0,0.4-0.1c0.4-0.2,0.6-0.5,0.6-0.9V7c0-0.4-0.2-0.8-0.6-0.9C14.3,6,14.1,6,14,6z M19.9,20.4c-0.104,0-0.301,0-0.4-0.104c-0.2-0.196-0.2-0.5,0-0.696C20.4,18.7,21,17.4,21,16.1s-0.5-2.6-1.5-3.5 c-0.2-0.2-0.2-0.5,0-0.7c0.2-0.2,0.5-0.2,0.7,0c1.1,1.1,1.8,2.6,1.8,4.2s-0.6,3.1-1.8,4.2C20.1,20.3,20,20.4,19.9,20.4z'/>
+  </g>
+
+</svg>

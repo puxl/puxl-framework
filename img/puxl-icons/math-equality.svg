@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='math-equality' aria-labelledby='t-math-equality d-math-equality'>
+    <title id='t-math-equality'>Equality</title>
+    <desc id='d-math-equality'>Math symbol for equality</desc>
+    <path d='M31,22H1c-0.552,0-1-0.447-1-1c0-0.552,0.448-1,1-1h30c0.553,0,1,0.448,1,1C32,21.553,31.553,22,31,22z'/>
+    <path d='M31,12H1c-0.552,0-1-0.447-1-1c0-0.552,0.448-1,1-1h30c0.553,0,1,0.448,1,1C32,11.553,31.553,12,31,12z'/>
+  </g>
+
+</svg>

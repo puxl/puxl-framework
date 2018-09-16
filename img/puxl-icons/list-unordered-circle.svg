@@ -1,0 +1,20 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='list-unordered-circle' aria-labelledby='t-list-unordered-circle d-list-unordered-circle'>
+    <title id='t-list-unordered-circle'>Circle unordered list</title>
+    <desc id='d-list-unordered-circle'>Unordered list with circles as bullets</desc>
+    <path d='M30,28H12c-1.1,0-2-0.9-2-2s0.9-2,2-2h18c1.1,0,2,0.9,2,2S31.1,28,30,28z'/>
+    <path d='M5,24c1.103,0,2,0.896,2,2s-0.897,2-2,2s-2-0.896-2-2S3.897,24,5,24 M5,23c-1.657,0-3,1.343-3,3 s1.343,3,3,3s3-1.343,3-3S6.657,23,5,23L5,23z'/>
+    <path d='M30,18H12c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2h18c1.1,0,2,0.9,2,2C32,17.1,31.1,18,30,18z'/>
+    <path d='M5,14c1.103,0,2,0.897,2,2c0,1.104-0.897,2-2,2s-2-0.896-2-2C3,14.897,3.897,14,5,14 M5,13 c-1.657,0-3,1.343-3,3s1.343,3,3,3s3-1.343,3-3S6.657,13,5,13L5,13z'/>
+    <path d='M30,8H12c-1.1,0-2-0.9-2-2s0.9-2,2-2h18c1.1,0,2,0.9,2,2S31.1,8,30,8z'/>
+    <path d='M5,4c1.103,0,2,0.897,2,2S6.103,8,5,8S3,7.103,3,6S3.897,4,5,4 M5,3C3.343,3,2,4.343,2,6s1.343,3,3,3 s3-1.343,3-3S6.657,3,5,3L5,3z'/>
+  </g>
+
+</svg>

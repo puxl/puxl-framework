@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='flag' aria-labelledby='t-flag d-flag'>
+    <title id='t-flag'>Flag</title>
+    <desc id='d-flag'>A cloth flag waving in the wind</desc>
+    <path d='M27.016,6c-6.677-0.098-8.604-1.062-10.468-1.995L16.44,3.954C14.519,3.043,12.533,2.102,6.016,2 C6.01,2,6.005,2,6,2V1c0-0.6-0.4-1-1-1S4,0.4,4,1v31h2V16c6.661,0.099,8.589,1.062,10.454,1.994l0.22,0.102 C18.641,18.982,20.672,19.9,26.984,20c0.004,0,0.011,0,0.016,0c0.264,0,0.516-0.104,0.701-0.287C27.893,19.523,28,19.268,28,19V7 C28,6.454,27.562,6.008,27.016,6z M27,19c-6.3-0.1-8.1-1-10.1-1.9c-2-1-4.104-2-10.9-2.1V3c6.4,0.1,8.2,1,10.1,1.9 c2,1,4.1,2,10.9,2.1V19z'/>
+  </g>
+
+</svg>

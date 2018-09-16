@@ -1,0 +1,18 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='calculator' aria-labelledby='t-calculator d-calculator'>
+    <title id='t-calculator'>Calculator</title>
+    <desc id='d-calculator'>Three buttons for addition, substraction and result</desc>
+    <path d='M14,18v13H1V18H14 M14,17H1c-0.6,0-1,0.4-1,1v13c0,0.6,0.4,1,1,1h13c0.6,0,1-0.4,1-1V18 C15,17.4,14.6,17,14,17z'/>
+    <path d='M12,24H3c-0.3,0-0.5,0.2-0.5,0.5S2.7,25,3,25h9c0.3,0,0.5-0.2,0.5-0.5S12.3,24,12,24z M31,1v30H18V1H31 M31,0H18c-0.6,0-1,0.4-1,1v30c0,0.6,0.4,1,1,1h13c0.6,0,1-0.4,1-1V1C32,0.4,31.6,0,31,0z'/>
+    <path d='M19.5,18.5c0-0.3,0.2-0.5,0.5-0.5h9c0.3,0,0.5,0.2,0.5,0.5S29.3,19,29,19h-9C19.7,19,19.5,18.8,19.5,18.5 z M19.5,13.5c0-0.3,0.2-0.5,0.5-0.5h9c0.3,0,0.5,0.2,0.5,0.5S29.3,14,29,14h-9C19.7,14,19.5,13.8,19.5,13.5z M14,1v13H1V1H14 M14,0 H1C0.4,0,0,0.4,0,1v13c0,0.6,0.4,1,1,1h13c0.6,0,1-0.4,1-1V1C15,0.4,14.6,0,14,0z'/>
+    <path d='M12,7H8V3c0-0.3-0.2-0.5-0.5-0.5S7,2.7,7,3v4H3C2.7,7,2.5,7.2,2.5,7.5S2.7,8,3,8h4v4 c0,0.3,0.2,0.5,0.5,0.5S8,12.3,8,12V8h4c0.3,0,0.5-0.2,0.5-0.5S12.3,7,12,7z'/>
+  </g>
+
+</svg>

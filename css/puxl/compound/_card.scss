@@ -1,0 +1,203 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/compound/_card.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/mixin/_z-shadow.scss
+//
+//    License:     The MIT License (MIT)
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .card {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    background-color:    $card--background-color;
+    border-radius:       var(--control__box--shape);
+    overflow:            hidden;
+
+    @include z-shadow(map-get($z-elevations, card), south);
+
+    @each $key, $value in $colors {
+      &.#{$key} {
+        background-color:    var(--color--#{$key});
+        color:               contrast-color-black-white(get-color(#{$key}));
+        --txt--c:            contrast-color-black-white(get-color(#{$key}));
+      }
+    }
+
+		&.elevated {
+      @include z-shadow((map-get($z-elevations, card) + 7), south);
+		}
+
+    &.capsule {
+      --control__box--shape:    var(--control__box--shape--capsule);
+    }
+
+    &.round {
+      --control__box--shape:    var(--control__box--shape--round);
+    }
+
+    &.square {
+      --control__box--shape:    var(--control__box--shape--square);
+    }
+
+    > img,
+    > video {
+      width:    100%;
+    }
+
+    > header {
+      font-size:    $card__header--font-size;
+      padding:      $card__header--padding;
+
+      > h4 {
+        font-size:        $card__header--font-size;
+        font-weight:      normal;
+        margin-bottom:    ($card__header--padding / 2);
+      }
+
+      > h4 + p {
+        font-size:      $card__header__subheader--font-size;
+        line-height:    1.5em;
+        max-width:      100%;
+      }
+    }
+
+    > .content {
+      padding:   $card--padding;
+
+      > p {
+        max-width:    100%;
+      }
+    }
+
+    > header + .content {
+      padding-top:   0;
+    }
+
+    > footer {
+      align-items:        center;
+      border-top:         $card__footer--border;
+      display:            flex;
+      justify-content:    flex-end;
+      padding:            $card__footer--padding;
+
+      > * {
+        [dir=ltr] & {
+          margin-right:    $alert__footer__item--separation;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+
+        [dir=rtl] & {
+          margin-left:    $alert__footer__item--separation;
+
+          &:last-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .space {
+        &--before {
+          [dir=ltr] & {
+            margin-left:    auto;
+          }
+
+          [dir=rtl] & {
+            margin-right:    auto;
+          }
+        }
+
+        &--after {
+          [dir=ltr] & {
+            margin-right:    auto;
+          }
+
+          [dir=rtl] & {
+            margin-left:    auto;
+          }
+        }
+      }// .space
+    }
+
+    .list {
+      list-style:    none;
+      margin:        0;
+      padding:       0;
+
+      > li {
+        border-bottom:    solid
+                          $card__list__item--border-width
+                          $card__list__item--border-color;
+        padding:          $card__list__item--padding;
+
+        &:first-child {
+          border-top:    solid
+                         $card__list__item--border-width
+                         $card__list__item--border-color;
+        }
+
+        .heading {
+          display:        block;
+          font-size:      $card__list__item__heading--font-size;
+          line-height:    $card__list__item__heading--line-height;
+        }
+
+        .description {
+          display:        block;
+          font-size:      $card__list__item__description--font-size;
+          line-height:    $card__list__item__description--line-height;
+        }
+      }
+    }
+
+    .list + footer {
+      border-top:    none;
+    }
+
+    > .content .list > li {
+      padding:    $card__list__item--padding
+                  0;
+    }
+
+    .swc {
+      display:    flex;
+
+      > span:first-of-type {
+        flex-grow:      1;
+        line-height:    var(--body--line-height);
+      }
+    }
+  }// .card
+
+
+  a.card {
+    color:              inherit;
+    display:            block;
+    text-decoration:    none;
+
+    &:focus,
+    &:hover {
+      transform:    scale(1.005);
+    }
+  }// a.card
+

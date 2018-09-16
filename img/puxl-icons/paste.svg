@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='paste' aria-labelledby='t-paste d-paste'>
+    <title id='t-paste'>Paste</title>
+    <desc id='d-paste'>A written document over a clipboard</desc>
+    <path d='M9,1h6l1,4H8L9,1z M8,28v-1H1V3h6.5L7,4.8c0,0.3,0,0.6,0.2,0.8C7.4,5.8,7.7,6,8,6h8 c0.3,0,0.6-0.1,0.8-0.4C17,5.3,17,5.1,17,4.8L16.5,3H23v5h1V3c0-0.6-0.4-1-1-1h-6.7L16,0.8C15.9,0.3,15.5,0,15,0H9 C8.5,0,8.1,0.3,8,0.8L7.7,2H1C0.4,2,0,2.4,0,3v24c0,0.6,0.4,1,1,1H8z'/>
+    <path d='M10,31c0,0.6,0.4,1,1,1h20c0.6,0,1-0.4,1-1V11c0-0.6-0.4-1-1-1H11c-0.6,0-1,0.4-1,1V31z M31,31H11V11h20 V31z'/>
+    <path d='M15,15h6v1h-6V15z M17,19h10v1H17V19z M15,23h12v1H15V23z M15,27h6v1h-6V27z'/>
+  </g>
+
+</svg>

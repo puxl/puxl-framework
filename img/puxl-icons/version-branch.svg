@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='version-branch' aria-labelledby='t-version-branch d-version-branch'>
+    <title id='t-version-branch'>Version branch</title>
+    <desc id='d-version-branch'>Two lines diverge from a point</desc>
+    <path d='M25,2.174V0h-2v2.174C21.818,2.573,21,3.655,21,5c0,1.3,0.8,2.4,2,2.8V9c0,3.315-2.688,6-6,6h-2 c-2.392,0-4.534,1.056-6,2.721V7.8c1.2-0.4,2-1.5,2-2.8c0-1.345-0.818-2.427-2-2.826V0H7v2.174C5.818,2.573,5,3.655,5,5 c0,1.3,0.8,2.4,2,2.8v16.4C5.8,24.6,5,25.7,5,27c0,1.346,0.818,2.427,2,2.826V32h2v-2.174c1.182-0.399,2-1.48,2-2.826 c0-1.3-0.8-2.4-2-2.8V23c0-3.314,2.688-6,6-6h2c4.419,0,8-3.579,8-8V7.8c1.2-0.4,2-1.5,2-2.8C27,3.655,26.182,2.573,25,2.174z M10,27c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S10,25.9,10,27z M8,7C6.9,7,6,6.1,6,5s0.9-2,2-2s2,0.9,2,2S9.1,7,8,7z M24,7 c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S25.1,7,24,7z'/>
+  </g>
+
+</svg>

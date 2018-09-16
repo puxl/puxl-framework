@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='star-full' aria-labelledby='t-star-full d-star-full'>
+    <title id='t-star-full'>Star full</title>
+    <desc id='d-star-full'>Filled shape of a five point star</desc>
+    <path d='M16,0.7c-0.4,0-0.7,0.2-0.9,0.6l-4.4,8.9l-9.8,1.4C0.5,11.7,0.2,12,0,12.3c-0.1,0.4,0,0.8,0.3,1l7.1,6.9 L5.7,30c-0.1,0.4,0.1,0.8,0.4,1c0.2,0.1,0.4,0.2,0.6,0.2c0.2,0,0.3,0,0.5-0.101l8.8-4.604l8.8,4.604C24.9,31.2,25.1,31.2,25.3,31.2 S25.7,31.1,25.9,31c0.3-0.2,0.5-0.6,0.396-1L24.6,20.2l7.104-6.9c0.3-0.3,0.396-0.7,0.3-1c-0.104-0.4-0.396-0.6-0.8-0.7l-9.899-1.4 l-4.396-8.9C16.7,0.9,16.4,0.7,16,0.7z'/>
+  </g>
+
+</svg>

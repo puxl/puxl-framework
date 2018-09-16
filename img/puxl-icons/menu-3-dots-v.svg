@@ -1,0 +1,17 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='menu-3-dots-v' aria-labelledby='t-menu-3-dots-v d-menu-3-dots-v'>
+    <title id='t-menu-3-dots-v'>Menu 3 dots vertical</title>
+    <desc id='d-menu-3-dots-v'>3 dots in vertical row</desc>
+    <circle cx='16' cy='28' r='4'/>
+    <circle cx='16' cy='16' r='4'/>
+    <circle cx='16' cy='4' r='4'/>
+  </g>
+
+</svg>

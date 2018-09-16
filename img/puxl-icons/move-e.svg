@@ -1,0 +1,15 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='move-e' aria-labelledby='t-move-e d-move-e'>
+    <title id='t-move-e'>Move east</title>
+    <desc id='d-move-e'>A vertical line, from its center an arrow points east</desc>
+    <path d='M17,31V17h11.6l-3.3,3.3c-0.399,0.4-0.399,1,0,1.4c0.4,0.399,1,0.399,1.4,0l5-5c0.399-0.4,0.399-1,0-1.4 l-5-5c-0.4-0.4-1-0.4-1.4,0c-0.399,0.4-0.399,1,0,1.4l3.3,3.3H17V1c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1v30c0,0.6,0.4,1,1,1 C16.6,32,17,31.6,17,31z'/>
+  </g>
+
+</svg>

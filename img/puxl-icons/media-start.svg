@@ -1,0 +1,16 @@
+<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+<!--
+  Puxl icons 1.0 - https://puxl.io/puxl-icons
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country
+  Puxl icons is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
+  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+-->
+
+  <g id='media-start' aria-labelledby='t-media-start d-media-start'>
+    <title id='t-media-start'>Start</title>
+    <desc id='d-media-start'>A triangle pointing backward touching with its edge a vertical square</desc>
+    <path d='M2,4h6c1.1,0,2,0.9,2,2v20c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V6C0,4.9,0.9,4,2,4z'/>
+    <path d='M11,14.3l18-10c1.3-0.7,3,0.2,3,1.7v20c0,1.5-1.6,2.5-3,1.7l-18-10C9.7,17,9.7,15,11,14.3z'/>
+  </g>
+
+</svg>

@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Puxl
+//
+//    Version:     0.1-beta
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__range/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/mixin/_error-warning.scss
+//                 puxl-framework/css/puxl/element/control__range-appearance/_placeholders.scss
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .rng {
+    &:not([for]) {
+      @include error-warning('This <label class="rng"> tag must have a non-empty for="" attribute. It must point at the child <input> ID. Example: <label class="rng" for="[ child input ID ]">.');
+    }
+
+    @extend %rng;
+
+    > input {
+      &:not([type=range]) {
+        @include error-warning('This <input> tag must be of type="range". Example: <input type="range">.');
+      }
+
+      &:not([id]) {
+        @include error-warning('This <input> tag must have a non-empty id="" attribute. Remember, the parent <label> for="" attribute must be this <input> ID. Example: <input id="[ some ID ]">.');
+      }
+    }// > input
+
+    > small {
+      &:not([id]) {
+        @include error-warning('This <small> tag must have a non-empty id="" attribute. Remember, the precedent <input> tag must have a aria-describedby="" attribute whose value is this <small> tag ID. Example: <small id="[ some ID ]">.');
+      }
+    }// > small
+  }// .rng

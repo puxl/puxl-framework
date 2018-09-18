@@ -1,15 +1,15 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-    Puxl
+  Puxl
 
-    Version:      0.1-beta
+  Version:    0.1-beta
 
-    Author:       Iñigo Garcia (@MrKanuel)
+  Author:     Iñigo Garcia (@MrKanuel)
 
-    Route:        puxl-framework/thanks.txt
+  Route:      puxl-framework/thanks.txt
 
-    License:      Licensed under MIT Open Source.
-                  https://github.com/puxl/puxl-framework/blob/master/LICENSE
+  License:    Puxl is licensed under the MIT License (MIT)
+              https://github.com/puxl/puxl-framework/blob/master/LICENSE
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -17,7 +17,145 @@
   Thanks everyone for knowledge, dedication, hard work and inspiration.
   This project stands on the shoulders of giants.
 
-  Thank you:
+  This application uses Open Source components. You can find the source code
+  of their open source projects along with license information below.
+  Thank you very much and a big applause to these creators for their
+  contributions to open source. They helped this project happen.
+
+
+
+  Credits:
+
+  Normalize.css  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Project:         Normalize.css
+
+  Project URLs:    https://necolas.github.io/normalize.css/
+                   https://github.com/necolas/normalize.css
+
+  Authors:         Nicolas Gallagher
+                   Jonathan Neal
+
+  Author URLs:     http://nicolasgallagher.com/
+                   http://jonathantneal.com/
+
+  Copyright:       Copyright © Nicolas Gallagher and Jonathan Neal
+
+  License:         The MIT License (MIT)
+                   https://github.com/necolas/normalize.css/blob/master/LICENSE.md
+
+
+
+  Micro Clearfix Hack  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Project:        Micro Clearfix Hack
+
+  Project URL:    http://nicolasgallagher.com/micro-clearfix-hack/
+
+  Author:         Nicolas Gallagher
+
+  Author URL:     http://nicolasgallagher.com/
+
+  Copyright:      Nicolas Gallagher
+
+  License:        ?
+
+
+
+  Bootstrap Reboot - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Resources:      https://getbootstrap.com/docs/4.1/content/reboot/
+
+  Project:        Bootstrap
+
+  Project URL:    https://getbootstrap.com/
+
+  Copyright:      Copyright (c) 2011-2018 Twitter, Inc.
+                  Copyright (c) 2011-2018 The Bootstrap Authors
+
+  License:        The MIT License (MIT)
+                  https://github.com/twbs/bootstrap/blob/v4-dev/LICENSE
+
+
+
+  SASS Color Helpers - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Resources:     https://github.com/voxpelli/sass-color-helpers
+
+  SASS Color Helpers: Math - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Resources:     https://github.com/voxpelli/sass-color-helpers/blob/master/stylesheets/color-helpers/_math.scss    
+
+  Author:        Pelle Wessman
+
+  Author URL:    http://kodfabrik.se/
+
+  Copyright:     Copyright © 2018 Pelle Wessman <pelle@kodfabrik.se>
+
+  License:       The MIT License (MIT)
+                 https://voxpelli.mit-license.org/
+
+
+
+  Strip unit - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Resource URL:    https://hugogiraudel.com/2013/08/12/sass-functions/
+
+  Author:          Hugo Giraudel
+
+  Author URL:      https://hugogiraudel.com/
+
+  License:         Public
+
+
+
+  Open Dyslexic Font - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Project:         OpenDyslexic
+
+  Project URLs:    https://www.opendyslexic.org/
+                   https://github.com/antijingoist/open-dyslexic
+
+  Copyright:       Copyright (c) 2003 by Bitstream, Inc. All Rights Reserved.
+                   Bitstream Vera is a trademark of Bitstream, Inc.
+
+  License:         Bitstream License
+                   https://github.com/antijingoist/open-dyslexic#license
+
+
+
+  Accessible icon  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Project:        The Accessible Icon Project
+
+  Project URL:    http://accessibleicon.org/
+
+  Author:         The Accessible Icon Project Team
+
+  License:        Public
+
+
+
+  Puxl icons - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  Project:        Puxl Icons
+
+  Project URL:    https://puxl.io/puxl-icons/
+
+  Author:         Iñigo Garcia (@MrKanuel)
+
+  Copyright:      Copyright © 2018 Puxl
+
+  License:        The MIT License (MIT)
+                  https://github.com/puxl/puxl-icons/blob/master/LICENSE
+
+
+  Thanks:
+
+  The W3C,
+  Mozilla,
+  Adobe,
+  BrowserStack,
 
   https://24ways.org/2006/compose-to-a-vertical-rhythm
   http://www.456bereastreet.com/archive/201211/accessible_custom_checkboxes_and_radio_buttons/
@@ -179,13 +317,13 @@
   Jean Zozaya,
   Julen Lizaso,
   Urko Larrañaga,
-  Laura Fernández...
-  "a quien me ha acompañado y animado,
+  Laura Fernández,
+  "a quien lo necesita,
+  a quien me ha acompañado y animado,
   a quien no me ha molestado ni desalentado,
   a quien no lo entiende,
-  a quien lo necesita,
   a mi familia y amistades,
   a Mati,
-  ...y a la peña #Estróper de La Sozi! ;D".
+  y a la peña #Estróper de La Sozi!".
 
-  With love.
+  Created by @MrKanuel, brought by The Puxl Clan with love from Basque Country.

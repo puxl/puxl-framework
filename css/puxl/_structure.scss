@@ -18,14 +18,27 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-  //	00 Geometry  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  01 Geometry  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  02 Colors  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  03 Type  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  04 Control box - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  05 Control box: Button-ish - - - - - - - - - - - - - - - - - - - - - - - -
+  //  06 Control box: Textfield-ish  - - - - - - - - - - - - - - - - - - - - - -
+  //  07 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - - -
+  //  08 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - - -
+  //  09 Structure: Bar  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-	$phi:    1.6180;
-	$pi:     3.1415;
+
+
+  //  01 Geometry  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  $phi:    1.6180;
+  $pi:     3.1415;
+
 
   :root {
 
-    //  00 Colors  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  02 Colors  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     --body--background-color:      $body--background-color;
     --body--color:                 $body--color;
@@ -36,7 +49,8 @@
       --color--#{$key}:    #{$value};
     }
 
-    //	00 Type  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  //  03 Type  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     --font-family--mono:     #{inspect($font-family--mono)};
     --font-family--sans:     #{inspect($font-family--sans)};
@@ -49,7 +63,7 @@
     --body--line-height:           $body--line-height;
 
 
-    //	00 Structure: Control box  - - - - - - - - - - - - - - - - - - - - - - -
+  //  04 Control box - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     --control__box--border-width:    $control__box--border-width;
 
@@ -66,14 +80,14 @@
     --control__box--size:    var(--control__box--size--#{$control__box--size});
 
 
-    //	00 Control box: Button-ish - - - - - - - - - - - - - - - - - - - - - - -
+  //  05 Control box: Button-ish - - - - - - - - - - - - - - - - - - - - - - - -
 
     --btn--bg-c:    $btn--default--rest--background-color;
     --btn--bd-c:    $btn--default--rest--border-color;
     --btn--c:       $btn--default--rest--color;
 
 
-    //	00 Control box: Textfield-ish  - - - - - - - - - - - - - - - - - - - - -
+  //  06 Control box: Textfield-ish  - - - - - - - - - - - - - - - - - - - - - -
 
     --txt--bg-c:    $txt--default--rest--background-color;
     --txt--bd-c:    $txt--default--rest--border-color;
@@ -81,7 +95,7 @@
     --txt--c:       $txt--default--rest--color;
 
 
-    //	00 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - -
+  //  07 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - - -
 
     @each $key, $value in $breakpoints {
       --breakpoint--#{$key}:    #{$value};
@@ -90,14 +104,14 @@
     --mobile-threshold:    $mobile-threshold;
 
 
-    //	00 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - -
+  //  08 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - - -
 
     @each $key, $value in $z-elevations {
       --z--#{$key}:    #{$value};
     }
 
 
-    //	00 Structure: Bar  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  09 Structure: Bar  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     --status-bar--height:    rem(24px);
 

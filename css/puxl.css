@@ -3,7 +3,7 @@
  *  Created by @MrKanuel. Brought by The Puxl Clan, with love from Basque Country.
  *  Puxl is licensed under the MIT License (MIT) - Copyright © 2018 Puxl
  *  (https://github.com/puxl/puxl-framework/blob/master/LICENSE) */
-/* line 26, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/_structure.scss */
+/* line 39, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/_structure.scss */
 :root {
   --body--background-color: white;
   --body--color: #333;
@@ -6302,7 +6302,7 @@ img {
   /* line 29, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.border tbody tr th,
   .tbl.border tbody tr td {
-    border-bottom: 0.0625em solid rgba(221, 221, 221, 0.5); }
+    border-bottom: 0.0625rem solid rgba(221, 221, 221, 0.5); }
   /* line 37, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.border tbody tr:last-child th,
   .tbl.border tbody tr:last-child td {
@@ -6311,77 +6311,78 @@ img {
   .tbl.framed,
   .tbl.framed th,
   .tbl.framed td {
-    border: rgba(221, 221, 221, 0.5) solid 0.0625em; }
+    border: rgba(221, 221, 221, 0.5) solid 0.0625rem; }
   /* line 56, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  .tbl.hover tr:hover,
   .tbl.hover th:hover,
   .tbl.hover td:hover {
     background-color: rgba(221, 221, 221, 0.5); }
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.responsive--xs {
     width: 100%; }
     @media (max-width: 479px) {
-      /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+      /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
       .tbl.responsive--xs {
         display: block;
         overflow-x: auto; } }
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.responsive--sm {
     width: 100%; }
     @media (max-width: 575px) {
-      /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+      /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
       .tbl.responsive--sm {
         display: block;
         overflow-x: auto; } }
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.responsive--md {
     width: 100%; }
     @media (max-width: 767px) {
-      /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+      /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
       .tbl.responsive--md {
         display: block;
         overflow-x: auto; } }
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.responsive--lg {
     width: 100%; }
     @media (max-width: 991px) {
-      /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+      /* line 65, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
       .tbl.responsive--lg {
         display: block;
         overflow-x: auto; } }
-  /* line 77, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 78, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.stripe--even tr:nth-of-type(even) {
     background-color: rgba(221, 221, 221, 0.75); }
-  /* line 83, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 84, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.stripe--odd tr:nth-of-type(odd) {
     background-color: rgba(221, 221, 221, 0.75); }
-  /* line 90, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 91, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl.xs th,
   .tbl.xs td {
     padding: 0.25em; }
-  /* line 96, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 97, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl caption {
     padding: 0.5em; }
-    /* line 99, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+    /* line 100, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
     .tbl caption.bottom {
       caption-side: bottom; }
-  /* line 104, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 105, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl th,
   .tbl td {
     line-height: 1em;
     padding: 0.5em; }
-  /* line 110, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 111, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl thead th,
   .tbl thead td {
-    border-bottom: rgba(221, 221, 221, 0.5) solid 0.0625em;
+    border-bottom: rgba(221, 221, 221, 0.5) solid 0.0625rem;
     vertical-align: bottom; }
-  /* line 118, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 119, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl tbody th,
   .tbl tbody td {
     vertical-align: top; }
-  /* line 123, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
+  /* line 124, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/table/_styles.scss */
   .tbl tfoot th,
   .tbl tfoot td {
-    border-top: rgba(221, 221, 221, 0.5) solid 0.0625em;
+    border-top: rgba(221, 221, 221, 0.5) solid 0.0625rem;
     vertical-align: top; }
 
 /* line 23, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/tag/_styles.scss */

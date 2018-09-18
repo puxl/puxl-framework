@@ -1,0 +1,90 @@
+$breakpoints: (
+  xs:     480px, // 30rem
+  sm:     576px, // 36rem
+  md:     768px, // 48rem
+  lg:     992px, // 62rem
+  xl:    1200px  // 75rem
+);
+
+#page__home {
+
+  #main__header {
+
+    .grid {
+      background-image:       url(../img/page__home/puxl-home__main-header--bg.png);
+      background-repeat:      no-repeat;
+
+      @media (max-width: map-get($breakpoints, md) - 1) {
+        background-position:    bottom center;
+        background-size:        20em;
+        padding:                0
+                                0
+                                20em;
+      }
+
+      @media (min-width: map-get($breakpoints, md)) {
+        background-position:    center right;
+        background-size:        20em;
+        padding:                0;
+      }
+
+      @media (min-width: map-get($breakpoints, lg)) {
+        background-size:        25em;
+      }
+    }
+
+    a.btn {
+      @media (max-width: map-get($breakpoints, sm) - 1) {
+        width:    100%;
+      }
+
+      &:first-child {
+        @media (max-width: map-get($breakpoints, sm) - 1) {
+          margin-bottom:    1em;
+        }
+
+        @media (min-width: map-get($breakpoints, sm)) {
+          margin-bottom:    0;
+
+          [dir=ltr] & {
+            margin-right:    1em;
+          }
+
+          [dir=rtl] & {
+            margin-left:    1em;
+          }
+        }
+      }
+    }
+
+  }// #main__header
+
+  #features {
+
+    article {
+      @media (min-width: map-get($breakpoints, sm)) {
+        height:    20em;
+      }
+
+      @media (min-width: map-get($breakpoints, md)) {
+        height:    16em;
+      }
+    }
+
+  }// #features
+
+  #soon {
+
+    article {
+      h4 {
+        text-align:    center;
+      }
+    }
+
+  }// #soon
+
+}// #page__home
+
+#page__docs {
+
+}// #page__docs

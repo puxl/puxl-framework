@@ -25,7 +25,7 @@ function puxl_disclosure() {
     disclosureComponents = document.getElementsByClassName('disclosure'),
 
     // disclosureTogglerIconPath: the path to icons folder.
-    disclosureTogglerIconPath = 'img/puxl/icon/',
+    disclosureTogglerIconPath = 'img/puxl-icons/',
 
     // disclosureTogglerIconShown: the icon when content is shown.
     disclosureTogglerIconShown = 'arrow-n.svg',

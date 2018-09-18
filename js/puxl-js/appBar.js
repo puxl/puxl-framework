@@ -36,7 +36,7 @@ function puxl_appBar(id) {
     appBarCollapsible = appBar.querySelector('#' + appBarToggler.getAttribute('aria-controls')),
 
     // appBarTogglerIconPath: the path to icons folder.
-    appBarTogglerIconPath = 'img/puxl/icon/',
+    appBarTogglerIconPath = 'img/puxl-icons/',
 
     // appBarTogglerIconShown: the path to toggler icon when collapsible is shown.
     appBarTogglerIconShown = 'cross.svg',

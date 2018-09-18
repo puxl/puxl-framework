@@ -1,0 +1,57 @@
+/* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__home #main__header .grid {
+  background-image: url(../img/page__home/puxl-home__main-header--bg.png);
+  background-repeat: no-repeat; }
+  @media (max-width: 767px) {
+    /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    #page__home #main__header .grid {
+      background-position: bottom center;
+      background-size: 20em;
+      padding: 0 0 20em; } }
+  @media (min-width: 768px) {
+    /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    #page__home #main__header .grid {
+      background-position: center right;
+      background-size: 20em;
+      padding: 0; } }
+  @media (min-width: 992px) {
+    /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    #page__home #main__header .grid {
+      background-size: 25em; } }
+
+@media (max-width: 575px) {
+  /* line 36, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #main__header a.btn {
+    width: 100%; } }
+
+@media (max-width: 575px) {
+  /* line 41, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #main__header a.btn:first-child {
+    margin-bottom: 1em; } }
+
+@media (min-width: 576px) {
+  /* line 41, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #main__header a.btn:first-child {
+    margin-bottom: 0; }
+    /* line 49, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    [dir=ltr] #page__home #main__header a.btn:first-child {
+      margin-right: 1em; }
+    /* line 53, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    [dir=rtl] #page__home #main__header a.btn:first-child {
+      margin-left: 1em; } }
+
+@media (min-width: 576px) {
+  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #features article {
+    height: 20em; } }
+
+@media (min-width: 768px) {
+  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #features article {
+    height: 16em; } }
+
+/* line 79, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__home #soon article h4 {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

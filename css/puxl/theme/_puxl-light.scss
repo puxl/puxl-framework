@@ -435,7 +435,7 @@
   $table--border-collapse:                  collapse;
   $table--border-spacing:                   0;
   $table--border-style:                     solid;
-  $table--border-width:                     .0625em;
+  $table--border-width:                     rem(1px);
 
   $table__cell--line-height:                1em;
   $table__cell--padding:                    .5em;

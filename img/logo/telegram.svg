@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <g id="telegram">
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-279.7051" y1="-444.0977" x2="-281.4257" y2="-440.0841" gradientTransform="matrix(37.205 0 0 37.205 10571.7188 16563.7188)">
+      <stop offset="0" style="stop-color:#38AEE1"/>
+      <stop offset="1" style="stop-color:#2197C8"/>
+    </linearGradient>
+    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-273.2163" y1="-432.2476" x2="-271.8971" y2="-429.7288" gradientTransform="matrix(20.2291 0 0 16.967 5663.875 7464.9375)">
+      <stop offset="0" style="stop-color:#EFF8FD"/>
+      <stop offset="1" style="stop-color:#FFFFFF"/>
+    </linearGradient>
+    <path fill="url(#SVGID_1_)" d="M128,0c70.688,0,128,57.309,128,128c0,70.688-57.312,128-128,128C57.309,256,0,198.688,0,128C0,57.309,57.309,0,128,0z"/>
+    <path fill="#C8DAEA" d="M104.535,186.672c-4.148,0-3.445-1.57-4.875-5.516l-12.191-40.141l93.859-55.684L104.535,186.672z"/>
+    <path fill="#A9C9DC" d="M104.535,186.672c3.199,0,4.613-1.469,6.398-3.203L128,166.875l-21.289-12.844L104.535,186.672z"/>
+    <path fill="url(#SVGID_2_)" d="M106.711,154.039l51.586,38.109c5.883,3.25,10.133,1.57,11.594-5.461l21-98.953c2.156-8.617-3.281-12.527-8.914-9.969L58.68,125.309c-8.418,3.375-8.367,8.066-1.531,10.16l31.637,9.875l73.254-46.211c3.461-2.098,6.633-0.969,4.023,1.344L106.711,154.039z"/>
+  </g>
+</svg>

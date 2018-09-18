@@ -53,6 +53,7 @@
     }
 
     &.hover {
+      tr:hover,
       th:hover,
       td:hover {
         background-color:    $table__cell--hover--background-color;

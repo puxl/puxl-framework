@@ -12,14 +12,18 @@ $breakpoints: (
 
     .grid {
       background-image:       url(../img/page__home/puxl-home__main-header--bg.png);
+      background-position:    bottom center;
       background-repeat:      no-repeat;
+      background-size:        25em;
+      padding:                0
+                              0
+                              25em;
 
-      @media (max-width: map-get($breakpoints, md) - 1) {
-        background-position:    bottom center;
-        background-size:        20em;
-        padding:                0
-                                0
-                                20em;
+      @media (min-width: map-get($breakpoints, sm)) {
+        background-size:    35em;
+        padding:            0
+                            0
+                            35em;
       }
 
       @media (min-width: map-get($breakpoints, md)) {
@@ -29,7 +33,12 @@ $breakpoints: (
       }
 
       @media (min-width: map-get($breakpoints, lg)) {
-        background-size:        25em;
+        background-size:    30em;
+        padding:            0;
+      }
+
+      @media (min-width: map-get($breakpoints, xl)) {
+        background-size:    38em;
       }
     }
 
@@ -62,18 +71,21 @@ $breakpoints: (
   #features {
 
     article {
-      @media (min-width: map-get($breakpoints, sm)) {
+      @media (min-width: map-get($breakpoints, md)) {
         height:    20em;
       }
 
-      @media (min-width: map-get($breakpoints, md)) {
-        height:    16em;
+      @media (min-width: map-get($breakpoints, lg)) {
+        height:    18em;
       }
     }
 
   }// #features
 
   #soon {
+
+    padding:    4em
+                0;
 
     article {
       h4 {
@@ -83,8 +95,35 @@ $breakpoints: (
 
   }// #soon
 
+  #main__footer {
+
+    background-color:    #EEE;
+    padding:             2em
+                         0;
+
+  }// #main__footer
+
 }// #page__home
 
 #page__docs {
 
+}// #page__docs
+
+#page__icons {
+  figure {
+    display:    inline-block;
+    height: 6rem;
+    margin: .25rem;
+		padding: .5rem;
+		width: 6rem;
+  }
+	svg {
+		&:focus,
+		&:hover {
+			transform: scale(2);
+		}
+	}
+  figcaption {
+    display: none;
+  }
 }// #page__docs

@@ -2,7 +2,7 @@
 
   Puxl
 
-  Version:    0.1-beta
+  Version:    1-beta
 
   Author:     Iñigo Garcia (@MrKanuel)
 
@@ -317,6 +317,7 @@
   Jean Zozaya,
   Julen Lizaso,
   Urko Larrañaga,
+  Ceinpro,
   Laura Fernández,
   "a quien lo necesita,
   a quien me ha acompañado y animado,

@@ -2,7 +2,7 @@
 //
 //    Puxl
 //
-//    Version:     0.1-beta
+//    Version:     1-beta
 //
 //    Author:      Iñigo Garcia (@MrKanuel)
 //

@@ -1,13 +1,15 @@
 /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
 #page__home #main__header .grid {
   background-image: url(../img/page__home/puxl-home__main-header--bg.png);
-  background-repeat: no-repeat; }
-  @media (max-width: 767px) {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 25em;
+  padding: 0 0 25em; }
+  @media (min-width: 576px) {
     /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
     #page__home #main__header .grid {
-      background-position: bottom center;
-      background-size: 20em;
-      padding: 0 0 20em; } }
+      background-size: 35em;
+      padding: 0 0 35em; } }
   @media (min-width: 768px) {
     /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
     #page__home #main__header .grid {
@@ -17,41 +19,70 @@
   @media (min-width: 992px) {
     /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
     #page__home #main__header .grid {
-      background-size: 25em; } }
+      background-size: 30em;
+      padding: 0; } }
+  @media (min-width: 1200px) {
+    /* line 13, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    #page__home #main__header .grid {
+      background-size: 38em; } }
 
 @media (max-width: 575px) {
-  /* line 36, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  /* line 45, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
   #page__home #main__header a.btn {
     width: 100%; } }
 
 @media (max-width: 575px) {
-  /* line 41, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  /* line 50, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
   #page__home #main__header a.btn:first-child {
     margin-bottom: 1em; } }
 
 @media (min-width: 576px) {
-  /* line 41, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  /* line 50, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
   #page__home #main__header a.btn:first-child {
     margin-bottom: 0; }
-    /* line 49, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    /* line 58, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
     [dir=ltr] #page__home #main__header a.btn:first-child {
       margin-right: 1em; }
-    /* line 53, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+    /* line 62, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
     [dir=rtl] #page__home #main__header a.btn:first-child {
       margin-left: 1em; } }
 
-@media (min-width: 576px) {
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+@media (min-width: 768px) {
+  /* line 73, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
   #page__home #features article {
     height: 20em; } }
 
-@media (min-width: 768px) {
-  /* line 64, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+@media (min-width: 992px) {
+  /* line 73, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
   #page__home #features article {
-    height: 16em; } }
+    height: 18em; } }
 
-/* line 79, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
-#page__home #soon article h4 {
-  text-align: center; }
+/* line 85, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__home #soon {
+  padding: 4em 0; }
+  /* line 91, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+  #page__home #soon article h4 {
+    text-align: center; }
+
+/* line 98, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__home #main__footer {
+  background-color: #EEE;
+  padding: 2em 0; }
+
+/* line 113, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__icons figure {
+  display: inline-block;
+  height: 6rem;
+  margin: .25rem;
+  padding: .5rem;
+  width: 6rem; }
+
+/* line 121, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__icons svg:focus, #page__icons svg:hover {
+  transform: scale(2); }
+
+/* line 126, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/style.scss */
+#page__icons figcaption {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

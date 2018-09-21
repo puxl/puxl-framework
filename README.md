@@ -356,9 +356,9 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
 
 <p align="center">
-  A Xavier Crespo, Jean Zozaya, Julen Lizaso, Urko Larrañaga, Ceinpro, Laura Fernández.
+  <b>A Xavier Crespo, Jean Zozaya, Julen Lizaso, Urko Larrañaga, Ceinpro, Laura Fernández.</b>
 <p align="center">
-  "A quien lo necesita, a quien me ha acompañado y animado, a quien no me ha molestado ni desalentado, a quien no lo entiende, a mi familia y amistades, a Mati, y a la peña #Estróper de La Sozi!".
+  <b>"A quien lo necesita, a quien me ha acompañado y animado, a quien no me ha molestado ni desalentado, a quien no lo entiende, a mi familia y amistades, a Mati, y a la peña #Estróper de La Sozi!".</b>
   </a>
 
 --------------------------------------------------------------------------------------------------------------

@@ -19,7 +19,7 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
 <p align="left">
   <a href="https://www.mozilla.org/es-ES/firefox/developer/">
-    <img src="https://github.com/puxl/puxl-framework/blob/master/img/logo/firefox-quantum-developer.png" alt="" width=150 height=150>
+    <img src="https://github.com/puxl/puxl-framework/blob/master/img/logo/firefox-quantum-developer.png" alt="" width=100 height=100>
   </a>
   
   Thanks to [Firefox developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) for making such a powerful browser!

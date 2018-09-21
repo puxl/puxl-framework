@@ -44,10 +44,7 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
   Thank you:
 
-  The W3C,
-  Mozilla,
-  Adobe,
-  BrowserStack,
+  The W3C and Adobe,
 
   https://24ways.org/2006/compose-to-a-vertical-rhythm
   

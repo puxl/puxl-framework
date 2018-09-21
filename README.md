@@ -42,9 +42,7 @@ We would like to thank a lot of people, organizations and initiatives, big and s
   Thank you very much and a big applause to these creators for their
   contributions to open source. They helped this project happen.
 
-  Thank you:
-
-  The W3C and Adobe,
+  Thank you the W3C, Adobe and:
 
   https://24ways.org/2006/compose-to-a-vertical-rhythm
   

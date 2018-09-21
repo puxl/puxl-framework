@@ -1,6 +1,11 @@
 # Puxl framework
 
-![Puxl logo](https://github.com/puxl/puxl-framework/blob/master/img/logo/puxl.svg)
+<p align="center">
+  <a href="https://puxl.io/">
+    <img src="https://github.com/puxl/puxl-framework/blob/master/img/logo/puxl.svg" alt="" width=150 height=150>
+  </a>
+
+  <p align="center">
 
 **Puxl** (ˈpʌksl) is an accessibility-first, eco-friendly open source front-end library for the modern Web.
 It helps you create accessible, responsive Web User Interfaces with lightweight HTML.
@@ -12,11 +17,19 @@ It helps you create accessible, responsive Web User Interfaces with lightweight 
 
 We would like to thank a lot of people, organizations and initiatives, big and small around the globe for making their contributions to the open accessible Web. You are so many we had to make [a thanks.txt file](https://github.com/puxl/puxl-framework/blob/master/thanks.txt)!
 
-![Firefox Quantum Developer Edition logo](https://github.com/puxl/puxl-framework/blob/master/img/logo/firefox-quantum-developer.png)
-[Firefox developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) for making such a powerful browser.
+<p align="left">
+  <a href="https://www.mozilla.org/es-ES/firefox/developer/">
+    <img src="https://github.com/puxl/puxl-framework/blob/master/img/logo/firefox-quantum-developer.png" alt="" width=150 height=150>
+  </a>
+  
+  Thanks to [Firefox developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) for making such a powerful browser!
 
-![BrowserStack logo](https://github.com/puxl/puxl-framework/blob/master/img/logo/browserstack.svg)
-Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
+<p align="left">
+  <a href="https://browserstack.com">
+    <img src="https://camo.githubusercontent.com/60f9eba6b13f38bad02ef92c3665696845dbe501/68747470733a2f2f6c6976652e62726f77736572737461636b2e636f6d2f696d616765732f6f70656e736f757263652f62726f77736572737461636b2d6c6f676f2e737667" alt="" width=300 height=100>
+  </a>
+  
+  Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

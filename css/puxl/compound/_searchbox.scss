@@ -33,7 +33,7 @@
     color:                var(--txt--c);
     cursor:               $cursor--press;
     font-size:            var(--control__box--size);
-    height:               2em;
+    height:               $searchbox--height;
     vertical-align:       middle;
 
     &.block {
@@ -54,7 +54,7 @@
       }
     }
 
-    > input {
+    input {
       &:not([type=search]) {
         @include error-warning('This <input> tag must have a type="search" attribute. Example: <input type="search">.');
       }
@@ -82,7 +82,7 @@
       }
     }
 
-    > button {
+    button {
       &:not([type=submit]) {
         @include error-warning('This <button> tag must have a type="submit" attribute. Example: <button type="submit">.');
       }

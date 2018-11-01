@@ -26,8 +26,8 @@
   //
   //	01 Typography  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  02 Colors  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  //	03 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - - -
-  //	04 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - - -
+  //	03 Breakpoints - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //	04 Z-Elevation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //	05 Control Box - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //	06 Looks - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  07 Animation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -153,7 +153,7 @@
   $rng--default__track--background-color:       $swc--default__before--background-color;
 
 
-  //	03 Structure: Breakpoints  - - - - - - - - - - - - - - - - - - - - - - - -
+  //	03 Breakpoints - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	$breakpoints: (
     xs:     480px, // 30rem
@@ -166,7 +166,7 @@
   $mobile-threshold:    map-get($breakpoints, md); // 768px = 48rem
 
 
-  //	04 Structure: Z-Elevation  - - - - - - - - - - - - - - - - - - - - - - - -
+  //	04 Z-Elevation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 	$z-elevations: (
 		main-content:     0,
@@ -342,23 +342,27 @@
 
   //  15 Type: Links - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  $link--link--background-color:       transparent;
-  $link--link--border-bottom-color:    var(--color--primary);
-  $link--link--border-bottom-style:    solid;
-  $link--link--border-bottom-width:    .0625em;
-  $link--link--border-radius:          .125em;
-  $link--link--color:                  var(--color--primary);
-  $link--link--padding:                0
-                                       .125em;
-  $link--link--text-decoration:        none;
+  $link--link--background-color:                 transparent;
+  $link--link--border-bottom-color:              var(--color--primary);
+  $link--link--border-bottom-style:              solid;
+  $link--link--border-bottom-width:              .0625em;
+  $link--link--border-radius:                    .125em;
+  $link--link--color:                            var(--color--primary);
+  $link--link--padding:                          0
+                                                 .125em;
+  $link--link--text-decoration:                  none;
 
-  $link--visited--color:               get-color(primary, darkest);
+  $link--visited--color:                         get-color(primary, darkest);
 
-  $link--hover--background-color:      get-color(primary);
-  $link--hover--color:                 contrast-color-black-white($link--hover--background-color);
+  $link--hover--background-color:                get-color(primary);
+  $link--hover--color:                           contrast-color-black-white($link--hover--background-color);
 
-  $link--active--background-color:     get-color(primary, darker);
-  $link--active--color:                contrast-color-black-white($link--active--background-color);
+  $link--active--background-color:               get-color(primary, darker);
+  $link--active--color:                          contrast-color-black-white($link--active--background-color);
+
+  $link__external__icon--size:                   .75em;
+  $link__external__icon--background-position:    .25em;
+  $link__external__icon--padding:                2 * $link__external__icon--size;
 
 
   //  16 Type: List  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -441,7 +445,7 @@
   $table__cell--padding:                    .5em;
   $table__cell--hover--background-color:    transparentize(get-color(secondary), .5);
 
-  $table--stripe--background-color:         transparentize(get-color(secondary), .25);
+  $table--stripe--background-color:         transparentize(get-color(secondary), .75);
 
 
   //  24 Element: Tag  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -600,7 +604,6 @@
   //  Puxl/Compounds - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //
   //  32 Compound: Alert - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  //  32 Compound: Alert - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  33 Compound: Bar - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  34 Compound: Breadcrumbs - - - - - - - - - - - - - - - - - - - - - - - - -
   //  35 Compound: Card  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -610,7 +613,8 @@
   //  39 Compound: Fly-out - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  40 Compound: Form  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //  41 Compound: Input group - - - - - - - - - - - - - - - - - - - - - - - - -
-  //  42 Compound: Tabs  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  42 Compound: Searchbox - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //  43 Compound: Tabs  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
   //  32 Compound: Alert - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -810,7 +814,13 @@
   $input-group__addon__icon--size:          1.25em;
 
 
-  //  42 Compound: Tabs  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  //  42 Compound: Searchbox - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  $searchbox--height:    2em;
+
+
+  //  43 Compound: Tabs  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   $tabs__tab--border-radius:                 0;
   $tabs__tab--border-style:                  solid;

@@ -57,18 +57,27 @@
         color:                    $link--active--color;
       }
 
-      &[rel=external] {
+      &.block {
+        background:               none;
+        border:                   0;
+        color:                    inherit;
+        display:                  block;
+        padding:                  0;
+        text-decoration:          none;
+      }
+
+      &.external {
         background-repeat:        no-repeat;
-        background-size:          1em;
+        background-size:          $link__external__icon--size;
 
         [dir=ltr] & {
-          background-position:    center right .125em;
-          padding-right:          1.5em;
+          background-position:    center right $link__external__icon--background-position;
+          padding-right:          $link__external__icon--padding;
         }
 
         [dir=rtl] & {
-          background-position:    .125em center;
-          padding-left:           1.5em;
+          background-position:    $link__external__icon--background-position center;
+          padding-left:           $link__external__icon--padding;
         }
 
         &,
@@ -88,15 +97,6 @@
         &:active {
           background-image:       url(draw-svg(link-external, $link--active--color));
         }
-      }
-
-      &.block {
-        background:               none;
-        border:                   0;
-        color:                    inherit;
-        display:                  block;
-        padding:                  0;
-        text-decoration:          none;
       }
     }
   }

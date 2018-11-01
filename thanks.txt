@@ -242,6 +242,7 @@
   https://github.com/jonathantneal/svg4everybody
   https://github.com/necolas/normalize.css
   https://github.com/voxpelli/sass-color-helpers/blob/master/stylesheets/color-helpers/_contrast.scss
+  https://github.com/w3c/aria/issues/85
   https://github.com/xi/sass-planifolia/blob/master/sass/contrast.scss
   http://gmazzocato.altervista.org/colorwheel/wheel.php
   https://html5boilerplate.com/
@@ -318,6 +319,7 @@
   Julen Lizaso,
   Urko Larrañaga,
   Ceinpro,
+  Jon Larunbe (https://www.facebook.com/LarunbePhoto/),
   Laura Fernández,
   "a quien lo necesita,
   a quien me ha acompañado y animado,

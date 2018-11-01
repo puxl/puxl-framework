@@ -1,10 +1,7 @@
-$breakpoints: (
-  xs:     480px, // 30rem
-  sm:     576px, // 36rem
-  md:     768px, // 48rem
-  lg:     992px, // 62rem
-  xl:    1200px  // 75rem
-);
+@charset 'UTF-8';
+
+// Import Puxl:
+@import 'puxl/setup';
 
 #page__home {
 
@@ -96,34 +93,215 @@ $breakpoints: (
   }// #soon
 
   #main__footer {
-
     background-color:    #EEE;
     padding:             2em
                          0;
-
   }// #main__footer
 
 }// #page__home
 
+
 #page__docs {
 
-}// #page__docs
+  .wrapper {
+    @include float--grid();
 
-#page__icons {
-  figure {
-    display:    inline-block;
-    height: 6rem;
-    margin: .25rem;
-		padding: .5rem;
-		width: 6rem;
-  }
-	svg {
-		&:focus,
-		&:hover {
-			transform: scale(2);
-		}
-	}
-  figcaption {
-    display: none;
-  }
+    > aside {
+
+      @if $animation--enabled == true {
+        @extend %animation--enable;
+      }
+
+      @media (max-width: $mobile-threshold - 1) {
+
+        background-color:    $drawer--background-color;
+        bottom:              0;
+        overflow-y:          auto;
+        position:            fixed;
+        top:                 0;
+        width:               $drawer--width;
+        z-index:             map-get($z-elevations, drawer);
+
+        &[aria-hidden=false] {
+          &.left {
+            @include z-shadow(map-get($z-elevations, drawer), east);
+
+            left: 0;
+          }
+
+          &.right {
+            @include z-shadow(map-get($z-elevations, drawer), west);
+
+            right: 0;
+          }
+        }
+
+        &[aria-hidden=true] {
+          &.left {
+            @include z-shadow(0);
+
+            left: -$drawer--width;
+          }
+
+          &.right {
+            @include z-shadow(0);
+
+            right: -$drawer--width;
+          }
+        }
+
+      }// @media (max-width: $mobile-threshold - 1)
+
+      @media (min-width: $mobile-threshold) {
+
+        @include float--column(md, 4);
+        @include float--column(lg, 3);
+
+        min-height:    1px;
+        position:      relative;
+
+        [dir=ltr] & {
+          float:    left;
+        }
+
+        [dir=rtl] & {
+          float:    right;
+        }
+
+      }// @media (min-width: $mobile-threshold)
+
+      ul {background-color:aqua;
+
+        li {background-color:aquamarine;}
+
+      }
+
+    }// > aside
+
+    > main {
+
+      @if $animation--enabled == true {
+        @extend %animation--enable;
+      }
+
+      @include float--column(xs, 12);
+      @include float--column(md, 8);
+      @include float--column(lg, 9);
+
+      min-height:    1px;
+      position:      relative;
+
+      [dir=ltr] & {
+        float:    left;
+      }
+
+      [dir=rtl] & {
+        float:    right;
+      }
+
+      section {
+        > h4 {
+          padding:          2em
+                            0
+                            0;
+          border-bottom:    solid
+                            .125rem
+                            rgba(0,0,0,.1);
+        }
+      }
+
+    }// > main
+
+  }// .wrapper
+
+    .file-article {
+      border-bottom:     solid
+                         .125rem
+                         rgba(0,0,0,.1);
+      margin:            2em
+                         0;
+      padding-bottom:    1em;
+    }
+
+      .file-example {
+        border:        solid
+                       .0625rem
+                       rgba(0,0,0,.05);
+        overflow-x:    scroll;
+        padding:       1rem;
+      }
+
+      .file-code {
+
+        opacity:    .25;
+
+        &:hover {
+          opacity:    1;
+        }
+
+        pre {
+          margin:         0;
+
+          &::before,
+          &::after {
+            display:    none;
+          }
+        }
+
+        code {
+          border:           none;
+          border-radius:    0;
+        }
+
+        .tag {
+          border:           none;
+          border-radius:    0;
+          box-shadow:       none;
+        }
+
+        .code-toolbar{
+
+          .toolbar {
+            top:    0;
+          }
+
+        }
+
+        > figcaption {
+          padding:    1rem;
+        }
+      }
+
+//  #type {}
+//    #type__abbreviation {}
+//    #type__blockquote {}
+//    #type__bold {}
+//    #type__code {}
+//    #type__definition-list {}
+//    #type__definition {}
+//    #type__heading {}
+//    #type__italic {}
+//    #type__keyboard {}
+//    #type__link {}
+//    #type__list {}
+//    #type__mark {}
+//    #type__paragraph {}
+//    #type__preformatted {}
+//    #type__quotation {}
+//    #type__small {}
+//    #type__sub-sup {}
+//    #type__thematic-break {}
+//  #element {}
+//   #element__image {}
+//   #element__figure {}
+//   #element__table {}
+//   #element__button {}
+//   #element__label-button {}
+//   #element__check {}
+//   #element__textfield {}
+//   #element__textarea {}
+//   #element__select {}
+//   #element__switch {}
+//   #element__range {}
+   
 }// #page__docs

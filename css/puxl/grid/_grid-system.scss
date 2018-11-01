@@ -41,7 +41,7 @@
 
     //  Column - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    [class*=grid] > [class*=col] {
+    %col {
       min-height:    1px;
       position:      relative;
 
@@ -52,6 +52,11 @@
       [dir=rtl] & {
         float:    right;
       }
+    }
+
+
+    [class*=grid] > [class*=col] {
+      @extend %col;
     }
 
 

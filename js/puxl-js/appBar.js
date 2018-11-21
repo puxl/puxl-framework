@@ -16,71 +16,130 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
 
 
-function puxl_appBar(id) {
+function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed) {
   'use strict';
 
   var
-    // appBar: the found appBar.
+    // mobileThreshold: the breakpoint limit between mobile screens an bigger ones.
+    mobileThreshold = getComputedStyle(document.documentElement).getPropertyValue('--mobile-threshold'),
+
+    // mediaQueryWidth: the mobile-threshold media-query.
+    mediaQueryWidth = window.matchMedia("(min-width: " + mobileThreshold + ")"),
+
+    // appBar: the found app bar.
     appBar = document.getElementById(id),
 
-    // appBarToggler: the appBarCollapsible toggle button.
+    // appBarToggler: the app bar toggle button.
     appBarToggler = appBar.querySelector('.toggler'),
 
-    // appBarTogglerImg: the toggle button icon.
+    // appBarTogglerIcon: the toggle button icon.
     appBarTogglerIcon = appBarToggler.querySelector('img'),
+
+    // appBarTogglerIconPath: the path to icons folder.
+    appBarTogglerIconPath = iconPath,
+
+    // appBarTogglerIconOpened: the path to toggler icon when menu is opened.
+    appBarTogglerIconOpened = iconOpened,
+
+    // appBarTogglerIconClosed: the path to toggler icon when menu is closed.
+    appBarTogglerIconClosed = iconClosed,
 
     // appBarTogglerText: the toggle button text.
     appBarTogglerText = appBarToggler.querySelector('span'),
 
-    // appBarCollapsible: the collapsible section.
-    appBarCollapsible = appBar.querySelector('#' + appBarToggler.getAttribute('aria-controls')),
+    // appBarTogglerTextOpened: the toggler text when menu is opened.
+    appBarTogglerTextOpened = txtOpened,
 
-    // appBarTogglerIconPath: the path to icons folder.
-    appBarTogglerIconPath = 'img/puxl-icons/',
+    // appBarTogglerTextClosed: the toggler text when menu is closed.
+    appBarTogglerTextClosed = txtClosed,
 
-    // appBarTogglerIconShown: the path to toggler icon when collapsible is shown.
-    appBarTogglerIconShown = 'cross.svg',
+    // appBarNav: the navigation section.
+    appBarNav = appBar.querySelector('nav'),
 
-    // appBarTogglerIconHidden: the path to toggler icon when collapsible is hidden.
-    appBarTogglerIconHidden = 'menu-burger.svg',
+    // appBarMenu: the menu.
+    appBarMenu = appBar.querySelector('nav > .subheading'),
 
-    // appBarTogglerTextShown: the toggler text when collapsible is shown.
-    appBarTogglerTextShown = 'Close',
-
-    // appBarTogglerTextHidden: the toggler text when collapsible is hidden.
-    appBarTogglerTextHidden = 'Menu';
+    // appBarMenuOpened: the state of menu, closed by default on small screens.
+    appBarMenuOpened = false;
 
 
-  // Show collapsible.
-  function showCollapsible() {
+  // Show menu.
+  function showMenu() {
+
+    console.log('Puxl appBar(): Show menu.');
+
     // set appBarToggler attribute "aria-expanded" to "true".
     appBarToggler.setAttribute('aria-expanded', 'true');
 
-    // set appBarToggler icon attribute "src" to the path in appBarTogglerIconShown.
-    appBarTogglerIcon.setAttribute('src', appBarTogglerIconPath + appBarTogglerIconShown);
+    // set appBarToggler icon attribute "src" to the path to appBarTogglerIconOpened.
+    appBarTogglerIcon.setAttribute('src', appBarTogglerIconPath + appBarTogglerIconOpened);
 
-    // set appBarToggler text to appBarTogglerTextShown.
-    appBarTogglerText.innerHTML = appBarTogglerTextShown;
+    // set appBarToggler text to appBarTogglerTextOpened.
+    appBarTogglerText.innerHTML = appBarTogglerTextOpened;
 
-    // set appBarCollapsible attribute "aria-hidden" to "false".
-    appBarCollapsible.setAttribute('aria-hidden', 'false');
-  }
+    // set appBarMenu attribute "aria-hidden" to "false".
+    appBarMenu.setAttribute('aria-hidden', 'false');
+
+  }// End: Show menu.
 
 
-  // Hide collapsible.
-  function hideCollapsible() {
+  // Hide menu.
+  function hideMenu() {
+
+    console.log('Puxl appBar(): Hide menu.');
+
     // set appBarToggler attribute "aria-expanded" to "false".
     appBarToggler.setAttribute('aria-expanded', 'false');
 
-    // set appBarToggler icon attribute "src" to the path in appBarTogglerIconHidden.
-    appBarTogglerIcon.setAttribute('src', appBarTogglerIconPath + appBarTogglerIconHidden);
+    // set appBarToggler icon attribute "src" to the path to appBarTogglerIconClosed.
+    appBarTogglerIcon.setAttribute('src', appBarTogglerIconPath + appBarTogglerIconClosed);
 
-    // set appBarToggler text to appBarTogglerTextHidden.
-    appBarTogglerText.innerHTML = appBarTogglerTextHidden;
+    // set appBarToggler text to appBarTogglerTextClosed.
+    appBarTogglerText.innerHTML = appBarTogglerTextClosed;
 
-    // set appBarCollapsible attribute "aria-hidden" to "true".
-    appBarCollapsible.setAttribute('aria-hidden', 'true');
-  }
+    // set appBarMenu attribute "aria-hidden" to "true".
+    appBarMenu.setAttribute('aria-hidden', 'true');
+
+  }// End: Hide menu.
+
+
+  // Handle width media-query change.
+  function handleWidthChange(mediaQueryWidthListener) {
+
+    // If screen width is bigger than mobile threshold.
+    if (mediaQueryWidth.matches) {
+
+      console.log('Puxl appBar(): The screen is now bigger than mobile threshold.');
+
+      // Show menu.
+      showMenu();
+
+    // If screen width is smaller than mobile threshold.
+    } else {
+
+      console.log('Puxl appBar(): The screen is now smaller than mobile threshold.');
+
+      // If menu is opened.
+      if (appBarMenuOpened === true) {
+
+        console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+
+        // Show menu.
+        showMenu();
+
+      // If menu is closed.
+      } else {
+
+        console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+
+        // Hide menu.
+        hideMenu();
+
+      }// End if: If menu is opened.
+
+    }// End if: If screen width is bigger than mobile threshold.
+
+  }// End: Handle width media-query change.
 
 
   // If appBar does not exist, return error message on console.
@@ -93,39 +152,135 @@ function puxl_appBar(id) {
 
     console.log('Puxl appBar(): #' + id + ' was found.');
 
-    // If collapsible is shown.
-    if (appBarCollapsible.getAttribute('aria-hidden') === 'false') {
+    console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
-      // Reset attributes for appBarToggler and appBarCollapsible.
-      showCollapsible();
+    // If <html> tag contains class="js".
+    if (document.documentElement.classList.contains('js')) {
 
-    // If collapsible is hidden.
-    } else {
+      // If toggler does not have any id attribute.
+      if (appBarToggler.hasAttribute('id') === false) {
 
-      // Reset attributes for appBarToggler and appBarCollapsible.
-      hideCollapsible();
+        // Get this toggler an id.
+        appBarToggler.setAttribute('id', appBar.id + '__toggler');
 
-    }// if (appBarCollapsible.getAttribute('aria-hidden') === 'false')
+      }// End if: If toggler does not have any id attribute.
 
-    // On clicking on toggler.
-    appBarToggler.onclick = function () {
 
-      // If collapsible is shown.
-      if (appBarCollapsible.getAttribute('aria-hidden') === 'false') {
+      // If menu does not have any id attribute.
+      if (appBarMenu.hasAttribute('id') === false) {
 
-        // Hide collapsible.
-        hideCollapsible();
+        // Get this menu an ID.
+        appBarMenu.setAttribute('id', appBar.id + '__menu');
 
-      // If collapsible is hidden.
+      }// End if: If menu does not have any id attribute.
+
+
+      // Configure toggler aria-controls attribute.
+      appBarToggler.setAttribute('aria-controls', appBarMenu.id);
+
+
+      // Configure toggler aria-haspopup attribute.
+      appBarToggler.setAttribute('aria-haspopup', 'true');
+
+
+      // Configure toggler type attribute.
+      appBarToggler.setAttribute('type', 'button');
+
+
+      // Configure navigation role.
+      appBarNav.setAttribute('role', 'navigation');
+
+
+      // If screen width is bigger than mobile threshold.
+      if (mediaQueryWidth.matches) {
+
+        console.log('Puxl appBar(): Screen is now bigger than mobile threshold.');
+
+        // Show menu.
+        showMenu();
+
+      // If screen width is smaller than mobile threshold.
       } else {
 
-        // Show collapsible.
-        showCollapsible();
+        console.log('Puxl appBar(): Screen is now smaller than mobile threshold.');
 
-      }// if (appBarCollapsible.getAttribute('aria-hidden') === 'false')
+        // If menu is closed.
+        if (appBarMenuOpened === false) {
 
-    };// appBarToggler.onclick
+          // Hide menu.
+          hideMenu();
 
-  }// if (document.getElementById(id) === null)
+        }// End if: If menu is closed.
+
+      }// End if: If screen width is bigger than mobile threshold.
+
+
+      // Detect the width media-query for mobile-threshold.
+      if (matchMedia) {
+
+        // Watch screen width change and handle changes with the handleWidthChange function.
+        mediaQueryWidth.addListener(handleWidthChange);
+
+      }// End if: Detect the width media-query for mobile-threshold.
+
+
+      // On clicking on toggler.
+      appBarToggler.onclick = function () {
+
+        // If menu is closed.
+        if (appBarMenuOpened === false) {
+
+          // Change menu state to opened.
+          appBarMenuOpened = true;
+
+          console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+
+          // Show menu.
+          showMenu();
+
+        // If menu is opened.
+        } else {
+
+          // Change menu state to closed.
+          appBarMenuOpened = false;
+
+          console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+
+          // Hide menu.
+          hideMenu();
+
+        }// End if: If menu is closed.
+
+      };// End: On clicking on toggler.
+
+
+      // On press escape key.
+      document.addEventListener('keydown', function (appBarMenuKeyEsc) {
+
+        // If menu is opened.
+        if (appBarMenuOpened === true) {
+
+          // If key pressed is "Escape".
+          if (appBarMenuKeyEsc.keyCode === 27) {
+
+            // Change menu state to closed.
+            appBarMenuOpened = false;
+
+            console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+
+            // Hide menu.
+            hideMenu();
+
+            appBarToggler.focus();
+
+          }// End if: If key pressed is "Escape".
+
+        }// End if: If menu is opened.
+
+      });// End: On press escape key.
+
+    }// End if: If <html> tag contains class="js".
+
+  }// End if: If appBar does not exist, return error message on console.
 
 }// puxl_appBar(id)

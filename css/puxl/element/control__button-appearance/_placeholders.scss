@@ -151,11 +151,12 @@
 
     > img,
     > svg {
-      height:    $control__button-icon__icon--size;
-      margin:    0
-                 auto
-                 -.125em;
-      width:     $control__button-icon__icon--size;
+      display:    inline-block;
+      height:     $control__button-icon__icon--size;
+      margin:     0
+                  auto
+                  -.125em;
+      width:      $control__button-icon__icon--size;
     }
 
     > svg {

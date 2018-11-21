@@ -2,7 +2,7 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL
 //
 //    Version:     1-beta
 //
@@ -26,7 +26,7 @@
       @extend %animation--enable;
     }
 
-    &:not([class*=bar]):not([class*=btn]):not([class*=card]):not([class*=site]) {
+    &:not([class*=bar]):not([class*=btn]):not([class*=card]):not([class*=home]) {
       &,
       &:link {
         background-color:         $link--link--background-color;
@@ -55,6 +55,26 @@
         background-color:         $link--active--background-color;
         border-bottom-color:      $link--active--background-color;
         color:                    $link--active--color;
+      }
+
+      &[href="#"] {
+        position:    relative;
+
+        &::after {
+          @include z-shadow(2, south);
+ 
+          background-color:    $link__broken--background-color;
+          color:               $link__broken--color;
+          content:             $link__broken--content;
+          font-family:         $link__broken--font-family;
+          font-size:           $link__broken--font-size;
+          left:                $link__broken--left;
+          padding:             $link__broken--padding;
+          position:            $link__broken--position;
+          top:                 $link__broken--top;
+          transform:           $link__broken--transform;
+          transform-origin:    $link__broken--transform-origin;
+        }
       }
 
       &.block {

@@ -118,6 +118,25 @@ function puxl_drawer(togglerId) {
 
     });// End: On click anywhere in the document.
 
+
+    // On press escape key.
+    document.addEventListener('keydown', function (drawerKeyEsc) {
+
+      // If drawer is shown.
+      if (drawer.getAttribute('aria-hidden') === 'false') {
+
+        // If key pressed is "Escape".
+        if (drawerKeyEsc.keyCode === 27) {
+
+          // Hide drawer.
+          hideDrawer();
+
+        }// End if: If key pressed is "Escape".
+
+      }// End if: If drawer is shown.
+
+    });// End: On press escape key.
+
   }// End if: If toggler does not exist.
 
 }// puxl_drawer(togglerId)

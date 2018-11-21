@@ -114,6 +114,8 @@ We would like to thank a lot of people, organizations and initiatives, big and s
   
   https://codepen.io/tigt/post/meta-viewport-for-2015
   
+  https://codepen.io/tallys/pen/NOrpMO
+  
   https://codepen.io/tigt/post/optimizing-svgs-in-data-uris
   
   https://codepen.io/tompere/post/css-input-checkbox-custom-style
@@ -217,6 +219,8 @@ We would like to thank a lot of people, organizations and initiatives, big and s
   https://github.com/xi/sass-planifolia/blob/master/sass/contrast.scss
   
   http://gmazzocato.altervista.org/colorwheel/wheel.php
+  
+  https://gomakethings.com/getting-an-elements-css-attributes-with-vanilla-javascript/
   
   https://html5boilerplate.com/
   

@@ -2,31 +2,31 @@
 <html class="no-js" dir="ltr" lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Puxl: New HTML document</title>
+  <title>PUXL: New HTML document</title>
   <meta name="description" content="Description of the page less than 150 characters.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/puxl.min.css">
 </head>
 <body>
 
-  <a class="skip-to-main" href="#main__content">Skip to main content</a>
+  <a class="jump-link" href="#main__content">Jump to main content</a>
 
 
-  <header id="main__header">
+  <header role="banner">
 
     <!-- Header here -->
 
   </header>
 
 
-  <main id="main__content">
+  <main id="main__content" role="main">
 
-    <!-- Content here -->
+    <!-- Main content here -->
 
   </main>
 
 
-  <footer id="main__footer">
+  <footer role="contentinfo">
 
     <!-- Footer here -->
 
@@ -37,19 +37,12 @@
     (function() {
       'use strict';
 
-      var
-        // html: The document element: <html>.
-        html = document.documentElement;
-
-      // If html tag has the .no-js class.
-      if (html.classList.contains('no-js')) {
-
-        // Remove .no-js class from html's classlist.
-        html.classList.remove('no-js');
-
-        // Add .js class to html's classlist.
-        html.classList.add('js');
-
+      // If <html> tag contains class="no-js".
+      if (document.documentElement.classList.contains('no-js')) {
+        // Remove class="no-js" from <html>.
+        document.documentElement.classList.remove('no-js');
+        // Add class="js" to <html>.
+        document.documentElement.classList.add('js');
       }
     })();
   </script>

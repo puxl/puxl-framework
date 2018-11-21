@@ -191,6 +191,7 @@
   https://codepen.io/rachelandrew/pen/mPvboy
   https://codepen.io/scottnix/pen/Hidvz
   https://codepen.io/SitePoint/pen/euKgi
+  https://codepen.io/tallys/pen/NOrpMO
   https://codepen.io/tigt/post/meta-viewport-for-2015
   https://codepen.io/tigt/post/optimizing-svgs-in-data-uris
   https://codepen.io/tompere/post/css-input-checkbox-custom-style
@@ -245,6 +246,7 @@
   https://github.com/w3c/aria/issues/85
   https://github.com/xi/sass-planifolia/blob/master/sass/contrast.scss
   http://gmazzocato.altervista.org/colorwheel/wheel.php
+  https://gomakethings.com/getting-an-elements-css-attributes-with-vanilla-javascript/
   https://html5boilerplate.com/
   http://html5doctor.com/
   http://htmldog.com/guides/html/advanced/links

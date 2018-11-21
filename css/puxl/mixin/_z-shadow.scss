@@ -35,7 +35,7 @@
   //                 $raised (optional): [ number ]
   //                                     Default: [ null ]
   //                                     Extra z-elevation that adds to rest
-  //                                     rest elevation.
+  //                                     elevation.
 
     @if ($rest != null and $direction == null and $raised == null) {
       @if (type-of($rest) == number) {

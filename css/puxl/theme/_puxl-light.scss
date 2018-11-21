@@ -360,6 +360,20 @@
   $link--active--background-color:               get-color(primary, darker);
   $link--active--color:                          contrast-color-black-white($link--active--background-color);
 
+  $link__broken--background-color:               get-color(info, lightest);
+  $link__broken--color:                          contrast-color-black-white($link__broken--background-color);
+  $link__broken--content:                        'href="#"!';
+  $link__broken--font-family:                    var(--body--font-family--mono);
+  $link__broken--font-size:                      .75rem;
+  $link__broken--left:                           -.25rem;
+  $link__broken--padding:                        0
+                                                 .25rem;
+  $link__broken--position:                       absolute;
+  $link__broken--top:                            .125rem;
+  $link__broken--transform:                      rotate(-20deg);
+  $link__broken--transform-origin:               50%
+                                                 50%;
+
   $link__external__icon--size:                   .75em;
   $link__external__icon--background-position:    .25em;
   $link__external__icon--padding:                2 * $link__external__icon--size;
@@ -599,8 +613,6 @@
   $control__range__thumb--width:         $control__range__thumb--height;
 
 
-
-
   //  Puxl/Compounds - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   //
   //  32 Compound: Alert - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -645,6 +657,7 @@
   $app-bar--padding-x:                  0;
   $app-bar--padding-y:                  0;
   $app-bar--height:                     rem(56px) + (2 * $app-bar--padding-y);
+  $app-bar--max-height:                 60vh;
 
   $bar--background-color:               var(--body--background-color);
   $bar--color:                          var(--body--color);
@@ -652,13 +665,13 @@
   $bar--padding-y:                      0;
   $bar--height:                         rem(56px) + (2 * $bar--padding-y);
 
-  $bar__site-link--background-color:    transparent;
-  $bar__site-link--color:               var(--body--color);
-  $bar__site-link--font-size:           1.125em;
-  $bar__site-link--padding:             .5rem
+  $bar__home-link--background-color:    transparent;
+  $bar__home-link--color:               var(--body--color);
+  $bar__home-link--font-size:           1.125em;
+  $bar__home-link--padding:             .5rem
                                         1rem;
-  $bar__site-link__icon--size:          2rem;
-  $bar__site-link__span--margin:        .5rem;
+  $bar__home-link__icon--size:          2rem;
+  $bar__home-link__span--margin:        .5rem;
 
   $bar__item--margin:                   .5rem;
 
@@ -702,11 +715,11 @@
 
   //  36 Compound: Disclosure  - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  $disclosure__header--border-color:    get-color(secondary, lightest);
-  $disclosure__header--border-style:    solid;
-  $disclosure__header--border-width:    rem(1px);
-  $disclosure__header--padding:         rem(2px)
-                                        0;
+  $disclosure__heading--border-color:    get-color(secondary, lightest);
+  $disclosure__heading--border-style:    solid;
+  $disclosure__heading--border-width:    rem(1px);
+  $disclosure__heading--padding:         rem(2px)
+                                         0;
 
 
   //  37 Compound: Drawer  - - - - - - - - - - - - - - - - - - - - - - - - - - -

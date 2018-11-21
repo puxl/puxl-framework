@@ -8,7 +8,7 @@
 //
 //    Author:       Iñigo Garcia (@MrKanuel)
 //
-//    Route:        puxl-framework/css/puxl/utility/_skip-to-main.scss
+//    Route:        puxl-framework/css/puxl/utility/_jump-link.scss
 //
 //    Requires:     puxl-framework/css/puxl/placeholder/_sr.scss
 //                  puxl-framework/css/puxl/placeholder/_sr--undo.scss
@@ -19,13 +19,20 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-  .skip-to-main {
+  .jump-link {
     @extend %sr;
 
-    left:        .5rem;
     position:    fixed;
     top:         .5rem;
     z-index:     map-get($z-elevations, app-bar) + 1;
+
+    [dir=ltr] & {
+      left:    .5rem;
+    }
+
+    [dir=rtl] & {
+      right:    .5rem;
+    }
 
     &:active,
     &:focus {

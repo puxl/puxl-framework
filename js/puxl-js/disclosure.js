@@ -17,7 +17,7 @@
 
 
 
-function puxl_disclosure() {
+function puxl_disclosure(iconPath, iconOpened, iconClosed, txtOpened, txtClosed) {
   'use strict';
 
   var
@@ -25,170 +25,193 @@ function puxl_disclosure() {
     disclosureComponents = document.getElementsByClassName('disclosure'),
 
     // disclosureTogglerIconPath: the path to icons folder.
-    disclosureTogglerIconPath = 'img/puxl-icons/',
+    disclosureTogglerIconPath = iconPath,
 
-    // disclosureTogglerIconShown: the icon when content is shown.
-    disclosureTogglerIconShown = 'arrow-n.svg',
+    // disclosureTogglerIconOpened: the icon when content is opened.
+    disclosureTogglerIconOpened = iconOpened,
 
-    // disclosureTogglerIconHidden: the icon when content is hidden.
-    disclosureTogglerIconHidden = 'arrow-s.svg',
+    // disclosureTogglerIconClosed: the icon when content is closed.
+    disclosureTogglerIconClosed = iconClosed,
 
-    // disclosureTogglerTextShown: the toggler text when content is shown.
-    disclosureTogglerTextShown = 'Hide content',
+    // disclosureTogglerTextShown: the toggler text when content is opened.
+    disclosureTogglerTextShown = txtOpened,
 
-    // disclosureTogglerTextHidden: the toggler text when content is hidden.
-    disclosureTogglerTextHidden = 'Show content';
+    // disclosureTogglerTextHidden: the toggler text when content is closed.
+    disclosureTogglerTextHidden = txtClosed;
 
 
-  if (disclosureComponents.length >= 2) {
-    console.log('Puxl disclosure(): ' + disclosureComponents.length + ' .disclosure components were found.');
+
+
+
+  // If no disclosure is found, return error message on console.
+  if (disclosureComponents.length === 0) {
+
+    console.log('Puxl disclosure(): Sorry, no disclosure was found.');
+
+  // If any disclosure is found, return success message on console and do the magic.
   } else {
-    console.log('Puxl disclosure(): ' + disclosureComponents.length + ' .disclosure component was found.');
-  }
+
+    // If there are more than one disclosures, return success message on console.
+    if (disclosureComponents.length >= 2) {
+
+      console.log('Puxl disclosure(): ' + disclosureComponents.length + ' disclosures were found.');
+
+    // If there is one disclosures, return success message on console.
+    } else {
+
+      console.log('Puxl disclosure(): ' + disclosureComponents.length + ' disclosure was found.');
+
+    }// End if: If there are more than one disclosures, return success message on console.
 
 
-  // For each found disclosure:
-  Array.prototype.forEach.call(disclosureComponents, function (thisDisclosure, thisDisclosureCount) {
+    // If <html> tag contains class="js".
+    if (document.documentElement.classList.contains('js')) {
 
-    var
-      // thisDisclosureNumber: the number for this disclosure.
-      thisDisclosureNumber = thisDisclosureCount + 1,
+      // For each found disclosure:
+      Array.prototype.forEach.call(disclosureComponents, function (thisDisclosure, thisDisclosureCount) {
 
-      // thisDisclosureHeader: the header for this disclosure.
-      thisDisclosureHeader = thisDisclosure.getElementsByTagName('header')[0],
+        var
+          // thisDisclosureNumber: the number for this disclosure.
+          thisDisclosureNumber = thisDisclosureCount + 1,
 
-      // thisDisclosureToggler: create a button element to toggle this disclosure.
-      thisDisclosureToggler = document.createElement('button'),
+          // thisDisclosureHeading: the header for this disclosure.
+          thisDisclosureHeading = thisDisclosure.getElementsByTagName('h3')[0],
 
-      // thisDisclosureTogglerImg: create a img element for this button element.
-      thisDisclosureTogglerImg = document.createElement('img'),
+          // thisDisclosureToggler: the button in heading for this disclosure.
+          thisDisclosureToggler = thisDisclosureHeading.querySelector('button'),
 
-      // thisDisclosureTogglerSpan: create a span element for this button element.
-      thisDisclosureTogglerSpan = document.createElement('span'),
+          // thisDisclosureTogglerIcon: create a img element for this button element.
+          thisDisclosureTogglerIcon = document.createElement('img'),
 
-      // thisDisclosureTogglerText: create a text node for this span element.
-      thisDisclosureTogglerText = document.createTextNode(''),
-
-      // thisDisclosureContent: the content for this disclosure.
-      thisDisclosureContent = thisDisclosure.getElementsByTagName('div')[0];
+          // thisDisclosureContent: the content for this disclosure.
+          thisDisclosureContent = thisDisclosure.getElementsByTagName('div')[0];
 
 
-    // set header id to 'disclosure-[thisDisclosureNumber]--header'.
-    thisDisclosureHeader.setAttribute('id', 'disclosure-' + thisDisclosureNumber + '__header');
+        // Open disclosure.
+        function disclosureOpen() {
 
-    // set content id to 'disclosure-[thisDisclosureNumber]--content'.
-    thisDisclosureContent.setAttribute('id', 'disclosure-' + thisDisclosureNumber + '__content');
+          // Set this disclosure toggler button icon "src" attribute to opened icon path.
+          thisDisclosureTogglerIcon.setAttribute('src', iconPath + disclosureTogglerIconOpened);
 
-    // set content 'aria-labelledby' attribute to header id.
-    thisDisclosureContent.setAttribute('aria-labelledby', thisDisclosureHeader.getAttribute('id'));
+          // Set this disclosure content attribute "aria-hidden" to "false".
+          thisDisclosureContent.setAttribute('aria-hidden', 'false');
 
-    // set button 'class' attribute to 'btn-icn'.
-    thisDisclosureToggler.setAttribute('class', 'btn-icn');
-
-    // set button 'type' attribute to 'button'.
-    thisDisclosureToggler.setAttribute('type', 'button');
-
-    // set button 'aria-controls' attribute to content id.
-    thisDisclosureToggler.setAttribute('aria-controls', thisDisclosureContent.getAttribute('id'));
-
-    // set img 'alt' attribute to '' (empty).
-    thisDisclosureTogglerImg.setAttribute('alt', '');
-
-    // set img 'src' attribute to '' (empty).
-    thisDisclosureTogglerImg.setAttribute('src', '');
-
-    // set img 'aria-hidden' attribute to 'true'.
-    thisDisclosureTogglerImg.setAttribute('aria-hidden', 'true');
-
-    // add 'thisDisclosureTogglerText' to span.
-    thisDisclosureTogglerSpan.appendChild(thisDisclosureTogglerText);
-
-    // add 'thisDisclosureTogglerImg' to button.
-    thisDisclosureToggler.appendChild(thisDisclosureTogglerImg);
-
-    // add 'thisDisclosureTogglerSpan' to button.
-    thisDisclosureToggler.appendChild(thisDisclosureTogglerSpan);
-
-    // add button to header.
-    thisDisclosureHeader.appendChild(thisDisclosureToggler);
+        }// End: Open disclosure.
 
 
-    function disclosureShow() {
-      // set thisDisclosureToggler attribute "aria-expanded" to "true".
-      thisDisclosureToggler.setAttribute('aria-expanded', 'true');
+        // Close disclosure.
+        function disclosureClose() {
 
-      // set thisDisclosureTogglerImg attribute "src" to the path in disclosureTogglerIconShown.
-      thisDisclosureTogglerImg.setAttribute('src', disclosureTogglerIconPath + disclosureTogglerIconShown);
+          // Set this disclosure toggler button icon "src" attribute to closed icon path.
+          thisDisclosureTogglerIcon.setAttribute('src', iconPath + disclosureTogglerIconClosed);
 
-      // set thisDisclosureTogglerText value to disclosureTogglerTextShown.
-      thisDisclosureTogglerText.nodeValue = disclosureTogglerTextShown;
+          // Set this disclosure content attribute "aria-hidden" to "true".
+          thisDisclosureContent.setAttribute('aria-hidden', 'true');
 
-      // set thisDisclosureContent attribute "aria-hidden" to "false".
-      thisDisclosureContent.setAttribute('aria-hidden', 'false');
-    }
-
-    function disclosureHide() {
-      // set thisDisclosureToggler attribute "aria-expanded" to "false".
-      thisDisclosureToggler.setAttribute('aria-expanded', 'false');
-
-      // set thisDisclosureTogglerImg attribute "src" to the path in disclosureTogglerIconHidden.
-      thisDisclosureTogglerImg.setAttribute('src', disclosureTogglerIconPath + disclosureTogglerIconHidden);
-
-      // set thisDisclosureTogglerText value to disclosureTogglerTextHidden.
-      thisDisclosureTogglerText.nodeValue = disclosureTogglerTextHidden;
-
-      // set thisDisclosureContent attribute "aria-hidden" to "true".
-      thisDisclosureContent.setAttribute('aria-hidden', 'true');
-    }
+        }// End: Close disclosure.
 
 
-    // If thisDisclosureContent is hidden.
-    if (thisDisclosureContent.getAttribute('aria-hidden') === 'true') {
-      // set thisDisclosureTogglerImg attribute "src" to the path in disclosureTogglerIconHidden.
-      thisDisclosureTogglerImg.setAttribute('src', disclosureTogglerIconPath + disclosureTogglerIconHidden);
 
-      // set thisDisclosureTogglerText value to disclosureTogglerTextHidden.
-      thisDisclosureTogglerText.nodeValue = disclosureTogglerTextHidden;
-      
-    // Else, if thisDisclosureContent is shown.
-    } else if (thisDisclosureContent.getAttribute('aria-hidden') === 'false') {
-      // set thisDisclosureTogglerImg attribute "src" to the path in disclosureTogglerIconShown.
-      thisDisclosureTogglerImg.setAttribute('src', disclosureTogglerIconPath + disclosureTogglerIconShown);
+        // If this disclosure does not have any id attribute.
+        if (thisDisclosure.hasAttribute('id') === false) {
 
-      // set thisDisclosureTogglerText value to disclosureTogglerTextShown.
-      thisDisclosureTogglerText.nodeValue = disclosureTogglerTextShown;
-    }
+          // Set id to 'disclosure-[thisDisclosureNumber]'.
+          thisDisclosure.setAttribute('id', 'disclosure-' + thisDisclosureNumber);
+
+        }// End if: If this disclosure does not have any id attribute.
 
 
-    // Click on thisDisclosureToggler.
-    thisDisclosureToggler.addEventListener('click', function (thisDisclosureTogglerClickEvent) {
+        // If this disclosure heading does not have any id attribute.
+        if (thisDisclosureHeading.hasAttribute('id') === false) {
 
-      // If thisDisclosureContent is hidden.
-      if (thisDisclosureContent.getAttribute('aria-hidden') === 'true') {
+          // Set id to 'disclosure-[thisDisclosureNumber]--heading'.
+          thisDisclosureHeading.setAttribute('id', 'disclosure-' + thisDisclosureNumber + '--heading');
 
-        // Show thisDisclosureContent.
-        disclosureShow();
-
-      // Else, if thisDisclosureContent is shown.
-      } else if (thisDisclosureContent.getAttribute('aria-hidden') === 'false') {
-
-        // Hide thisDisclosureContent.
-        disclosureHide();
-      }
-    });
+        }// End if: If this disclosure does not have any id attribute.
 
 
-    // Release key on thisDisclosureToggler.
-    thisDisclosureToggler.addEventListener('keyup', function (thisDisclosureTogglerKeyupEvent) {
+        // Set this disclosure toggler button "type" attribute to "button".
+        thisDisclosureToggler.setAttribute('type', 'button');
 
-      // If pressed key is "esc".
-      if (thisDisclosureTogglerKeyupEvent.keyCode === 27) {
 
-        // Blur thisDisclosureToggler.
-        thisDisclosureToggler.blur();
-      }
-    });
+        // Add icon to button.
+        thisDisclosureToggler.appendChild(thisDisclosureTogglerIcon);
 
-  });// Array.prototype.forEach.call(disclosureComponents, function (thisDisclosure)
+
+        // Set this disclosure toggler button icon "alt" attribute to "" (empty).
+        thisDisclosureTogglerIcon.setAttribute('alt', '');
+
+
+        // Set this disclosure toggler button icon "src" attribute to opened icon path.
+        thisDisclosureTogglerIcon.setAttribute('src', iconPath + disclosureTogglerIconOpened);
+
+
+        // Set this disclosure toggler button icon 'aria-hidden' attribute to 'true'.
+        thisDisclosureTogglerIcon.setAttribute('aria-hidden', 'true');
+
+
+        // If this disclosure content does not have any id attribute.
+        if (thisDisclosureContent.hasAttribute('id') === false) {
+
+          // Set id to 'disclosure-[thisDisclosureNumber]--content'.
+          thisDisclosureContent.setAttribute('id', 'disclosure-' + thisDisclosureNumber + '--content');
+
+        }// End if: If this disclosure does not have any id attribute.
+
+
+        // Set this disclosure toggler button "aria-controls" attribute to content id.
+        thisDisclosureToggler.setAttribute('aria-controls', thisDisclosureContent.getAttribute('id'));
+
+
+        // Set content 'aria-labelledby' attribute to heading id.
+        thisDisclosureContent.setAttribute('aria-labelledby', thisDisclosureHeading.getAttribute('id'));
+
+
+        // If this disclosure content has aria-hidden="false".
+        if (thisDisclosureContent.getAttribute('aria-hidden') === 'false') {
+
+          // Set this disclosure toggler button 'aria-expanded' attribute to 'true'.
+          thisDisclosureToggler.setAttribute('aria-expanded', 'true');
+
+        // Else, if this disclosure content has aria-hidden="true", or no aria-hidden="".
+        } else {
+
+          // Set this disclosure toggler button 'aria-expanded' attribute to 'false'.
+          thisDisclosureToggler.setAttribute('aria-expanded', 'false');
+
+
+          // Set this disclosure toggler button icon "src" attribute to closed icon path.
+          thisDisclosureTogglerIcon.setAttribute('src', iconPath + disclosureTogglerIconClosed);
+
+
+          // Set this disclosure content 'aria-hidden' attribute to 'false'.
+          thisDisclosureContent.setAttribute('aria-hidden', 'true');
+
+        }// End if: If this disclosure content has aria-hidden="true".
+
+
+        // Click on this disclosure toggler button.
+        thisDisclosureToggler.addEventListener('click', function (thisDisclosureTogglerClickEvent) {
+
+          // If thisDisclosureContent is closed.
+          if (thisDisclosureContent.getAttribute('aria-hidden') === 'true') {
+
+            // Open disclosure.
+            disclosureOpen();
+
+          // Else, if thisDisclosureContent is opened.
+          } else if (thisDisclosureContent.getAttribute('aria-hidden') === 'false') {
+
+            // Close disclosure.
+            disclosureClose();
+
+          }
+        });// End: Click on this disclosure toggler button.
+
+      });// End: For each found disclosure.
+
+    }// End if: If <html> tag contains class="js".
+
+  }// End if: If no disclosure exists, return error message on console.
 
 }// puxl_disclosure()

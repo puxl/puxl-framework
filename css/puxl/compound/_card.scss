@@ -66,13 +66,13 @@
       font-size:    $card__header--font-size;
       padding:      $card__header--padding;
 
-      > h4 {
+      > .heading {
         font-size:        $card__header--font-size;
         font-weight:      normal;
         margin-bottom:    ($card__header--padding / 2);
       }
 
-      > h4 + p {
+      > .heading + p {
         font-size:      $card__header__subheader--font-size;
         line-height:    1.5em;
         max-width:      100%;
@@ -150,10 +150,8 @@
                           $card__list__item--border-color;
         padding:          $card__list__item--padding;
 
-        &:first-child {
-          border-top:    solid
-                         $card__list__item--border-width
-                         $card__list__item--border-color;
+        &:last-child {
+          border-bottom:    0;
         }
 
         .heading {
@@ -174,18 +172,9 @@
       border-top:    none;
     }
 
-    > .content .list > li {
+    > .content > .list > li {
       padding:    $card__list__item--padding
                   0;
-    }
-
-    .swc {
-      display:    flex;
-
-      > span:first-of-type {
-        flex-grow:      1;
-        line-height:    var(--body--line-height);
-      }
     }
   }// .card
 
@@ -195,4 +184,3 @@
     display:            block;
     text-decoration:    none;
   }// a.card
-

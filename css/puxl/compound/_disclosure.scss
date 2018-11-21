@@ -21,31 +21,77 @@
 
   .disclosure {
 
-    > header {
+    > h3 {
       &:not([id]) {
-        @include error-warning('This header must have a not empty id="" attribute. Example: <header id="[ some ID ]">.');
+        @include error-warning('This <h3> must have a not empty id="" attribute. Example: <h3 id="[ some ID ]">.');
       }
 
-      align-items:         center;
-      border-bottom:       $disclosure__header--border-color
-                           $disclosure__header--border-style
-                           $disclosure__header--border-width;
-      display:             flex;
-      justify-content:     space-between;
-      padding:             $disclosure__header--padding;
-    }// > header
+      border-bottom:       $disclosure__heading--border-color
+                           $disclosure__heading--border-style
+                           $disclosure__heading--border-width;
+      display:             block;
+      font-size:           1em;
+      font-weight:         normal;
+      line-height:         1em;
+      margin:              0;
+      padding:             0;
+
+      > button {
+        &:not([aria-controls]) {
+          @include error-warning('This <button> must have an aria-controls="" attribute. The value of the aria-controls="" attribute must be the ID of this disclosure content. Example: <div aria-labelledby="[ this disclosure content ID ]">.');
+        }
+
+        &:not([aria-expanded=true]):not([aria-expanded=false]) {
+          @include error-warning('This <button> must have a true OR false aria-expanded="" attribute. Example: <button aria-expanded="[ true OR false ]">.');
+        }
+
+        &:not([type=button]) {
+          @include error-warning('This <button> must have a role="button" attribute. Example: <button role="button">.');
+        }
+
+        background-color:    transparent;
+        border:              0;
+        border-radius:       0;
+        color:               inherit;
+        cursor:              $cursor--press;
+        font-size:           inherit;
+        padding:             $disclosure__heading--padding;
+        width:               100%;
+
+        [dir=ltr] & {
+          text-align:    left;
+        }
+
+        [dir=rtl] & {
+          text-align:    right;
+        }
+
+        > img {
+          height:    1em;
+          width:     1em;
+
+          [dir=ltr] & {
+            float:    right;
+          }
+
+          [dir=rtl] & {
+            float:    left;
+          }
+        }
+      }// > button
+    }// > h3
 
     > div {
       &:not([id]) {
-        @include error-warning('This tag must have a not empty id="" attribute. Example: <tag id="[ some ID ]">.');
+        @include error-warning('This <div> must have a not empty id="" attribute. Example: <div id="[ some ID ]">.');
       }
 
       &:not([aria-labelledby]) {
-        @include error-warning('This tag must have an aria-labelledby="" attribute. The value of the aria-labelledby="" attribute must be the ID of this disclosure header. Example: <tag aria-labelledby="[ this disclosure header ID ]">.');
+        @include error-warning('This <div> must have an aria-labelledby="" attribute. The value of the aria-labelledby="" attribute must be the ID of this disclosure heading. Example: <div aria-labelledby="[ this disclosure heading ID ]">.');
       }
 
       &:not([aria-hidden=true]):not([aria-hidden=false]) {
-        @include error-warning('This tag must have a true OR false aria-hidden="" attribute. Example: <tag aria-hidden="[ true OR false ]">.');
+        @include error-warning('This <div> must have a true OR false aria-hidden="" attribute. Example: <div aria-hidden="[ true OR false ]">.');
       }
 
       &[aria-hidden=true] {

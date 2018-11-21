@@ -35,6 +35,7 @@ function puxl_tabs() {
     allTabpanels = [];
 
 
+  // Select tab.
   function selectTab(tab) {
     tab.focus();
     tab.setAttribute('aria-selected', 'true');
@@ -42,6 +43,7 @@ function puxl_tabs() {
   }// End: Function selectTab(tab).
 
 
+  // Deselect tab.
   function deselectTab(tab) {
     tab.blur();
     tab.setAttribute('aria-selected', 'false');
@@ -49,12 +51,14 @@ function puxl_tabs() {
   }// End: Function deselectTab(tab).
 
 
+  // Select tabpanel.
   function selectTabpanel(tabpanel) {
     tabpanel.removeAttribute('hidden');
     tabpanel.setAttribute('tabindex', '0');
   }// End: Function selectTabpanel(tabpanel).
 
 
+  // Deselect tabpanel.
   function deselectTabpanel(tabpanel) {
     tabpanel.blur();
     tabpanel.setAttribute('hidden', '');

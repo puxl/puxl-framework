@@ -50,6 +50,10 @@
       &:not([id]) {
         @include error-warning('This <select> tag must have a non-empty id="" attribute. Remember, the parent <label class="sel-mul"> for="" attribute must be this <input> ID. Example: <select id="[ some ID ]">.');
       }
+
+      &:not([multiple]) {
+        @include error-warning('This <select> tag must have a multiple attribute. Example: <select multiple>.');
+      }
     }// > select
 
     > small {

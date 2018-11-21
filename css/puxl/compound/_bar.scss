@@ -23,7 +23,7 @@
   // Body  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
   body {
-    &.app-bar--top {
+    .js &.app-bar--top {
       padding-top:    var(--app-bar--height);
 
       &--double {
@@ -31,7 +31,7 @@
       }
     }
 
-    &.app-bar--bottom {
+    .js &.app-bar--bottom {
       padding-bottom:    var(--app-bar--height);
 
       &--double {
@@ -42,10 +42,6 @@
 
 
   // Bar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-  div.bar:not([role=navigation]) {
-    @include error-warning('Missing role="navigation" attribute in this <div class="bar"> tag. Example: <div class="bar" role="navigation">.');
-  }// div.bar:not([role=navigation])
 
   .bar {
     align-items:         center;
@@ -60,257 +56,44 @@
       min-height:    calc(2 * var(--app-bar--height));
     }
 
-    &.app {
-      &:not([id]) {
-        @include error-warning('This <div class="app bar"> tag must have a non-empty id="" attribute. Example: <div class="app bar" id="[ some ID ]">.');
+    ul {
+      display:           inline-flex;
+      flex-direction:    row;
+      list-style:        none;
+      margin:            0;
+      padding:           0;
+
+      li {
+        padding:       $bar__item--margin;
+        text-align:    center;
+      }
+    }// ul
+
+    @each $key, $value in $breakpoints {
+      .#{$key}--down {
+        @media (min-width: $value) {
+          display:    none;
+        }
       }
 
-      background-color:    $app-bar--background-color;
-      color:               $app-bar--color;
-      font-size:           $app-bar--font-size;
-      left:                0;
-      max-height:          60vh;
-      padding:             $app-bar--padding-x
-                           $app-bar--padding-y;
-      position:            fixed;
-      width:               100%;
-      z-index:             map-get($z-elevations, app-bar);
-
-      @media (max-width: $mobile-threshold - 1) {
-        flex-direction:    column;
+      .#{$key}--up {
+        @media (max-width: $value - 1) {
+          display:    none;
+        }
       }
+    }// @each $key, $value in $breakpoints
 
+    .mobile--down {
       @media (min-width: $mobile-threshold) {
-        flex-direction:    row;
+        display:    none;
       }
+    }// .mobile--down
 
-      &.top {
-        @include z-shadow(map-get($z-elevations, app-bar), south);
-
-        top:    var(--app-bar--top);
-      }// .app.bar.top
-
-      &.bottom {
-        @include z-shadow(map-get($z-elevations, app-bar), north);
-
-        bottom:    var(--app-bar--bottom);
-      }// .app.bar.bottom
-
-      > header,
-      > .header {
-        align-items:    center;
-        align-self:     stretch;
-        display:        inline-flex;
-        min-height:     var(--app-bar--height);
-
-        @media (max-width: $mobile-threshold - 1) {
-           flex-grow:    1;
-        }
-      }// > header, > .header
-
-        .site-link {
-          align-items:         center;
-          background-color:    $bar__site-link--background-color;
-          color:               $bar__site-link--color;
-          display:             inline-flex;
-          font-size:           $bar__site-link--font-size;
-          height:              var(--app-bar--height);
-          padding:             $bar__site-link--padding;
-          text-decoration:     none;
-
-          a {
-            color:              $bar__site-link--color;
-            text-decoration:    none;
-          }
-
-          img,
-          svg {
-            height:    $bar__site-link__icon--size;
-            width:     $bar__site-link__icon--size;
-          }
-
-          svg {
-            color:    currentColor;
-          }
-
-          span {
-            [dir=ltr] & {
-              margin-left:    $bar__site-link__span--margin;
-            }
-
-            [dir=rtl] & {
-              margin-right:    $bar__site-link__span--margin;
-            }
-          }
-        }// .site-link
-
-        [class*=bar-btn] {
-          border-radius:    $bar-btn--border-radius;
-          font-size:        inherit;
-          height:           var(--app-bar--height);
-          min-width:        var(--app-bar--height);
-          padding:          $bar-btn--padding;
-        }// [class*=bar-btn]
-
-        .bar-btn-icn {
-          > img,
-          > svg {
-            height:    $bar-btn-icn__icon--size;
-            width:     $bar-btn-icn__icon--size;
-          }
-        }// .bar-btn-icn
-
-        a.bar-btn-icn {
-          > img,
-          > svg {
-            margin-top:    em(7px);
-          }
-        }// .bar-btn-icn
-
-        .bar-btn-icn-txt {
-          &.v {
-            > span {
-              font-size:    $bar-btn-icn-txt--v__text--size;
-              margin:       0;
-            }
-
-            > img,
-            > svg {
-              height:    $bar-btn-icn-txt--v__icon--size;
-              margin:    0
-                         auto;
-              width:     $bar-btn-icn-txt--v__icon--size;
-            }
-          }
-
-          > img,
-          > svg {
-            display:    inline-block;
-            height:     $bar-btn-icn-txt__icon--size;
-            margin:     0
-                        0
-                        -.125em;
-            width:      $bar-btn-icn-txt__icon--size;
-          }
-        }// .bar-btn-icn-txt
-
-        a.bar-btn-icn-txt {
-          line-height:    2.625em;
-
-          &.v {
-            line-height:    1em;
-          }
-        }// a.bar-btn-icn-txt
-
-        @each $key, $value in $breakpoints {
-          .#{$key}--down {
-            @media (min-width: $value) {
-              display:    none;
-            }
-          }
-
-          .#{$key}--up {
-            @media (max-width: $value - 1) {
-              display:    none;
-            }
-          }
-        }
-
-        .mobile--down {
-          @media (min-width: $mobile-threshold) {
-            display:    none;
-          }
-        }
-
-        .mobile--up {
-          @media (max-width: $mobile-threshold - 1) {
-            display:    none;
-          }
-        }
-
-        .toggler {
-          &:not([aria-controls]) {
-            @include error-warning('This <button class="toggler"> tag must have a not empty aria-controls="" attribute with the id="" attribute of the element it toggles. Example: <button class="toggler" aria-controls="[ The toggled element ID ]">.');
-          }
-
-          &:not([aria-haspopup=true]) {
-            @include error-warning('This <button class="toggler"> tag must have a aria-haspopup="true" attribute. Example: <button class="toggler" aria-haspopup="true">.');
-          }
-
-          &:not([aria-expanded=true]):not([aria-expanded=false]) {
-            @include error-warning('This <button class="toggler"> tag must have a true OR false aria-expanded="" attribute. Example: <button class="toggler" aria-expanded="[ true OR false ]">.');
-          }
-        }// .toggler
-
-      > .collapsible {
-        display:    inline-flex;
-
-        @media (max-width: $mobile-threshold - 1) {
-          align-self:        stretch;
-          flex-direction:    column;
-          overflow:          scroll;
-        }
-
-        @media (min-width: $mobile-threshold) {
-          align-items:       center;
-          flex-direction:    row;
-          flex-grow:         1;
-        }
-
-        &[aria-hidden=true] {
-          @media (max-width: $mobile-threshold - 1) {
-            display:    none;
-          }
-        }
-
-        .space {
-          &--before {
-            [dir=ltr] & {
-              @media (max-width: $mobile-threshold - 1) {
-                margin-left:    0;
-              }
-            }
-
-            [dir=rtl] & {
-              @media (max-width: $mobile-threshold - 1) {
-                margin-right:    0;
-              }
-            }
-          }
-
-          &--after {
-            [dir=ltr] & {
-              @media (max-width: $mobile-threshold - 1) {
-                margin-right:    0;
-              }
-            }
-
-            [dir=rtl] & {
-              @media (max-width: $mobile-threshold - 1) {
-                margin-left:    0;
-              }
-            }
-          }
-        }// .space
-
-        ul {
-          @media (max-width: $mobile-threshold - 1) {
-            flex-direction:    column;
-          }
-
-          @media (min-width: $mobile-threshold) {
-            flex-direction:    row;
-          }
-
-          li {
-            @media (max-width: $mobile-threshold - 1) {
-              margin:      0;
-              padding:     $bar__item--margin;
-            }
-          }
-        }
-      }// > .collapsible
-    }// .app.bar
+    .mobile--up {
+      @media (max-width: $mobile-threshold - 1) {
+        display:    none;
+      }
+    }// .mobile--up
 
     .space {
       &--before {
@@ -334,30 +117,235 @@
       }
     }// .space
 
-    ul {
-      display:          flex;
-      list-style:       none;
-      margin-bottom:    0;
-      width:            100%;
+    [class*=bar-btn] {
+      border-radius:    $bar-btn--border-radius;
+      font-size:        inherit;
+      height:           var(--app-bar--height);
+      min-width:        var(--app-bar--height);
+      padding:          $bar-btn--padding;
+    }// [class*=bar-btn]
 
-      [dir=ltr] & {
-        padding-left:    0;
+    .bar-btn-icn {
+      > img,
+      > svg {
+        height:    $bar-btn-icn__icon--size;
+        width:     $bar-btn-icn__icon--size;
+      }
+    }// .bar-btn-icn
+
+    a.bar-btn-icn {
+      line-height:    2.875em;
+    }// a.bar-btn-icn
+
+    .bar-btn-icn-txt {
+      &.v {
+        > img,
+        > svg {
+          height:    $bar-btn-icn-txt--v__icon--size;
+          width:     $bar-btn-icn-txt--v__icon--size;
+        }
+
+        > span {
+          font-size:    $bar-btn-icn-txt--v__text--size;
+        }
       }
 
-      [dir=rtl] & {
-        padding-right:    0;
+      > img,
+      > svg {
+        height:    $bar-btn-icn-txt__icon--size;
+        width:     $bar-btn-icn-txt__icon--size;
       }
+    }// .bar-btn-icn-txt
 
-      li {
-        align-items:        center;
-        justify-content:    center;
-        display:            inline-flex;
-        margin:             0
-                            $bar__item--margin;
-      }// li
-    }// ul
+    a.bar-btn-icn-txt {
+      line-height:    2.5em;
 
-    .flag {
-      align-items:    center;
-    }// .flag
+      &.v {
+        line-height:    1em;
+      }
+    }// a.bar-btn-icn-txt
+
   }// .bar
+
+
+  // App bar - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  .app.bar {
+    &:not([id]) {
+      @include error-warning('This <header class="app bar"> tag must have a non-empty id="" attribute. Example: <header class="app bar" id="[ some ID ]">.');
+    }
+
+    background-color:    $app-bar--background-color;
+    color:               $app-bar--color;
+    font-size:           $app-bar--font-size;
+    max-height:          $app-bar--max-height;
+    padding:             $app-bar--padding-x
+                         $app-bar--padding-y;
+    width:               100%;
+    z-index:             map-get($z-elevations, app-bar);
+
+    .js & {
+      left:        0;
+      position:    fixed;
+    }
+
+    @media (max-width: $mobile-threshold - 1) {
+      align-items:       stretch;
+      flex-direction:    column;
+    }
+
+    @media (min-width: $mobile-threshold) {
+      flex-direction:    row;
+    }
+
+    &.top {
+      @include z-shadow(map-get($z-elevations, app-bar), south);
+
+      .js & {
+        top:    var(--app-bar--top);
+      }
+    }// header.app.bar.top
+
+    &.bottom {
+      @include z-shadow(map-get($z-elevations, app-bar), north);
+
+      .js & {
+        bottom:    var(--app-bar--bottom);
+      }
+    }// header.app.bar.bottom
+
+    > header {
+      align-items:    center;
+      display:        flex;
+      min-height:     var(--app-bar--height);
+    }// > header
+
+      .home {
+        align-items:         center;
+        background-color:    $bar__home-link--background-color;
+        color:               $bar__home-link--color;
+        display:             inline-flex;
+        font-size:           $bar__home-link--font-size;
+        height:              var(--app-bar--height);
+        padding:             $bar__home-link--padding;
+        text-decoration:     none;
+
+        img,
+        svg {
+          height:    $bar__home-link__icon--size;
+          width:     $bar__home-link__icon--size;
+        }
+
+        svg {
+          color:    currentColor;
+        }
+
+        span {
+          [dir=ltr] & {
+            margin-left:    $bar__home-link__span--margin;
+          }
+
+          [dir=rtl] & {
+            margin-right:    $bar__home-link__span--margin;
+          }
+        }
+      }// .home
+
+      button.toggler {
+        &:not([id]) {
+          @include error-warning('This <button class="toggler"> tag must have a non-empty id="" attribute. Example: <button class="toggler" id="[ some ID ]">.');
+        }
+
+        &:not([aria-controls]) {
+          @include error-warning('This <button class="toggler"> tag must have a not empty aria-controls="" attribute with the ID attribute of the element it toggles. Example: <button class="toggler" aria-controls="[ The toggled element ID ]">.');
+        }
+
+        &:not([aria-haspopup=true]) {
+          @include error-warning('This <button class="toggler"> tag must have a aria-haspopup="true" attribute. Example: <button class="toggler" aria-haspopup="true">.');
+        }
+
+        &:not([aria-expanded=true]):not([aria-expanded=false]) {
+          @include error-warning('This <button class="toggler"> tag must have a true OR false aria-expanded="" attribute. Example: <button class="toggler" aria-expanded="[ true OR false ]">.');
+        }
+
+        &[type=reset],
+        &[type=submit],
+        &:not([type=button]) {
+          @include error-warning('This <button class="toggler"> tag must have a type="button" attribute. Example: <button class="toggler" type="button">.');
+        }
+      }// button.toggler
+
+    > nav {
+      &:not([role=navigation]) {
+        @include error-warning('This <nav> tag must have a role="navigation" attribute. Example: <nav role="navigation">.');
+      }
+
+      max-height:    calc(#{$app-bar--max-height} - var(--app-bar--height));
+      overflow:      auto;
+
+      @media (min-width: $mobile-threshold) {
+        flex-grow:    1;
+      }
+
+      .space {
+        &--before,
+        &--after {
+          @media (max-width: $mobile-threshold - 1) {
+            margin-left:     0;
+            margin-right:    0;
+          }
+        }
+      }
+    }// > nav
+
+      .subheading {
+        &:not([id]) {
+          @include error-warning('This <div class="subheading"> tag must have a non-empty id="" attribute. Example: <div class="subheading" id="[ some ID ]">.');
+        }
+
+        &:not([aria-hidden=true]):not([aria-hidden=false]) {
+          @include error-warning('This <div class="subheading"> tag must have a true OR false aria-hidden="" attribute. Example: <div class="subheading" aria-hidden="[ true OR false ]">.');
+        }
+
+        &[aria-hidden=false] {
+          display:    flex;
+        }
+
+        &[aria-hidden=true] {
+          display:    none;
+        }
+
+        display:       flex;
+        min-height:    var(--app-bar--height);
+
+        @media (max-width: $mobile-threshold - 1) {
+          align-items:       stretch;
+          flex-direction:    column;
+        }
+
+        @media (min-width: $mobile-threshold) {
+          align-items:       center;
+          flex-direction:    row;
+        }
+
+        ul {
+          @media (max-width: $mobile-threshold - 1) {
+            flex-direction:    column;
+          }
+
+          @media (min-width: $mobile-threshold) {
+            flex-direction:    row;
+          }
+        }// ul
+
+        .space {
+          &--before {
+            //
+          }
+
+          &--after {
+            //
+          }
+        }// .space
+      }// .subheading
+  }// .app.bar

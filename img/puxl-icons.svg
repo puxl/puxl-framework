@@ -1497,15 +1497,15 @@
     <path fill='#00622E' d='M0,18v14h32V18h-9v-4h7l-6-6h3l-4-4h2l-4-4l-4,4h2l-4,4h3l-6,6h7v4H8 c0,2.816,22,1.245,22,8c0,2.75-2,4-2,4H12c0,0,8-2,8-4c0-4.167-16-4.083-16-8H0z'/>
   </g>
 
-  <g id='drop-arrow--up' aria-labelledby='t-drop-arrow--up d-drop-arrow--up'>
-    <title id='t-drop-arrow--up'>Drop-up arrow</title>
-    <desc id='d-drop-arrow--up'>Arrow pointing up</desc>
+  <g id='drop-arrow--n' aria-labelledby='t-drop-arrow--n d-drop-arrow--n'>
+    <title id='t-drop-arrow--n'>Drop arrow north</title>
+    <desc id='d-drop-arrow--n'>Arrow pointing north</desc>
     <path d='M7.996 22h16.002c.809 0 1.539-.49 1.851-1.234.308-.75.138-1.609-.436-2.18l-7.999-8c-.391-.391-.905-.586-1.415-.586s-1.02.195-1.41.586l-8.004 8.001c-.569.569-.743 1.429-.432 2.179C6.464 21.511 7.19 22 7.996 22z'/>
   </g>
 
-  <g id='drop-arrow--down' aria-labelledby='t-drop-arrow--down d-drop-arrow--down'>
-    <title id='t-drop-arrow--down'>Drop-down arrow</title>
-    <desc id='d-drop-arrow--down'>Arrow pointing down</desc>
+  <g id='drop-arrow--s' aria-labelledby='t-drop-arrow--s d-drop-arrow--s'>
+    <title id='t-drop-arrow--s'>Drop arrow south</title>
+    <desc id='d-drop-arrow--s'>Arrow pointing south</desc>
     <path d='M24.004 10H8.002c-.809 0-1.54.49-1.851 1.234-.308.75-.138 1.61.436 2.179l7.999 8c.39.392.905.587 1.415.587s1.02-.195 1.41-.586l8.004-8c.569-.569.743-1.429.432-2.179C25.536 10.49 24.81 10 24.004 10z'/>
   </g>
 

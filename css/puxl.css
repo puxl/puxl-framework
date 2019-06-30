@@ -2330,19 +2330,6 @@ button[class*=btn]:not([type=button]):not([type=reset]):not([type=submit]) {
 a[class*=btn] {
   text-align: center;
   text-decoration: none; }
-  /* line 32, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/control__button/_styles.scss */
-  a[class*=btn]:not([role=button]) {
-    background-color: rgba(255, 0, 0, 0.1);
-    border: dotted 0.25rem red !important; }
-    /* line 39, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/mixin/_error-warning.scss */
-    a[class*=btn]:not([role=button])::before {
-      background-color: red;
-      display: inline-block;
-      color: white;
-      content: 'This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.';
-      font-size: 16px;
-      font-weight: bold;
-      padding: 0.125rem 0.25rem; }
   /* line 39, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/element/control__button/_styles.scss */
   a[class*=btn][aria-disabled=true] {
     cursor: not-allowed;
@@ -6516,7 +6503,7 @@ img {
       padding-left: 3.5rem; }
     /* line 70, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/compound/_alert.scss */
     [dir=rtl] [class^=alert].success, [dir=rtl] [class^=alert].info, [dir=rtl] [class^=alert].warning, [dir=rtl] [class^=alert].danger {
-      background-position: calc(100% - ($alert__icon--size / 2)) 1rem;
+      background-position: calc(100% - (1.5rem / 2)) 1rem;
       padding-right: 3.5rem; }
   /* line 76, /Users/MrKanuel/Documents/GitHub/puxl-framework/css/puxl/compound/_alert.scss */
   [class^=alert].success {

@@ -68,7 +68,7 @@
       }
 
       [dir=rtl] & {
-        background-position:    calc(100% - ($alert__icon--size / 2))
+        background-position:    calc(100% - (#{$alert__icon--size} / 2))
                                 $alert--padding;
         padding-right:          (2 * $alert--padding) + $alert__icon--size;
       }

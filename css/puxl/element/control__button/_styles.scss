@@ -29,9 +29,9 @@
 	}// button[class*=btn]:not([type=button]):not([type=reset]):not([type=submit])
 
 	a[class*=btn] {
-    &:not([role=button]) {
-      @include error-warning('This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.');
-    }
+//    &:not([role=button]) {
+//      @include error-warning('This <a class="btn"> tag must have a role="button" attribute. Example: <a class="btn" role="button">.');
+//    }
 
     text-align:         center;
     text-decoration:    none;

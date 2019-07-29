@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_bar.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -42,12 +42,12 @@ function puxl_appBarScroll(id) {
     // If appBar does not exist, return error message on console.
     if (document.getElementById(arguments[i]) === null) {
 
-      console.log('Puxl appBarScroll(): Sorry, #' + arguments[i] + ' was not found.');
+      console.log('PUXL appBarScroll(): Sorry, #' + arguments[i] + ' was not found.');
 
     // If appBar exists, return success message on console and add this appBar to appBars.
     } else {
 
-      console.log('Puxl appBarScroll(): #' + arguments[i] + ' was found.');
+      console.log('PUXL appBarScroll(): #' + arguments[i] + ' was found.');
       appBars.push(arguments[i]);
 
     }

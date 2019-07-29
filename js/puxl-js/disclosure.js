@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_disclosure.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -46,7 +46,7 @@ function puxl_disclosure(iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
   // If no disclosure is found, return error message on console.
   if (disclosureComponents.length === 0) {
 
-    console.log('Puxl disclosure(): Sorry, no disclosure was found.');
+    console.log('PUXL disclosure(): Sorry, no disclosure was found.');
 
   // If any disclosure is found, return success message on console and do the magic.
   } else {
@@ -54,12 +54,12 @@ function puxl_disclosure(iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
     // If there are more than one disclosures, return success message on console.
     if (disclosureComponents.length >= 2) {
 
-      console.log('Puxl disclosure(): ' + disclosureComponents.length + ' disclosures were found.');
+      console.log('PUXL disclosure(): ' + disclosureComponents.length + ' disclosures were found.');
 
     // If there is one disclosures, return success message on console.
     } else {
 
-      console.log('Puxl disclosure(): ' + disclosureComponents.length + ' disclosure was found.');
+      console.log('PUXL disclosure(): ' + disclosureComponents.length + ' disclosure was found.');
 
     }// End if: If there are more than one disclosures, return success message on console.
 

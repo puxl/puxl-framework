@@ -1,4 +1,4 @@
-# Puxl framework
+# PUXL framework
 
 <p align="center">
   <a href="https://puxl.io/">
@@ -7,7 +7,7 @@
 
   <p align="center">
 
-**Puxl** (ˈpʌksl) is an accessibility-first, eco-friendly open source front-end library for the modern Web.
+**PUXL** (ˈpʌksl) is an accessibility-first, eco-friendly open source front-end library for the modern Web.
 It helps you create accessible, responsive Web User Interfaces with lightweight HTML.
 
 [Check out the Docs (v0.1-βeta)](https://puxl.io/docs/v0_1-beta/)
@@ -478,15 +478,15 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
 
 
-  **Puxl icons** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  **PUXL icons** - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-  Project:        Puxl Icons
+  Project:        PUXL Icons
 
   Project URL:    https://puxl.io/puxl-icons/
 
   Author:         Iñigo Garcia (@MrKanuel)
 
-  Copyright:      Copyright © 2018 Puxl
+  Copyright:      Copyright © 2018 PUXL
 
   License:        The MIT License (MIT)
                   https://github.com/puxl/puxl-icons/blob/master/LICENSE
@@ -495,7 +495,7 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
 ## Authors
 
-Puxl is created by [@MrKanuel](https://github.com/mrkanuel), and brought by [The Puxl Clan](https://github.com/orgs/puxl/teams/puxl-clan) with love from Basque Country.
+PUXL is created by [@MrKanuel](https://github.com/mrkanuel), and brought by [The PUXL Clan](https://github.com/orgs/puxl/teams/puxl-clan) with love from Basque Country.
 
 
 ## Copyright and license

@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_tabs.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -159,7 +159,7 @@ function puxl_tabs() {
 
       // If the number of tabs is not equal to the number of tabpanels.
       if (tabsCount !== tabpanelsCount) {
-        alert('Puxl tabs(): Component .tabs#' + tabsComponent.id + ' must have equal number of tabs (' + tabsCount + ') and tabpanels (' + tabpanelsCount + ').');
+        alert('PUXL tabs(): Component .tabs#' + tabsComponent.id + ' must have equal number of tabs (' + tabsCount + ') and tabpanels (' + tabpanelsCount + ').');
       }// End if: If the number of tabs is not equal to the number of tabpanels.
 
 
@@ -289,7 +289,7 @@ function puxl_tabs() {
   // If there are no .tabs components.
   if (tabsComponents.length === 0) {
 
-    console.log('Puxl tabs(): No .tabs components were found.');
+    console.log('PUXL tabs(): No .tabs components were found.');
 
   // If there are .tabs components.
   } else {
@@ -298,13 +298,13 @@ function puxl_tabs() {
     if (tabsComponents.length >= 2) {
 
       // Return message on console.
-      console.log('Puxl tabs(): ' + tabsComponents.length + ' .tabs components were found.');
+      console.log('PUXL tabs(): ' + tabsComponents.length + ' .tabs components were found.');
 
     // If there is one .tabs component.
     } else {
 
       // Return message on console.
-      console.log('Puxl tabs(): ' + tabsComponents.length + ' .tabs component was found.');
+      console.log('PUXL tabs(): ' + tabsComponents.length + ' .tabs component was found.');
 
     }// End if: If there are two or more .tabs components.
 
@@ -458,49 +458,49 @@ function puxl_tabs() {
             switch (tabsTabKeydown.keyCode) {
             case 13:// Key press: enter
 
-              console.log('Puxl tabs(): Pressed Enter (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Focus tabpanel.');
+              console.log('PUXL tabs(): Pressed Enter (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Focus tabpanel.');
               document.getElementById(item.getAttribute('aria-controls')).focus();
 
               break;
             case 27:// Key press: escape
 
-              console.log('Puxl tabs(): Pressed Escape (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Loose focus.');
+              console.log('PUXL tabs(): Pressed Escape (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Loose focus.');
               item.blur();
 
               break;
             case 35:// Key press: end
 
-              console.log('Puxl tabs(): Pressed End (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to last tab.');
+              console.log('PUXL tabs(): Pressed End (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to last tab.');
               lastTab();
 
               break;
             case 36:// Key press: home
 
-              console.log('Puxl tabs(): Pressed Home (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to first tab.');
+              console.log('PUXL tabs(): Pressed Home (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to first tab.');
               firstTab();
 
               break;
             case 37:// Key press: left
 
-              console.log('Puxl tabs(): Pressed Left (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to previous tab.');
+              console.log('PUXL tabs(): Pressed Left (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to previous tab.');
               previousTab();
 
               break;
             case 38:// Key press: up
 
-              console.log('Puxl tabs(): Pressed Up (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to previous tab.');
+              console.log('PUXL tabs(): Pressed Up (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to previous tab.');
               previousTab();
 
               break;
             case 39:// Key press: right
 
-              console.log('Puxl tabs(): Pressed Right (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to next tab.');
+              console.log('PUXL tabs(): Pressed Right (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to next tab.');
               nextTab();
 
               break;
             case 40:// Key press: down
 
-              console.log('Puxl tabs(): Pressed Down (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to next tab.');
+              console.log('PUXL tabs(): Pressed Down (keyCode ' + tabsTabKeydown.keyCode + ') on ' + item.id + '. Go to next tab.');
               nextTab();
 
               break;
@@ -524,7 +524,7 @@ function puxl_tabs() {
         switch (tabsTabpanelKeydown.keyCode) {
         case 27:// Key press: escape
 
-          console.log('Puxl tabs(): Pressed Escape (keyCode ' + tabsTabpanelKeydown.keyCode + ') on ' + item.id + '. Loose focus.');
+          console.log('PUXL tabs(): Pressed Escape (keyCode ' + tabsTabpanelKeydown.keyCode + ') on ' + item.id + '. Loose focus.');
           item.blur();
 
           break;

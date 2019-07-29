@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_drawer.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -75,13 +75,13 @@ function puxl_drawer(togglerId) {
   if (document.getElementById(togglerId) === null) {
 
     // Return error message on console.
-    console.log('Puxl drawer(): Sorry, #' + togglerId + ' was not found.');
+    console.log('PUXL drawer(): Sorry, #' + togglerId + ' was not found.');
 
   // If toggler does exist.
   } else {
 
     // Return success message on console.
-    console.log('Puxl drawer(): #' + drawer.id + ' was found.');
+    console.log('PUXL drawer(): #' + drawer.id + ' was found.');
 
 
     // On click anywhere in the document.

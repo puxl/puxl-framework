@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_fly-out.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -40,13 +40,13 @@ function puxl_flyout() {
   if (flyoutComponents.length >= 2) {
 
     // Return message on console.
-    console.log('Puxl flyout(): ' + flyoutComponents.length + ' .flyout components were found.');
+    console.log('PUXL flyout(): ' + flyoutComponents.length + ' .flyout components were found.');
 
   // If there is just one fly-out.
   } else {
 
     // Return message on console.
-    console.log('Puxl flyout(): ' + flyoutComponents.length + ' .flyout component was found.');
+    console.log('PUXL flyout(): ' + flyoutComponents.length + ' .flyout component was found.');
 
   }// End if: If there are two or more fly-outs.
 
@@ -211,11 +211,11 @@ function puxl_flyout() {
 
         // hide all fly-outs, and return message on console.
         hideAllFlyouts();
-        console.log('Puxl flyout(): Hide all fly-outs.');
+        console.log('PUXL flyout(): Hide all fly-outs.');
 
         // show this fly-out, and return message on console.
         showFlyout();
-        console.log('Puxl flyout(): Show #' + thisFlyoutContent.id + '.');
+        console.log('PUXL flyout(): Show #' + thisFlyoutContent.id + '.');
 
 
       // If .content is shown.
@@ -223,7 +223,7 @@ function puxl_flyout() {
 
         // hide this fly-out, and return message on console.
         hideFlyout();
-        console.log('Puxl flyout(): Hide #' + thisFlyoutContent.id + '.');
+        console.log('PUXL flyout(): Hide #' + thisFlyoutContent.id + '.');
 
       }// End if: If .content is hidden.
 

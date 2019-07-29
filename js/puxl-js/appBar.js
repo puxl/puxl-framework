@@ -1,6 +1,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-//    Puxl
+//    PUXL framework
 //
 //    Version:     1-beta
 //
@@ -10,7 +10,7 @@
 //
 //    Requires:    puxl-framework/css/puxl/compound/_bar.scss
 //
-//    License:     The MIT License (MIT)
+//    License:     GNU General Public License v3.0
 //                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
 //
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
@@ -66,7 +66,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
   // Show menu.
   function showMenu() {
 
-    console.log('Puxl appBar(): Show menu.');
+    console.log('PUXL appBar(): Show menu.');
 
     // set appBarToggler attribute "aria-expanded" to "true".
     appBarToggler.setAttribute('aria-expanded', 'true');
@@ -86,7 +86,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
   // Hide menu.
   function hideMenu() {
 
-    console.log('Puxl appBar(): Hide menu.');
+    console.log('PUXL appBar(): Hide menu.');
 
     // set appBarToggler attribute "aria-expanded" to "false".
     appBarToggler.setAttribute('aria-expanded', 'false');
@@ -109,7 +109,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
     // If screen width is bigger than mobile threshold.
     if (mediaQueryWidth.matches) {
 
-      console.log('Puxl appBar(): The screen is now bigger than mobile threshold.');
+      console.log('PUXL appBar(): The screen is now bigger than mobile threshold.');
 
       // Show menu.
       showMenu();
@@ -117,12 +117,12 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
     // If screen width is smaller than mobile threshold.
     } else {
 
-      console.log('Puxl appBar(): The screen is now smaller than mobile threshold.');
+      console.log('PUXL appBar(): The screen is now smaller than mobile threshold.');
 
       // If menu is opened.
       if (appBarMenuOpened === true) {
 
-        console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+        console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
         // Show menu.
         showMenu();
@@ -130,7 +130,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
       // If menu is closed.
       } else {
 
-        console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+        console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
         // Hide menu.
         hideMenu();
@@ -145,14 +145,14 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
   // If appBar does not exist, return error message on console.
   if (document.getElementById(id) === null) {
 
-    console.log('Puxl appBar(): Sorry, #' + id + ' was not found.');
+    console.log('PUXL appBar(): Sorry, #' + id + ' was not found.');
 
   // If appBar exists, return success message on console and do the magic.
   } else {
 
-    console.log('Puxl appBar(): #' + id + ' was found.');
+    console.log('PUXL appBar(): #' + id + ' was found.');
 
-    console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+    console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
     // If <html> tag contains class="js".
     if (document.documentElement.classList.contains('js')) {
@@ -194,7 +194,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
       // If screen width is bigger than mobile threshold.
       if (mediaQueryWidth.matches) {
 
-        console.log('Puxl appBar(): Screen is now bigger than mobile threshold.');
+        console.log('PUXL appBar(): Screen is now bigger than mobile threshold.');
 
         // Show menu.
         showMenu();
@@ -202,7 +202,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
       // If screen width is smaller than mobile threshold.
       } else {
 
-        console.log('Puxl appBar(): Screen is now smaller than mobile threshold.');
+        console.log('PUXL appBar(): Screen is now smaller than mobile threshold.');
 
         // If menu is closed.
         if (appBarMenuOpened === false) {
@@ -233,7 +233,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
           // Change menu state to opened.
           appBarMenuOpened = true;
 
-          console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+          console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
           // Show menu.
           showMenu();
@@ -244,7 +244,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
           // Change menu state to closed.
           appBarMenuOpened = false;
 
-          console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+          console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
           // Hide menu.
           hideMenu();
@@ -266,7 +266,7 @@ function puxl_appBar(id, iconPath, iconOpened, iconClosed, txtOpened, txtClosed)
             // Change menu state to closed.
             appBarMenuOpened = false;
 
-            console.log('Puxl appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
+            console.log('PUXL appBar(): App bar menu opened = ' + appBarMenuOpened + '.');
 
             // Hide menu.
             hideMenu();

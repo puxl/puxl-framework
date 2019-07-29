@@ -37,12 +37,18 @@
     (function() {
       'use strict';
 
+      var
+        // html: The root <html> tag.
+        html = document.documentElement;
+
       // If <html> tag contains class="no-js".
-      if (document.documentElement.classList.contains('no-js')) {
-        // Remove class="no-js" from <html>.
-        document.documentElement.classList.remove('no-js');
-        // Add class="js" to <html>.
-        document.documentElement.classList.add('js');
+      if (html.classList.contains('no-js')) {
+        // Replace from <html> tag class="no-js" with class="js".
+        html.classList.replace('no-js', 'js');
+      // If <html> tag does not contain class="js".
+      } else if (!html.classList.contains('js')) {
+        // Add class="js" to <html> tag.
+        html.classList.add('js');
       }
     })();
   </script>

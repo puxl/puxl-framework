@@ -486,7 +486,7 @@ We would like to thank a lot of people, organizations and initiatives, big and s
 
   Author:         Iñigo Garcia (@MrKanuel)
 
-  Copyright:      Copyright © 2018 PUXL
+  Copyright:      Copyright © 2019 PUXL
 
   License:        The General Public License V-3 (GPL3)
                   https://github.com/puxl/puxl-icons/blob/master/LICENSE

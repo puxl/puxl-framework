@@ -144,9 +144,9 @@
 
   Author:         Iñigo Garcia (@MrKanuel)
 
-  Copyright:      Copyright © 2018 PUXL
+  Copyright:      Copyright © 2019 PUXL
 
-  License:        The MIT License (MIT)
+  License:        GPL V3
                   https://github.com/puxl/puxl-icons/blob/master/LICENSE
 
 

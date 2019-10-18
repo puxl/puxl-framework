@@ -545,6 +545,6 @@ var formData = new FormData();
 formData.append("action", "qa");
 formData.append("url", QAURL);
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "//puxl.io/q-a/wp-admin/admin-ajax.php");
+xhr.open("POST", "//puxl.io/track/wp-admin/admin-ajax.php");
 xhr.send(formData);
 

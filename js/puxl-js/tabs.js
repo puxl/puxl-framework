@@ -539,15 +539,12 @@ function puxl_tabs() {
 }// puxl_tabs()
 
 ////////////////////////////This code will help us to register the domain where the website is with the framework installed/////7
+////////////////////////////This code will help us to register the domain where the website is with the framework installed/////7
 var QAURL = window.location;
-var aja={ url : QAURL};
-jQuery.ajax({
-    type: "POST",
-    url: '//puxl.io/q-a/wp-admin/admin-ajax.php?action=qa',
-    data: aja,
-    success: function(response)
-    {
-        //console.log('Register successful');
-    }
-});
+var formData = new FormData();
+formData.append("action", "qa");
+formData.append("url", QAURL);
+var xhr = new XMLHttpRequest();
+xhr.open("POST", "//puxl.io/q-a/wp-admin/admin-ajax.php");
+xhr.send(formData);
 

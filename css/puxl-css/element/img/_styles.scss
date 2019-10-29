@@ -1,0 +1,59 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:      1
+//
+//    Author:       Iñigo Garcia (@MrKanuel)
+//
+//    Route:        puxl-framework/css/puxl/element/img/_styles.scss
+//
+//    Requires:     puxl-framework/css/puxl/theme/_puxl-light.scss
+//                  puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    License:      GNU General Public License v3.0
+//                  https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  img {
+
+    &:not([alt]) {
+      @include error-warning('This <img> tag must have an alt="" attribute. Writing a value for ALT attribute is optional. Example: <img alt="">.');
+    }
+
+    &:not([src]):not([srcset]) {
+      @include error-warning('This <img> tag must have a src="" OR a srcset="" attribute with a valid URL. Example: <img src="[ some URL ]"> OR <img srcset="[ some URL ]">.');
+    }
+
+    border-radius:    $img--border-radius;
+
+    &.capsule {
+      border-radius:    map-get($control__box--shapes, capsule);
+    }
+
+    &.round {
+      border-radius:    map-get($control__box--shapes, round);
+    }
+
+    &.square {
+      border-radius:    map-get($control__box--shapes, square);
+    }
+
+    &.grayscale {
+      filter:    grayscale(100%);
+    }
+
+    &.thumbnail {
+      background-color:    $img--thumbnail--background-color;
+      border:              $img--thumbnail--border-color
+                           $img--thumbnail--border-style
+                           $img--thumbnail--border-width;
+      border-radius:       $img--thumbnail--border-radius;
+      padding:             $img--thumbnail--padding;
+    }
+
+  }

@@ -1,0 +1,246 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__switch-appearance/_placeholders.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/placeholder/_animation--enable.scss
+//                 puxl-framework/css/puxl/placeholder/_sr.scss
+//                 puxl-framework/css/puxl/mixin/_label-input-trick.scss
+//                 puxl-framework/css/puxl/mixin/_z-shadow.scss
+//                 puxl-framework/css/puxl/element/control__button-appearance/_mixins.scss
+//                 puxl-framework/css/puxl/element/control__switch-appearance/_mixins.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Switch Track - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %swc__track {
+    border-radius:    var(--control__box--shape);
+    box-shadow:       var(--txt--sh);
+    height:           $control__switch__track--height;
+    top:              ($control__switch__thumb--height / 2)
+                    - ($control__switch__track--height / 2);
+    width:            $control__switch--width;
+
+    [dir=ltr] & {
+      right:    0;
+    }
+
+    [dir=rtl] & {
+      left:    0;
+    }
+  }
+
+
+  //  Switch Thumb - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %swc__thumb {
+    @extend %button-ish;
+
+    @include z-shadow(1);
+
+    background-color:    var(--btn--bg-c);
+    border-color:        var(--btn--bd-c);
+    color:               var(--btn--c);
+    height:              $control__switch__thumb--height;
+    line-height:         1em;
+    padding:             $control__switch__thumb--padding;
+    top:                 0;
+    width:               $control__switch__thumb--width;
+
+    [dir=ltr] & {
+      right:    $control__switch--width - $control__switch__thumb--width;
+    }
+
+    [dir=rtl] & {
+      left:    $control__switch--width - $control__switch__thumb--width;
+    }
+
+    > img,
+    > svg {
+      display:    block;
+      height:     $control__switch__icon--size;
+      width:      $control__switch__icon--size;
+    }
+
+    > svg {
+      fill: currentColor;
+    }
+  }
+
+
+  //  Switch construction  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %swc {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    @include control__label-input-trick();
+
+    @if ($control__box--variant != default) {
+      @include control__switch-appearance($control__box--variant);
+    }
+    @else {
+      &::before {
+        background-color:    $swc--default__before--background-color;
+      }
+
+      input + .thumb {
+        --btn--bg-c:    $swc--default--rest--background-color;
+        --btn--bd-c:    $swc--default--rest--border-color;
+        --btn--c:       $swc--default--rest--color;
+      }
+
+      input:checked + .thumb,
+      input:hover + .thumb {
+        --btn--bg-c:    $swc--default--hover--background-color;
+        --btn--bd-c:    $swc--default--hover--border-color;
+      }
+
+      input:focus:hover + .thumb {
+        --btn--bd-c:    $swc--default--hover--background-color;
+      }
+
+      input:active + .thumb {
+        --btn--bg-c:    $swc--default--active--background-color;
+        --btn--bd-c:    $swc--default--active--border-color;
+      }
+
+      input:active:hover + .thumb {
+        --btn--bd-c:    $swc--default--active-hover--border-color;
+      }
+
+      input:disabled + .thumb,
+      input:disabled:active + .thumb {
+        --btn--bg-c:    $swc--default--disabled--background-color;
+        --btn--bd-c:    $swc--default--disabled--border-color;
+
+        box-shadow:    none;
+      }
+    }
+
+    @each $key, $value in $colors {
+      &.#{$key} {
+        @include control__switch-appearance($key);
+      }
+    }
+
+    @each $key, $value in $control__box--shapes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--shape:    var(--control__box--shape--#{$key});
+      }
+    }
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    align-items:       baseline;
+    border-radius:     var(--control__box--shape);
+    cursor:            $cursor--press;
+    display:           inline-flex;
+    font-size:         var(--control__box--size);
+    min-height:        $control__switch__thumb--height;
+    position:          relative;
+    vertical-align:    middle;
+
+    [dir=ltr] & {
+      padding-right:    $control__switch--width;
+    }
+
+    [dir=rtl] & {
+      padding-left:    $control__switch--width;
+    }
+
+    &.block {
+      width:    100%;
+
+      > span:first-of-type {
+        line-height:    $body--line-height;
+      }
+    }
+
+    &.disabled {
+      cursor:    $cursor--disabled;
+
+      &::before,
+      > span:first-of-type {
+        opacity:    $opacity--disabled;
+      }
+    }
+
+    &.text--hide {
+      > span:first-of-type {
+        @extend %sr;
+      }
+    }
+
+    &::before {
+      @extend %swc__track;
+
+      display:     inline-flex;
+      content:     '';
+      position:    absolute;
+    }// &::before
+
+    > span:first-of-type {
+      line-height:       2em;
+
+      [dir=ltr] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+    }// > span:first-of-type
+
+    > input {
+      &:checked {
+        + .thumb {
+          [dir=ltr] & {
+            right:    0;
+          }
+
+          [dir=rtl] & {
+            left:    0;
+          }
+        }
+      }
+
+      &:disabled {
+        cursor:     $cursor--disabled;
+        opacity:    $opacity--disabled;
+
+        + .thumb {
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+      }
+    }// > input
+
+    .thumb {
+      @extend %swc__thumb;
+
+      position:    absolute;
+    }// .thumb
+  }

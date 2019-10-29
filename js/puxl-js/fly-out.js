@@ -2,11 +2,11 @@
 //
 //    PUXL framework
 //
-//    Version:     1-beta
+//    Version:     1
 //
 //    Author:      Iñigo Garcia (@MrKanuel)
 //
-//    Route:       puxl-framework/js/puxl/fly-out.js
+//    Route:       puxl-framework/js/puxl-js/fly-out.js
 //
 //    Requires:    puxl-framework/css/puxl/compound/_fly-out.scss
 //

@@ -1,0 +1,135 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__check/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/function/_draw-svg.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//                 puxl-framework/css/puxl/mixin/_label-input-trick.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .chk {
+    &:not([for]) {
+      @include error-warning('This <label class="chk"> tag must have a non-empty for="" attribute. It must point at the child <input> ID. Example: <label class="chk" for="[ child input ID ]">.');
+    }
+
+    @include control__label-input-trick();
+
+    color:        var(--txt--c);
+    cursor:       $cursor--press;
+    font-size:    var(--control__box--size);
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    &.block {
+      display:    inline-block;
+      width:      100%;
+
+      > input + span {
+        display:    block;
+      }
+    }// .block
+
+    > input {
+      &:not([type=checkbox]):not([type=radio]) {
+        + span {
+          @include error-warning('This <input> tag must be of type="checkbox", OR of type="radio". Example: <input type="checkbox"> OR <input type="radio">.');
+        }
+      }
+
+      &:not([id]) {
+        + span {
+          @include error-warning('This <input> tag must have a non-empty id="" attribute. Remember, the parent <label class="chk"> for="" attribute must be this <input> ID. Example: <input id="[ some ID ]">.');
+        }
+      }
+    }// > input
+
+    > span {
+      background-repeat:    no-repeat;
+      background-size:      $control__check__span--background-size;
+      display:              inline;
+
+      [dir=ltr] & {
+        background-position:    center left;
+        padding-left:           $control__check__span--padding;
+      }
+
+      [dir=rtl] & {
+        background-position:    center right;
+        padding-right:          $control__check__span--padding;
+      }
+    }// > span
+
+    [type=checkbox] {
+      + span,
+      &:disabled:hover + span{
+        background-image:    $control__check-checkbox--rest__span--background-image;
+      }
+
+      &:focus + span,
+      &:hover + span {
+        background-image:    $control__check-checkbox--hover__span--background-image;
+      }
+
+      &:checked + span,
+      &:checked:disabled:hover + span {
+        background-image:    $control__check-checkbox--checked__span--background-image;
+      }
+
+      &:checked:focus + span,
+      &:checked:hover + span {
+        background-image:    $control__check-checkbox--checked-hover__span--background-image;
+      }
+
+      &:active + span,
+      &:checked:active + span {
+        background-image:    $control__check-checkbox--checked-active__span--background-image;
+      }
+    }// [type=checkbox]
+
+    [type=radio] {
+      + span,
+      &:disabled:hover + span{
+        background-image:    $control__check-radio--rest__span--background-image;
+      }
+
+      &:focus + span,
+      &:hover + span {
+        background-image:    $control__check-radio--hover__span--background-image;
+      }
+
+      &:checked + span,
+      &:checked:disabled:hover + span {
+        background-image:    $control__check-radio--checked__span--background-image;
+      }
+
+      &:checked:focus + span,
+      &:checked:hover + span {
+        background-image:    $control__check-radio--checked-hover__span--background-image;
+      }
+
+      &:active + span,
+      &:checked:active + span {
+        background-image:    $control__check-radio--checked-active__span--background-image;
+      }
+    }// [type=radio]
+  }

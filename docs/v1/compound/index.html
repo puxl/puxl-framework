@@ -1,0 +1,2742 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PUXL framework v1 documentation: Compound</title>
+	<meta name="description" content="PUXL is an open-source and eco-friendly library to create front-end Web interfaces. It helps you build accessible and responsive sites with lightweight HTML.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/puxl.min.css">
+  <link rel="stylesheet" href="../../../vendor/prism-js/prismJS_1-15-0.min.css">
+  <style>
+    article.card {
+      margin-bottom:    2em;
+    }
+
+      .file-code {
+        opacity:       .5;
+        margin-top:    2em;
+      }
+      .file-code:hover {
+        opacity:    1;
+      }
+
+        .file-code pre {
+          margin:    0;
+        }
+
+        .file-code pre::before,
+        .file-code pre::after {
+          display:    none;
+        }
+
+        .file-code pre > code {
+          border-left-color:    var(--color--primary);
+          border-left-width:    .125rem;
+        }
+
+        .file-code code {
+          border-radius:    0;
+        }
+
+        .file-code .tag {
+          border:           none;
+          border-radius:    0;
+          box-shadow:       none;
+        }
+
+          .file-code .code-toolbar > .toolbar {
+            top:    -.25em;
+          }
+  </style>
+</head>
+<body id="page__docs" class="app-bar--top">
+
+  <a class="jump-link" href="#main__content">Jump to main content</a>
+
+
+  <div id="app-bar" class="app bar top">
+
+    <header>
+
+      <a class="home" href="https://puxl.io/">
+        <img alt="" src="https://puxl.io/img/logo/puxl.svg">
+        <span>PUXL</span>
+      </a>
+
+      <button
+        id="app-bar__toggler"
+        class="bar-btn-icn toggler mobile--down space--before"
+        aria-haspopup="true"
+        aria-controls="app-bar__menu"
+        aria-expanded="true"
+        type="button">
+        <img alt="" src="https://puxl.io/img/puxl-icons/menu-burger.svg" aria-hidden="true">
+        <span>Open navigation menu</span>
+      </button>
+
+    </header>
+
+    <nav role="navigation">
+
+      <div id="app-bar__menu" class="subheading" aria-hidden="false">
+
+        <ul class="space--after">
+          <li>
+            <a href="https://puxl.io/">
+              PUXL framework
+            </a>
+          </li>
+          <li>
+            <a href="https://puxl.io/puxl-icons/">
+              PUXL icons
+            </a>
+          </li>
+        </ul>
+
+        <a class="bar-btn-icn" href="https://github.com/puxl/puxl-framework" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>PUXL framework repository on GitHub</span>
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+
+  <div class="grid-fluid">
+
+
+    <header class="col-xs-12" aria-labelledby="main--heading" role="banner">
+
+      <h1 id="main--heading">PUXL documentation <small>v1</small></h1>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumbs from PUXL documentation to this page">
+        <ol>
+          <li>
+            <a href="https://puxl.io/">PUXL home</a>
+          </li>
+          <li>
+            <a href="../index.html">Docs v1</a>
+          </li>
+          <li aria-current="page">
+            Compound
+          </li>
+        </ol>
+      </nav>
+
+    </header>
+
+
+    <nav class="col-xs-12 col-sm-4 col-md-3 col-xl-2" role="navigation">
+
+      <ul class="unlisted">
+        <li>
+          <a href="#compound__alert">Alert</a>
+        </li>
+        <li>
+          <a href="#compound__bar">Bar</a>
+        </li>
+        <li>
+          <a href="#compound__breadcrumbs">Breadcrumbs</a>
+        </li>
+        <li>
+          <a href="#compound__card">Card</a>
+        </li>
+        <li>
+          <a href="#compound__disclosure">Disclosure</a>
+        </li>
+        <li>
+          <a href="#compound__form">Form</a>
+        </li>
+        <li>
+          <a href="#compound__flag">Flag</a>
+        </li>
+        <li>
+          <a href="#compound__group">Group</a>
+        </li>
+        <li>
+          <a href="#compound__input-group">Input group</a>
+        </li>
+        <li>
+          <a href="#compound__responsive-embed">Responsive embed</a>
+        </li>
+        <li>
+          <a href="#compound__searchbox">Searchbox</a>
+        </li>
+        <li>
+          <a href="#compound__tabs">Tabs</a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+    <main id="main__content" class="col-xs-12 col-sm-8 col-md-9 col-xl-10" role="main">
+
+      <article id="compound__alert" class="card" aria-labelledby="compound__alert--heading">
+
+        <header>
+          <h4 id="compound__alert--heading" class="heading">Alert</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <div class="alert" role="alert">
+              Alert default. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <div class="alert" aria-labelledby="alert-02--heading" role="alert">
+              <h4 id="alert-02--heading">Alert default heading</h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="alert" role="alert"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+&lt;/div&gt;
+
+&lt;div class="alert" aria-labelledby="alert-02--heading" role="alert"&gt;
+  &lt;h4 id="alert-02--heading"&gt;Alert heading&lt;/h4&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Default <code>.alert</code> and <code>.alert</code> with heading.
+            </figcaption>
+          </figure>
+
+          <h5>Alert looks</h5>
+
+          <div class="file-example">
+
+            <h6>Primary</h6>
+
+            <div class="alert primary" role="alert">
+              Alert primary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <h6>Secondary</h6>
+
+            <div class="alert secondary" role="alert">
+              Alert secondary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <h6>Success</h6>
+
+            <div class="alert success" role="alert">
+              Alert success. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <h6>Info</h6>
+
+            <div class="alert info" role="alert">
+              Alert info. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <h6>Warning</h6>
+
+            <div class="alert warning" role="alert">
+              Alert warning. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+            <br>
+
+            <h6>Danger</h6>
+
+            <div class="alert danger" aria-labelledby="alert-08--heading" role="alert">
+              <h4 id="alert-08--heading">Alert danger</h4>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="alert primary" role="alert"&gt;
+  Alert primary. ...
+&lt;/div&gt;
+
+&lt;div class="alert secondary" role="alert"&gt;
+  Alert secondary. ...
+&lt;/div&gt;
+
+&lt;div class="alert success" role="alert"&gt;
+  Alert success. ...
+&lt;/div&gt;
+
+&lt;div class="alert info" role="alert"&gt;
+  Alert info. ...
+&lt;/div&gt;
+
+&lt;div class="alert warning" role="alert"&gt;
+  Alert warning. ...
+&lt;/div&gt;
+
+&lt;div class="alert danger" aria-labelledby="alert-08--heading" role="alert"&gt;
+  &lt;h4 id="alert-08--heading"&gt;Alert danger&lt;/h4&gt;
+  ...
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.alert</code> with class <code>.primary</code>, <code>.secondary</code>, <code>.success</code>, <code>.info</code>, <code>.warning</code> and <code>.danger</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Alert dialog</h5>
+
+          <div class="file-example">
+
+            <div class="alertdialog" aria-labelledby="alertdialog-01--heading" aria-describedby="alertdialog-01--content" role="alertdialog">
+              <header>
+                <h4 id="alertdialog-01--heading">Default alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-01--content" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+
+              <footer>
+                <span class="space--after">Text element</span>
+                <label class="swc" for="alert-swc-0001">
+                  <span>Switch</span>
+                  <input id="alert-swc-0001" type="checkbox">
+                  <span class="thumb"></span>
+                </label>
+                <label class="chk" for="alert-checkbox-0001">
+                  <input id="alert-checkbox-0001" name="checkbox" type="checkbox">
+                  <span>Checkbox</span>
+                </label>
+                <button class="btn" type="button">Button</button>
+              </footer>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="alertdialog" aria-labelledby="alertdialog-01--heading" aria-describedby="alertdialog-01--content" role="alertdialog"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-01--heading"&gt;Default alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-01--content" role="document" tabindex="0"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. &lt;strong&gt;Quod cum dixissent, ille contra.&lt;/strong&gt; &lt;a href="http://loripsum.net/" target="_blank"&gt;Quare conare, quaeso.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;footer&gt;
+    &lt;span class="space--after"&gt;Text element&lt;/span&gt;
+    &lt;label class="swc" for="alert-swc-0001"&gt;
+      &lt;span&gt;Switch&lt;/span&gt;
+      &lt;input id="alert-swc-0001" type="checkbox"&gt;
+      &lt;span class="thumb"&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="chk" for="alert-checkbox-0001"&gt;
+      &lt;input id="alert-checkbox-0001" name="checkbox" type="checkbox"&gt;
+      &lt;span&gt;Checkbox&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;button class="btn" type="button"&gt;Button&lt;/button&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Default <code>.alertdialog</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Alert dialog looks</h5>
+
+          <div class="file-example">
+
+            <h6>Primary</h6>
+
+            <div class="alertdialog primary" role="alertdialog" aria-labelledby="alertdialog-01-label" aria-describedby="alertdialog-01-description">
+              <header>
+                <h4 id="alertdialog-01-label">Primary alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-01-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+            <br>
+
+            <h6>Secondary</h6>
+
+            <div class="alertdialog secondary" role="alertdialog" aria-labelledby="alertdialog-02-label" aria-describedby="alertdialog-02-description">
+              <header>
+                <h4 id="alertdialog-02-label">Secondary alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-02-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+            <br>
+
+            <h6>Success</h6>
+
+            <div class="alertdialog success" role="alertdialog" aria-labelledby="alertdialog-03-label" aria-describedby="alertdialog-03-description">
+              <header>
+                <h4 id="alertdialog-03-label">Success alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-03-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+            <br>
+
+            <h6>Info</h6>
+
+            <div class="alertdialog info" role="alertdialog" aria-labelledby="alertdialog-04-label" aria-describedby="alertdialog-04-description">
+              <header>
+                <h4 id="alertdialog-04-label">Info alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-04-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+            <br>
+
+            <h6>Warning</h6>
+
+            <div class="alertdialog warning" role="alertdialog" aria-labelledby="alertdialog-05-label" aria-describedby="alertdialog-05-description">
+              <header>
+                <h4 id="alertdialog-05-label">Warning alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-05-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+            <br>
+
+            <h6>Danger</h6>
+
+            <div class="alertdialog danger" role="alertdialog" aria-labelledby="alertdialog-06-label" aria-describedby="alertdialog-06-description">
+              <header>
+                <h4 id="alertdialog-06-label">Danger alertdialog header</h4>
+              </header>
+
+              <div id="alertdialog-06-description" role="document" tabindex="0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. <strong>Quod cum dixissent, ille contra.</strong> <a href="http://loripsum.net/" target="_blank">Quare conare, quaeso.</a></p>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="alertdialog primary" role="alertdialog" aria-labelledby="alertdialog-01-label" aria-describedby="alertdialog-01-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-01-label"&gt;Primary alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-01-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alertdialog secondary" role="alertdialog" aria-labelledby="alertdialog-02-label" aria-describedby="alertdialog-02-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-02-label"&gt;Secondary alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-02-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alertdialog success" role="alertdialog" aria-labelledby="alertdialog-03-label" aria-describedby="alertdialog-03-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-03-label"&gt;Success alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-03-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alertdialog info" role="alertdialog" aria-labelledby="alertdialog-04-label" aria-describedby="alertdialog-04-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-04-label"&gt;Info alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-04-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alertdialog warning" role="alertdialog" aria-labelledby="alertdialog-05-label" aria-describedby="alertdialog-05-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-05-label"&gt;Warning alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-05-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="alertdialog danger" role="alertdialog" aria-labelledby="alertdialog-06-label" aria-describedby="alertdialog-06-description"&gt;
+  &lt;header&gt;
+    &lt;h4 id="alertdialog-06-label"&gt;Danger alertdialog header&lt;/h4&gt;
+  &lt;/header&gt;
+
+  &lt;div id="alertdialog-06-description" role="document" tabindex="0"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.alertdialog</code> with class <code>.primary</code>, <code>.secondary</code>, <code>.success</code>, <code>.info</code>, <code>.warning</code> and <code>.danger</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__bar" class="card" aria-labelledby="compound__bar--heading">
+
+        <header>
+          <h4 id="compound__bar--heading" class="heading">Bar</h4>
+        </header>
+
+        <div class="content">
+          <p>Bar compounds accept this set of classes:</p>
+
+          <dl>
+            <dt>App</dt>
+            <dd>
+              <code>.app</code>
+            </dd>
+            <dt>Top</dt>
+            <dd>
+              <code>.top</code>
+            </dd>
+            <dt>Bottom</dt>
+            <dd>
+              <code>.bottom</code>
+            </dd>
+          </dl>
+
+          <div class="file-example">
+
+            <div class="bar">
+
+              <button class="bar-btn-icn" type="button">
+                <img alt="" src="https://puxl.io/img/puxl-icons/arrow-w.svg" aria-hidden="true">
+                <span>Back</span>
+              </button>
+
+              My app name
+
+              <button class="bar-btn-icn space--before" type="button">
+                <img alt="" src="https://puxl.io/img/puxl-icons/menu-3-dots-v.svg" aria-hidden="true">
+                <span>Open options menu</span>
+              </button>
+
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="bar"&gt;
+
+  &lt;button class="bar-btn-icn" type="button"&gt;
+    &lt;img alt="" src="https://puxl.io/img/puxl-icons/arrow-w.svg" aria-hidden="true"&gt;
+    &lt;span&gt;Back&lt;/span&gt;
+  &lt;/button&gt;
+
+  My app name
+
+  &lt;button class="bar-btn-icn space--before" type="button"&gt;
+    &lt;img alt="" src="https://puxl.io/img/puxl-icons/menu-3-dots-v.svg" aria-hidden="true"&gt;
+    &lt;span&gt;Open options menu&lt;/span&gt;
+  &lt;/button&gt;
+
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>div.bar</code> with navigation buttons
+            </figcaption>
+          </figure>
+
+          <h5>App bar</h5>
+
+          <div class="alert info" role="alert">
+            Requires puxl-js/appBar.js
+          </div>
+
+          <div class="file-example">
+
+            (There is one in this page. See the top navigation)
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div id="app-bar" class="app bar top"&gt;
+
+  &lt;header&gt;
+
+    &lt;a class="home" href="https://puxl.io/"&gt;
+      &lt;img alt="" src="https://puxl.io/img/logo/puxl.svg"&gt;
+      &lt;span&gt;PUXL Docs&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;button
+      id="app-bar__toggler"
+      class="bar-btn-icn toggler mobile--down space--before"
+      aria-haspopup="true"
+      aria-controls="app-bar__menu"
+      aria-expanded="true"
+      type="button"&gt;
+      &lt;img alt="" src="https://puxl.io/img/puxl-icons/menu-burger.svg" aria-hidden="true"&gt;
+      &lt;span&gt;Open navigation menu&lt;/span&gt;
+    &lt;/button&gt;
+
+  &lt;/header&gt;
+
+  &lt;nav role="navigation"&gt;
+
+    &lt;div id="app-bar__menu" class="subheading" aria-hidden="false"&gt;
+
+      &lt;ul class="space--after"&gt;
+        &lt;li&gt;
+          &lt;a href="https://puxl.io/"&gt;
+            PUXL framework
+          &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href="https://puxl.io/puxl-icons/"&gt;
+            PUXL icons
+          &lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;a class="bar-btn-icn" href="https://github.com/puxl/puxl-framework" role="button"&gt;
+        &lt;img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true"&gt;
+        &lt;span&gt;PUXL framework repository on GitHub&lt;/span&gt;
+      &lt;/a&gt;
+
+      &lt;a class="bar-btn-icn" href="https://t.me/joinchat/AoC6ohKwoJDMIiqe_e01cA" role="button"&gt;
+        &lt;img alt="" src="https://puxl.io/img/logo/telegram.svg" aria-hidden="true"&gt;
+        &lt;span&gt;PUXL channel on Telegram&lt;/span&gt;
+      &lt;/a&gt;
+
+    &lt;/div&gt;
+
+  &lt;/nav&gt;
+
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>div.app.bar</code> with heading, navigation section and extra buttons.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__breadcrumbs" class="card" aria-labelledby="compound__breadcrumbs--heading">
+
+        <header>
+          <h4 id="compound__breadcrumbs--heading" class="heading">Breadcrumbs</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <nav class="breadcrumbs" aria-label="Breadcrumbs to this page">
+              <ol>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 1</a>
+                </li>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 2</a>
+                </li>
+                <li>
+                  Text
+                </li>
+              </ol>
+            </nav>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;nav class="breadcrumbs" aria-label="Breadcrumbs to this page"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;a href="#compound__breadcrumbs"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#compound__breadcrumbs"&gt;Link 2&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Text
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+
+            <figcaption>
+              <code>nav</code> with class <code>.breadrumbs</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Breadcrumbs with <code>aria-current=""</code></h5>
+
+          <div class="file-example">
+
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+              <ol>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 1</a>
+                </li>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 2</a>
+                </li>
+                <li aria-current="page">
+                  Text
+                </li>
+              </ol>
+            </nav>
+
+            <br>
+
+            <nav class="breadcrumbs" aria-label="Breadcrumbs">
+              <ol>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 1</a>
+                </li>
+                <li>
+                  <a href="#compound__breadcrumbs">Link 2</a>
+                </li>
+                <li>
+                  <a href="#compound__breadcrumbs" aria-current="page">Link 3</a>
+                </li>
+              </ol>
+            </nav>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;nav class="breadcrumbs" aria-label="Breadcrumbs"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;a href="#compound__breadcrumbs"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    ...
+    &lt;li aria-current="page"&gt;
+      Text
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;nav class="breadcrumbs" aria-label="Breadcrumbs"&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;Link 1&lt;/a&gt;
+    &lt;/li&gt;
+    ...
+    &lt;li&gt;
+      &lt;a href="#compound__breadcrumbs" aria-current="page"&gt;Link 3&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;</code></pre>
+
+            <figcaption>
+              Breadrumbs ending in text and in link.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__card" class="card" aria-labelledby="compound__card--heading">
+
+        <header>
+          <h4 id="compound__card--heading" class="heading">Card</h4>
+        </header>
+
+        <div class="content">
+          <p>Card compounds accept this set of classes:</p>
+
+          <dl>
+
+            <dt>Elevated</dt>
+            <dd>
+              <code>.elevated</code>
+            </dd>
+
+            <dt>Looks</dt>
+            <dd>
+              Default, <code>.primary</code>, <code>.secondary</code>, <code>.success</code>, <code>.info</code>, <code>.warning</code> and <code>.danger</code>
+            </dd>
+
+            <dt>Shapes</dt>
+            <dd>
+              <code>.capsule</code>, <code>.round</code> and <code>.square</code>
+            </dd>
+
+          </dl>
+
+          <div class="file-example">
+
+            <div class="card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+            </div>
+
+            <br>
+
+            <div class="card">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+              </div>
+            </div>
+
+            <br>
+
+            <div class="card elevated">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  ...
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;div class="content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card elevated"&gt;
+  &lt;div class="content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Default <code>.card</code> and with class <code>.elevated</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Card looks</h5>
+
+          <div class="file-example">
+
+            <h5>Primary</h5>
+
+            <div class="card primary">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <h5>Secondary</h5>
+
+            <div class="card secondary">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <h5>Success</h5>
+
+            <div class="card success">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <h5>Info</h5>
+
+            <div class="card info">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <h5>Warning</h5>
+
+            <div class="card warning">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <h5>Danger</h5>
+
+            <div class="card danger">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card primary"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card secondary"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card success"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card info"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card warning"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card danger"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.card</code> with class <code>.primary</code>, <code>.secondary</code>, <code>.success</code>, <code>.info</code>, <code>.warning</code> and <code>.danger</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Card shapes</h5>
+
+          <div class="file-example">
+
+            <div class="card capsule">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <div class="card round">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+            <br>
+
+            <div class="card square">
+              <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.</div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card capsule"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card round"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card square"&gt;
+  &lt;div class="content"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.card</code> with class <code>.capsule</code>, <code>.round</code> and <code>.square</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Card structure</h5>
+
+          <div class="file-example">
+
+            <div class="card">
+              <header>
+                header
+              </header>
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+              </div>
+              <footer>
+                <button class="btn ghost secondary" type="button">Cancel</button>
+                <button class="btn solid primary" type="button">Accept</button>
+              </footer>
+            </div>
+
+            <br>
+
+            <div class="card">
+              <header>
+                header
+              </header>
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+              </div>
+            </div>
+
+            <br>
+
+            <div class="card">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+              </div>
+              <footer>
+                footer
+              </footer>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  &lt;header&gt;
+    Header
+  &lt;/header&gt;
+  &lt;div class="content"&gt;
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo.
+  &lt;/div&gt;
+  &lt;footer&gt;
+    &lt;button class="btn ghost secondary" type="button"&gt;Cancel&lt;/button&gt;
+    &lt;button class="btn solid primary" type="button"&gt;Accept&lt;/button&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;header&gt;
+    ...
+  &lt;/header&gt;
+  &lt;div class="content"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;div class="content"&gt;
+    ...
+  &lt;/div&gt;
+  &lt;footer&gt;
+    ...
+  &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.card</code> structure with header, content and footer.
+            </figcaption>
+          </figure>
+
+          <h5>Card list simple</h5>
+
+          <div class="file-example">
+
+            <div class="card">
+              <ul class="list">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+                <li>List item 5</li>
+              </ul>
+            </div>
+
+            <br>
+
+            <div class="card">
+              <div class="content">
+                <ul class="list">
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                  <li>List item 4</li>
+                  <li>List item 5</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  &lt;ul class="list"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;div class="content"&gt;
+    &lt;ul class="list"&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Card list simple, inside <code>.card</code>, and inside <code>.content</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Card list two lines</h5>
+
+          <div class="file-example">
+
+            <div class="card">
+              <ul class="list">
+                <li>
+                  <span class="heading">List item 1</span>
+                  <span class="description">List item description.</span>
+                </li>
+                <li>
+                  <span class="heading">List item 2 lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.</span>
+                  <span class="description">List item description ita tanta sit in finibus bonorum malorumque dissimilitudo. Nec vero intermittunt aut admirationem earum rerum, quae sunt ab antiquis repertae, aut investigationem novarum. Duo Reges: constructio interrete. Qui est in parvis malis.</span>
+                </li>
+                <li>
+                  <span class="heading">List item 3</span>
+                  <span class="description">List item description.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  &lt;ul class="list"&gt;
+    &lt;li&gt;
+      &lt;span class="heading"&gt;List item 1&lt;/span&gt;
+      &lt;span class="description"&gt;List item description.&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class="heading"&gt;List item 2 ...&lt;/span&gt;
+      &lt;span class="description"&gt;List item description ...&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class="heading"&gt;List item 3&lt;/span&gt;
+      &lt;span class="description"&gt;List item description.&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Card list with two lines: heading and description.
+            </figcaption>
+          </figure>
+
+          <h5>Card Image</h5>
+
+          <div class="file-example">
+
+            <div class="card">
+              <img alt="" src="https://puxl.io/img/larunbe-photo--donostia.jpg"/>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  &lt;img alt="" src="..."/&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Card with image.
+            </figcaption>
+          </figure>
+
+          <h5>Card Image and content</h5>
+
+          <div class="file-example">
+
+            <div class="card">
+              <img alt="" src="https://puxl.io/img/larunbe-photo--donostia.jpg"/>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Sed ille, ut dixi, vitiose. Nec vero intermittunt aut admirationem earum rerum, quae sunt ab antiquis repertae, aut investigationem novarum.</p>
+                <button class="btn" type="button">More...</button>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="card">
+              <img alt="" src="https://puxl.io/img/larunbe-photo--donostia.jpg"/>
+              <header>
+                <div class="heading">Card heading</div>
+                <p>Subheading lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus.</p>
+              </header>
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oculorum, inquit Plato, est in nobis sensus acerrimus, quibus sapientiam non cernimus. Ita fit ut, quanta differentia est in principiis naturalibus, tanta sit in finibus bonorum malorumque dissimilitudo. Sed ille, ut dixi, vitiose. Nec vero intermittunt aut admirationem earum rerum, quae sunt ab antiquis repertae, aut investigationem novarum.</p>
+                <button class="btn" type="button">More...</button>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="card"&gt;
+  &lt;img alt="" src=""/&gt;
+  &lt;div class="content"&gt;
+    &lt;p&gt;...&lt;/p&gt;
+    &lt;button class="btn" type="button"&gt;...&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="card"&gt;
+  &lt;img alt="" src=""/&gt;
+  &lt;header&gt;
+    &lt;div class="heading"&gt;...&lt;/div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;div class="content"&gt;
+    &lt;p&gt;....&lt;/p&gt;
+    &lt;button class="btn" type="button"&gt;...&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Cards with image and content.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__disclosure" class="card" aria-labelledby="compound__disclosure--heading">
+
+        <header>
+          <h4 id="compound__disclosure--heading" class="heading">Disclosure</h4>
+        </header>
+
+        <div class="content">
+
+          <div class="alert info" role="alert">
+            Requires puxl-js/disclosure.js
+          </div>
+
+          <div class="file-example">
+
+            <div class="disclosure">
+              <h3>
+                <button>disclosure 01 header</button>
+              </h3>
+              <div aria-hidden="false">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur laoreet massa. Nam eu porta dolor. Vestibulum pulvinar lorem et nisl tempor lacinia.</p>
+                <p>Cras mi nisl, semper ut gravida sed, vulputate vel mauris. In dignissim aliquet fermentum. Donec arcu nunc, tempor sed nunc id, dapibus ornare dolor.</p>
+              </div>
+            </div>
+
+            <div class="disclosure">
+              <h3>
+                <button>disclosure 02 header</button>
+              </h3>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur laoreet massa. Nam eu porta dolor. Vestibulum pulvinar lorem et nisl tempor lacinia.</p>
+                <p>Cras mi nisl, semper ut gravida sed, vulputate vel mauris. In dignissim aliquet fermentum. Donec arcu nunc, tempor sed nunc id, dapibus ornare dolor.</p>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="disclosure"&gt;
+  &lt;h3&gt;
+    &lt;button&gt;disclosure 01 header&lt;/button&gt;
+  &lt;/h3&gt;
+  &lt;div aria-hidden="false"&gt;
+    &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+    &lt;p&gt;Cras mi nisl...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="disclosure"&gt;
+  &lt;h3&gt;
+    &lt;button&gt;...&lt;/button&gt;
+  &lt;/h3&gt;
+  &lt;div&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Two <code>.disclosure</code>s, open and closed.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__form" class="card" aria-labelledby="compound__form--heading">
+
+        <header>
+          <h4 id="compound__form--heading" class="heading">Form</h4>
+        </header>
+
+        <div class="content">
+          <p>Form compounds accept this set of classes:</p>
+
+          <dl>
+
+            <dt>Classic</dt>
+            <dd>
+              <code>.classic</code>
+            </dd>
+
+            <dt>Vertical</dt>
+            <dd>
+              <code>.v</code>
+            </dd>
+
+          </dl>
+
+          <h5>Classic form</h5>
+
+          <div class="file-example">
+
+            <form class="classic">
+
+              <div class="ctrl">If you want to join us on this project, please fill this form. We will take care of your information, and we will send you monthly news to your inbox.</div>
+
+              <label class="ctrl txt" for="form-03--txt-01">
+                <span>
+                  <abbr class="req" title="Required information">*</abbr>Your name
+                </span>
+                <input id="form-03--txt-01" name="form-03--txt-01" placeholder="Name (required)" aria-describedby="form-03--txt-01--description" type="text" required>
+                <small id="form-03--txt-01--description">Use your real name.</small>
+              </label>
+
+              <label class="ctrl txt" for="form-03--txt-02">
+                <span>Your surname</span>
+                <input id="form-03--txt-02" name="form-03--txt-02" placeholder="Surname" type="text">
+              </label>
+
+              <label class="ctrl sel" for="form-03--sel-01">
+                <span>Country</span>
+                <select id="form-03--sel-01" name="form-03--sel-01">
+                  <option value="">Select a country...</option>
+                  <option value="1">Afganistán</option>
+                  <option value="3">Albania</option>
+                  <option value="4">Alemania</option>
+                  <option value="5">Andorra</option>
+                  <option value="6">Angola</option>
+                  <option value="7">Anguilla</option>
+                  <option value="8">Antártida</option>
+                  <option value="9">Antigua y Barbuda</option>
+                  <option value="10">Antillas Holandesas</option>
+                  <option value="11">Arabia Saudí</option>
+                  <option value="12">Argelia</option>
+                  <option value="13">Argentina</option>
+                  <option value="14">Armenia</option>
+                  <option value="15">Aruba</option>
+                  <option value="131">ARY Macedonia</option>
+                  <option value="16">Australia</option>
+                  <option value="17">Austria</option>
+                  <option value="18">Azerbaiyán</option>
+                  <option value="19">Bahamas</option>
+                  <option value="20">Bahréin</option>
+                  <option value="21">Bangladesh</option>
+                  <option value="22">Barbados</option>
+                  <option value="24">Bélgica</option>
+                  <option value="25">Belice</option>
+                  <option value="26">Benin</option>
+                  <option value="27">Bermudas</option>
+                  <option value="28">Bhután</option>
+                  <option value="23">Bielorrusia</option>
+                  <option value="29">Bolivia</option>
+                  <option value="30">Bosnia y Herzegovina</option>
+                  <option value="31">Botsuana</option>
+                  <option value="33">Brasil</option>
+                  <option value="34">Brunéi</option>
+                  <option value="35">Bulgaria</option>
+                  <option value="36">Burkina Faso</option>
+                  <option value="37">Burundi</option>
+                  <option value="38">Cabo Verde</option>
+                  <option value="40">Camboya</option>
+                  <option value="41">Camerún</option>
+                  <option value="42">Canadá</option>
+                  <option value="44">Chad</option>
+                  <option value="46">Chile</option>
+                  <option value="47">China</option>
+                  <option value="48">Chipre</option>
+                  <option value="50">Ciudad del Vaticano</option>
+                  <option value="52">Colombia</option>
+                  <option value="53">Comoras</option>
+                  <option value="55">Congo</option>
+                  <option value="57">Corea del Norte</option>
+                  <option value="58">Corea del Sur</option>
+                  <option value="59">Costa de Marfil</option>
+                  <option value="60">Costa Rica</option>
+                  <option value="61">Croacia</option>
+                  <option value="62">Cuba</option>
+                  <option value="63">Dinamarca</option>
+                  <option value="64">Dominica</option>
+                  <option value="66">Ecuador</option>
+                  <option value="67">Egipto</option>
+                  <option value="68">El Salvador</option>
+                  <option value="69">Emiratos Árabes Unidos</option>
+                  <option value="70">Eritrea</option>
+                  <option value="71">Eslovaquia</option>
+                  <option value="72">Eslovenia</option>
+                  <option value="73">España</option>
+                  <option value="75">Estados Unidos</option>
+                  <option value="76">Estonia</option>
+                  <option value="77">Etiopía</option>
+                  <option value="79">Filipinas</option>
+                  <option value="80">Finlandia</option>
+                  <option value="81">Fiyi</option>
+                  <option value="82">Francia</option>
+                  <option value="83">Gabón</option>
+                  <option value="84">Gambia</option>
+                  <option value="85">Georgia</option>
+                  <option value="87">Ghana</option>
+                  <option value="88">Gibraltar</option>
+                  <option value="89">Granada</option>
+                  <option value="90">Grecia</option>
+                  <option value="91">Groenlandia</option>
+                  <option value="92">Guadalupe</option>
+                  <option value="93">Guam</option>
+                  <option value="94">Guatemala</option>
+                  <option value="95">Guayana Francesa</option>
+                  <option value="96">Guinea</option>
+                  <option value="97">Guinea Ecuatorial</option>
+                  <option value="98">Guinea-Bissau</option>
+                  <option value="99">Guyana</option>
+                  <option value="100">Haití</option>
+                  <option value="102">Honduras</option>
+                  <option value="103">Hong Kong</option>
+                  <option value="104">Hungría</option>
+                  <option value="105">India</option>
+                  <option value="106">Indonesia</option>
+                  <option value="107">Irán</option>
+                  <option value="108">Iraq</option>
+                  <option value="109">Irlanda</option>
+                  <option value="32">Isla Bouvet</option>
+                  <option value="49">Isla de Navidad</option>
+                  <option value="161">Isla Norfolk</option>
+                  <option value="110">Islandia</option>
+                  <option value="39">Islas Caimán</option>
+                  <option value="51">Islas Cocos</option>
+                  <option value="56">Islas Cook</option>
+                  <option value="78">Islas Feroe</option>
+                  <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+                  <option value="2">Islas Gland</option>
+                  <option value="101">Islas Heard y McDonald</option>
+                  <option value="138">Islas Malvinas</option>
+                  <option value="139">Islas Marianas del Norte</option>
+                  <option value="141">Islas Marshall</option>
+                  <option value="174">Islas Pitcairn</option>
+                  <option value="186">Islas Salomón</option>
+                  <option value="223">Islas Turcas y Caicos</option>
+                  <option value="74">Islas ultramarinas de Estados Unidos</option>
+                  <option value="234">Islas Vírgenes Británicas</option>
+                  <option value="235">Islas Vírgenes de los Estados Unidos</option>
+                  <option value="111">Israel</option>
+                  <option value="112">Italia</option>
+                  <option value="113">Jamaica</option>
+                  <option value="114">Japón</option>
+                  <option value="115">Jordania</option>
+                  <option value="116">Kazajstán</option>
+                  <option value="117">Kenia</option>
+                  <option value="118">Kirguistán</option>
+                  <option value="119">Kiribati</option>
+                  <option value="120">Kuwait</option>
+                  <option value="121">Laos</option>
+                  <option value="122">Lesotho</option>
+                  <option value="123">Letonia</option>
+                  <option value="124">Líbano</option>
+                  <option value="125">Liberia</option>
+                  <option value="126">Libia</option>
+                  <option value="127">Liechtenstein</option>
+                  <option value="128">Lituania</option>
+                  <option value="129">Luxemburgo</option>
+                  <option value="130">Macao</option>
+                  <option value="132">Madagascar</option>
+                  <option value="133">Malasia</option>
+                  <option value="134">Malawi</option>
+                  <option value="135">Maldivas</option>
+                  <option value="136">Malí</option>
+                  <option value="137">Malta</option>
+                  <option value="140">Marruecos</option>
+                  <option value="142">Martinica</option>
+                  <option value="143">Mauricio</option>
+                  <option value="144">Mauritania</option>
+                  <option value="145">Mayotte</option>
+                  <option value="146">México</option>
+                  <option value="147">Micronesia</option>
+                  <option value="148">Moldavia</option>
+                  <option value="149">Mónaco</option>
+                  <option value="150">Mongolia</option>
+                  <option value="151">Montserrat</option>
+                  <option value="152">Mozambique</option>
+                  <option value="153">Myanmar</option>
+                  <option value="154">Namibia</option>
+                  <option value="155">Nauru</option>
+                  <option value="156">Nepal</option>
+                  <option value="157">Nicaragua</option>
+                  <option value="158">Níger</option>
+                  <option value="159">Nigeria</option>
+                  <option value="160">Niue</option>
+                  <option value="162">Noruega</option>
+                  <option value="163">Nueva Caledonia</option>
+                  <option value="164">Nueva Zelanda</option>
+                  <option value="165">Omán</option>
+                  <option value="166">Países Bajos</option>
+                  <option value="167">Pakistán</option>
+                  <option value="168">Palau</option>
+                  <option value="169">Palestina</option>
+                  <option value="170">Panamá</option>
+                  <option value="171">Papúa Nueva Guinea</option>
+                  <option value="172">Paraguay</option>
+                  <option value="173">Perú</option>
+                  <option value="175">Polinesia Francesa</option>
+                  <option value="176">Polonia</option>
+                  <option value="177">Portugal</option>
+                  <option value="178">Puerto Rico</option>
+                  <option value="179">Qatar</option>
+                  <option value="180">Reino Unido</option>
+                  <option value="43">República Centroafricana</option>
+                  <option value="45">República Checa</option>
+                  <option value="54">República Democrática del Congo</option>
+                  <option value="65">República Dominicana</option>
+                  <option value="181">Reunión</option>
+                  <option value="182">Ruanda</option>
+                  <option value="183">Rumania</option>
+                  <option value="184">Rusia</option>
+                  <option value="185">Sahara Occidental</option>
+                  <option value="187">Samoa</option>
+                  <option value="188">Samoa Americana</option>
+                  <option value="189">San Cristóbal y Nevis</option>
+                  <option value="190">San Marino</option>
+                  <option value="191">San Pedro y Miquelón</option>
+                  <option value="192">San Vicente y las Granadinas</option>
+                  <option value="193">Santa Helena</option>
+                  <option value="194">Santa Lucía</option>
+                  <option value="195">Santo Tomé y Príncipe</option>
+                  <option value="196">Senegal</option>
+                  <option value="197">Serbia y Montenegro</option>
+                  <option value="198">Seychelles</option>
+                  <option value="199">Sierra Leona</option>
+                  <option value="200">Singapur</option>
+                  <option value="201">Siria</option>
+                  <option value="202">Somalia</option>
+                  <option value="203">Sri Lanka</option>
+                  <option value="204">Suazilandia</option>
+                  <option value="205">Sudáfrica</option>
+                  <option value="206">Sudán</option>
+                  <option value="207">Suecia</option>
+                  <option value="208">Suiza</option>
+                  <option value="209">Surinam</option>
+                  <option value="210">Svalbard y Jan Mayen</option>
+                  <option value="211">Tailandia</option>
+                  <option value="212">Taiwán</option>
+                  <option value="213">Tanzania</option>
+                  <option value="214">Tayikistán</option>
+                  <option value="215">Territorio Británico del Océano Índico</option>
+                  <option value="216">Territorios Australes Franceses</option>
+                  <option value="217">Timor Oriental</option>
+                  <option value="218">Togo</option>
+                  <option value="219">Tokelau</option>
+                  <option value="220">Tonga</option>
+                  <option value="221">Trinidad y Tobago</option>
+                  <option value="222">Túnez</option>
+                  <option value="224">Turkmenistán</option>
+                  <option value="225">Turquía</option>
+                  <option value="226">Tuvalu</option>
+                  <option value="227">Ucrania</option>
+                  <option value="228">Uganda</option>
+                  <option value="229">Uruguay</option>
+                  <option value="230">Uzbekistán</option>
+                  <option value="231">Vanuatu</option>
+                  <option value="232">Venezuela</option>
+                  <option value="233">Vietnam</option>
+                  <option value="236">Wallis y Futuna</option>
+                  <option value="237">Yemen</option>
+                  <option value="238">Yibuti</option>
+                  <option value="239">Zambia</option>
+                  <option value="240">Zimbabue</option>
+                </select>
+              </label>
+
+              <label class="ctrl sel" for="form-03--sel-02">
+                <span>Province / State</span>
+                <select id="form-03--sel-02" name="form-03--sel-02">
+                  <option value="">Select a province...</option>
+                  <option value="15">A Coruña</option>
+                  <option value="01">Araba</option>
+                  <option value="02">Albacete</option>
+                  <option value="03">Alicante/Alacant</option>
+                  <option value="04">Almería</option>
+                  <option value="33">Asturias</option>
+                  <option value="05">Ávila</option>
+                  <option value="06">Badajoz</option>
+                  <option value="08">Barcelona</option>
+                  <option value="48">Bizkaia</option>
+                  <option value="09">Burgos</option>
+                  <option value="10">Cáceres</option>
+                  <option value="11">Cádiz</option>
+                  <option value="39">Cantabria</option>
+                  <option value="12">Castellón/Castelló</option>
+                  <option value="51">Ceuta</option>
+                  <option value="13">Ciudad Real</option>
+                  <option value="14">Córdoba</option>
+                  <option value="16">Cuenca</option>
+                  <option value="20">Gipuzkoa</option>
+                  <option value="17">Girona</option>
+                  <option value="18">Granada</option>
+                  <option value="19">Guadalajara</option>
+                  <option value="21">Huelva</option>
+                  <option value="22">Huesca</option>
+                  <option value="07">Illes Balears</option>
+                  <option value="23">Jaén</option>
+                  <option value="26">La Rioja</option>
+                  <option value="35">Las palmas</option>
+                  <option value="24">León</option>
+                  <option value="25">Lleida</option>
+                  <option value="27">Lugo</option>
+                  <option value="28">Madrid</option>
+                  <option value="29">Málaga</option>
+                  <option value="52">Melilla</option>
+                  <option value="30">Murcia</option>
+                  <option value="31">Navarra</option>
+                  <option value="32">Ourense</option>
+                  <option value="34">Palencia</option>
+                  <option value="36">Pontevedra</option>
+                  <option value="37">Salamanca</option>
+                  <option value="38">Santa Cruz de Tenerife</option>
+                  <option value="40">Segovia</option>
+                  <option value="41">Sevilla</option>
+                  <option value="42">Soria</option>
+                  <option value="43">Tarragona</option>
+                  <option value="44">Teruel</option>
+                  <option value="45">Toledo</option>
+                  <option value="46">Valencia/València</option>
+                  <option value="47">Valladolid</option>
+                  <option value="49">Zamora</option>
+                  <option value="50">Zaragoza</option>
+                </select>
+              </label>
+
+              <label class="ctrl rng" for="form-03--rng-01">
+                <span>Skill Level</span>
+                <input id="form-03--rng-01" name="skill-level" max="100" min="0" value="20" aria-describedby="form-03--rng-01--description" type="range">
+                <small id="form-03--rng-01--description">Some small text.</small>
+              </label>
+
+              <label class="ctrl txt" for="form-03--txt-03">
+                <span>Telephone number</span>
+                <input id="form-03--txt-03" name="form-03--txt-03" placeholder="(0012) 012 345 678" type="tel">
+              </label>
+
+              <label class="ctrl txt" for="form-03--txt-04">
+                <span><abbr class="req" title="Required information">*</abbr>Email</span>
+                <input id="form-03--txt-04" placeholder="email@server.com" type="email" required>
+              </label>
+
+              <label class="ctrl swc" for="form-03--switch-01">
+                <span>Switch</span>
+                <input id="form-03--switch-01" type="checkbox">
+                <span class="thumb"></span>
+              </label>
+
+              <label class="ctrl txta" for="form-03--txta-01">
+                <span>Additional comments</span>
+                <textarea id="form-03--txta-01" name="form-03--txta-01" placeholder="Any other thing you want to tell us?" rows="2"></textarea>
+              </label>
+
+            </form>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;form class="classic"&gt;
+
+  &lt;div class="ctrl"&gt;If you want to join us...&lt;/div&gt;
+
+  &lt;label class="ctrl txt" for="form-03--txt-01"&gt;
+    &lt;span&gt;
+      &lt;abbr class="req" title="Required information"&gt;*&lt;/abbr&gt;Your name
+    &lt;/span&gt;
+    &lt;input id="form-03--txt-01" name="form-03--txt-01" placeholder="Name (required)" aria-describedby="form-03--txt-01--description" type="text" required&gt;
+    &lt;small id="form-03--txt-01--description"&gt;Use your real name.&lt;/small&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-03--txt-02"&gt;
+    &lt;span&gt;Your surname&lt;/span&gt;
+    &lt;input id="form-03--txt-02" name="form-03--txt-02" placeholder="Surname" type="text"&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl sel" for="form-03--sel-01"&gt;
+    &lt;span&gt;Country&lt;/span&gt;
+    &lt;select id="form-03--sel-01" name="form-03--sel-01"&gt;
+      &lt;option value=""&gt;...&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl sel" for="form-03--sel-02"&gt;
+    &lt;span&gt;Province / State&lt;/span&gt;
+    &lt;select id="form-03--sel-02" name="form-03--sel-02"&gt;
+      &lt;option value=""&gt;...&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl rng" for="form-03--rng-01"&gt;
+    &lt;span&gt;Skill Level&lt;/span&gt;
+    &lt;input id="form-03--rng-01" name="skill-level" max="100" min="0" value="20" aria-describedby="form-03--rng-01--description" type="range"&gt;
+    &lt;small id="form-03--rng-01--description"&gt;Some small text.&lt;/small&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-03--txt-03"&gt;
+    &lt;span&gt;Telephone number&lt;/span&gt;
+    &lt;input id="form-03--txt-03" name="form-03--txt-03" placeholder="(0012) 012 345 678" type="tel"&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-03--txt-04"&gt;
+    &lt;span&gt;&lt;abbr class="req" title="Required information"&gt;*&lt;/abbr&gt;Email&lt;/span&gt;
+    &lt;input id="form-03--txt-04" placeholder="email@server.com" type="email" required&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl swc" for="form-03--switch-01"&gt;
+    &lt;span&gt;Switch&lt;/span&gt;
+    &lt;input id="form-03--switch-01" type="checkbox"&gt;
+    &lt;span class="thumb"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txta" for="form-03--txta-01"&gt;
+    &lt;span&gt;Additional comments&lt;/span&gt;
+    &lt;textarea id="form-03--txta-01" name="form-03--txta-01" placeholder="Any other thing you want to tell us?" rows="2"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+
+&lt;/form&gt;</code></pre>
+
+            <figcaption>
+              <code>form</code> with class <code>.classic</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Vertical form</h5>
+
+          <div class="file-example">
+
+            <form class="v">
+
+              <div class="ctrl">If you want to join us on this project, please fill this form. We will take care of your information, and we will send you monthly news to your inbox.</div>
+
+              <label class="ctrl txt" for="form-01--txt-01">
+                <span>
+                  <abbr class="req" title="Required information">*</abbr>Your name
+                </span>
+                <input id="form-01--txt-01" name="form-01--txt-01" placeholder="Name (required)" aria-describedby="form-01--txt-01--description" type="text" required>
+                <small id="form-01--txt-01--description">Use your real name.</small>
+              </label>
+
+              <label class="ctrl txt" for="form-01--txt-02">
+                <span>Your surname</span>
+                <input id="form-01--txt-02" name="form-01--txt-02" placeholder="Surname" type="text">
+              </label>
+
+              <label class="ctrl sel" for="form-01--sel-01">
+                <span>Country</span>
+                <select id="form-01--sel-01" name="form-01--sel-01">
+                  <option value="">Select a country...</option>
+                  <option value="1">Afganistán</option>
+                  <option value="3">Albania</option>
+                  <option value="4">Alemania</option>
+                  <option value="5">Andorra</option>
+                  <option value="6">Angola</option>
+                  <option value="7">Anguilla</option>
+                  <option value="8">Antártida</option>
+                  <option value="9">Antigua y Barbuda</option>
+                  <option value="10">Antillas Holandesas</option>
+                  <option value="11">Arabia Saudí</option>
+                  <option value="12">Argelia</option>
+                  <option value="13">Argentina</option>
+                  <option value="14">Armenia</option>
+                  <option value="15">Aruba</option>
+                  <option value="131">ARY Macedonia</option>
+                  <option value="16">Australia</option>
+                  <option value="17">Austria</option>
+                  <option value="18">Azerbaiyán</option>
+                  <option value="19">Bahamas</option>
+                  <option value="20">Bahréin</option>
+                  <option value="21">Bangladesh</option>
+                  <option value="22">Barbados</option>
+                  <option value="24">Bélgica</option>
+                  <option value="25">Belice</option>
+                  <option value="26">Benin</option>
+                  <option value="27">Bermudas</option>
+                  <option value="28">Bhután</option>
+                  <option value="23">Bielorrusia</option>
+                  <option value="29">Bolivia</option>
+                  <option value="30">Bosnia y Herzegovina</option>
+                  <option value="31">Botsuana</option>
+                  <option value="33">Brasil</option>
+                  <option value="34">Brunéi</option>
+                  <option value="35">Bulgaria</option>
+                  <option value="36">Burkina Faso</option>
+                  <option value="37">Burundi</option>
+                  <option value="38">Cabo Verde</option>
+                  <option value="40">Camboya</option>
+                  <option value="41">Camerún</option>
+                  <option value="42">Canadá</option>
+                  <option value="44">Chad</option>
+                  <option value="46">Chile</option>
+                  <option value="47">China</option>
+                  <option value="48">Chipre</option>
+                  <option value="50">Ciudad del Vaticano</option>
+                  <option value="52">Colombia</option>
+                  <option value="53">Comoras</option>
+                  <option value="55">Congo</option>
+                  <option value="57">Corea del Norte</option>
+                  <option value="58">Corea del Sur</option>
+                  <option value="59">Costa de Marfil</option>
+                  <option value="60">Costa Rica</option>
+                  <option value="61">Croacia</option>
+                  <option value="62">Cuba</option>
+                  <option value="63">Dinamarca</option>
+                  <option value="64">Dominica</option>
+                  <option value="66">Ecuador</option>
+                  <option value="67">Egipto</option>
+                  <option value="68">El Salvador</option>
+                  <option value="69">Emiratos Árabes Unidos</option>
+                  <option value="70">Eritrea</option>
+                  <option value="71">Eslovaquia</option>
+                  <option value="72">Eslovenia</option>
+                  <option value="73">España</option>
+                  <option value="75">Estados Unidos</option>
+                  <option value="76">Estonia</option>
+                  <option value="77">Etiopía</option>
+                  <option value="79">Filipinas</option>
+                  <option value="80">Finlandia</option>
+                  <option value="81">Fiyi</option>
+                  <option value="82">Francia</option>
+                  <option value="83">Gabón</option>
+                  <option value="84">Gambia</option>
+                  <option value="85">Georgia</option>
+                  <option value="87">Ghana</option>
+                  <option value="88">Gibraltar</option>
+                  <option value="89">Granada</option>
+                  <option value="90">Grecia</option>
+                  <option value="91">Groenlandia</option>
+                  <option value="92">Guadalupe</option>
+                  <option value="93">Guam</option>
+                  <option value="94">Guatemala</option>
+                  <option value="95">Guayana Francesa</option>
+                  <option value="96">Guinea</option>
+                  <option value="97">Guinea Ecuatorial</option>
+                  <option value="98">Guinea-Bissau</option>
+                  <option value="99">Guyana</option>
+                  <option value="100">Haití</option>
+                  <option value="102">Honduras</option>
+                  <option value="103">Hong Kong</option>
+                  <option value="104">Hungría</option>
+                  <option value="105">India</option>
+                  <option value="106">Indonesia</option>
+                  <option value="107">Irán</option>
+                  <option value="108">Iraq</option>
+                  <option value="109">Irlanda</option>
+                  <option value="32">Isla Bouvet</option>
+                  <option value="49">Isla de Navidad</option>
+                  <option value="161">Isla Norfolk</option>
+                  <option value="110">Islandia</option>
+                  <option value="39">Islas Caimán</option>
+                  <option value="51">Islas Cocos</option>
+                  <option value="56">Islas Cook</option>
+                  <option value="78">Islas Feroe</option>
+                  <option value="86">Islas Georgias del Sur y Sandwich del Sur</option>
+                  <option value="2">Islas Gland</option>
+                  <option value="101">Islas Heard y McDonald</option>
+                  <option value="138">Islas Malvinas</option>
+                  <option value="139">Islas Marianas del Norte</option>
+                  <option value="141">Islas Marshall</option>
+                  <option value="174">Islas Pitcairn</option>
+                  <option value="186">Islas Salomón</option>
+                  <option value="223">Islas Turcas y Caicos</option>
+                  <option value="74">Islas ultramarinas de Estados Unidos</option>
+                  <option value="234">Islas Vírgenes Británicas</option>
+                  <option value="235">Islas Vírgenes de los Estados Unidos</option>
+                  <option value="111">Israel</option>
+                  <option value="112">Italia</option>
+                  <option value="113">Jamaica</option>
+                  <option value="114">Japón</option>
+                  <option value="115">Jordania</option>
+                  <option value="116">Kazajstán</option>
+                  <option value="117">Kenia</option>
+                  <option value="118">Kirguistán</option>
+                  <option value="119">Kiribati</option>
+                  <option value="120">Kuwait</option>
+                  <option value="121">Laos</option>
+                  <option value="122">Lesotho</option>
+                  <option value="123">Letonia</option>
+                  <option value="124">Líbano</option>
+                  <option value="125">Liberia</option>
+                  <option value="126">Libia</option>
+                  <option value="127">Liechtenstein</option>
+                  <option value="128">Lituania</option>
+                  <option value="129">Luxemburgo</option>
+                  <option value="130">Macao</option>
+                  <option value="132">Madagascar</option>
+                  <option value="133">Malasia</option>
+                  <option value="134">Malawi</option>
+                  <option value="135">Maldivas</option>
+                  <option value="136">Malí</option>
+                  <option value="137">Malta</option>
+                  <option value="140">Marruecos</option>
+                  <option value="142">Martinica</option>
+                  <option value="143">Mauricio</option>
+                  <option value="144">Mauritania</option>
+                  <option value="145">Mayotte</option>
+                  <option value="146">México</option>
+                  <option value="147">Micronesia</option>
+                  <option value="148">Moldavia</option>
+                  <option value="149">Mónaco</option>
+                  <option value="150">Mongolia</option>
+                  <option value="151">Montserrat</option>
+                  <option value="152">Mozambique</option>
+                  <option value="153">Myanmar</option>
+                  <option value="154">Namibia</option>
+                  <option value="155">Nauru</option>
+                  <option value="156">Nepal</option>
+                  <option value="157">Nicaragua</option>
+                  <option value="158">Níger</option>
+                  <option value="159">Nigeria</option>
+                  <option value="160">Niue</option>
+                  <option value="162">Noruega</option>
+                  <option value="163">Nueva Caledonia</option>
+                  <option value="164">Nueva Zelanda</option>
+                  <option value="165">Omán</option>
+                  <option value="166">Países Bajos</option>
+                  <option value="167">Pakistán</option>
+                  <option value="168">Palau</option>
+                  <option value="169">Palestina</option>
+                  <option value="170">Panamá</option>
+                  <option value="171">Papúa Nueva Guinea</option>
+                  <option value="172">Paraguay</option>
+                  <option value="173">Perú</option>
+                  <option value="175">Polinesia Francesa</option>
+                  <option value="176">Polonia</option>
+                  <option value="177">Portugal</option>
+                  <option value="178">Puerto Rico</option>
+                  <option value="179">Qatar</option>
+                  <option value="180">Reino Unido</option>
+                  <option value="43">República Centroafricana</option>
+                  <option value="45">República Checa</option>
+                  <option value="54">República Democrática del Congo</option>
+                  <option value="65">República Dominicana</option>
+                  <option value="181">Reunión</option>
+                  <option value="182">Ruanda</option>
+                  <option value="183">Rumania</option>
+                  <option value="184">Rusia</option>
+                  <option value="185">Sahara Occidental</option>
+                  <option value="187">Samoa</option>
+                  <option value="188">Samoa Americana</option>
+                  <option value="189">San Cristóbal y Nevis</option>
+                  <option value="190">San Marino</option>
+                  <option value="191">San Pedro y Miquelón</option>
+                  <option value="192">San Vicente y las Granadinas</option>
+                  <option value="193">Santa Helena</option>
+                  <option value="194">Santa Lucía</option>
+                  <option value="195">Santo Tomé y Príncipe</option>
+                  <option value="196">Senegal</option>
+                  <option value="197">Serbia y Montenegro</option>
+                  <option value="198">Seychelles</option>
+                  <option value="199">Sierra Leona</option>
+                  <option value="200">Singapur</option>
+                  <option value="201">Siria</option>
+                  <option value="202">Somalia</option>
+                  <option value="203">Sri Lanka</option>
+                  <option value="204">Suazilandia</option>
+                  <option value="205">Sudáfrica</option>
+                  <option value="206">Sudán</option>
+                  <option value="207">Suecia</option>
+                  <option value="208">Suiza</option>
+                  <option value="209">Surinam</option>
+                  <option value="210">Svalbard y Jan Mayen</option>
+                  <option value="211">Tailandia</option>
+                  <option value="212">Taiwán</option>
+                  <option value="213">Tanzania</option>
+                  <option value="214">Tayikistán</option>
+                  <option value="215">Territorio Británico del Océano Índico</option>
+                  <option value="216">Territorios Australes Franceses</option>
+                  <option value="217">Timor Oriental</option>
+                  <option value="218">Togo</option>
+                  <option value="219">Tokelau</option>
+                  <option value="220">Tonga</option>
+                  <option value="221">Trinidad y Tobago</option>
+                  <option value="222">Túnez</option>
+                  <option value="224">Turkmenistán</option>
+                  <option value="225">Turquía</option>
+                  <option value="226">Tuvalu</option>
+                  <option value="227">Ucrania</option>
+                  <option value="228">Uganda</option>
+                  <option value="229">Uruguay</option>
+                  <option value="230">Uzbekistán</option>
+                  <option value="231">Vanuatu</option>
+                  <option value="232">Venezuela</option>
+                  <option value="233">Vietnam</option>
+                  <option value="236">Wallis y Futuna</option>
+                  <option value="237">Yemen</option>
+                  <option value="238">Yibuti</option>
+                  <option value="239">Zambia</option>
+                  <option value="240">Zimbabue</option>
+                </select>
+              </label>
+
+              <label class="ctrl sel" for="form-01--sel-02">
+                <span>Province / State</span>
+                <select id="form-01--sel-02" name="form-01--sel-02">
+                  <option value="">Select a province...</option>
+                  <option value="15">A Coruña</option>
+                  <option value="01">Araba</option>
+                  <option value="02">Albacete</option>
+                  <option value="03">Alicante/Alacant</option>
+                  <option value="04">Almería</option>
+                  <option value="33">Asturias</option>
+                  <option value="05">Ávila</option>
+                  <option value="06">Badajoz</option>
+                  <option value="08">Barcelona</option>
+                  <option value="48">Bizkaia</option>
+                  <option value="09">Burgos</option>
+                  <option value="10">Cáceres</option>
+                  <option value="11">Cádiz</option>
+                  <option value="39">Cantabria</option>
+                  <option value="12">Castellón/Castelló</option>
+                  <option value="51">Ceuta</option>
+                  <option value="13">Ciudad Real</option>
+                  <option value="14">Córdoba</option>
+                  <option value="16">Cuenca</option>
+                  <option value="20">Gipuzkoa</option>
+                  <option value="17">Girona</option>
+                  <option value="18">Granada</option>
+                  <option value="19">Guadalajara</option>
+                  <option value="21">Huelva</option>
+                  <option value="22">Huesca</option>
+                  <option value="07">Illes Balears</option>
+                  <option value="23">Jaén</option>
+                  <option value="26">La Rioja</option>
+                  <option value="35">Las palmas</option>
+                  <option value="24">León</option>
+                  <option value="25">Lleida</option>
+                  <option value="27">Lugo</option>
+                  <option value="28">Madrid</option>
+                  <option value="29">Málaga</option>
+                  <option value="52">Melilla</option>
+                  <option value="30">Murcia</option>
+                  <option value="31">Navarra</option>
+                  <option value="32">Ourense</option>
+                  <option value="34">Palencia</option>
+                  <option value="36">Pontevedra</option>
+                  <option value="37">Salamanca</option>
+                  <option value="38">Santa Cruz de Tenerife</option>
+                  <option value="40">Segovia</option>
+                  <option value="41">Sevilla</option>
+                  <option value="42">Soria</option>
+                  <option value="43">Tarragona</option>
+                  <option value="44">Teruel</option>
+                  <option value="45">Toledo</option>
+                  <option value="46">Valencia/València</option>
+                  <option value="47">Valladolid</option>
+                  <option value="49">Zamora</option>
+                  <option value="50">Zaragoza</option>
+                </select>
+              </label>
+
+              <label class="ctrl rng" for="form-01--rng-01">
+                <span>Skill Level</span>
+                <input id="form-01--rng-01" name="skill-level" max="100" min="0" value="20" aria-describedby="form-01--rng-01--description" type="range">
+                <small id="form-01--rng-01--description">Some small text.</small>
+              </label>
+
+              <label class="ctrl txt" for="form-01--txt-03">
+                <span>Telephone number</span>
+                <input id="form-01--txt-03" name="form-01--txt-03" placeholder="(0012) 012 345 678" type="tel">
+              </label>
+
+              <label class="ctrl txt" for="form-01--txt-04">
+                <span><abbr class="req" title="Required information">*</abbr>Email</span>
+                <input id="form-01--txt-04" placeholder="email@server.com" type="email" required>
+              </label>
+
+              <label class="ctrl swc" for="form-01--switch-01">
+                <span>Switch</span>
+                <input id="form-01--switch-01" type="checkbox">
+                <span class="thumb"></span>
+              </label>
+
+              <label class="ctrl txta" for="form-01--txta-01">
+                <span>Additional comments</span>
+                <textarea id="form-01--txta-01" name="form-01--txta-01" placeholder="Any other thing you want to tell us?" rows="2"></textarea>
+              </label>
+
+            </form>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;form class="v"&gt;
+
+  &lt;div class="ctrl"&gt;If you want to join us on this project, please fill this form. We will take care of your information, and we will send you monthly news to your inbox.&lt;/div&gt;
+
+  &lt;label class="ctrl txt" for="form-01--txt-01"&gt;
+    &lt;span&gt;
+      &lt;abbr class="req" title="Required information"&gt;*&lt;/abbr&gt;Your name
+    &lt;/span&gt;
+    &lt;input id="form-01--txt-01" name="form-01--txt-01" placeholder="Name (required)" aria-describedby="form-01--txt-01--description" type="text" required&gt;
+    &lt;small id="form-01--txt-01--description"&gt;Use your real name.&lt;/small&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-01--txt-02"&gt;
+    &lt;span&gt;Your surname&lt;/span&gt;
+    &lt;input id="form-01--txt-02" name="form-01--txt-02" placeholder="Surname" type="text"&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl sel" for="form-01--sel-01"&gt;
+    &lt;span&gt;Country&lt;/span&gt;
+    &lt;select id="form-01--sel-01" name="form-01--sel-01"&gt;
+      &lt;option value=""&gt;...&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl sel" for="form-01--sel-02"&gt;
+    &lt;span&gt;Province / State&lt;/span&gt;
+    &lt;select id="form-01--sel-02" name="form-01--sel-02"&gt;
+      &lt;option value=""&gt;...&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl rng" for="form-01--rng-01"&gt;
+    &lt;span&gt;Skill Level&lt;/span&gt;
+    &lt;input id="form-01--rng-01" name="skill-level" max="100" min="0" value="20" aria-describedby="form-01--rng-01--description" type="range"&gt;
+    &lt;small id="form-01--rng-01--description"&gt;Some small text.&lt;/small&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-01--txt-03"&gt;
+    &lt;span&gt;Telephone number&lt;/span&gt;
+    &lt;input id="form-01--txt-03" name="form-01--txt-03" placeholder="(0012) 012 345 678" type="tel"&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txt" for="form-01--txt-04"&gt;
+    &lt;span&gt;&lt;abbr class="req" title="Required information"&gt;*&lt;/abbr&gt;Email&lt;/span&gt;
+    &lt;input id="form-01--txt-04" placeholder="email@server.com" type="email" required&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl swc" for="form-01--switch-01"&gt;
+    &lt;span&gt;Switch&lt;/span&gt;
+    &lt;input id="form-01--switch-01" type="checkbox"&gt;
+    &lt;span class="thumb"&gt;&lt;/span&gt;
+  &lt;/label&gt;
+
+  &lt;label class="ctrl txta" for="form-01--txta-01"&gt;
+    &lt;span&gt;Additional comments&lt;/span&gt;
+    &lt;textarea id="form-01--txta-01" name="form-01--txta-01" placeholder="Any other thing you want to tell us?" rows="2"&gt;&lt;/textarea&gt;
+  &lt;/label&gt;
+
+&lt;/form&gt;</code></pre>
+
+            <figcaption>
+              <code>form</code> with class <code>.v</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__flag" class="card" aria-labelledby="compound__flag--heading">
+
+        <header>
+          <h4 id="compound__flag--heading" class="heading">Flag</h4>
+        </header>
+
+        <div class="content">
+          <p>Flag compounds accept this set of classes:</p>
+
+          <dl>
+
+            <dt>Block</dt>
+            <dd>
+              <code>.block</code>
+            </dd>
+
+            <dt>Flip</dt>
+            <dd>
+              <code>.flip</code>
+            </dd>
+
+          </dl>
+
+          <div class="file-example">
+
+            <div class="flag">
+              <div class="visual">
+                <img alt="" src="https://puxl.io/img/puxl-icons/accessibility.svg"/>
+              </div>
+              <div class="textual">
+                <div>Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="flag">
+              <div class="visual">
+                <img alt="" src="https://puxl.io/img/puxl-icons/accessibility.svg"/>
+              </div>
+              <div class="textual">
+                <div>Flag first line</div>
+                <div>Second line</div>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="flag"&gt;
+  &lt;div class="visual"&gt;
+    &lt;img alt="" src="..."/&gt;
+  &lt;/div&gt;
+  &lt;div class="textual"&gt;
+    &lt;div&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="flag"&gt;
+  &lt;div class="visual"&gt;
+    &lt;img alt="" src="..."/&gt;
+  &lt;/div&gt;
+  &lt;div class="textual"&gt;
+    &lt;div&gt;Flag first line&lt;/div&gt;
+    &lt;div&gt;Second line&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Default flag with one textual line, and with two textual lines.
+            </figcaption>
+          </figure>
+
+          <h5>Block</h5>
+
+          <div class="file-example">
+
+            <div class="flag block">
+              <div class="visual">
+                <img alt="" src="https://puxl.io/img/puxl-icons/accessibility.svg"/>
+              </div>
+              <div class="textual">
+                <div>Flag first line</div>
+                <div>Second line</div>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="flag block"&gt;
+  &lt;div class="visual"&gt;
+    &lt;img alt="" src="..."/&gt;
+  &lt;/div&gt;
+  &lt;div class="textual"&gt;
+    &lt;div&gt;...&lt;/div&gt;
+    &lt;div&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Flag with class <code>.block</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Flip</h5>
+
+          <div class="file-example">
+
+            <div class="flag flip">
+              <div class="visual">
+                <img alt="" src="https://puxl.io/img/puxl-icons/accessibility.svg"/>
+              </div>
+              <div class="textual">
+                <div>Flag first line</div>
+                <div>Second line</div>
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="flag flip"&gt;
+  &lt;div class="visual"&gt;
+    &lt;img alt="" src="..."/&gt;
+  &lt;/div&gt;
+  &lt;div class="textual"&gt;
+    &lt;div&gt;...&lt;/div&gt;
+    &lt;div&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Flag with class <code>.flip</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__group" class="card" aria-labelledby="compound__group--heading">
+
+        <header>
+          <h4 id="compound__group--heading" class="heading">Group</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <div class="group" aria-label="Group 1" role="group">
+
+              <a class="btn" href="#" role="button">a.btn</a>
+
+              <label class="txt text--hide" for="group-text-000001">
+                <span>Group input, type text</span>
+                <input id="group-text-000001" name="input" placeholder="Group text 01 lorem ipsum" type="text">
+              </label>
+
+              <label class="sel" for="select--grouped-00002">
+                <select id="select--grouped-00002" name="select-in-group">
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                </select>
+              </label>
+
+              <button class="btn-icn" type="button">
+                <svg viewbox="0 0 32 32" aria-hidden="true">
+                  <path d="M16 19.1s.4 0 .7 1l2.4 7.3c.2.5.8.8 1.3.6s.8-.8.6-1.3l-2.4-7.1c-.4-1.1-.6-2.4-.6-3.6v-2.7c0-.368.078-1.394 1.19-1.524 2.473-.292 4.862-.766 5.006-.795.542-.107.893-.634.784-1.175-.107-.542-.637-.893-1.176-.785-.05.01-4.94.98-7.804.98-2.865 0-7.755-.97-7.804-.98-.54-.11-1.07.243-1.176.784-.108.542.243 1.068.784 1.176.144.03 2.533.503 5.007.795 1.112.13 1.19 1.157 1.19 1.525V16c0 1.2-.2 2.5-.6 3.6L11 26.7c-.2.5.1 1.1.6 1.3s1.1-.1 1.3-.6l2.4-7.3c.3-1 .7-1 .7-1z"/>
+                  <circle cx="16" cy="7" r="2"/>
+                  <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 31C7.8 31 1 24.3 1 16S7.8 1 16 1s15 6.8 15 15-6.7 15-15 15z"/>
+                </svg>
+                <span>Button Icon</span>
+              </button>
+
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="group" aria-label="Group 1" role="group"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.group</code> with some elements.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__input-group" class="card" aria-labelledby="compound__input-group--heading">
+
+        <header>
+          <h4 id="compound__input-group--heading" class="heading">Input group</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <div class="input-group">
+              <span class="addon">https://example.com/users/</span>
+              <label class="txt" for="input-group-01-txt">
+                <span>
+                  <code>Textfield</code>
+                </span>
+                <input id="input-group-01-txt" placeholder="Textfield" type="text">
+              </label>
+              <span class="addon">€</span>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="input-group"&gt;
+  &lt;span class="addon"&gt;...&lt;/span&gt;
+  &lt;label class="txt" for="..."&gt;
+    &lt;span&gt;...&lt;/span&gt;
+    &lt;input id="..." placeholder="..." type="text"&gt;
+  &lt;/label&gt;
+  &lt;span class="addon"&gt;...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              <code>.input-group</code> with some elements.
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article id="compound__responsive-embed" class="card" aria-labelledby="compound__responsive-embed--heading">
+
+        <header>
+          <h4 id="compound__responsive-embed--heading" class="heading">Responsive embed</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <div class="responsive-embed">
+              <iframe src="https://www.youtube.com/embed/dE-vOscpiNc" title="YouTube video: NASA | Earthrise: The 45th Anniversary" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="responsive-embed"&gt;
+  &lt;iframe src="..." title="..."&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Responsive embed video.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__searchbox" class="card" aria-labelledby="compound__searchbox--heading">
+
+        <header>
+          <h4 id="compound__searchbox--heading" class="heading">Searchbox</h4>
+        </header>
+
+        <div class="content">
+          <p>Searchbox compounds accept this set of classes:</p>
+
+          <dl>
+
+            <dt>Block</dt>
+            <dd>
+              <code>.block</code>
+            </dd>
+
+          </dl>
+
+          <div class="file-example">
+
+            <div class="searchbox" role="search">
+              <input aria-label="Search" placeholder="Search..." type="search">
+              <button class="btn-icn" type="submit">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M31.121,26.878l-5.982-5.983c-0.925-0.924-2.301-1.119-3.416-0.586l-2.268-2.268 c3.605-4.321,3.383-10.76-0.676-14.817c-4.295-4.296-11.26-4.296-15.556,0c-4.296,4.296-4.296,11.261,0,15.555 c4.057,4.059,10.495,4.283,14.817,0.68l2.269,2.268c-0.531,1.113-0.336,2.487,0.586,3.41l5.984,5.984 c1.171,1.171,3.071,1.171,4.242,0C32.293,29.95,32.293,28.05,31.121,26.878z M17.363,17.363c-3.514,3.516-9.213,3.516-12.729,0 c-3.514-3.514-3.514-9.213,0-12.729c3.514-3.515,9.213-3.515,12.728,0C20.879,8.15,20.879,13.85,17.363,17.363z M30.414,30.414 c-0.78,0.779-2.048,0.779-2.828,0l-5.984-5.984c-0.771-0.781-0.771-2.048,0-2.828c0.78-0.771,2.049-0.781,2.828,0l5.984,5.984 C31.193,28.366,31.193,29.634,30.414,30.414z"/>
+                </svg>
+                <span>Search</span>
+              </button>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="searchbox" role="search"&gt;
+  &lt;input aria-label="Search" placeholder="Search..." type="search"&gt;
+  &lt;button class="btn-icn" type="submit"&gt;
+    &lt;svg viewBox="0 0 32 32" aria-hidden="true"&gt;
+      ...
+    &lt;/svg&gt;
+    &lt;span&gt;Search&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Searchbox with a textfield and a button.
+            </figcaption>
+          </figure>
+
+          <h5>Block</h5>
+
+          <div class="file-example">
+
+            <div class="searchbox block" role="search">
+              <input aria-label="Search" placeholder="Search..." type="search">
+              <button class="btn-icn" type="submit">
+                <svg viewBox="0 0 32 32" aria-hidden="true">
+                  <path d="M31.121,26.878l-5.982-5.983c-0.925-0.924-2.301-1.119-3.416-0.586l-2.268-2.268 c3.605-4.321,3.383-10.76-0.676-14.817c-4.295-4.296-11.26-4.296-15.556,0c-4.296,4.296-4.296,11.261,0,15.555 c4.057,4.059,10.495,4.283,14.817,0.68l2.269,2.268c-0.531,1.113-0.336,2.487,0.586,3.41l5.984,5.984 c1.171,1.171,3.071,1.171,4.242,0C32.293,29.95,32.293,28.05,31.121,26.878z M17.363,17.363c-3.514,3.516-9.213,3.516-12.729,0 c-3.514-3.514-3.514-9.213,0-12.729c3.514-3.515,9.213-3.515,12.728,0C20.879,8.15,20.879,13.85,17.363,17.363z M30.414,30.414 c-0.78,0.779-2.048,0.779-2.828,0l-5.984-5.984c-0.771-0.781-0.771-2.048,0-2.828c0.78-0.771,2.049-0.781,2.828,0l5.984,5.984 C31.193,28.366,31.193,29.634,30.414,30.414z"/>
+                </svg>
+                <span>Search</span>
+              </button>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="searchbox block" role="search"&gt;
+  &lt;input aria-label="Search" placeholder="Search..." type="search"&gt;
+  &lt;button class="btn-icn" type="submit"&gt;
+    &lt;svg viewBox="0 0 32 32" aria-hidden="true"&gt;
+      ...
+    &lt;/svg&gt;
+    &lt;span&gt;Search&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="compound__tabs" class="card" aria-labelledby="compound__tabs--heading">
+
+        <header>
+          <h4 id="compound__tabs--heading" class="heading">Tabs</h4>
+        </header>
+
+        <div class="content">
+          <div class="alert info" role="alert">
+            Requires puxl-js/tabs.js
+          </div>
+
+          <div class="file-example">
+
+            <div class="tabs" aria-label="Tabs 1 label">
+              <div role="tablist">
+                <button role="tab">tab1</button>
+                <button class="tab-icn-txt" role="tab">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 19.1s.4 0 .7 1l2.4 7.3c.2.5.8.8 1.3.6s.8-.8.6-1.3l-2.4-7.1c-.4-1.1-.6-2.4-.6-3.6v-2.7c0-.368.078-1.394 1.19-1.524 2.473-.292 4.862-.766 5.006-.795.542-.107.893-.634.784-1.175-.107-.542-.637-.893-1.176-.785-.05.01-4.94.98-7.804.98-2.865 0-7.755-.97-7.804-.98-.54-.11-1.07.243-1.176.784-.108.542.243 1.068.784 1.176.144.03 2.533.503 5.007.795 1.112.13 1.19 1.157 1.19 1.525V16c0 1.2-.2 2.5-.6 3.6L11 26.7c-.2.5.1 1.1.6 1.3s1.1-.1 1.3-.6l2.4-7.3c.3-1 .7-1 .7-1z"/>
+                    <circle cx="16" cy="7" r="2"/>
+                    <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 31C7.8 31 1 24.3 1 16S7.8 1 16 1s15 6.8 15 15-6.7 15-15 15z"/>
+                  </svg>
+                  <span>Tab icon 2</span>
+                </button>
+                <button class="tab-icn-txt v" role="tab">
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 19.1s.4 0 .7 1l2.4 7.3c.2.5.8.8 1.3.6s.8-.8.6-1.3l-2.4-7.1c-.4-1.1-.6-2.4-.6-3.6v-2.7c0-.368.078-1.394 1.19-1.524 2.473-.292 4.862-.766 5.006-.795.542-.107.893-.634.784-1.175-.107-.542-.637-.893-1.176-.785-.05.01-4.94.98-7.804.98-2.865 0-7.755-.97-7.804-.98-.54-.11-1.07.243-1.176.784-.108.542.243 1.068.784 1.176.144.03 2.533.503 5.007.795 1.112.13 1.19 1.157 1.19 1.525V16c0 1.2-.2 2.5-.6 3.6L11 26.7c-.2.5.1 1.1.6 1.3s1.1-.1 1.3-.6l2.4-7.3c.3-1 .7-1 .7-1z"/>
+                    <circle cx="16" cy="7" r="2"/>
+                    <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 31C7.8 31 1 24.3 1 16S7.8 1 16 1s15 6.8 15 15-6.7 15-15 15z"/>
+                  </svg>
+                  <span>Tab icon 3</span>
+                </button>
+                <button class="tab-icn-txt v" role="tab">
+                  <span>Tab icon 4</span>
+                  <svg viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M16 19.1s.4 0 .7 1l2.4 7.3c.2.5.8.8 1.3.6s.8-.8.6-1.3l-2.4-7.1c-.4-1.1-.6-2.4-.6-3.6v-2.7c0-.368.078-1.394 1.19-1.524 2.473-.292 4.862-.766 5.006-.795.542-.107.893-.634.784-1.175-.107-.542-.637-.893-1.176-.785-.05.01-4.94.98-7.804.98-2.865 0-7.755-.97-7.804-.98-.54-.11-1.07.243-1.176.784-.108.542.243 1.068.784 1.176.144.03 2.533.503 5.007.795 1.112.13 1.19 1.157 1.19 1.525V16c0 1.2-.2 2.5-.6 3.6L11 26.7c-.2.5.1 1.1.6 1.3s1.1-.1 1.3-.6l2.4-7.3c.3-1 .7-1 .7-1z"/>
+                    <circle cx="16" cy="7" r="2"/>
+                    <path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 31C7.8 31 1 24.3 1 16S7.8 1 16 1s15 6.8 15 15-6.7 15-15 15z"/>
+                  </svg>
+                </button>
+              </div>
+              <div role="tabpanel">
+                panel1
+
+                <div id="putortabs" class="tabs" aria-label="Tabs label">
+                  <div role="tablist">
+                    <button aria-selected="true" role="tab" disabled>tab1 2</button>
+                    <button role="tab">tab2 2</button>
+                    <button role="tab">tab3 2</button>
+                  </div>
+                  <div role="tabpanel">
+                    subpanel1
+                  </div>
+                  <div role="tabpanel">
+                    subpanel2
+                  </div>
+                  <div role="tabpanel">
+                    subpanel3
+                  </div>
+                </div>
+
+              </div>
+              <div role="tabpanel">
+                panel2
+              </div>
+              <div role="tabpanel">
+                panel3
+              </div>
+              <div role="tabpanel">
+                panel4
+              </div>
+            </div>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;div class="tabs" aria-label="Tabs 1 label"&gt;
+  &lt;div role="tablist"&gt;
+    &lt;button role="tab"&gt;tab1&lt;/button&gt;
+    &lt;button class="tab-icn-txt" role="tab"&gt;
+      &lt;svg viewBox="0 0 32 32" aria-hidden="true"&gt;
+        ...
+      &lt;/svg&gt;
+      &lt;span&gt;Tab icon 2&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="tab-icn-txt v" role="tab"&gt;
+      &lt;svg viewBox="0 0 32 32" aria-hidden="true"&gt;
+        ...
+      &lt;/svg&gt;
+      &lt;span&gt;Tab icon 3&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class="tab-icn-txt v" role="tab"&gt;
+      &lt;span&gt;Tab icon 4&lt;/span&gt;
+      &lt;svg viewBox="0 0 32 32" aria-hidden="true"&gt;
+        ...
+      &lt;/svg&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div role="tabpanel"&gt;
+    panel1
+
+    &lt;div id="putortabs" class="tabs" aria-label="Tabs label"&gt;
+      &lt;div role="tablist"&gt;
+        &lt;button aria-selected="true" role="tab" disabled&gt;tab1 2&lt;/button&gt;
+        &lt;button role="tab"&gt;tab2 2&lt;/button&gt;
+        &lt;button role="tab"&gt;tab3 2&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div role="tabpanel"&gt;
+        subpanel1
+      &lt;/div&gt;
+      &lt;div role="tabpanel"&gt;
+        subpanel2
+      &lt;/div&gt;
+      &lt;div role="tabpanel"&gt;
+        subpanel3
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div role="tabpanel"&gt;
+    panel2
+  &lt;/div&gt;
+  &lt;div role="tabpanel"&gt;
+    panel3
+  &lt;/div&gt;
+  &lt;div role="tabpanel"&gt;
+    panel4
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <figcaption>
+              Tabs with tabs inside tab panel 1.
+            </figcaption>
+          </figure>
+
+        </div>
+
+      </article>
+
+    </main>
+
+
+  </div>
+
+
+  <footer role="contentinfo">
+
+    <div class="grid">
+
+      <div class="col-xs-12 col-sm-8">
+
+        <p>
+          <strong>PUXL framework <small>v1</small></strong>.
+          <br>
+          <small>Created by <a href="https://github.com/mrkanuel" rel="external">@MrKanuel</a>. Brought by <a href="https://github.com/orgs/puxl/teams/puxl-clan" rel="external">The PUXL Clan</a>, with love from Basque Country.</small>
+          <br>
+          <small>Code licensed <a href="https://github.com/puxl/puxl-framework/blob/master/LICENSE">GPL V3</a>, docs <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</small>
+        </p>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4 text--right">
+
+        <a class="btn-icn lg capsule" href="mailto:info@puxl.io" role="button">
+          <img alt="" src="https://puxl.io/img/puxl-icons/email-unread.svg" aria-hidden="true">
+          <span>Email contact</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.linkedin.com/company/puxl/" role="button">
+          <img alt="" src="https://puxl.io/img/logo/linkedin.svg" aria-hidden="true">
+          <span>Company on LinkedIn</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.reddit.com/user/puxl_io" role="button">
+          <img alt="" src="https://puxl.io/img/logo/reddit.svg" aria-hidden="true">
+          <span>Community on Reddit</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://github.com/puxl" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>Repository on GitHub</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://t.me/joinchat/AoC6ohKwoJDMIiqe_e01cA" role="button">
+          <img alt="" src="https://puxl.io/img/logo/telegram.svg" aria-hidden="true">
+          <span>Channel on Telegram</span>
+        </a>
+
+      </div>
+
+      <div class="col-xs-12 text--center">
+        <small><a href="https://puxl.io/aviso-legal/">Legal</a> · <a href="https://puxl.io/politica-de-privacidad/">Privacy</a></small>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../../../js/puxl.js"></script>
+  <script src="../../../js/puxl-js/appBar.js"></script>
+  <script src="../../../js/puxl-js/disclosure.js"></script>
+  <script src="../../../js/puxl-js/tabs.js"></script>
+  <script src="../../../vendor/prism-js/prismJS_1-15-0.min.js"></script>
+  <script>
+    'use strict';
+
+    // Initialize app bar.
+    puxl_appBar(
+      // id
+      'app-bar',
+      // iconPath
+      '../../../img/puxl-icons/',
+      // iconOpened
+      'cross.svg',
+      // iconClosed
+      'menu-burger.svg',
+      // txtOpened
+      'Close navigation menu',
+      // txtClosed
+      'Open navigation menu'
+    );
+
+    // Initialize disclosures.
+    puxl_disclosure(
+      // iconPath
+      '../../../img/puxl-icons/',
+      // iconOpened
+      'arrow-n.svg',
+      // iconClosed
+      'arrow-s.svg',
+      // txtOpened
+      'Close disclosure',
+      // txtClosed
+      'Open disclosure'
+    );
+
+    // Initialize tabs.
+    puxl_tabs();
+  </script>
+
+</body>
+</html>

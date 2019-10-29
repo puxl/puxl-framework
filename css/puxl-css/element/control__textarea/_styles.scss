@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__textarea/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/mixin/_error-warning.scss
+//                 puxl-framework/css/puxl/element/control__textfield-appearance/_placeholders.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .txta {
+    &:not([for]) {
+      @include error-warning('This <label class="txta"> tag must have a non-empty for="" attribute. It must point at the child <textarea> ID. Example: <label class="txta" for="[ child textarea ID ]">.');
+    }
+
+    @extend %txta;
+
+    > textarea {
+      &:not([id]) {
+        @include error-warning('This <textarea> tag must have a non-empty id="" attribute. Remember, the parent <label class="txta"> for="" attribute must be this <textarea> ID. Example: <textarea id="[ some ID ]">.');
+      }
+    }// > textarea
+
+    > small {
+      &:not([id]) {
+        @include error-warning('This <small> tag must have a non-empty id="" attribute. Remember, the precedent <textarea> tag must have a aria-describedby="" attribute whose value is this <small> tag ID. Example: <small id="[ some ID ]">.');
+      }
+    }// > small
+  }

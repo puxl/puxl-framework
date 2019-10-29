@@ -1,0 +1,64 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__select/_styles.scss
+//
+//    Requires:    puxl-framework/css/puxl/mixin/_error-warning.scss
+//                 puxl-framework/css/puxl/element/control__select-appearance/_placeholders.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .sel {
+    &:not([for]) {
+      @include error-warning('This <label class="sel"> tag must have a non-empty for="" attribute. It must point at the child <select> ID. Example: <label class="sel" for="[ child select ID ]">.');
+    }
+
+    @extend %sel;
+
+    > select {
+      &:not([id]) {
+        @include error-warning('This <select> tag must have a non-empty id="" attribute. Remember, the parent <label class="sel"> for="" attribute must be this <input> ID. Example: <select id="[ some ID ]">.');
+      }
+    }// > select
+
+    > small {
+      &:not([id]) {
+        @include error-warning('This <small> tag must have a non-empty id="" attribute. Remember, the precedent <select> tag must have a aria-describedby="" attribute whose value is this <small> tag ID. Example: <small id="[ some ID ]">.');
+      }
+    }// > small
+  }
+
+  .sel-mul {
+    &:not([for]) {
+      @include error-warning('This <label class="sel-mul"> tag must have a non-empty for="" attribute. It must point at the child <select> ID. Example: <label class="sel-mul" for="[ child select ID ]">.');
+    }
+
+    @extend %sel-mul;
+
+    > select {
+      &:not([id]) {
+        @include error-warning('This <select> tag must have a non-empty id="" attribute. Remember, the parent <label class="sel-mul"> for="" attribute must be this <input> ID. Example: <select id="[ some ID ]">.');
+      }
+
+      &:not([multiple]) {
+        @include error-warning('This <select> tag must have a multiple attribute. Example: <select multiple>.');
+      }
+    }// > select
+
+    > small {
+      &:not([id]) {
+        @include error-warning('This <small> tag must have a non-empty id="" attribute. Remember, the precedent <select> tag must have a aria-describedby="" attribute whose value is this <small> tag ID. Example: <small id="[ some ID ]">.');
+      }
+    }// > small
+  }

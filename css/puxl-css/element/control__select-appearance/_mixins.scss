@@ -1,0 +1,223 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__select-appearance/_mixins.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/function/_draw-svg.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/element/control__button-appearance/_mixins.scss
+//                 puxl-framework/css/puxl/element/control__textfield-appearance/_mixins.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Select: Look ghost - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin select--ghost--rest($variant) {
+    --btn--bg-c:    transparent;
+    --btn--bd-c:    colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+    --btn--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+
+    --txt--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+  }
+
+  @mixin select--ghost--hover($variant) {
+    --btn--bg-c:    transparentize(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), .9);
+    --btn--bd-c:    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%);
+    --btn--c:       darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 20%);
+  }
+
+  @mixin select--ghost--focus-hover($variant) {
+    --btn--bd-c:    darken(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+  }
+
+  @mixin select--ghost--disabled($variant) {
+    --btn--bg-c:    transparent;
+    --btn--bd-c:    lighten(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+    --btn--c:       lighten(colors-shade-contrast-dark-light(get-color($variant), $main--background-color), 10%);
+  }
+
+
+  //  Select: Look solid - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin select--solid--rest($variant) {
+    --btn--bg-c:    var(--color--#{$variant});
+    --btn--bd-c:    var(--btn--bg-c);
+    --btn--c:       contrast-color-black-white(get-color($variant));
+
+    --txt--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+  }
+
+  @mixin select--solid--hover($variant) {
+    --btn--bg-c:    get-color($variant, lighter);
+    --btn--c:       contrast-color-black-white(get-color($variant, lighter));
+  }
+
+  @mixin select--solid--focus-hover($variant) {
+    --btn--bd-c:    get-color($variant, darker);
+  }
+
+  @mixin select--solid--disabled($variant) {
+    --btn--bg-c:    get-color($variant, lightest);
+    --btn--bd-c:    get-color($variant, lightest);
+    --btn--c:       get-color($variant);
+  }
+
+
+  //  Select multiple: Look ghost  - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin select-multiple--ghost--rest($variant) {
+    --txt--bg-c:    transparent;
+    --txt--bd-c:    transparent
+                    transparent
+                    var(--color--#{$variant});
+    --txt--sh:      $txt--box-shadow--none;
+    --txt--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+  }
+
+  @mixin select-multiple--ghost--hover($variant) {
+    --txt--bd-c:    get-color($variant, darker);
+  }
+
+  @mixin select-multiple--ghost--disabled($variant) {
+    --txt--bg-c:    transparentize(get-color($variant, lightest), $opacity--disabled);
+    --txt--bd-c:    transparentize(get-color($variant, lightest), $opacity--disabled);
+    --txt--c:       var(--color--#{$variant});
+  }
+
+
+  //  Select multiple: Look solid  - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin select-multiple--solid--rest($variant) {
+    --txt--bg-c:    $body--background-color;
+    --txt--bd-c:    transparent
+                    transparent
+                    var(--color--#{$variant});
+    --txt--sh:      $txt--box-shadow;
+    --txt--c:       colors-shade-contrast-dark-light(get-color($variant), $main--background-color);
+  }
+
+  @mixin select-multiple--solid--hover($variant) {
+    --txt--bd-c:    get-color($variant, darker);
+    --txt--sh:      $txt--box-shadow;
+  }
+
+  @mixin select-multiple--solid--disabled($variant) {
+    --btn--bg-c:    get-color($variant, lightest);
+    --btn--bd-c:    get-color($variant, lightest);
+    --btn--c:       get-color($variant);
+
+    --txt--bg-c:    get-color($variant, lightest);
+    --txt--bd-c:    get-color($variant, lightest);
+    --txt--sh:      $txt--box-shadow--none;
+    --txt--c:       get-color($variant, darkest);
+  }
+
+
+  //  Control select appearance - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin control__select-appearance($look, $variant) {
+    @if ($look == ghost) {
+
+      @include select--ghost--rest($variant);
+
+      > select {
+        background-image:    url(draw-svg(drop-arrow--s, colors-shade-contrast-dark-light(get-color($variant), $main--background-color)));
+      }
+
+      > select:focus,
+      &:hover > select {
+        @include select--ghost--hover($variant);
+
+        background-image:    url(draw-svg(drop-arrow--s, colors-shade-contrast-dark-light(get-color($variant, lighter), $main--background-color)));
+      }
+
+      &:hover > select:focus {
+        @include select--ghost--focus-hover($variant);
+      }
+
+      &.disabled > select,
+      > select:disabled {
+        @include select--ghost--disabled($variant);
+
+        background-image:    url(draw-svg(drop-arrow--s, get-color($variant)));
+      }
+
+    }// @if ($look == ghost)
+
+    @if ($look == solid) {
+
+      @include select--solid--rest($variant);
+
+      > select {
+        background-image:    url(draw-svg(drop-arrow--s, contrast-color-black-white(get-color($variant))));
+      }
+
+      > select:focus,
+      &:hover > select {
+        @include select--solid--hover($variant);
+
+        background-image:    url(draw-svg(drop-arrow--s, contrast-color-black-white(get-color($variant, lighter))));
+      }
+
+      &:hover > select:focus {
+        @include select--solid--focus-hover($variant);
+      }
+
+      &.disabled > select,
+      > select:disabled {
+        @include select--solid--disabled($variant);
+
+        background-image:    url(draw-svg(drop-arrow--s, get-color($variant)));
+      }
+
+    }// @if ($look == solid)
+  }// @mixin control__select-appearance($look, $variant)
+
+
+  //  Control select multiple appearance  - - - - - - - - - - - - - - - - - - - -
+
+  @mixin control__select-multiple-appearance($look, $variant) {
+    @if ($look == ghost) {
+
+      @include select-multiple--ghost--rest($variant);
+
+      > select:focus,
+      &:hover > select {
+        @include select-multiple--ghost--hover($variant);
+      }
+
+      &.disabled > select,
+      > select:disabled {
+        @include select-multiple--ghost--disabled($variant);
+      }
+
+    }// @if ($look == ghost)
+
+    @if ($look == solid) {
+
+      @include select-multiple--solid--rest($variant);
+
+      > select:focus,
+      &:hover > select {
+        @include select-multiple--solid--hover($variant);
+      }
+
+      &.disabled > select,
+      > select:disabled {
+        @include select-multiple--solid--disabled($variant);
+      }
+
+    }// @if ($look == solid)
+  }// @mixin control__select-multiple-appearance($look, $variant)

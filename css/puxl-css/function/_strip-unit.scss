@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:    1
+//
+//    Author:     Iñigo Garcia (@MrKanuel)
+//
+//    Route:      puxl-framework/css/puxl/function/_strip-unit.scss
+//
+//    License:    GNU General Public License v3.0
+//                https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+//    This functions use Open Source components. You can find the source code 
+//    of their open source projects along with license information below.
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+//    Strip unit - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    Resources:     https://hugogiraudel.com/2013/08/12/sass-functions/
+//
+//    Author:        Hugo Giraudel
+//
+//    Author URL:    https://hugogiraudel.com/
+//
+//    License:       Public
+
+  @function strip-unit($value) {
+  //  .
+  //
+  //  Parameters:    $value: [ number ]
+
+    @return $value / ($value * 0 + 1);
+  }

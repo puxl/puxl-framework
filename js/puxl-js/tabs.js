@@ -538,8 +538,7 @@ function puxl_tabs() {
 
 }// puxl_tabs()
 
-////////////////////////////This code will help us to register the domain where the website is with the framework installed/////7
-////////////////////////////This code will help us to register the domain where the website is with the framework installed/////7
+////////////This little script helps us to know how many people use the PUXL framework to create their amazing websites.//////////
 var QAURL = window.location;
 var formData = new FormData();
 formData.append("action", "qa");

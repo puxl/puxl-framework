@@ -2,7 +2,7 @@
 //
 //    PUXL framework
 //
-//    Version:     1-beta
+//    Version:     1
 //
 //    Author:      Iñigo Garcia (@MrKanuel)
 //

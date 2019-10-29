@@ -27,11 +27,11 @@ var
   // agent: The browser user-agent.
   agent = navigator.userAgent,
 
-  // qaUrl: The document location.
-  qaUrl = window.location,
+  // url: The document location.
+  url = window.location,
 
-  // formData: A new FormData object.
-  formData = new FormData(),
+  // stats: A new FormData object.
+  stats = new FormData(),
 
   // xhr: A new XML Http Request.
   xhr = new XMLHttpRequest();
@@ -54,16 +54,16 @@ if (html.classList.contains('no-js')) {
 }
 
 
-// This code helps us for statistical purposes to register domains where
-// PUXL framework is published.
-// Add "action" key with value "qa" to the FormData object - - - - - - - - - - -
-formData.append('action', 'qa');
+// This code helps us for statistical purposes to know where PUXL framework
+// is published.
+// Add "action" key with a value of "qa" to the stats object - - - - - - - - - -
+stats.append('action', 'qa');
 
-// Add "url" key with value of var qaUrl to the FormData object  - - - - - - - -
-formData.append('url', qaUrl);
+// Add "url" key with value of url.href to the stats object  - - - - - - - - - -
+stats.append('url', url.href);
 
 // Open a "POST" request to puxl.io/track  - - - - - - - - - - - - - - - - - - -
 xhr.open('POST', '//puxl.io/track/wp-admin/admin-ajax.php');
 
 // Send the FormData object to puxl.io/track - - - - - - - - - - - - - - - - - -
-xhr.send(formData);
+xhr.send(stats);

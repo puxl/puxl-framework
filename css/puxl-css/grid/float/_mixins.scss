@@ -1,0 +1,341 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       css/puxl/grid/float/_mixins.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/placeholder/_clearfix.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Float: Grid fluid  - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin float__grid-fluid($column-gap: null, $row-gap: null) {
+
+    @extend %clearfix;
+
+    width: 100%;
+
+    @if $column-gap != null and $row-gap != null {
+      padding:    0
+                  ($column-gap / 2);
+
+      &:first-child {
+        padding-top:    ($row-gap / 2);
+      }
+
+      &:last-child {
+        padding-bottom:    ($row-gap / 2);
+      }
+    }
+
+    @else if $column-gap != null and $row-gap == null {
+      padding:    0
+                  ($column-gap / 2);
+
+      &:first-child {
+        padding-top:    ($column-gap / 2);
+      }
+
+      &:last-child {
+        padding-bottom:    ($column-gap / 2);
+      }
+    }
+
+    @else if $column-gap == null and $row-gap == null {
+      padding:    0
+                  ($grid--column-gap / 2);
+
+      &:first-child {
+        padding-top:    ($grid--row-gap / 2);
+      }
+
+      &:last-child {
+        padding-bottom:    ($grid--row-gap / 2);
+      }
+    }
+
+  }
+
+
+  //  Float: Grid  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin float__grid($column-gap: null, $row-gap: null) {
+    @include float__grid-fluid($column-gap, $row-gap);
+
+    margin-left:     auto;
+    margin-right:    auto;
+
+    @each $key, $value in $breakpoints {
+      @media (min-width: map-get($breakpoints, #{$key})) {
+        max-width:    map-get($breakpoints, #{$key});
+      }
+    }
+  }
+
+
+  //  Float: Column  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin float__column($breakpoint, $i, $column-gap: null, $row-gap: null) {
+
+    $multiplier:    $i / $grid--column-count;
+
+    @if type-of($breakpoint) == string and type-of($i) == number {
+
+      @if $breakpoint == 'xs' {
+
+        @if $column-gap != null and $row-gap != null {
+          margin:    ($row-gap / 2)
+                     ($column-gap / 2);
+
+          @if ($column-gap > 0) {
+            width:    calc(
+                          (100% * #{$multiplier})
+                        - #{$column-gap}
+                      );
+          }
+          @else {
+            width:    calc(
+                        (100% * #{$multiplier})
+                      );
+          }
+        }// @if $column-gap != null and $row-gap != null
+
+        @if $column-gap != null and $row-gap == null {
+          margin:    ($column-gap / 2);
+
+          @if $column-gap > 0 {
+            width:    calc(
+                          (100% * #{$multiplier})
+                        - #{$column-gap}
+                      );
+          }
+          @else {
+            width:    calc(
+                          (100% * #{$multiplier})
+                        - #{$column-gap}
+                      );
+          }
+        }// @if $column-gap != null and $row-gap == null
+
+        @if $column-gap == null and $row-gap == null {
+          margin:    ($grid--row-gap / 2)
+                     ($grid--column-gap / 2);
+
+          @if $grid--column-gap > 0 {
+            width:    calc(
+                          (100% * #{$multiplier})
+                        - #{$grid--column-gap}
+                      );
+          }
+          @else {
+            width:    calc(
+                        (100% * #{$multiplier})
+                      );
+          }
+        }// @if $column-gap == null and $row-gap == null
+
+      }// @if $breakpoint == 'xs'
+
+      @else if $breakpoint == 'sm' or $breakpoint == 'md' or $breakpoint == 'lg' or $breakpoint == 'xl' {
+
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+
+          @if $column-gap != null and $row-gap != null {
+            margin:    ($row-gap / 2)
+                       ($column-gap / 2);
+
+            @if ($column-gap > 0) {
+              width:    calc(
+                            (100% * #{$multiplier})
+                          - #{$column-gap}
+                        );
+            }
+            @else {
+              width:    calc(
+                          (100% * #{$multiplier})
+                        );
+            }
+          }// @if $column-gap != null and $row-gap != null
+
+          @if $column-gap != null and $row-gap == null {
+            margin:    ($column-gap / 2);
+
+            @if $column-gap > 0 {
+              width:    calc(
+                          (100% * #{$multiplier})
+                          - #{$column-gap}
+                        );
+            }
+            @else {
+              width:    calc(
+                          (100% * #{$multiplier})
+                        );
+            }
+          }// @if $column-gap != null and $row-gap == null
+
+          @if $column-gap == null and $row-gap == null {
+            margin:    ($grid--row-gap / 2)
+                       ($grid--column-gap / 2);
+
+            @if $grid--column-gap > 0 {
+              width:    calc(
+                            (100% * #{$multiplier})
+                          - #{$grid--column-gap}
+                        );
+            }
+            @else {
+              width:    calc(
+                          (100% * #{$multiplier})
+                        );
+            }
+          }// @if $column-gap == null and $row-gap == null
+
+        }// @media (min-width: map-get($breakpoints, $breakpoint))
+
+      }// @else if $breakpoint == 'sm' or $breakpoint == 'md' or $breakpoint == 'lg' or $breakpoint == 'xl'
+
+    }// @if type-of($breakpoint) == string and type-of($i) == number
+
+  }
+
+
+  //  Float: Column offset - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @mixin float__column-offset($breakpoint, $offset, $column-gap: null) {
+
+    $multiplier: $offset / $grid--column-count;
+
+    @if type-of($breakpoint) == string and type-of($offset) == number {
+
+      @if ($breakpoint == 'xs') {
+
+        [dir=ltr] & {
+          @if $column-gap != null {
+            @if $column-gap > 0 {
+              margin-left:    calc(
+                                  (100% * #{$multiplier})
+                                + (#{$column-gap} / 2)
+                              );
+            }
+            @else {
+              margin-left:    calc(100% * #{$multiplier});
+            }
+          }// @if $column-gap != null
+
+          @if $column-gap == null {
+            @if $grid--column-gap > 0 {
+              margin-left:    calc(
+                                  (100% * #{$multiplier})
+                                + (#{$grid--column-gap} / 2)
+                              );
+            }
+            @else {
+              margin-left:    calc(100% * #{$multiplier});
+            }
+          }// @if $column-gap == null
+        }
+
+        [dir=rtl] & {
+          @if $column-gap != null {
+            @if $column-gap > 0 {
+              margin-right:    calc(
+                                   (100% * #{$multiplier})
+                                 + (#{$column-gap} / 2)
+                               );
+            }
+            @else {
+              margin-right:    calc(100% * #{$multiplier});
+            }
+          }// @if $column-gap != null
+
+          @if $column-gap == null {
+            @if $grid--column-gap > 0 {
+              margin-right:    calc(
+                                   (100% * #{$multiplier})
+                                 + (#{$grid--column-gap} / 2)
+                               );
+            }
+            @else {
+              margin-right:    calc(100% * #{$multiplier});
+            }
+          }// @if $column-gap == null
+        }
+
+      }// @if ($breakpoint == 'xs')
+
+      @else if $breakpoint == 'sm' or $breakpoint == 'md' or $breakpoint == 'lg' or $breakpoint == 'xl' {
+
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+
+          [dir=ltr] & {
+            @if $column-gap != null {
+              @if $column-gap > 0 {
+                margin-left:    calc(
+                                    (100% * #{$multiplier})
+                                  + (#{$column-gap} / 2)
+                                );
+              }
+              @else {
+                margin-left:    calc(100% * #{$multiplier});
+              }
+            }// @if $column-gap != null
+
+            @if $column-gap == null {
+              @if $grid--column-gap > 0 {
+                margin-left:    calc(
+                                    (100% * #{$multiplier})
+                                  + (#{$grid--column-gap} / 2)
+                                );
+              }
+              @else {
+                margin-left:    calc(100% * #{$multiplier});
+              }
+            }// @if $column-gap == null
+          }
+
+          [dir=rtl] & {
+            @if $column-gap != null {
+              @if $column-gap > 0 {
+                margin-right:    calc(
+                                     (100% * #{$multiplier})
+                                   + (#{$column-gap} / 2)
+                                 );
+              }
+              @else {
+                margin-right:    calc(100% * #{$multiplier});
+              }
+            }// @if $column-gap != null
+
+            @if $column-gap == null {
+              @if $grid--column-gap > 0 {
+                margin-right:    calc(
+                                     (100% * #{$multiplier})
+                                   + (#{$grid--column-gap} / 2)
+                                 );
+              }
+              @else {
+                margin-right:    calc(100% * #{$multiplier});
+              }
+            }// @if $column-gap == null
+          }
+
+        }// @media (min-width: map-get($breakpoints, $breakpoint))
+
+      }// @else if $breakpoint == 'sm' or $breakpoint == 'md' or $breakpoint == 'lg' or $breakpoint == 'xl'
+
+    }// @if type-of($breakpoint) == string and type-of($offset) == number
+
+  }

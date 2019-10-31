@@ -1,0 +1,292 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__range-appearance/_placeholders.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/placeholder/_sr.scss
+//                 puxl-framework/css/puxl/element/control__range-appearance/_mixins.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Range construction - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %rng {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    align-items:       baseline;
+    border-radius:     var(--control__box--shape);
+    cursor:            $cursor--press;
+    display:           inline-flex;
+    font-size:         var(--control__box--size);
+    vertical-align:    middle;
+
+    @if ($control__box--variant != default) {
+      @include control__range-appearance($control__box--variant);
+    }
+    @else {
+      > input::-moz-range-thumb {
+        --btn--bg-c:    $rng--default--rest--background-color;
+        --btn--bd-c:    $rng--default--rest--border-color;
+      }
+      > input::-ms-thumb {
+        --btn--bg-c:    $rng--default--rest--background-color;
+        --btn--bd-c:    $rng--default--rest--border-color;
+      }
+      > input::-webkit-slider-thumb {
+        --btn--bg-c:    $rng--default--rest--background-color;
+        --btn--bd-c:    $rng--default--rest--border-color;
+      }
+
+      > input:hover::-moz-range-thumb {
+        --btn--bg-c:    $rng--default--hover--background-color;
+        --btn--bd-c:    $rng--default--hover--border-color;
+      }
+      > input:hover::-ms-thumb {
+        --btn--bg-c:    $rng--default--hover--background-color;
+        --btn--bd-c:    $rng--default--hover--border-color;
+      }
+      > input:hover::-webkit-slider-thumb {
+        --btn--bg-c:    $rng--default--hover--background-color;
+        --btn--bd-c:    $rng--default--hover--border-color;
+      }
+
+      > input:active::-moz-range-thumb {
+        --btn--bg-c:    $rng--default--active--background-color;
+        --btn--bd-c:    $rng--default--active--border-color;
+      }
+      > input:active::-ms-thumb {
+        --btn--bg-c:    $rng--default--active--background-color;
+        --btn--bd-c:    $rng--default--active--border-color;
+      }
+      > input:active::-webkit-slider-thumb {
+        --btn--bg-c:    $rng--default--active--background-color;
+        --btn--bd-c:    $rng--default--active--border-color;
+      }
+
+      > input:active:hover::-moz-range-thumb {
+        --btn--bd-c:    $rng--default--active-hover--border-color;
+      }
+      > input:active:hover::-ms-thumb {
+        --btn--bd-c:    $rng--default--active-hover--border-color;
+      }
+      > input:active:hover::-webkit-slider-thumb {
+        --btn--bd-c:    $rng--default--active-hover--border-color;
+      }
+
+      > input:disabled::-moz-range-thumb {
+        --btn--bg-c:    $rng--default--disabled--background-color;
+        --btn--bd-c:    $rng--default--disabled--border-color;
+      }
+      > input:disabled::-ms-thumb {
+        --btn--bg-c:    $rng--default--disabled--background-color;
+        --btn--bd-c:    $rng--default--disabled--border-color;
+      }
+      > input:disabled::-webkit-slider-thumb {
+        --btn--bg-c:    $rng--default--disabled--background-color;
+        --btn--bd-c:    $rng--default--disabled--border-color;
+      }
+    }
+
+    @each $key, $value in $colors {
+      &.#{$key} {
+        @include control__range-appearance($key);
+      }
+    }
+
+    @each $key, $value in $control__box--shapes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--shape:    var(--control__box--shape--#{$key});
+      }
+    }
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    &.disabled {
+      cursor:    $cursor--disabled;
+
+      > span,
+      > small {
+        opacity:    $opacity--disabled;
+      }
+    }
+
+    &.block {
+      width:    100%;
+
+      > input {
+        flex-grow:    1;
+      }
+    }
+
+    &.capsule {
+      --control__box--shape:    var(--control__box--shape--capsule);
+    }
+
+    &.round {
+      --control__box--shape:    var(--control__box--shape--round);
+    }
+
+    &.square {
+      --control__box--shape:    var(--control__box--shape--square);
+    }
+
+    &.text--hide {
+      > span,
+      > small {
+        @extend %sr;
+      }
+    }// &.text--hide
+
+    &.v {
+      align-items:       stretch;
+      flex-direction:    column;
+
+      > span {
+        line-height:    var(--body--line-height);
+        margin:         0
+                        0
+                        $control__textfield--separation--v;
+
+        [dir=ltr] & {
+          margin-right:    0;
+        }
+
+        [dir=rtl] & {
+          margin-left:    0;
+        }
+      }
+
+      > input {
+        width:    100%;
+      }
+
+      > small {
+        margin:    $control__textfield--separation--v
+                   0
+                   0;
+
+        [dir=ltr] & {
+          margin-left:    0;
+        }
+
+        [dir=rtl] & {
+          margin-right:    0;
+        }
+      }
+    }
+
+    > span {
+      line-height:    2em;
+
+      [dir=ltr] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+    }// > span
+
+    > input {
+      align-self:            center;
+      appearance:            none;
+      -moz-appearance:       none;
+      -webkit-appearance:    none;
+      background:            transparent;
+      border:                0;
+      cursor:                $cursor--press;
+      font-size:             1em;
+      height:                $control__range__track--height;
+      padding:               0;
+      min-width:             $control__range--min-width;
+
+      &:disabled {
+        cursor:    $cursor--disabled;
+
+        &::-moz-range-track {
+          opacity:    $opacity--disabled;
+        }
+        &::-ms-track {
+          opacity:    $opacity--disabled;
+        }
+        &::-webkit-slider-runnable-track {
+          opacity:    $opacity--disabled;
+        }
+
+        &::-moz-range-thumb {
+          box-shadow:    none;
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+        &::-ms-thumb {
+          box-shadow:    none;
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+        &::-webkit-slider-thumb {
+          box-shadow:    none;
+          cursor:     $cursor--disabled;
+          opacity:    $opacity--disabled;
+        }
+      }
+
+      &::-moz-range-track {
+        @include rng__track();
+      }
+      &::-ms-track {
+        @include rng__track();
+      }
+      &::-webkit-slider-runnable-track {
+        @include rng__track();
+      }
+
+      &::-moz-range-thumb {
+        @include rng__thumb();
+      }
+      &::-ms-thumb {
+        @include rng__thumb();
+      }
+      &::-webkit-slider-thumb {
+        @include rng__thumb();
+      }
+
+//      &::-ms-fill-lower {}
+//      &::-ms-fill-upper {}
+    }// > input
+
+    > small {
+      color:          var(--txt--c);
+      font-size:      $control__textfield__small--font-size;
+      line-height:    $control__textfield__small--line-height;
+
+      [dir=ltr] & {
+        margin-left:    $control__textfield--separation--h;
+      }
+
+      [dir=rtl] & {
+        margin-right:    $control__textfield--separation--h;
+      }
+    }// > small
+  }

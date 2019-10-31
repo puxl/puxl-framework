@@ -1,0 +1,336 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:    1
+//
+//    Author:     Iñigo Garcia (@MrKanuel)
+//
+//    Route:      puxl-framework/css/puxl/_setup.scss
+//
+//    License:    GNU General Public License v3.0
+//                https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Main settings  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  $animation--enabled:       true;       // true OR false
+
+  $focus-outline--enabled:   true;       // true OR false
+
+  $dyslexia--enabled:        false;      // true OR false
+
+  $grid--column-count:       12;         // integer number
+  $grid--column-gap:         1.5rem;     // width value
+  $grid--row-gap:            1.5rem;     // height value
+  $grid--system:             float;      // float
+
+  $control__box--size:       sm;         // xs, sm, md OR lg
+  $control__box--shape:      round;      // capsule, round OR square
+  $control__box--look:       solid;      // ghost OR solid
+  $control__box--variant:    default;    // default, primary, secondary, success, info, warning OR danger
+
+
+  //  Imports  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @import
+
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //
+  //    Please, be careful when changing any code in this "@import" section.
+  //    Play with caution: altering this first "@import" section (from line 40
+  //    to line 110) can make something crucial fail or break.
+  //
+  //    After this first "@import" section ends (line 110), there are other
+  //    "@import" sections where you can remove unnecessary things you may
+  //    not want for your project, or add your own new Puxl extensions,
+  //    futuristic stuff, or whatever you want.
+  //
+  //    Thank you very much.
+  //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+    //  Icons  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'icon/puxl-icons',
+
+
+    //  Functions  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'function/color',
+    'function/draw-svg',
+    'function/em',
+    'function/math',
+    'function/rem',
+    'function/strip-unit',
+
+
+    //  Theme  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'theme/puxl-light',
+
+
+    //  Structure  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'structure',
+
+
+    //  Animation  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'animation/focus--outline',
+
+
+    //  Placeholders - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'placeholder/animation--enable',
+    'placeholder/circle',
+    'placeholder/clearfix',
+    'placeholder/sr',
+    'placeholder/sr--undo',
+    'placeholder/user-select--all',
+    'placeholder/user-select--disable',
+
+
+    //  Mixins - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'mixin/error-warning',
+    'mixin/label-input-trick',
+    'mixin/z-shadow',
+
+
+    //  Core CSS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'start';
+
+
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //
+  //    Hi there! Thank you for coming. Now you can play. Enjoy! ;D
+  //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  @import
+
+    //  Grid - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'grid/float/mixins',
+
+    'grid/grid-system',
+
+
+    //  Type - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'type/abbreviation',
+
+    'type/blockquote',
+
+    'type/bold-b-strong',
+
+    'type/code',
+
+    'type/definition',
+
+    'type/definition-list',
+
+    'type/heading',
+
+    'type/italic-i-em',
+
+    'type/keyboard',
+
+    'type/link',
+
+    'type/list-ol-ul',
+
+    'type/mark',
+
+    'type/paragraph',
+
+    'type/preformatted',
+
+    'type/quotation',
+
+    'type/small',
+
+    'type/subscript-superscript',
+
+    'type/thematic-break',
+
+
+    //  Elements - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'element/control__button-appearance/mixins',
+    'element/control__button-appearance/placeholders',
+    'element/control__button/styles',
+    'element/control__button-icon/styles',
+    'element/control__button-icon-text/styles',
+
+    'element/control__check/styles',
+
+    'element/control__label-button-appearance/mixins',
+    'element/control__label-button-appearance/placeholders',
+    'element/control__label-button/styles',
+    'element/control__label-button-icon/styles',
+    'element/control__label-button-icon-text/styles',
+
+    'element/control__textfield-appearance/mixins',
+    'element/control__textfield-appearance/placeholders',
+    'element/control__textfield/styles',
+
+    'element/control__textarea/styles',
+
+    'element/control__select-appearance/mixins',
+    'element/control__select-appearance/placeholders',
+    'element/control__select/styles',
+
+    'element/control__switch-appearance/mixins',
+    'element/control__switch-appearance/placeholders',
+    'element/control__switch/styles',
+
+    'element/control__range-appearance/mixins',
+    'element/control__range-appearance/placeholders',
+    'element/control__range/styles',
+
+    'element/figure/styles',
+
+    'element/img/styles',
+
+    'element/table/styles',
+
+    'element/tag/styles',
+
+
+    // Compounds  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'compound/alert',
+
+    'compound/bar',
+
+    'compound/breadcrumbs',
+
+    'compound/card',
+
+    'compound/disclosure',
+
+    'compound/drawer',
+
+    'compound/flag',
+
+    'compound/fly-out',
+
+    'compound/form',
+
+    'compound/group',
+
+    'compound/input-group',
+
+    'compound/responsive-embed',
+
+    'compound/searchbox',
+
+    'compound/tabs',
+
+
+    //  Utilities - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    'utility/circle',
+
+    'utility/jump-link',
+
+    'utility/sr',
+
+    'utility/text-align',
+
+    'utility/text-blur',
+
+    'utility/text-color',
+
+    'utility/text-uppercase';
+
+
+  //  Custom fonts - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  @if ($dyslexia--enabled == true) {
+
+    //  Font: OpenDyslexic - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    @font-face {
+      font-family: 'OpenDyslexic';
+      src: url('../font/open_dyslexic/OpenDyslexic-Regular.eot');                                    // IE9 Compat Modes
+      src: 
+        url('../font/open_dyslexic/OpenDyslexic-Regular.eot?#iefix') format('embedded-opentype'),    // IE6-IE8
+        url('../font/open_dyslexic/OpenDyslexic-Regular.woff') format('woff'),                       // Pretty Modern Browsers
+        url('../font/open_dyslexic/OpenDyslexic-Regular.ttf') format('truetype'),                    // Safari, Android, iOS
+        url('../font/open_dyslexic/OpenDyslexic-Regular.svg#opendyslexicregular') format('svg');     // Legacy iOS
+    }
+
+    @font-face {
+      font-family: 'OpenDyslexic';
+      font-weight: bold;
+      src: url('../font/open_dyslexic/OpenDyslexic-Bold.eot');                                    // IE9 Compat Modes
+      src: 
+        url('../font/open_dyslexic/OpenDyslexic-Bold.eot?#iefix') format('embedded-opentype'),    // IE6-IE8
+        url('../font/open_dyslexic/OpenDyslexic-Bold.woff') format('woff'),                       // Pretty Modern Browsers
+        url('../font/open_dyslexic/OpenDyslexic-Bold.ttf') format('truetype'),                    // Safari, Android, iOS
+        url('../font/open_dyslexic/OpenDyslexic-Bold.svg#opendyslexicbold') format('svg');        // Legacy iOS
+    }
+
+    @font-face {
+      font-family: 'OpenDyslexic';
+      font-style: italic;
+      src: url('../font/open_dyslexic/OpenDyslexic-Italic.eot');                                    // IE9 Compat Modes
+      src: 
+        url('../font/open_dyslexic/OpenDyslexic-Italic.eot?#iefix') format('embedded-opentype'),    // IE6-IE8
+        url('../font/open_dyslexic/OpenDyslexic-Italic.woff') format('woff'),                       // Pretty Modern Browsers
+        url('../font/open_dyslexic/OpenDyslexic-Italic.ttf') format('truetype'),                    // Safari, Android, iOS
+        url('../font/open_dyslexic/OpenDyslexic-Italic.svg#opendyslexicitalic') format('svg');      // Legacy iOS
+    }
+
+    @font-face {
+      font-family: 'OpenDyslexic';
+      font-style: italic;
+      font-weight: bold;
+      src: url('../font/open_dyslexic/OpenDyslexic-BoldItalic.eot');                                       // IE9 Compat Modes
+      src: 
+        url('../font/open_dyslexic/OpenDyslexic-BoldItalic.eot?#iefix') format('embedded-opentype'),       // IE6-IE8
+        url('../font/open_dyslexic/OpenDyslexic-BoldItalic.woff') format('woff'),                          // Pretty Modern Browsers
+        url('../font/open_dyslexic/OpenDyslexic-BoldItalic.ttf') format('truetype'),                       // Safari, Android, iOS
+        url('../font/open_dyslexic/OpenDyslexic-BoldItalic.svg#opendyslexicbold_italic') format('svg');    // Legacy iOS
+    }
+
+    //  Font: OpenDyslexicMono - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    @font-face {
+      font-family: 'OpenDyslexicMono';
+      src: url('../font/open_dyslexic/OpenDyslexicMono-Regular.otf');
+      src: url('../font/open_dyslexic/OpenDyslexicMono-Regular.ttf') format('truetype');    // Safari, Android, iOS
+    }
+
+
+    //  Add custom font families to structure  - - - - - - - - - - - - - - - - -
+
+    $font-family--OpenDyslexicMono:    OpenDyslexicMono, #{inspect($font-family--mono)};
+    $font-family--OpenDyslexic:        OpenDyslexic, #{inspect($font-family--sans)};
+
+    :root {
+      --font-family--dyslexia--mono:    #{inspect($font-family--OpenDyslexicMono)};
+      --font-family--dyslexia--sans:    #{inspect($font-family--OpenDyslexic)};
+
+      --font-family--mono:    var(--font-family--dyslexia--mono);
+      --font-family--sans:    var(--font-family--dyslexia--sans);
+    }
+
+  }// @if ($dyslexia--enabled == true)
+
+
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  //
+  //    Now is your time to do something good.
+  //
+  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

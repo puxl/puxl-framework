@@ -1,0 +1,1077 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PUXL framework v1 documentation: Type</title>
+	<meta name="description" content="PUXL is an open-source and eco-friendly library to create front-end Web interfaces. It helps you build accessible and responsive sites with lightweight HTML.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/puxl.min.css">
+  <link rel="stylesheet" href="../../../vendor/prism-js/prismJS_1-15-0.min.css">
+  <style>
+    article.card {
+      margin-bottom:    2em;
+    }
+
+      .file-code {
+        opacity:       .5;
+        margin-top:    2em;
+      }
+      .file-code:hover {
+        opacity:    1;
+      }
+
+        .file-code pre {
+          margin:    0;
+        }
+
+        .file-code pre::before,
+        .file-code pre::after {
+          display:    none;
+        }
+
+        .file-code pre > code {
+          border-left-color:    var(--color--primary);
+          border-left-width:    .125rem;
+        }
+
+        .file-code code {
+          border-radius:    0;
+        }
+
+        .file-code .tag {
+          border:           none;
+          border-radius:    0;
+          box-shadow:       none;
+        }
+
+          .file-code .code-toolbar > .toolbar {
+            top:    -.25em;
+          }
+  </style>
+</head>
+<body id="page__docs" class="app-bar--top">
+
+  <a class="jump-link" href="#main__content">Jump to main content</a>
+
+
+  <div id="app-bar" class="app bar top">
+
+    <header>
+
+      <a class="home" href="https://puxl.io/">
+        <img alt="" src="https://puxl.io/img/logo/puxl.svg">
+        <span>PUXL</span>
+      </a>
+
+      <button
+        id="app-bar__toggler"
+        class="bar-btn-icn toggler mobile--down space--before"
+        aria-haspopup="true"
+        aria-controls="app-bar__menu"
+        aria-expanded="true"
+        type="button">
+        <img alt="" src="https://puxl.io/img/puxl-icons/menu-burger.svg" aria-hidden="true">
+        <span>Open navigation menu</span>
+      </button>
+
+    </header>
+
+    <nav role="navigation">
+
+      <div id="app-bar__menu" class="subheading" aria-hidden="false">
+
+        <ul class="space--after">
+          <li>
+            <a href="https://puxl.io/">
+              PUXL framework
+            </a>
+          </li>
+          <li>
+            <a href="https://puxl.io/puxl-icons/">
+              PUXL icons
+            </a>
+          </li>
+        </ul>
+
+        <a class="bar-btn-icn" href="https://github.com/puxl/puxl-framework" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>PUXL framework repository on GitHub</span>
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+
+  <div class="grid-fluid">
+
+
+    <header class="col-xs-12" aria-labelledby="main--heading" role="banner">
+
+      <h1 id="main--heading">PUXL documentation <small>v1</small></h1>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumbs from PUXL documentation to this page">
+        <ol>
+          <li>
+            <a href="https://puxl.io/">PUXL home</a>
+          </li>
+          <li>
+            <a href="../index.html">Docs v1</a>
+          </li>
+          <li aria-current="page">
+            Type
+          </li>
+        </ol>
+      </nav>
+
+    </header>
+
+
+    <nav class="col-xs-12 col-sm-4 col-md-3 col-xl-2" role="navigation">
+
+      <ul class="unlisted">
+        <li>
+          <a href="#type__abbreviation">Abbreviation</a>
+        </li>
+        <li>
+          <a href="#type__blockquote">Blockquote</a>
+        </li>
+        <li>
+          <a href="#type__bold">Bold</a>
+        </li>
+        <li>
+          <a href="#type__code">Code</a>
+        </li>
+        <li>
+          <a href="#type__definition-list">Definition list</a>
+        </li>
+        <li>
+          <a href="#type__definition">Definition</a>
+        </li>
+        <li>
+          <a href="#type__heading">Heading</a>
+        </li>
+        <li>
+          <a href="#type__italic">Italic</a>
+        </li>
+        <li>
+          <a href="#type__keyboard">Keyboard</a>
+        </li>
+        <li>
+          <a href="#type__link">Link</a>
+        </li>
+        <li>
+          <a href="#type__list">List</a>
+        </li>
+        <li>
+          <a href="#type__mark">Mark</a>
+        </li>
+        <li>
+          <a href="#type__paragraph">Paragraph</a>
+        </li>
+        <li>
+          <a href="#type__preformatted">Preformatted</a>
+        </li>
+        <li>
+          <a href="#type__quotation">Quotation</a>
+        </li>
+        <li>
+          <a href="#type__small">Small</a>
+        </li>
+        <li>
+          <a href="#type__sub-sup">Subscript and superscript</a>
+        </li>
+        <li>
+          <a href="#type__thematic-break">Thematic break</a>
+        </li>
+      </ul>
+
+    </nav>
+
+
+    <main id="main__content" class="col-xs-12 col-sm-8 col-md-9 col-xl-10" role="main">
+
+      <article id="type__abbreviation" class="card" aria-labelledby="type__abbreviation--heading">
+
+        <header>
+          <h4 class="heading" id="type__abbreviation--heading">Abbreviation</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            PUXL is a <abbr title="Cascading Style Sheets">CSS</abbr> tool.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>PUXL is a &lt;abbr title="Cascading Style Sheets"&gt;CSS&lt;/abbr&gt; tool.</code></pre>
+
+            <figcaption>
+              <code>abbr</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__blockquote" class="card" aria-labelledby="type__blockquote--heading">
+
+        <header>
+          <h4 class="heading" id="type__blockquote--heading">Blockquote</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <blockquote cite="https://www.w3.org/standards/webdesign/accessibility">
+              <p>The power of the Web is in its universality.
+              <br>
+              Access by everyone regardless of disability is an essential aspect.</p>
+              <footer>
+                <cite>
+                  <a href="http://webfoundation.org/about/sir-tim-berners-lee/">Tim Berners-Lee</a>, <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium (W3C)">W3C</abbr></a> Director and inventor of the World Wide Web.
+                </cite>
+              </footer>
+            </blockquote>
+
+            <blockquote>
+              Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.
+            </blockquote>
+
+            <blockquote>
+              <blockquote>
+                <p>Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.</p>
+                <p>Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.</p>
+                <p>Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.</p>
+              </blockquote>
+              <p>Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.</p>
+            </blockquote>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;blockquote cite="https://www.w3.org/standards/webdesign/accessibility"&gt;
+  &lt;p&gt;The power of the Web is in its universality.
+  &lt;br&gt;
+  Access by everyone regardless of disability is an essential aspect.&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;cite&gt;
+      &lt;a href="http://webfoundation.org/about/sir-tim-berners-lee/"&gt;Tim Berners-Lee&lt;/a&gt;, &lt;a href="https://www.w3.org/"&gt;&lt;abbr title="World Wide Web Consortium (W3C)"&gt;W3C&lt;/abbr&gt;&lt;/a&gt; Director and inventor of the World Wide Web.
+    &lt;/cite&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.&lt;/p&gt;
+    &lt;p&gt;Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.&lt;/p&gt;
+    &lt;p&gt;Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;p&gt;Itaque prima illa commendatio, quae a natura nostri facta est nobis, incerta et obscura est, primusque appetitus ille animi tantum agit, ut salvi atque integri esse possimus.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+
+            <figcaption>
+              <code>blockquote</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__bold" class="card" aria-labelledby="type__bold--heading">
+
+        <header>
+          <h4 class="heading" id="type__bold--heading">Bold</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem <b>ipsum</b> dolor sit <strong>amet</strong>.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem &lt;b&gt;ipsum&lt;/b&gt; dolor sit &lt;strong&gt;amet&lt;/strong&gt;.</code></pre>
+
+            <figcaption>
+              <code>b</code>, <code>strong</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__code" class="card" aria-labelledby="type__code--heading">
+
+        <header>
+          <h4 class="heading" id="type__code--heading">Code</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <code>&lt;html&gt;&lt;/html&gt;</code>
+
+            <pre>Si vero id etiam explanare velles apertiusque diceres nihil eum fecisse nisi voluptatis causa, quo modo eum tandem laturum fuisse existimas? Nam omnia, quae sumenda quaeque legenda aut optanda sunt, inesse debent in summa bonorum, ut is, qui eam adeptus sit, nihil praeterea desideret.</pre>
+
+            <samp>'Hello world!'</samp>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;code&gt;&lt;html&gt;&lt;/html&gt;&lt;/code&gt;
+
+&lt;pre&gt;Si vero id etiam explanare velles apertiusque diceres nihil eum fecisse nisi voluptatis causa, quo modo eum tandem laturum fuisse existimas? Nam omnia, quae sumenda quaeque legenda aut optanda sunt, inesse debent in summa bonorum, ut is, qui eam adeptus sit, nihil praeterea desideret.&lt;/pre&gt;
+
+&lt;samp&gt;'Hello world!'&lt;/samp&gt;</code></pre>
+
+            <figcaption>
+              <code>code</code>, <code>pre</code>, and <code>samp</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__definition-list" class="card" aria-labelledby="type__definition-list--heading">
+
+        <header>
+          <h4 class="heading" id="type__definition-list--heading">Definition list</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <dl>
+              <dt>Haeret in salebra.</dt>
+              <dd>Non enim iam stirpis bonum quaeret, sed animalis.</dd>
+              <dt>Quid de Pythagora?</dt>
+              <dd>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</dd>
+              <dt>Explanetur igitur.</dt>
+              <dd>Addo etiam illud, multa iam mihi dare signa puerum et pudoris et ingenii, sed aetatem vides.</dd>
+              <dd>Illa argumenta propria videamus, cur omnia sint paria peccata.</dd>
+            </dl>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;dl&gt;
+  &lt;dt&gt;Haeret in salebra.&lt;/dt&gt;
+  &lt;dd&gt;Non enim iam stirpis bonum quaeret, sed animalis.&lt;/dd&gt;
+  &lt;dt&gt;Quid de Pythagora?&lt;/dt&gt;
+  &lt;dd&gt;Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.&lt;/dd&gt;
+  &lt;dt&gt;Explanetur igitur.&lt;/dt&gt;
+  &lt;dd&gt;Addo etiam illud, multa iam mihi dare signa puerum et pudoris et ingenii, sed aetatem vides.&lt;/dd&gt;
+  &lt;dd&gt;Illa argumenta propria videamus, cur omnia sint paria peccata.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+            <figcaption>
+              <code>dl</code>, <code>dt</code> and <code>dd</code> tags.
+            </figcaption>
+          </figure>
+
+          <h5>Horizontal definition list</h5>
+
+          <div class="file-example">
+
+            <dl class="h">
+              <dt>Haeret in salebra.</dt>
+              <dd>Non enim iam stirpis bonum quaeret, sed animalis.</dd>
+              <dt>Quid de Pythagora?</dt>
+              <dd>Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim.</dd>
+              <dt>Explanetur igitur.</dt>
+              <dd>Addo etiam illud, multa iam mihi dare signa puerum et pudoris et ingenii, sed aetatem vides.</dd>
+              <dd>Illa argumenta propria videamus, cur omnia sint paria peccata.</dd>
+            </dl>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;dl class="h"&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+            <figcaption>
+              <code>dl</code> with <code>class="h"</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__definition" class="card" aria-labelledby="type__definition--heading">
+
+        <header>
+          <h4 class="heading" id="type__definition--heading">Definition</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <dfn>HTML</dfn> is a markup language for hypertexts.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;dfn&gt;HTML&lt;/dfn&gt; is a markup language for hypertexts.</code></pre>
+
+            <figcaption>
+              <code>dfn</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__heading" class="card" aria-labelledby="type__heading--heading">
+
+        <header>
+          <h4 class="heading" id="type__heading--heading">Heading and small text</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <h1><code>h1</code> Illa videamus. <small>Small text</small></h1>
+            <h2><code>h2</code> Illa videamus. <small>Small text</small></h2>
+            <h3><code>h3</code> Illa videamus. <small>Small text</small></h3>
+            <h4><code>h4</code> Illa videamus. <small>Small text</small></h4>
+            <h5><code>h5</code> Illa videamus. <small>Small text</small></h5>
+            <h6><code>h6</code> Illa videamus. <small>Small text</small></h6>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;h1&gt;&lt;code&gt;h1&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;h2&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;code&gt;h3&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;code&gt;h4&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;code&gt;h5&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;code&gt;h6&lt;/code&gt; Illa videamus. &lt;small&gt;Small text&lt;/small&gt;&lt;/h6&gt;</code></pre>
+
+            <figcaption>
+              <code>h1</code> to <code>h6</code> using <code>small</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__italic" class="card" aria-labelledby="type__italic--heading">
+
+        <header>
+          <h4 class="heading" id="type__italic--heading">Italic</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem <i>ipsum</i> dolor sit <em>amet</em>.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem &lt;i&gt;ipsum&lt;/i&gt; dolor sit &lt;em&gt;amet&lt;/em&gt;.</code></pre>
+
+            <figcaption>
+              <code>i</code> and <code>em</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__keyboard" class="card" aria-labelledby="type__keyboard--heading">
+
+        <header>
+          <h4 class="heading" id="type__keyboard--heading">Keyboard</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <kbd><abbr title="Control">ctrl</abbr></kbd> + <kbd>s</kbd>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;kbd&gt;&lt;abbr title="Control"&gt;ctrl&lt;/abbr&gt;&lt;/kbd&gt; + &lt;kbd&gt;s&lt;/kbd&gt;</code></pre>
+
+            <figcaption>
+              <code>kbd</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__link" class="card" aria-labelledby="type__link--heading">
+
+        <header>
+          <h4 class="heading" id="type__link--heading">Link</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem ipsum <a href="#type__link">dolor sit amet</a>.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem ipsum &lt;a href="#type__link"&gt;dolor sit amet&lt;/a&gt;.</code></pre>
+
+            <figcaption>
+              <code>a</code> tag.
+            </figcaption>
+          </figure>
+
+          <h5>Broken link</h5>
+
+          <div class="file-example">
+
+            Forgot the URL where <a href="#">this link</a> is going?
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Forgot the URL where &lt;a href="#"&gt;this link&lt;/a&gt; is going?</code></pre>
+
+            <figcaption>
+              <code>a</code> tag with a "#" instead of a URL.
+            </figcaption>
+          </figure>
+
+          <h5>External link</h5>
+
+          <div class="file-example">
+
+            Lorem ipsum <a href="#type__link" class="external" rel="external" target="_blank">dolor sit amet</a>.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem ipsum &lt;a href="#type__link" class="external" rel="external" target="_blank"&gt;dolor sit amet&lt;/a&gt;.</code></pre>
+
+            <figcaption>
+              <code>a</code> tag with <code>class="external"</code>, <code>rel="external"</code> and <code>target="_blank"</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Block link</h5>
+
+          <div class="file-example">
+
+            <a class="block" href="#type__link">
+              <div>
+                <h5>Block link title</h5>
+                <p>div, h5, p inside this block link. Quamquam haec quidem praeposita recte et reiecta dicere licebit.</p>
+              </div>
+              <p>Another paragraph here too!. Quamquam haec quidem praeposita recte et reiecta dicere licebit.</p>
+            </a>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;a class="block" href="#type__link"&gt;
+  &lt;div&gt;
+    &lt;h5&gt;Block link title&lt;/h5&gt;
+    &lt;p&gt;div, h5, p inside this block link. Quamquam haec quidem praeposita recte et reiecta dicere licebit.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p&gt;Another paragraph here too!. Quamquam haec quidem praeposita recte et reiecta dicere licebit.&lt;/p&gt;
+&lt;/a&gt;</code></pre>
+
+            <figcaption>
+              <code>a</code> tag with <code>class="block"</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__list" class="card" aria-labelledby="type__list--heading">
+
+        <header>
+          <h4 class="heading" id="type__list--heading">List</h4>
+        </header>
+
+        <div class="content">
+          <h5>Ordered list</h5>
+
+          <div class="file-example">
+
+            <ol>
+              <li>Bat</li>
+              <li>Bi</li>
+              <li>Hiru</li>
+              <li>Lau</li>
+              <li>Bost</li>
+              <li>Sei
+                <ol>
+                  <li>Beste bat</li>
+                  <li>Beste bi</li>
+                  <li>Beste hiru</li>
+                  <li>Beste lau</li>
+                </ol>
+              </li>
+              <li>Zazpi</li>
+              <li>Zortzi</li>
+              <li>Bederatzi</li>
+              <li>Hamar</li>
+            </ol>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;ol&gt;
+  &lt;li&gt;Bat&lt;/li&gt;
+  &lt;li&gt;Bi&lt;/li&gt;
+  &lt;li&gt;Hiru&lt;/li&gt;
+  &lt;li&gt;Lau&lt;/li&gt;
+  &lt;li&gt;Bost&lt;/li&gt;
+  &lt;li&gt;Sei
+    &lt;ol&gt;
+      &lt;li&gt;Beste bat&lt;/li&gt;
+      &lt;li&gt;Beste bi&lt;/li&gt;
+      &lt;li&gt;Beste hiru&lt;/li&gt;
+      &lt;li&gt;Beste lau&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Zazpi&lt;/li&gt;
+  &lt;li&gt;Zortzi&lt;/li&gt;
+  &lt;li&gt;Bederatzi&lt;/li&gt;
+  &lt;li&gt;Hamar&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <figcaption>
+              <code>ol</code> tag with nested ordered list.
+            </figcaption>
+          </figure>
+
+          <h5>Unordered list</h5>
+
+          <div class="file-example">
+
+            <ul>
+              <li>Quamquam haec quidem praeposita recte et reiecta dicere licebit.</li>
+              <li>Nec enim, omnes avaritias si aeque avaritias esse dixerimus, sequetur ut etiam aequas esse dicamus.</li>
+              <li>
+                Quid enim possumus hoc agere divinius.
+                <ul>
+                  <li>Quamquam haec quidem praeposita.</li>
+                  <li>Nec enim, omnes avaritias.</li>
+                  <li>Quid enim possumus hoc agere divinius.</li>
+                  <li>Desideraret enim valitudinem.</li>
+                </ul>
+              </li>
+              <li>Desideraret enim valitudinem.</li>
+            </ul>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;ul&gt;
+  &lt;li&gt;Quamquam haec quidem praeposita recte et reiecta dicere licebit.&lt;/li&gt;
+  &lt;li&gt;Nec enim, omnes avaritias si aeque avaritias esse dixerimus, sequetur ut etiam aequas esse dicamus.&lt;/li&gt;
+  &lt;li&gt;
+    Quid enim possumus hoc agere divinius.
+    &lt;ul&gt;
+      &lt;li&gt;Quamquam haec quidem praeposita.&lt;/li&gt;
+      &lt;li&gt;Nec enim, omnes avaritias.&lt;/li&gt;
+      &lt;li&gt;Quid enim possumus hoc agere divinius.&lt;/li&gt;
+      &lt;li&gt;Desideraret enim valitudinem.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Desideraret enim valitudinem.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <figcaption>
+              <code>ul</code> tag with nested unordered list.
+            </figcaption>
+          </figure>
+
+          <h5>Horizontal list</h5>
+
+          <div class="file-example">
+
+            <ol class="h">
+              <li>Bat</li>
+              <li>Bi</li>
+              <li>Hiru</li>
+              <li>Lau</li>
+              <li>Bost</li>
+              <li>Sei</li>
+            </ol>
+
+            <ul class="h">
+              <li>Quamquam haec.</li>
+              <li>Nec enim.</li>
+              <li>Quid enim.</li>
+              <li>Desideraret.</li>
+            </ul>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;ol class="h"&gt;
+  &lt;li&gt;Bat&lt;/li&gt;
+  &lt;li&gt;Bi&lt;/li&gt;
+  &lt;li&gt;Hiru&lt;/li&gt;
+  &lt;li&gt;Lau&lt;/li&gt;
+  &lt;li&gt;Bost&lt;/li&gt;
+  &lt;li&gt;Sei&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul class="h"&gt;
+  &lt;li&gt;Quamquam haec.&lt;/li&gt;
+  &lt;li&gt;Nec enim.&lt;/li&gt;
+  &lt;li&gt;Quid enim.&lt;/li&gt;
+  &lt;li&gt;Desideraret.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <figcaption>
+              <code>ol</code> and <code>ul</code> tag with <code>class="h"</code>.
+            </figcaption>
+          </figure>
+
+          <h5>Unlisted list</h5>
+
+          <div class="file-example">
+
+            <ol class="unlisted">
+              <li>Bat</li>
+              <li>Bi</li>
+              <li>Hiru</li>
+              <li>Lau</li>
+              <li>Bost</li>
+              <li>Sei</li>
+            </ol>
+
+            <ul class="unlisted">
+              <li>Quamquam haec quidem praeposita.</li>
+              <li>Nec enim, omnes avaritias.</li>
+              <li>Quid enim possumus hoc.</li>
+              <li>Desideraret enim valitudinem.</li>
+            </ul>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;ol class="unlisted"&gt;
+  &lt;li&gt;Bat&lt;/li&gt;
+  &lt;li&gt;Bi&lt;/li&gt;
+  &lt;li&gt;Hiru&lt;/li&gt;
+  &lt;li&gt;Lau&lt;/li&gt;
+  &lt;li&gt;Bost&lt;/li&gt;
+  &lt;li&gt;Sei&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul class="unlisted"&gt;
+  &lt;li&gt;Quamquam haec quidem praeposita.&lt;/li&gt;
+  &lt;li&gt;Nec enim, omnes avaritias.&lt;/li&gt;
+  &lt;li&gt;Quid enim possumus hoc.&lt;/li&gt;
+  &lt;li&gt;Desideraret enim valitudinem.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            <figcaption>
+              <code>ol</code> and <code>ul</code> tag with <code>class="unlisted"</code>.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__mark" class="card" aria-labelledby="type__mark--heading">
+
+        <header>
+          <h4 class="heading" id="type__mark--heading">Mark</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem ipsum <mark>dolor sit</mark> amet.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem ipsum &lt;mark&gt;dolor sit&lt;/mark&gt; amet.</code></pre>
+
+            <figcaption>
+              <code>mark</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__paragraph" class="card" aria-labelledby="type__paragraph--heading">
+
+        <header>
+          <h4 class="heading" id="type__paragraph--heading">Paragraph</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dictum nisl. Integer in pulvinar justo. Pellentesque fermentum suscipit consectetur. Pellentesque auctor, turpis ac blandit fermentum, magna felis scelerisque eros, eget porta tellus erat vitae tortor. Sed tellus magna, eleifend at justo vel, pulvinar pellentesque tortor.</p>
+
+            <p>Sed eleifend tempor tempor. Aliquam vitae lorem ac lectus imperdiet mollis et in lectus. Sed non nibh a diam euismod consectetur vitae vel leo. Morbi sed turpis vitae enim posuere suscipit.</p>
+
+            <p>Aliquam fermentum elementum malesuada. Suspendisse potenti. Maecenas ut augue at eros pulvinar gravida nec sit amet felis. Sed purus leo, cursus vitae luctus non, suscipit et ligula. Sed elementum rutrum nisl, sed sollicitudin nulla. Fusce pulvinar velit a justo varius maximus. Cras eu tempor est. Vestibulum ut turpis eu leo interdum pellentesque id nec risus.</p>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dictum nisl. Integer in pulvinar justo. Pellentesque fermentum suscipit consectetur. Pellentesque auctor, turpis ac blandit fermentum, magna felis scelerisque eros, eget porta tellus erat vitae tortor. Sed tellus magna, eleifend at justo vel, pulvinar pellentesque tortor.&lt;/p&gt;
+
+&lt;p&gt;Sed eleifend tempor tempor. Aliquam vitae lorem ac lectus imperdiet mollis et in lectus. Sed non nibh a diam euismod consectetur vitae vel leo. Morbi sed turpis vitae enim posuere suscipit.&lt;/p&gt;
+
+&lt;p&gt;Aliquam fermentum elementum malesuada. Suspendisse potenti. Maecenas ut augue at eros pulvinar gravida nec sit amet felis. Sed purus leo, cursus vitae luctus non, suscipit et ligula. Sed elementum rutrum nisl, sed sollicitudin nulla. Fusce pulvinar velit a justo varius maximus. Cras eu tempor est. Vestibulum ut turpis eu leo interdum pellentesque id nec risus.&lt;/p&gt;</code></pre>
+
+            <figcaption>
+              <code>p</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__preformatted" class="card" aria-labelledby="type__preformatted--heading">
+
+        <header>
+          <h4 class="heading" id="type__preformatted--heading">Preformatted</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <pre>Si vero id etiam explanare velles apertiusque diceres nihil eum fecisse nisi voluptatis causa, quo modo eum tandem laturum fuisse existimas? Nam omnia, quae sumenda quaeque legenda aut optanda sunt, inesse debent in summa bonorum, ut is, qui eam adeptus sit, nihil praeterea desideret.</pre>
+
+            <pre>Si vero id etiam explanare
+    velles apertiusque diceres nihil
+ eum fecisse nisi voluptatis causa,
+  quo modo eum
+  tandem laturum
+fuisse existimas
+Nam omnia, quae sumenda quaeque legenda.</pre>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;pre&gt;Si vero id etiam explanare velles apertiusque diceres nihil eum fecisse nisi voluptatis causa, quo modo eum tandem laturum fuisse existimas? Nam omnia, quae sumenda quaeque legenda aut optanda sunt, inesse debent in summa bonorum, ut is, qui eam adeptus sit, nihil praeterea desideret.&lt;/pre&gt;
+
+&lt;pre&gt;Si vero id etiam explanare
+    velles apertiusque diceres nihil
+ eum fecisse nisi voluptatis causa,
+  quo modo eum
+  tandem laturum
+fuisse existimas
+Nam omnia, quae sumenda quaeque legenda.&lt;/pre&gt;</code></pre>
+
+            <figcaption>
+              <code>pre</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__quotation" class="card" aria-labelledby="type__quotation--heading">
+
+        <header>
+          <h4 class="heading" id="type__quotation--heading">Quotation</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            According to Mozilla's website, <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0 was released in 2004 and became a big success.</q>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>According to Mozilla's website, &lt;q cite="https://www.mozilla.org/en-US/about/history/details/"&gt;Firefox 1.0 was released in 2004 and became a big success.&lt;/q&gt;</code></pre>
+
+            <figcaption>
+              <code>q</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__small" class="card" aria-labelledby="type__small--heading">
+
+        <header>
+          <h4 class="heading" id="type__small--heading">Small</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem ipsum <small>dolor sit</small> amet.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem ipsum &lt;small&gt;dolor sit&lt;/small&gt; amet.</code></pre>
+
+            <figcaption>
+              <code>small</code> tag.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__sub-sup" class="card" aria-labelledby="type__sub-sup--heading">
+
+        <header>
+          <h4 class="heading" id="type__sub-sup--heading">Subscript and superscript</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            Lorem<sub>ipsum</sub> dolor sit amet, consectetur<sup>adipiscing</sup> elit.
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>Lorem&lt;sub&gt;ipsum&lt;/sub&gt; dolor sit amet, consectetur&lt;sup&gt;adipiscing&lt;/sup&gt; elit.</code></pre>
+
+            <figcaption>
+              <code>subscript</code> and <code>superscipt</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+      <article id="type__thematic-break" class="card" aria-labelledby="type__thematic-break--heading">
+
+        <header>
+          <h4 class="heading" id="type__thematic-break--heading">Thematic break</h4>
+        </header>
+
+        <div class="content">
+          <div class="file-example">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a dictum nisl. Integer in pulvinar justo. Pellentesque fermentum suscipit consectetur. Pellentesque auctor, turpis ac blandit fermentum, magna felis scelerisque eros, eget porta tellus erat vitae tortor. Sed tellus magna, eleifend at justo vel, pulvinar pellentesque tortor.</p>
+
+            <hr>
+
+            <p>Sed eleifend tempor tempor. Aliquam vitae lorem ac lectus imperdiet mollis et in lectus. Sed non nibh a diam euismod consectetur vitae vel leo. Morbi sed turpis vitae enim posuere suscipit.</p>
+
+          </div>
+          <figure class="file-code">
+
+            <pre class="language-html line-numbers"><code>&lt;p&gt;Lorem ipsum dolor sit...&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Sed eleifend tempor tempor...&lt;/p&gt;</code></pre>
+
+            <figcaption>
+              <code>hr</code> tag between two <code>p</code> tags.
+            </figcaption>
+          </figure>
+        </div>
+
+      </article>
+
+    </main>
+
+
+  </div>
+
+
+  <footer role="contentinfo">
+
+    <div class="grid">
+
+      <div class="col-xs-12 col-sm-8">
+
+        <p>
+          <strong>PUXL framework <small>v1</small></strong>.
+          <br>
+          <small>Created by <a href="https://github.com/mrkanuel" rel="external">@MrKanuel</a>. Brought by <a href="https://github.com/orgs/puxl/teams/puxl-clan" rel="external">The PUXL Clan</a>, with love from Basque Country.</small>
+          <br>
+          <small>Code licensed <a href="https://github.com/puxl/puxl-framework/blob/master/LICENSE">GPL V3</a>, docs <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</small>
+        </p>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4 text--right">
+
+        <a class="btn-icn lg capsule" href="mailto:info@puxl.io" role="button">
+          <img alt="" src="https://puxl.io/img/puxl-icons/email-unread.svg" aria-hidden="true">
+          <span>Email contact</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.linkedin.com/company/puxl/" role="button">
+          <img alt="" src="https://puxl.io/img/logo/linkedin.svg" aria-hidden="true">
+          <span>Company on LinkedIn</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.reddit.com/user/puxl_io" role="button">
+          <img alt="" src="https://puxl.io/img/logo/reddit.svg" aria-hidden="true">
+          <span>Community on Reddit</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://github.com/puxl" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>Repository on GitHub</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://t.me/joinchat/AoC6ohKwoJDMIiqe_e01cA" role="button">
+          <img alt="" src="https://puxl.io/img/logo/telegram.svg" aria-hidden="true">
+          <span>Channel on Telegram</span>
+        </a>
+
+      </div>
+
+      <div class="col-xs-12 text--center">
+        <small><a href="https://puxl.io/aviso-legal/">Legal</a> · <a href="https://puxl.io/politica-de-privacidad/">Privacy</a></small>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../../../js/puxl.js"></script>
+  <script src="../../../js/puxl-js/appBar.js"></script>
+  <script src="../../../vendor/prism-js/prismJS_1-15-0.min.js"></script>
+  <script>
+    'use strict';
+
+    // Initialize app bar.
+    puxl_appBar(
+      // id
+      'app-bar',
+      // iconPath
+      '../../../img/puxl-icons/',
+      // iconOpened
+      'cross.svg',
+      // iconClosed
+      'menu-burger.svg',
+      // txtOpened
+      'Close navigation menu',
+      // txtClosed
+      'Open navigation menu'
+    );
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:    1
+//
+//    Author:     Iñigo Garcia (@MrKanuel)
+//
+//    Route:      puxl-framework/css/puxl/utility/_text-align.scss
+//
+//    License:    GNU General Public License v3.0
+//                https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  .text {
+    &--left {
+      [dir=ltr] & {
+        text-align:    left;
+      }
+
+      [dir=rtl] & {
+        text-align:    right;
+      }
+    }
+
+    &--center {
+      text-align:    center;
+    }
+
+    &--right {
+      [dir=ltr] & {
+        text-align:    right;
+      }
+
+      [dir=rtl] & {
+        text-align:    left;
+      }
+    }
+  }

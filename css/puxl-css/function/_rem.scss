@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/function/_rem.scss
+//
+//    Requires:    puxl-framework/css/puxl/theme/_puxl-light.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+//    Rem  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+	@function rem($size) {
+  //  Convert pixels to rem units, depending on body font-size.
+  //
+  //  Parameters:    $size: [ pixel units ]
+  //                 The amount of pixel units to be converted to rem units.
+  //                 Is calculated in relation to $body--font-size in 
+  //                 theme/_puxl-light.scss
+
+		@return ($size / $body--font-size) * 1rem;
+	}

@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/compound/_breadcrumbs.scss
+//
+//    Requires:    puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/function/_draw-svg.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/mixin/_error-warning.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+	div.breadcrumbs {
+    &:not([role=navigation]) {
+      @include error-warning('This <div class="breadcrumbs"> must have role="navigation". Example: <div class="breadcrumbs"  role="navigation">.');
+    }
+  }
+
+
+	.breadcrumbs {
+    &:not([aria-label]) {
+      @include error-warning('This tag with class class="breadcrumbs" must have a non empty aria-label="" to be named. Example: <tag class="breadcrumbs" aria-label="[ tag.breadcrumbs name ]">.');
+    }
+
+    display: inline-block;
+    margin: 0;
+
+    > ol {
+      display:       inline-flex;
+      list-style:    none;
+      padding:       0;
+
+      > li {
+        align-items:          center;
+        background-repeat:    no-repeat;
+        background-size:      $breadcrumbs__icon--size;
+        display:              inline-flex;
+
+				[dir=ltr] & {
+					background-image:       url(draw-svg(arrow-right, get-color(secondary)));
+					background-position:    ($breadcrumbs__icon--size / 4)
+                                  center;
+					padding-left:           $breadcrumbs__icon--size + ($breadcrumbs__icon--size / 2);
+
+					&:first-child {
+						background:      none;
+						padding-left:    0;
+					}
+				}
+
+				[dir=rtl] & {
+					background-image:       url(draw-svg(arrow-left, get-color(secondary)));
+					background-position:    center
+                                  right ($breadcrumbs__icon--size / 4);
+					padding-right:          $breadcrumbs__icon--size + ($breadcrumbs__icon--size / 2);
+
+					&:first-child {
+						background:       none;
+						padding-right:    0;
+					}
+				}
+      }
+    }
+	}// nav.breadcrumbs

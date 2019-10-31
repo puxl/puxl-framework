@@ -1,0 +1,938 @@
+<!doctype html>
+<html class="no-js" dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PUXL framework v1 documentation: Grid</title>
+	<meta name="description" content="PUXL is an open-source and eco-friendly library to create front-end Web interfaces. It helps you build accessible and responsive sites with lightweight HTML.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../../css/puxl.min.css">
+  <link rel="stylesheet" href="../../../vendor/prism-js/prismJS_1-15-0.min.css">
+  <style>
+    .highlight,
+    .highlight [class*=col] {
+      background-color:    rgba(0,0,0,.1);
+    }
+
+      .file-code {
+        opacity:       .5;
+        margin-top:    2em;
+      }
+      .file-code:hover {
+        opacity:    1;
+      }
+
+        .file-code pre {
+          margin:    0;
+        }
+
+        .file-code pre::before,
+        .file-code pre::after {
+          display:    none;
+        }
+
+        .file-code pre > code {
+          border-left-color:    var(--color--primary);
+          border-left-width:    .125rem;
+        }
+
+        .file-code code {
+          border-radius:    0;
+        }
+
+        .file-code .tag {
+          border:           none;
+          border-radius:    0;
+          box-shadow:       none;
+        }
+
+          .file-code .code-toolbar > .toolbar {
+            top:    -.25em;
+          }
+  </style>
+</head>
+<body id="page__docs" class="app-bar--top">
+
+  <a class="jump-link" href="#main__content">Jump to main content</a>
+
+
+  <div id="app-bar" class="app bar top">
+
+    <header>
+
+      <a class="home" href="https://puxl.io/">
+        <img alt="" src="https://puxl.io/img/logo/puxl.svg">
+        <span>PUXL</span>
+      </a>
+
+      <button
+        id="app-bar__toggler"
+        class="bar-btn-icn toggler mobile--down space--before"
+        aria-haspopup="true"
+        aria-controls="app-bar__menu"
+        aria-expanded="true"
+        type="button">
+        <img alt="" src="https://puxl.io/img/puxl-icons/menu-burger.svg" aria-hidden="true">
+        <span>Open navigation menu</span>
+      </button>
+
+    </header>
+
+    <nav role="navigation">
+
+      <div id="app-bar__menu" class="subheading" aria-hidden="false">
+
+        <ul class="space--after">
+          <li>
+            <a href="https://puxl.io/">
+              PUXL framework
+            </a>
+          </li>
+          <li>
+            <a href="https://puxl.io/puxl-icons/">
+              PUXL icons
+            </a>
+          </li>
+        </ul>
+
+        <a class="bar-btn-icn" href="https://github.com/puxl/puxl-framework" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>PUXL framework repository on GitHub</span>
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+
+  <div class="grid-fluid">
+
+    <header class="col-xs-12" aria-labelledby="main--heading" role="banner">
+
+      <h1 id="main--heading">PUXL documentation <small>v1</small></h1>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumbs from PUXL documentation to this page">
+        <ol>
+          <li>
+            <a href="https://puxl.io/">PUXL home</a>
+          </li>
+          <li>
+            <a href="../index.html">Docs v1</a>
+          </li>
+          <li aria-current="page">
+            Grid
+          </li>
+        </ol>
+      </nav>
+
+    </header>
+
+  </div>
+
+
+  <main id="main__content" role="main">
+
+      <div class="grid">
+
+        <div class="col-xs-12">
+
+          <h4>Grid</h4>
+
+          <p>Grids can be of type <code>.grid-fluid</code> or <code>.grid</code>.
+          <br>
+          By default, PUXL grids have 12 columns. Each column has an adjustable column-gap and a row-gap of 1.5rem (1rem = 16px).
+          <br>
+          Fluid grids spread at 100% width of their container.
+          <br>
+          Grids respond to grid breakpoints, and remain centered. There are five grid breakpoints: <code>xs</code> (480px = 30rem), <code>sm</code> (576px = 36rem), <code>md</code> (768px = 48rem), <code>lg</code> (992px = 62rem) and <code>xl</code> (1200px = 75rem).</p>
+
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <code>.grid-fluid</code> or <code>.grid</code>
+            </dd>
+          </dl>
+
+          <p>Columns must be direct descendants of grids. They respond to grid breakpoints.
+          <br>
+          Columns can have a customizable offset-margin for each breakpoint.</p>
+
+          <dl>
+            <dt>Breakpoints</dt>
+            <dd>
+              <code>.col-xs-...</code>, <code>.col-sm-...</code>, <code>.col-md-...</code>, <code>.col-lg-...</code> and <code>.col-xl-...</code>
+            </dd>
+            <dt>Offset</dt>
+            <dd>
+              <code>.col-xs-offset-...</code>, <code>.col-sm-offset-...</code>, <code>.col-md-offset-...</code>, <code>.col-lg-offset-...</code> and <code>.col-xl-offset-...</code>
+            </dd>
+          </dl>
+
+        </div>
+
+        <article id="grid-fluid" class="file-article">
+          <h4>Grid fluid</h4>
+        </article>
+      </div>
+
+      <div class="grid-fluid highlight">
+
+        <div class="col-xs-12">
+          .xs-12
+        </div>
+
+        <div class="col-xs-1">
+          .xs-1
+        </div>
+
+        <div class="col-xs-11">
+          .xs-11
+        </div>
+
+        <div class="col-xs-2">
+          .xs-2
+        </div>
+
+        <div class="col-xs-10">
+          .xs-10
+        </div>
+
+        <div class="col-xs-3">
+          .xs-3
+        </div>
+
+        <div class="col-xs-9">
+          .xs-9
+        </div>
+
+        <div class="col-xs-4">
+          .xs-4
+        </div>
+
+        <div class="col-xs-8">
+          .xs-8
+        </div>
+
+        <div class="col-xs-5">
+          .xs-5
+        </div>
+
+        <div class="col-xs-7">
+          .xs-7
+        </div>
+
+        <div class="col-xs-6">
+          .xs-6
+        </div>
+
+        <div class="col-xs-6">
+          .xs-6
+        </div>
+
+        <div class="col-xs-7">
+          .xs-7
+        </div>
+
+        <div class="col-xs-5">
+          .xs-5
+        </div>
+
+        <div class="col-xs-8">
+          .xs-8
+        </div>
+
+        <div class="col-xs-4">
+          .xs-4
+        </div>
+
+        <div class="col-xs-9">
+          .xs-9
+        </div>
+
+        <div class="col-xs-3">
+          .xs-3
+        </div>
+
+        <div class="col-xs-10">
+          .xs-10
+        </div>
+
+        <div class="col-xs-2">
+          .xs-2
+        </div>
+
+        <div class="col-xs-11">
+          .xs-11
+        </div>
+
+        <div class="col-xs-1">
+          .xs-1
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="file-article">
+
+          <div>
+            <figure class="file-code">
+
+              <pre class="language-html line-numbers"><code>&lt;div class="grid-fluid"&gt;
+
+  &lt;div class="col-xs-12"&gt;
+    .xs-12
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1"&gt;
+    .xs-1
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11"&gt;
+    .xs-11
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2"&gt;
+    .xs-2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10"&gt;
+    .xs-10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3"&gt;
+    .xs-3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9"&gt;
+    .xs-9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4"&gt;
+    .xs-4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8"&gt;
+    .xs-8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5"&gt;
+    .xs-5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7"&gt;
+    .xs-7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6"&gt;
+    .xs-6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6"&gt;
+    .xs-6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7"&gt;
+    .xs-7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5"&gt;
+    .xs-5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8"&gt;
+    .xs-8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4"&gt;
+    .xs-4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9"&gt;
+    .xs-9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3"&gt;
+    .xs-3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10"&gt;
+    .xs-10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2"&gt;
+    .xs-2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11"&gt;
+    .xs-11
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1"&gt;
+    .xs-1
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+              <figcaption>
+                Grid fluid <code>.grid-fluid</code>, and descendant columns <code>.col-...</code>.
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid">
+        <article id="grid-fluid__offset" class="file-article">
+          <h4>Grid fluid: Column offset</h4>
+        </article>
+      </div>
+
+      <div class="grid-fluid highlight">
+
+        <div class="col-xs-12">
+          .xs-12
+        </div>
+
+        <div class="col-xs-11 col-xs-offset-1">
+          11 / 1
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-2">
+          10 / 2
+        </div>
+
+        <div class="col-xs-9 col-xs-offset-3">
+          9 / 3
+        </div>
+
+        <div class="col-xs-8 col-xs-offset-4">
+          8 / 4
+        </div>
+
+        <div class="col-xs-7 col-xs-offset-5">
+          7 / 5
+        </div>
+
+        <div class="col-xs-6 col-xs-offset-6">
+          6 / 6
+        </div>
+
+        <div class="col-xs-5 col-xs-offset-7">
+          5 / 7
+        </div>
+
+        <div class="col-xs-4 col-xs-offset-8">
+          4 / 8
+        </div>
+
+        <div class="col-xs-3 col-xs-offset-9">
+          3 / 9
+        </div>
+
+        <div class="col-xs-2 col-xs-offset-10">
+          2 / 10
+        </div>
+
+        <div class="col-xs-1 col-xs-offset-11">
+          1 / 11
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="file-article">
+
+          <div>
+            <figure class="file-code">
+
+              <pre class="language-html line-numbers"><code>&lt;div class="grid-fluid"&gt;
+
+  &lt;div class="col-xs-12"&gt;
+    .xs-12
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11 col-xs-offset-1"&gt;
+    11 / 1
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10 col-xs-offset-2"&gt;
+    10 / 2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9 col-xs-offset-3"&gt;
+    9 / 3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8 col-xs-offset-4"&gt;
+    8 / 4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7 col-xs-offset-5"&gt;
+    7 / 5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6 col-xs-offset-6"&gt;
+    6 / 6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5 col-xs-offset-7"&gt;
+    5 / 7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4 col-xs-offset-8"&gt;
+    4 / 8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3 col-xs-offset-9"&gt;
+    3 / 9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2 col-xs-offset-10"&gt;
+    2 / 10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1 col-xs-offset-11"&gt;
+    1 / 11
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+              <figcaption>
+                Grid fluid <code>.grid-fluid</code>, and descendant columns with offset  <code>.col-offset-...</code>.
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid">
+        <article id="grid" class="file-article">
+          <h4>Grid</h4>
+        </article>
+      </div>
+
+      <div class="grid highlight">
+
+        <div class="col-xs-12">
+          .xs-12
+        </div>
+
+        <div class="col-xs-1">
+          .xs-1
+        </div>
+
+        <div class="col-xs-11">
+          .xs-11
+        </div>
+
+        <div class="col-xs-2">
+          .xs-2
+        </div>
+
+        <div class="col-xs-10">
+          .xs-10
+        </div>
+
+        <div class="col-xs-3">
+          .xs-3
+        </div>
+
+        <div class="col-xs-9">
+          .xs-9
+        </div>
+
+        <div class="col-xs-4">
+          .xs-4
+        </div>
+
+        <div class="col-xs-8">
+          .xs-8
+        </div>
+
+        <div class="col-xs-5">
+          .xs-5
+        </div>
+
+        <div class="col-xs-7">
+          .xs-7
+        </div>
+
+        <div class="col-xs-6">
+          .xs-6
+        </div>
+
+        <div class="col-xs-6">
+          .xs-6
+        </div>
+
+        <div class="col-xs-7">
+          .xs-7
+        </div>
+
+        <div class="col-xs-5">
+          .xs-5
+        </div>
+
+        <div class="col-xs-8">
+          .xs-8
+        </div>
+
+        <div class="col-xs-4">
+          .xs-4
+        </div>
+
+        <div class="col-xs-9">
+          .xs-9
+        </div>
+
+        <div class="col-xs-3">
+          .xs-3
+        </div>
+
+        <div class="col-xs-10">
+          .xs-10
+        </div>
+
+        <div class="col-xs-2">
+          .xs-2
+        </div>
+
+        <div class="col-xs-11">
+          .xs-11
+        </div>
+
+        <div class="col-xs-1">
+          .xs-1
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="file-article">
+
+          <div>
+            <figure class="file-code">
+
+              <pre class="language-html line-numbers"><code>&lt;div class="grid"&gt;
+
+  &lt;div class="col-xs-12"&gt;
+    .xs-12
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1"&gt;
+    .xs-1
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11"&gt;
+    .xs-11
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2"&gt;
+    .xs-2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10"&gt;
+    .xs-10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3"&gt;
+    .xs-3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9"&gt;
+    .xs-9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4"&gt;
+    .xs-4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8"&gt;
+    .xs-8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5"&gt;
+    .xs-5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7"&gt;
+    .xs-7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6"&gt;
+    .xs-6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6"&gt;
+    .xs-6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7"&gt;
+    .xs-7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5"&gt;
+    .xs-5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8"&gt;
+    .xs-8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4"&gt;
+    .xs-4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9"&gt;
+    .xs-9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3"&gt;
+    .xs-3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10"&gt;
+    .xs-10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2"&gt;
+    .xs-2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11"&gt;
+    .xs-11
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1"&gt;
+    .xs-1
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+              <figcaption>
+                Grid <code>.grid</code>, and descendant columns <code>.col-...</code>.
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="grid">
+        <article id="grid__offset" class="file-article">
+          <h4>Grid: Column offset</h4>
+        </article>
+      </div>
+
+      <div class="grid highlight">
+
+        <div class="col-xs-12">
+          .xs-12
+        </div>
+
+        <div class="col-xs-11 col-xs-offset-1">
+          11 / 1
+        </div>
+
+        <div class="col-xs-10 col-xs-offset-2">
+          10 / 2
+        </div>
+
+        <div class="col-xs-9 col-xs-offset-3">
+          9 / 3
+        </div>
+
+        <div class="col-xs-8 col-xs-offset-4">
+          8 / 4
+        </div>
+
+        <div class="col-xs-7 col-xs-offset-5">
+          7 / 5
+        </div>
+
+        <div class="col-xs-6 col-xs-offset-6">
+          6 / 6
+        </div>
+
+        <div class="col-xs-5 col-xs-offset-7">
+          5 / 7
+        </div>
+
+        <div class="col-xs-4 col-xs-offset-8">
+          4 / 8
+        </div>
+
+        <div class="col-xs-3 col-xs-offset-9">
+          3 / 9
+        </div>
+
+        <div class="col-xs-2 col-xs-offset-10">
+          2 / 10
+        </div>
+
+        <div class="col-xs-1 col-xs-offset-11">
+          1 / 11
+        </div>
+
+      </div>
+
+      <div class="grid">
+
+        <div class="file-article">
+
+          <div>
+            <figure class="file-code">
+
+              <pre class="language-html line-numbers"><code>&lt;div class="grid"&gt;
+
+  &lt;div class="col-xs-12"&gt;
+    .xs-12
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-11 col-xs-offset-1"&gt;
+    11 / 1
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-10 col-xs-offset-2"&gt;
+    10 / 2
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-9 col-xs-offset-3"&gt;
+    9 / 3
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-8 col-xs-offset-4"&gt;
+    8 / 4
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-7 col-xs-offset-5"&gt;
+    7 / 5
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-6 col-xs-offset-6"&gt;
+    6 / 6
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-5 col-xs-offset-7"&gt;
+    5 / 7
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-4 col-xs-offset-8"&gt;
+    4 / 8
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-3 col-xs-offset-9"&gt;
+    3 / 9
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-2 col-xs-offset-10"&gt;
+    2 / 10
+  &lt;/div&gt;
+
+  &lt;div class="col-xs-1 col-xs-offset-11"&gt;
+    1 / 11
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+              <figcaption>
+                Grid <code>.grid</code>, and descendant columns with offset  <code>.col-offset-...</code>.
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+
+  </main>
+
+
+  <footer role="contentinfo">
+
+    <div class="grid">
+
+      <div class="col-xs-12 col-sm-8">
+
+        <p>
+          <strong>PUXL framework <small>v1</small></strong>.
+          <br>
+          <small>Created by <a href="https://github.com/mrkanuel" rel="external">@MrKanuel</a>. Brought by <a href="https://github.com/orgs/puxl/teams/puxl-clan" rel="external">The PUXL Clan</a>, with love from Basque Country.</small>
+          <br>
+          <small>Code licensed <a href="https://github.com/puxl/puxl-framework/blob/master/LICENSE">GPL V3</a>, docs <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</small>
+        </p>
+
+      </div>
+
+      <div class="col-xs-12 col-sm-4 text--right">
+
+        <a class="btn-icn lg capsule" href="mailto:info@puxl.io" role="button">
+          <img alt="" src="https://puxl.io/img/puxl-icons/email-unread.svg" aria-hidden="true">
+          <span>Email contact</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.linkedin.com/company/puxl/" role="button">
+          <img alt="" src="https://puxl.io/img/logo/linkedin.svg" aria-hidden="true">
+          <span>Company on LinkedIn</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://www.reddit.com/user/puxl_io" role="button">
+          <img alt="" src="https://puxl.io/img/logo/reddit.svg" aria-hidden="true">
+          <span>Community on Reddit</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://github.com/puxl" role="button">
+          <img alt="" src="https://puxl.io/img/logo/github.svg" aria-hidden="true">
+          <span>Repository on GitHub</span>
+        </a>
+
+        <a class="btn-icn lg capsule" href="https://t.me/joinchat/AoC6ohKwoJDMIiqe_e01cA" role="button">
+          <img alt="" src="https://puxl.io/img/logo/telegram.svg" aria-hidden="true">
+          <span>Channel on Telegram</span>
+        </a>
+
+      </div>
+
+      <div class="col-xs-12 text--center">
+        <small><a href="https://puxl.io/aviso-legal/">Legal</a> · <a href="https://puxl.io/politica-de-privacidad/">Privacy</a></small>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="../../../js/puxl.js"></script>
+  <script src="../../../js/puxl-js/appBar.js"></script>
+  <script src="../../../vendor/prism-js/prismJS_1-15-0.min.js"></script>
+  <script>
+    'use strict';
+
+    // Initialize app bar.
+    puxl_appBar(
+      // id
+      'app-bar',
+      // iconPath
+      '../../../img/puxl-icons/',
+      // iconOpened
+      'cross.svg',
+      // iconClosed
+      'menu-burger.svg',
+      // txtOpened
+      'Close navigation menu',
+      // txtClosed
+      'Open navigation menu'
+    );
+  </script>
+
+</body>
+</html>

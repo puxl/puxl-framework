@@ -1,0 +1,243 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/element/control__button-appearance/_placeholders.scss
+//
+//    Requires:    puxl-framework/css/puxl/_setup.scss
+//                 puxl-framework/css/puxl/function/_color.scss
+//                 puxl-framework/css/puxl/theme/_puxl-light.scss
+//                 puxl-framework/css/puxl/_structure.scss
+//                 puxl-framework/css/puxl/placeholder/_animation--enable.scss
+//                 puxl-framework/css/puxl/placeholder/_sr--undo.scss
+//                 puxl-framework/css/puxl/placeholder/_sr.scss
+//                 puxl-framework/css/puxl/placeholder/_user-select--disable.scss
+//                 puxl-framework/css/puxl/mixin/_z-shadow.scss
+//                 puxl-framework/css/puxl/element/control__button-appearance/_mixins.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  //  Button-ish appearance  - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %button-ish {
+    @if $animation--enabled == true {
+      @extend %animation--enable;
+    }
+
+    border-radius:     var(--control__box--shape);
+    border-style:      $control__box--border-style;
+    border-width:      var(--control__box--border-width);
+    cursor:            $cursor--press;
+    text-shadow:       $control__button--text-shadow;
+    vertical-align:    middle;
+  }// %button-ish
+
+
+  //  Button construction  - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %btn {
+		@extend
+			%button-ish,
+			%user-select--disable;
+
+    background-color:    var(--btn--bg-c);
+    border-color:        var(--btn--bd-c);
+    color:               var(--btn--c);
+    display:             inline-block;
+    font-size:           var(--control__box--size);
+    min-height:          2em;
+    line-height:         $control__button--line-height;
+    padding:             $control__button--padding;
+    text-align:          center;
+
+    @if ($control__box--variant != default) {
+      @include control__button-appearance($control__box--look, $control__box--variant);
+    }
+    @else {
+      &:focus,
+      &:hover {
+        --btn--bg-c:    $btn--default--hover--background-color;
+        --btn--bd-c:    $btn--default--hover--border-color;
+      }
+
+      &:focus:hover {
+        --btn--bd-c:    $btn--default--hover--background-color;
+      }
+
+      &:active {
+        --btn--bg-c:    $btn--default--active--background-color;
+        --btn--bd-c:    $btn--default--active--border-color;
+        --btn--c:       $btn--default--active--color;
+      }
+
+      &:active:hover {
+        --btn--bd-c:    $btn--default--active-hover--border-color;
+      }
+
+      &:disabled,
+      &:disabled:hover,
+      &:disabled:active,
+      &[aria-disabled=true],
+      &[aria-disabled=true]:hover,
+      &[aria-disabled=true]:active {
+        --btn--bg-c:    $btn--default--disabled--background-color;
+        --btn--bd-c:    $btn--default--disabled--border-color;
+        --btn--c:       $btn--default--disabled--color;
+      }
+    }
+
+    @each $look in $looks {
+      @each $key, $value in $colors {
+        &.#{$key} {
+          &.#{$look} {
+            @include control__button-appearance($look, $key);
+          }
+        }
+      }
+    }
+
+    @each $key, $value in $control__box--shapes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--shape:    var(--control__box--shape--#{$key});
+      }
+    }
+
+    @each $key, $value in $control__box--sizes {
+      &.#{$key},
+      .#{$key} & {
+        --control__box--size:    var(--control__box--size--#{$key});
+      }
+    }
+
+    &:disabled {
+      cursor:     $cursor--disabled;
+      opacity:    $opacity--disabled;
+    }
+
+		&.block {
+			width:    100%;
+		}
+
+		&.elevated {
+			@include z-shadow(2);
+
+			&:focus,
+			&:hover {
+				@include z-shadow(2, 4);
+			}
+
+      &:active {
+        @include z-shadow(2, 6);
+      }
+		}
+	}// %btn
+
+
+  //  Button icon construction - - - - - - - - - - - - - - - - - - - - - - - - -
+
+  %btn-icn {
+    padding:    $control__button-icon--padding;
+
+    > img,
+    > svg {
+      display:    inline-block;
+      height:     $control__button-icon__icon--size;
+      margin:     0
+                  auto
+                  -.125em;
+      width:      $control__button-icon__icon--size;
+    }
+
+    > svg {
+      fill: currentColor;
+    }
+
+    > span {
+      @extend %sr;
+    }
+  }// %btn-icn
+
+
+  //  Button icon text construction  - - - - - - - - - - - - - - - - - - - - - -
+
+  %btn-icn-txt {
+    padding:    $control__button--padding;
+
+    &.v {
+      height:     auto;
+
+      > img,
+      > svg {
+        display:    block;
+        height:     $control__button-icon-text--v__icon--size;
+        width:      $control__button-icon-text--v__icon--size;
+
+        [dir=ltr] &,
+        [dir=rtl] & {
+          margin-top:       0;
+          margin-left:      auto;
+          margin-right:     auto;
+          margin-bottom:    0;
+        }
+      }
+
+      > span {
+        display:    block;
+
+        [dir=ltr] &,
+        [dir=rtl] & {
+          margin-top:       0;
+          margin-left:      auto;
+          margin-right:     auto;
+          margin-bottom:    0;
+        }
+      }
+
+      > img + span,
+      > svg + span,
+      > span + img,
+      > span + svg {
+        [dir=ltr] &,
+        [dir=rtl] & {
+          margin-top:       $control__button-icon-text--v__icon--separation;
+          margin-left:      auto;
+          margin-right:     auto;
+          margin-bottom:    0;
+        }
+      }
+    }// &.v
+
+    > img,
+    > svg {
+      height:    $control__button-icon-text--h__icon--size;
+      width:     $control__button-icon-text--h__icon--size;
+    }// > img, > svg
+
+    > span {
+      @extend %sr--undo;
+    }// > span
+
+    > img + span,
+    > svg + span,
+    > span + img,
+    > span + svg {
+      [dir=ltr] & {
+        margin-left:    $control__button-icon-text--h__icon--separation;
+      }
+
+      [dir=rtl] & {
+        margin-right:    $control__button-icon-text--h__icon--separation;
+      }
+    }// > img + span, > svg + span, > span + img, > span + svg
+  }// %btn-icn-txt

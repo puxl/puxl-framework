@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//
+//    PUXL framework
+//
+//    Version:     1
+//
+//    Author:      Iñigo Garcia (@MrKanuel)
+//
+//    Route:       puxl-framework/css/puxl/type/_preformatted.scss
+//
+//    Requires:    puxl-framework/css/puxl/_structure.scss
+//
+//    License:     GNU General Public License v3.0
+//                 https://github.com/puxl/puxl-framework/blob/master/LICENSE
+//
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+  pre {
+    margin:        0
+                   0
+                   var(--body--line-height);
+    padding:       .25em;
+    overflow-x:    scroll;
+
+    &:last-child {
+      margin-bottom:    0;
+    }
+  }

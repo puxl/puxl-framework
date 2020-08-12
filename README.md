@@ -19,7 +19,7 @@
   - [Contributing](#Contributing)  
   - [Team](#Team)  
   - [Support](#Support)  
-  - [Credits & Thanks](#Credits-&-Thanks)  
+  - [Credits and Thanks](#Credits-and-Thanks)  
   - [Copyright and license](#Copyright-and-license)  
 
 ---
@@ -68,7 +68,7 @@
 
 ---
 
-## Credits & Thanks
+## Credits and Thanks
 
   Thanks everyone for knowledge, dedication, hard work and inspiration.  
   This project stands on the shoulders of giants.

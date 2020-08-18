@@ -82,5 +82,5 @@
 
 ## Copyright and license
 
-  Code released under [the General Public License V-3 (GPL3)](https://github.com/puxl/puxl-framework/blob/master/LICENSE).  
+  Code released under [the General Public License V-3 (GPL3)](LICENSE.md).  
   Docs released under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).

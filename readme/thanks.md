@@ -2,10 +2,10 @@
 
   >Version:    1  
   Author:     Iñigo Garcia (@MrKanuel)  
-  Route:      puxl-framework/thanks.txt  
+  Route:      puxl-framework/readme/thanks.md  
   License:    [PUXL is licensed under GNU General Public License v3.0](https://github.com/puxl/puxl-framework/blob/master/LICENSE)  
 
-  ### Credits:
+  ## Credits:
 
   <u>**Normalize.css** </u>  
 
@@ -69,7 +69,7 @@
 
   ---
 
-  ### Thanks:
+  ## Thanks:
     
   Thanks to [Firefox developer Edition](https://www.mozilla.org/es-ES/firefox/developer/) for making such a powerful browser!  
   <a href="https://www.mozilla.org/es-ES/firefox/developer/">

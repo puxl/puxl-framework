@@ -76,7 +76,7 @@
   This application uses Open Source components. You can find the source code of their open source projects along with license information below.  
   Thank you very much and a big applause to these creators for their contributions to open source. They helped this project happen.  
 
-  We would like to thank a lot of people, organizations and initiatives, big and small around the globe for making their contributions to the open accessible Web. You are so many we had to make a [Thanks file](https://github.com/puxl/puxl-framework/blob/testing/thanks.md)!
+  We would like to thank a lot of people, organizations and initiatives, big and small around the globe for making their contributions to the open accessible Web. You are so many we had to make a [Thanks file](readme/thanks.md)!
 
 ---
 

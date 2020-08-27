@@ -1,9 +1,9 @@
 # PUXL framework
-  <a href="https://puxl.io/"><img src="readme/PUXL_framework--black.png" alt="Puxl Logo" width=250></a>
+  <a href="https://puxl.github.io/puxl.io/"><img src="readme/PUXL_framework--black.png" alt="Puxl Logo" width=250></a>
 
   **PUXL** (ˈpʌksl) is an accessibility-first, eco-friendly open source front-end library for the modern Web. It helps you create accessible, responsive Web User Interfaces with lightweight HTML.  
 
-  [Check out the Docs (v1-βeta)](https://puxl.io/docs/v1-beta/)
+  [Check out the Docs (v1-βeta)](https://puxl.github.io/puxl.io/docs/v1-beta/)
 
 ---
 ## Crowdfunding
@@ -43,7 +43,7 @@
   | :---: |:---:|  
   | <img src="https://avatars1.githubusercontent.com/u/11219677?s=400&u=58da6fc5e43848768ccdb3597cc1f4246beafb8c&v=4" alt="Iñigo's profile pic" width=250> | <img src="readme/PUXL-Team.jpg" alt="Puxl team photo" width=250> |  
   | Human. Designer.<br>Creator and co-founder<br>of @PUXL_framework. | PUXL Team |  
-  | <a href="https://twitter.com/mrkanuel"><img src="readme/icons/twitter.png" alt="Iñigo's twitter" width=30></a> <a href="https://github.com/MrKanuel"><img src="readme/icons/github.png" alt="Iñigo's GitHub" width=32></a> | <a href="https://www.youtube.com/channel/UCKf093lz3NY-JZRvh-JGwdA"><img src="readme/icons/youtube.png" alt="Puxl's Youtube" width=30></a> <a href="https://www.facebook.com/puxla11y/"><img src="readme/icons/facebook.png" alt="Puxl's Facebook" width=35></a> <a href="https://twitter.com/puxla11y"><img src="readme/icons/twitter.png" alt="Puxl's Twitter" width=30></a> <a href="https://www.linkedin.com/company/puxl/"><img src="readme/icons/linkedin.png" alt="Puxl's Linkedin" width=30></a> <a href="https://puxlframework.slack.com/join/shared_invite/zt-6wuia0nl-2DUSBgjwYRwWH9yVviAosQ#/"><img src="readme/icons/slack.png" alt="Puxl's Slack" width=30></a> |
+  | <a href="https://twitter.com/mrkanuel"><img src="readme/icons/twitter.svg" alt="Iñigo's twitter" width=30></a> <a href="https://github.com/MrKanuel"><img src="readme/icons/github.svg" alt="Iñigo's GitHub" width=32></a> | <a href="https://www.youtube.com/channel/UCKf093lz3NY-JZRvh-JGwdA"><img src="readme/icons/youtube.svg" alt="Puxl's Youtube" width=30></a> <a href="https://www.facebook.com/puxla11y/"><img src="readme/icons/facebook.svg" alt="Puxl's Facebook" width=30></a> <a href="https://twitter.com/puxla11y"><img src="readme/icons/twitter.svg" alt="Puxl's Twitter" width=30></a> <a href="https://www.linkedin.com/company/puxl/"><img src="readme/icons/linkedin.svg" alt="Puxl's Linkedin" width=30></a> <a href="https://puxlframework.slack.com/join/shared_invite/zt-6wuia0nl-2DUSBgjwYRwWH9yVviAosQ#/"><img src="readme/icons/slack.svg" alt="Puxl's Slack" width=30></a> |
 
 
   PUXL is created by [@MrKanuel](https://twitter.com/mrkanuel), and brought by [The PUXL Clan](https://twitter.com/i/lists/1123508090614239232/members) with love from Basque Country.
@@ -53,18 +53,16 @@
 ## Support
 
   Contact us at one of the following places!
-
-  <a href="https://twitter.com/mrkanuel"><img src="readme/icons/twitter.png" alt="Twitter logo" width=30> Iñigo Garcia's Twitter</a>  
   
-  <a href="https://www.youtube.com/channel/UCKf093lz3NY-JZRvh-JGwdA"><img src="readme/icons/youtube.png" alt="Youtube logo" width=30> Watch our videos on Youtube!</a>  
+  <a href="https://www.youtube.com/channel/UCKf093lz3NY-JZRvh-JGwdA"><img src="readme/icons/youtube.svg" alt="Youtube logo" width=30> Watch our videos on Youtube!</a>  
   
-  <a href="https://www.facebook.com/puxla11y/"><img src="readme/icons/facebook.png" alt="Facebook logo" width=35> Puxl's Facebook</a>  
+  <a href="https://www.facebook.com/puxla11y/"><img src="readme/icons/facebook.svg" alt="Facebook logo" width=35> Puxl's Facebook</a>  
   
-  <a href="https://twitter.com/puxla11y"><img src="readme/icons/twitter.png" alt="Twitter logo" width=30> Puxl's Twitter</a>  
+  <a href="https://twitter.com/puxla11y"><img src="readme/icons/twitter.svg" alt="Twitter logo" width=30> Puxl's Twitter</a>  
   
-  <a href="https://www.linkedin.com/company/puxl/"><img src="readme/icons/linkedin.png" alt="Linkedin logo" width=30> Puxl's Linkedin</a>  
+  <a href="https://www.linkedin.com/company/puxl/"><img src="readme/icons/linkedin.svg" alt="Linkedin logo" width=30> Puxl's Linkedin</a>  
   
-  <a href="https://puxlframework.slack.com/join/shared_invite/zt-6wuia0nl-2DUSBgjwYRwWH9yVviAosQ#/"><img src="readme/icons/slack.png" alt="Slack logo" width=30> Puxl's Slack</a>  
+  <a href="https://puxlframework.slack.com/join/shared_invite/zt-6wuia0nl-2DUSBgjwYRwWH9yVviAosQ#/"><img src="readme/icons/slack.svg" alt="Slack logo" width=30> Puxl's Slack</a>  
 
 ---
 
